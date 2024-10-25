@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+    <body>
+        {% include '../components/nav.njk' %}
+        
+        <div class='hero-with-cta'>
+            Hero banner
+            <div class='hero-cta'>
+                Hero Call to Action
+            </div>
+        </div>
+        
+        <div class='landing-product-overview skeleton'>
+            Product Overview
+        </div>
+
+        <div class='landing-purpose skeleton'>
+            Why we exist
+        </div>
+
+        <div class='landing-benifit skeleton'>
+            Why you benifit from us
+        </div>
+
+        <div class='landing-call-to-action skeleton'>
+            Main call to action
+        </div>
+
+        <div class='landing-justification skeleton'>
+            Justification why other people think we're great
+        </div>
+
+        {% include '../components/cta/knowmore.njk' %}
+        
+        {% include '../components/footer.njk' %}
+    </body>
+</html>

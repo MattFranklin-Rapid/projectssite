@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+    <body>
+        {% include '../components/nav.njk' %}
+        
+        <div class='hero-with-content'>
+            Hero banner
+            <div class='hero-content'>
+                Hero Content
+            </div>
+        </div>
+        <div class='about-our-message skeleton'>
+            Our Message!
+        </div>
+
+        {% include '../components/cta/knowmore.njk' %}
+        
+        {% include '../components/footer.njk' %}
+    </body>
+</html>
