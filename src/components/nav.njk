@@ -1,6 +1,36 @@
-<ul id="navigation">
-    {% for item in ['index', 'about', 'hello'] %}
-        <li><a href="/{{ item }}">{{ item }}</a></li>
-    {% endfor %}
-        <li><a href="/campaign/bbg">Business Basics</a></li>
-</ul>
+<div class="sticky-container"> 
+    <div class="header" id="mainHeader">
+        <div class="header-logo">
+            <img src="src/assets/Rapid-Projects-Logo.png">
+        </div>
+        <div class="regular-header"> 
+            <div class="header-menu">
+                <a href="/approach">Our Approach</a>
+                <a href="/about">About Us</a>
+                <a href="https://www.google.com">Solutions +</a>
+            </div>
+        </div>
+        <div class="mobile-header"> 
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <!-- These spans are needed for displaying the hamburger icon -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="/approach">
+                        <li>Our Approach</li>
+                        </a>
+                        <a href="/about">
+                        <li>About Us</li>
+                        </a>
+                        <a href="#">
+                        <li>Solutions</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

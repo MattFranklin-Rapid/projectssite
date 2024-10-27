@@ -11,3 +11,390 @@ ul {
 :root {
   --accent: #2c6622;
 }
+
+/* Start of imported styles */
+:root {
+  font-family: 'Poppins', system-ui, Helvetica, Arial, serif;
+  line-height: 1;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(244, 244, 244, 1);
+  background-color: #f4f4f4;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #0091D0;
+  text-decoration: none;
+}
+a:hover {
+  color: #f0b41c !important;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: left;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: radial-gradient(black 1px transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
+}
+
+h1 {
+  font-size: 50pt;
+  line-height: 1.1;
+  color: #43c7f4;
+}
+
+h2 {
+    font-size: 34pt;
+    font-weight: normal;
+    color: #0091D0;
+    line-height: 0vw;
+    padding-top: 16vh;
+}
+
+h3 {
+  font-size: 13pt;
+  font-weight: normal;
+}
+
+b {
+  color: #0C152A;
+  font-weight: 500;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #0091D0;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #0091D0;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* Header */
+.sticky-container {
+  position: sticky;
+  top: 0;
+  height: 1px;
+  z-index:100;
+  width: 100%;
+}
+
+.header {
+  top: 0;
+  margin-top: 0;
+  padding: 20px;
+  background-color: #F4F4F4;
+  display: flex;
+  flex: 1;
+
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.header img {
+  padding-left: 10px;
+  margin: 0;
+  flex: 1;
+  max-height: 50px;
+}
+
+.header a {
+  margin: 0;
+  padding-right: 20px;
+  color: #0C152A !important;
+}
+
+.header a:hover {
+  color: #f0b41c !important;
+}
+
+/* Top container splash image */
+.img-container {
+  padding-top:100px;
+  margin: 0;
+  max-width: 100%;
+}
+
+.img-container img {
+  top: 0;
+  left: 0;
+  margin-bottom: 0;
+  padding-bottom: -10px;
+  width: 100%;
+}
+
+/* Spacer */
+.spacer {
+  padding-top: 32vh;
+}
+
+.spacer-half {
+  padding-top: 16vh;
+}
+
+/* Flex boxes for content */
+
+#flexible-tech-consulting {
+  align-items: start !important;
+}
+
+.flex-container, .footer-flex-container {
+  display: flex;
+  align-items: center;
+  place-items: row;
+}
+
+.flex-item-footer,
+.flex-item-1,
+.flex-item-2,
+.flex-item-3,
+.flex-item-testimony {
+  flex: 1; /* equal width for all items */
+  padding-right: 8vw;
+  padding-left: 4vw;
+}
+
+.flex-item-title {
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.flex-item-1 p, .flex-item-2 p, .flex-item-3 p, .flex-item-testimony p {
+  font-size: 15pt;
+  line-height: 1.2;
+  color: #0C152A;
+}
+
+.flex-item-1 .partner-logo {
+  max-width: 150px;
+  min-width: 100px;
+}
+
+/* Testimonials */
+.testimony-container {
+  display: flex;
+  align-items: start;
+  place-items: row;
+}
+
+.flex-item-testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 8%;
+}
+
+.testimony-speaker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15pt;
+  font-weight: 500;
+}
+
+.testimonial-head {
+  padding-right: 8%;
+}
+
+.testimonial-head img {
+  height: 150px;
+  width: 150px;
+  /* Clip path radius needs to be exactly 50% of width */
+  clip-path: circle(75px at center);
+}
+
+.testimonial-name {
+  color:#43c7f4;
+}
+
+.testimonial-company {
+  color: #0091D0;
+}
+
+.quote-marks {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 700;
+  font-size: 34pt;
+  color:#43c7f4;
+  padding-top: 4%;
+}
+
+/* Footer */
+
+.footer {
+  background: #0C152A;
+  align-content: flex-end;
+  justify-content: center;
+  padding-top: 8vh;
+}
+
+.flex-item-footer {
+  padding-bottom: 4vh;
+  padding-left: 75px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+}
+
+.footer h3, .footer p {
+  color: #F4F4F4;
+  padding-right: 10px;
+  font-size: 10 !important;
+}
+
+.footer h3 {
+  color: #43c7f4 !important;
+}
+
+.footer a {
+  color: #F4F4F4;
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background: #f4f4f4;
+    background-image: radial-gradient(black 1px transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
+  }
+  /* Header */
+  .mobile-header {
+    display: none;
+  }
+  .regular-header {
+    display: flex;
+  }
+  a:hover {
+    color: #0091D0;
+  }
+  button {
+    background-color: #f4f4f4;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Header */
+  .mobile-header {
+    display: flex !important;
+  }
+  .regular-header {
+    display: none !important;
+  }
+  .header img {
+    margin: 0;
+    flex: 1;
+    max-height: 40px;
+  }
+  /* Content */
+  h1 {
+    font-size: 35pt;
+  }
+  h2 {
+    font-size: 21pt;
+    padding-top: 8vh;
+  }
+  .flex-item-1 p, .flex-item-2 p, .flex-item-3 p, .flex-item-testimony p {
+    font-size: 12pt;
+  }
+  .flex-item-1 .partner-logo {
+    max-width: 100px;
+    min-width: 50px;
+  }
+  .spacer {
+    padding-top: 16vh;
+  }
+  .spacer-half {
+    padding-top: 8vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* Header */
+  .mobile-header {
+    display: flex;
+  }
+  .regular-header {
+    display: none;
+  }
+  /* Splash */
+  .img-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .img-container img {
+    /* Keeps the height and ensures no squishing due to 1000% width */
+    height: 100vh;
+    width: 1000%;
+  }
+  /* Content */
+  .flex-container, .testimonial-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex-item-title {
+    text-align: start;
+    
+  }
+  /* Testimonial */
+  .testimony-container {
+    flex-direction: column;
+  }
+  .flex-item-testimony {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
+  .testimonial-head {
+    padding-right: 4%;
+  }
+  /* Footer */
+  .flex-item-footer {
+    padding-bottom: 4vh;
+    padding-left: 4vw !important;
+  }
+  .footer {
+    align-items: flex-start;
+  }
+  .footer-menu {
+    flex-direction: column !important;
+    line-height: 0 !important;
+    padding-left: 4vw !important;
+  }
+}
