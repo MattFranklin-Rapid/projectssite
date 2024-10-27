@@ -1,0 +1,58 @@
+/* Layout guide for skeleton blocks */
+.skeleton{
+
+}
+/* TESTING PURPOSES ONLY */
+.skeleton:nth-of-type(even){
+  background-color: #0091D0;
+}
+.skeleton:nth-of-type(odd){
+  background-color: #43c7f4;
+}
+
+/* TO REVIEW : Added styles that might make no sense while cobbling this together */
+.first-element{ /* Element at the top of the page 'below' the sticky nav menu */
+  margin-top: 100px;
+}
+
+@media (max-width: 1000px){
+  .first-element{ /* Repeated in case we want to make the nav menu skinny in 🍔 mode */
+    margin-top: 100px;
+  }
+}
+
+/* Big splash takes up ~3/4 of the page on desktop, full screen on mobile */
+.splash-big{
+  min-height: 75vh;
+  background-color: green;
+}
+
+@media (max-width: 1000px){
+  .splash-big{
+    min-height: 100vh;
+  }
+}
+
+/* Small splash takes up ~1/3 of the page on desktop, half screen on mobile */
+.splash-small{
+  min-height: 35vh;
+  background-color: green;
+}
+
+@media (max-width: 1000px){
+  .splash-small{
+    min-height: 50vh;
+  }
+}
+
+.block-full {
+    min-height: 100vh;
+}
+
+.block-half {
+    min-height: 50vh;
+}
+
+.block-quarter {
+    min-height: 25vh;
+}

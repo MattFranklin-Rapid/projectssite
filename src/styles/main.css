@@ -1,21 +1,5 @@
 @import "https://cdn.jsdelivr.net/npm/simpledotcss@2.2.0/simple.min.css";
 
-/* Layout guide for skeleton blocks */
-.skeleton{
-
-}
-
-/* TO REVIEW : Added styles that might make no sense while cobbling this togeather */
-.first-element{ /* Element at the top of the page 'below' the sticky nav menu */
-  margin-top: 100px;
-}
-
-@media (max-width: 1000px){
-  .first-element{ /* Repeated in case we want to make the nav menu skinny in 🍔 mode */
-    margin-top: 100px;
-  }
-}
-
 /* Start of imported styles */
 :root {
   font-family: 'Poppins', system-ui, Helvetica, Arial, serif;
