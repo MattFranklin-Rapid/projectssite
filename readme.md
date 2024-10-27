@@ -15,6 +15,7 @@
 This project is a scaffold for future development as well as a static site generator for Rapid Platform
 
 📁 dist - location of statically generated files to be uploaded to the CDN
+📁 public - static files that aren't referenced will be exported to /dist 'as-is'
 📁 src
     📁 assets - Our static assets such as `.png` `.svg`
     📁 data - `.json` data used in templates
