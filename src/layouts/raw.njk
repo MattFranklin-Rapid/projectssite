@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    {% include '../components/global_head.njk' %}
+</head>
+    <body>
+        {% include '../components/nav.njk' %}
+        
+        <div class="first-element"></div>
+        
+        <div class="raw-text">
+            {{ content|safe }}
+        </div>
+
+        {% include '../components/footer.njk' %}
+    </body>
+</html>
