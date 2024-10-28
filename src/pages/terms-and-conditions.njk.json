@@ -4,7 +4,12 @@
         {
             "state": "open",
             "section_title": "General Product Terms and Conditions",
-            "content": ""
+            "content": [
+                {
+                    "heading": "1. Offer Inclusions ",
+                    "text": ""
+                }
+            ]
         },
         {
             "state": "",
