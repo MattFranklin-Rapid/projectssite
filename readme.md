@@ -14,19 +14,19 @@
 
 This project is a scaffold for future development as well as a static site generator for Rapid Platform
 
-```
-📁 dist - location of statically generated files to be uploaded to the CDN
-📁 public - static files that aren't referenced will be exported to /dist 'as-is'
-📁 src
-    📁 assets - Our static assets such as `.png` `.svg`
-    📁 data - `.json` data used in templates
-    📁 emails - email template files
-    📁 scripts - script files as `.js`
-    📁 styles - `.css` files
-    📁 components - template files as `.njk` for reuse throughout pages and layouts
-    📁 layouts - template layout files as `.njk` that define pages
-    📁 pages - static `.html` pages, as well as dynamic nunjuck templates, can be nested, includes local data files in `.json`
-```
+
+- 📁 dist - location of statically generated files to be uploaded to the CDN
+- 📁 public - static files that aren't referenced will be exported to /dist 'as-is'
+- 📁 src
+  - 📁 assets - Our static assets such as `.png` `.svg`
+  - 📁 data - `.json` data used in templates
+  - 📁 emails - email template files
+  - 📁 scripts - script files as `.js`
+  - 📁 styles - `.css` files
+  - 📁 components - template files as `.njk` for reuse throughout pages and layouts
+  - 📁 layouts - template layout files as `.njk` that define pages
+  - 📁 pages - static `.html` pages, as well as dynamic nunjuck templates, can be nested, includes local data files in `.json`
+
 
 To do : 
 - Figure out how to bind .json files from `src/data/` instead of having them be in the `src/pages/` folder
