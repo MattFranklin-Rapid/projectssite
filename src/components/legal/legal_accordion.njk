@@ -1,0 +1,7 @@
+
+{% for item in legals %}
+    <details {{ item.state or '' }}>
+        <summary>{{ item.section_title }}</summary>
+        {{item.content|safe}}
+    </details>
+{% endfor %}
