@@ -57,11 +57,17 @@
     min-height: 25vh;
 }
 
-details {
-  max-width: 1400px;
+details, .raw-text {
+  max-width: 75vw;
   min-width: 75vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 1000px){
+  details, .raw-text {
+    max-width: 80vw;
+  }
 }
 
 #wrap {
