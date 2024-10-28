@@ -4,10 +4,10 @@
 }
 /* TESTING PURPOSES ONLY */
 .skeleton:nth-of-type(even){
-  background-color: #0091D0;
+  background-color: #0091D020;
 }
 .skeleton:nth-of-type(odd){
-  background-color: #43c7f4;
+  background-color: #43c7f420;
 }
 
 /* TO REVIEW : Added styles that might make no sense while cobbling this together */
