@@ -134,12 +134,30 @@ hr {
   max-width: 100%;
 }
 
-.img-container img {
+.img-container .img-container .static-splash, .img-container .dynamic-splash {
   top: 0;
   left: 0;
   margin-bottom: 0;
   padding-bottom: -10px;
   width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex: 1;
+}
+
+.img-container .static-splash h1, .img-container .dynamic-splash h1 {
+  align-content: center;
+  font-size: 8vw;
+  max-width: 1500px;
+  color: #f4f4f4;
+  padding-left: 10px;
+}
+
+.dynamic-splash {
+  background-attachment: fixed;
 }
 
 /* Spacer */
@@ -164,9 +182,7 @@ hr {
 }
 
 .flex-item-footer,
-.flex-item-1,
-.flex-item-2,
-.flex-item-3,
+.flex-item,
 .flex-item-testimony {
   flex: 1; /* equal width for all items */
   padding-right: 8vw;
@@ -178,13 +194,13 @@ hr {
   text-align: end;
 }
 
-.flex-item-1 p, .flex-item-2 p, .flex-item-3 p, .flex-item-testimony p {
+.flex-item p, .flex-item-testimony p {
   font-size: 15pt;
   line-height: 1.2;
   color: #0C152A;
 }
 
-.flex-item-1 .partner-logo {
+.flex-item .partner-logo {
   max-width: 150px;
   min-width: 100px;
 }
@@ -347,11 +363,16 @@ hr {
     justify-content: center;
     overflow: hidden;
   }
-  .img-container img {
+  .img-container img, .img-container .dynamic-splash, .img-container .static-splash {
     /* Keeps the height and ensures no squishing due to 1000% width */
     height: 100vh;
     width: 1000%;
   }
+
+  .img-container .dynamic-splash h1, .img-container .static-splash h1 {
+    font-size: 11vw;
+  }
+  
   /* Content */
   .flex-container, .testimonial-container {
     flex-direction: column;
