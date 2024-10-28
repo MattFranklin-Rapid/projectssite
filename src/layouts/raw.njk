@@ -4,13 +4,13 @@
 </head>
     <body>
         {% include '../components/nav.njk' %}
-        
-        <div class="first-element"></div>
+        <div id="wrap"> {# Content minimum height wrapper, place between nav and footer #}
         
         <div class="raw-text">
             {{ content|safe }}
         </div>
-
+        
+        </div> {# End of Wrap div #}
         {% include '../components/footer.njk' %}
     </body>
 </html>

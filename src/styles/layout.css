@@ -56,3 +56,16 @@
 .block-quarter {
     min-height: 25vh;
 }
+
+details {
+  max-width: 1400px;
+  min-width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrap {
+  margin-top: 100px;  /* Nav menu height */
+  min-height: calc(100% - 100px - 475px);
+  margin-bottom: 475px; /* Footer height */
+}

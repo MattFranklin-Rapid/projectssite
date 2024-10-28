@@ -4,8 +4,9 @@
 </head>
     <body>
         {% include '../components/nav.njk' %}
-        
-        <div class='hero-with-content first-element splash-small'>
+        <div id="wrap"> {# Content minimum height wrapper, place between nav and footer #}
+
+        <div class='hero-with-content splash-small'>
             {# Hero banner #}
             <div class='hero-content'>
                 {# Hero Content #}
@@ -17,6 +18,7 @@
 
         {% include '../components/cta/knowmore.njk' %}
         
+        </div> {# End of Wrap div #}
         {% include '../components/footer.njk' %}
     </body>
 </html>

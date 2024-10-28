@@ -260,7 +260,12 @@ hr {
   background: #0C152A;
   align-content: flex-end;
   justify-content: center;
-  padding-top: 8vh;
+  padding-top: 75px;
+  position: relative;
+  margin-top: -438px;
+  /* negative value of footer height */
+  height: 437;
+  clear: both;
 }
 
 .flex-item-footer {

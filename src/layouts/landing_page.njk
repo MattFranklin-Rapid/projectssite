@@ -4,8 +4,8 @@
 </head>
     <body>
         {% include '../components/nav.njk' %}
-        
-        <div class='hero-with-cta first-element splash-big'>
+        <div id="wrap"> {# Content minimum height wrapper, place between nav and footer #}
+        <div class='hero-with-cta splash-big'>
             {# Hero banner #}
             <div class="img-container">
                 <div class="dynamic-splash" style="background-image: url('/images/Simplify-Systems-Splash.png')">
@@ -138,6 +138,7 @@
 
         {% include '../components/cta/knowmore.njk' %}
         
+        </div> {# End of Wrap div #}
         {% include '../components/footer.njk' %}
     </body>
 </html>
