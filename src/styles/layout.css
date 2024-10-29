@@ -57,7 +57,7 @@
     min-height: 25vh;
 }
 
-details, .raw-text {
+details {
   max-width: 75vw;
   min-width: 75vw;
   margin-left: auto;
@@ -65,7 +65,7 @@ details, .raw-text {
 }
 
 @media (max-width: 1000px){
-  details, .raw-text {
+  details {
     max-width: 80vw;
   }
 }
