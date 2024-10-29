@@ -2,6 +2,16 @@
 {% for item in legals %}
     <details {{ item.state or '' }}>
         <summary>{{ item.section_title }}</summary>
-        {{item.content|safe}}
+            <div class="legal_sections">
+                {% for inner_section in item.inner_sections %}
+                    <strong >{{ inner_section.section_title }}</strong>
+                    {% if inner_section.content == "" %}
+                        <br>
+                    {% else %}
+                        <p>{{ inner_section.content|safe }}</p>
+                    {% endif %}
+                    <br>
+                {% endfor %}
+            </div>
     </details>
 {% endfor %}
