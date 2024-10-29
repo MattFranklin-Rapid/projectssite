@@ -49,7 +49,6 @@ h2 {
     font-weight: normal;
     color: #0091D0;
     line-height: 0vw;
-    padding-top: 16vh;
 }
 
 h3 {
@@ -303,6 +302,16 @@ hr {
   padding-top: 4%;
 }
 
+.hero-with-content {
+  background-image: url("https://th.bing.com/th/id/OIP.NsFDLagAQWgzO_6wKALC4QAAAA?rs=1&pid=ImgDetMain");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.padding-top-medium {
+  padding-top: 16vh;
+}
+
 /* Footer */
 
 .footer {
@@ -385,8 +394,8 @@ hr {
   }
   h2 {
     font-size: 21pt;
-    padding-top: 8vh;
   }
+
   .flex-item-1 p, .flex-item-2 p, .flex-item-3 p, .flex-item-testimony p {
     font-size: 12pt;
   }
@@ -400,6 +409,9 @@ hr {
   .spacer-half {
     padding-top: 8vh;
   }
+  .padding-top-medium {
+    padding-top: 8vh;
+  } 
 }
 
 @media (max-width: 1000px) {
@@ -460,8 +472,4 @@ hr {
     line-height: 0 !important;
     padding-left: 4vw !important;
   }
-}
-
-.legal_sections {
-  font-size: 15px;
 }
