@@ -1,3 +1,27 @@
 <div class="cta-know-more block-half">
-    Want to know more? 🚀
+    <div class="cta-left-content">
+
+    </div>
+    <div class="cta-right-content"></div>
+    <p>Want to know more? 🚀<p>
+    {% if pageName == "contact us" %}
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+        <form class="contact-form">
+            <input type="text" name="email" placeholder="Email" />
+            <input type="text" name="description" placeholder="Description" />
+            <div class="h-captcha" data-sitekey="533653de-0d6e-4bc0-89a8-af3c97b6d310"></div>
+            <br />
+            <button type="submit">Submit</button>
+        </form>
+         <script>
+            const form = document.querySelector(".contact-form");
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const formData = new FormData(form);
+                console.log(formData);
+            });
+        </script>
+    {% else %}
+        <button>Button</button>
+    {% endif %}
 </div>
