@@ -2,7 +2,7 @@
 
 /* Start of imported styles */
 :root {
-  font-family: 'Poppins', system-ui, Helvetica, Arial, serif;
+  font-family: "Poppins", system-ui, Helvetica, Arial, serif;
   line-height: 1;
   font-weight: 400;
 
@@ -17,7 +17,7 @@
 }
 
 a {
-  color: #0091D0;
+  color: #0091d0;
   text-decoration: none;
 }
 a:hover {
@@ -45,10 +45,10 @@ h1 {
 }
 
 h2 {
-    font-size: 34pt;
-    font-weight: normal;
-    color: #0091D0;
-    line-height: 0vw;
+  font-size: 34pt;
+  font-weight: normal;
+  color: #0091d0;
+  line-height: 0vw;
 }
 
 h3 {
@@ -57,7 +57,7 @@ h3 {
 }
 
 b {
-  color: #0C152A;
+  color: #0c152a;
   font-weight: 500;
 }
 
@@ -73,7 +73,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #0091D0;
+  border-color: #0091d0;
 }
 button:focus,
 button:focus-visible {
@@ -84,7 +84,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #0091D0;
+  border-top: 1px solid #0091d0;
   margin: 1em 0;
   padding: 0;
 }
@@ -94,7 +94,7 @@ hr {
   position: sticky;
   top: 0;
   height: 1px;
-  z-index:100;
+  z-index: 100;
   width: 100%;
 }
 
@@ -102,7 +102,7 @@ hr {
   top: 0;
   margin-top: 0;
   padding: 20px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   display: flex;
   flex: 1;
 
@@ -121,7 +121,7 @@ hr {
 .header a {
   margin: 0;
   padding-right: 20px;
-  color: #0C152A !important;
+  color: #0c152a !important;
 }
 
 .header a:hover {
@@ -130,12 +130,13 @@ hr {
 
 /* Top container splash image */
 .img-container {
-  padding-top:100px;
+  padding-top: 100px;
   margin: 0;
   max-width: 100%;
 }
 
-.img-container .img-container .static-splash, .img-container .dynamic-splash {
+.img-container .img-container .static-splash,
+.img-container .dynamic-splash {
   top: 0;
   left: 0;
   margin-bottom: 0;
@@ -149,7 +150,8 @@ hr {
   flex: 1;
 }
 
-.img-container .static-splash h1, .img-container .dynamic-splash h1 {
+.img-container .static-splash h1,
+.img-container .dynamic-splash h1 {
   align-content: center;
   font-size: 8vw;
   max-width: 1500px;
@@ -168,7 +170,7 @@ hr {
 
 .block-quote {
   font-size: 32;
-  font-family: 'poppins';
+  font-family: "poppins";
   font-weight: 600;
   color: 0091D0;
 }
@@ -189,7 +191,7 @@ hr {
   margin-right: auto;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .content-medium {
     max-width: 80vw;
   }
@@ -202,7 +204,7 @@ hr {
   margin-right: auto;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
   .content-narrow {
     max-width: 65vw;
   }
@@ -223,7 +225,8 @@ hr {
   align-items: start !important;
 }
 
-.flex-container, .footer-flex-container {
+.flex-container,
+.footer-flex-container {
   display: flex;
   align-items: center;
   place-items: row;
@@ -242,10 +245,11 @@ hr {
   text-align: end;
 }
 
-.flex-item p, .flex-item-testimony p {
+.flex-item p,
+.flex-item-testimony p {
   font-size: 15pt;
   line-height: 1.2;
-  color: #0C152A;
+  color: #0c152a;
 }
 
 .flex-item .partner-logo {
@@ -287,35 +291,61 @@ hr {
 }
 
 .testimonial-name {
-  color:#43c7f4;
+  color: #43c7f4;
 }
 
 .testimonial-company {
-  color: #0091D0;
+  color: #0091d0;
 }
 
 .quote-marks {
-  font-family: 'Sarabun', sans-serif;
+  font-family: "Sarabun", sans-serif;
   font-weight: 700;
   font-size: 34pt;
-  color:#43c7f4;
+  color: #43c7f4;
   padding-top: 4%;
 }
 
 .hero-with-content {
-  background-image: url("https://th.bing.com/th/id/OIP.NsFDLagAQWgzO_6wKALC4QAAAA?rs=1&pid=ImgDetMain");
+  background-image: url("https://t3.ftcdn.net/jpg/04/67/96/14/360_F_467961418_UnS1ZAwAqbvVVMKExxqUNi0MUFTEJI83.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 100%;
 }
 
 .padding-top-medium {
   padding-top: 16vh;
 }
 
+.padding-left-small {
+  padding-left: 40px;
+}
+
+.padding-right-small {
+  padding-right: 40px;
+}
+
+.about-us-main-container {
+  max-width: 55%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.image-medium {
+  width: 350px;
+  height: 350px;
+  min-width: 350px;
+  min-height: 350px;
+}
+
+.about-us-messages-container {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Footer */
 
 .footer {
-  background: #0C152A;
+  background: #0c152a;
   align-content: flex-end;
   justify-content: center;
   padding-top: 75px;
@@ -337,8 +367,9 @@ hr {
   max-width: 1000px;
 }
 
-.footer h3, .footer p {
-  color: #F4F4F4;
+.footer h3,
+.footer p {
+  color: #f4f4f4;
   padding-right: 10px;
   font-size: 10 !important;
 }
@@ -348,7 +379,7 @@ hr {
 }
 
 .footer a {
-  color: #F4F4F4;
+  color: #f4f4f4;
   text-decoration: underline;
 }
 
@@ -368,7 +399,7 @@ hr {
     display: flex;
   }
   a:hover {
-    color: #0091D0;
+    color: #0091d0;
   }
   button {
     background-color: #f4f4f4;
@@ -396,7 +427,10 @@ hr {
     font-size: 21pt;
   }
 
-  .flex-item-1 p, .flex-item-2 p, .flex-item-3 p, .flex-item-testimony p {
+  .flex-item-1 p,
+  .flex-item-2 p,
+  .flex-item-3 p,
+  .flex-item-testimony p {
     font-size: 12pt;
   }
   .flex-item-1 .partner-logo {
@@ -411,7 +445,7 @@ hr {
   }
   .padding-top-medium {
     padding-top: 8vh;
-  } 
+  }
 }
 
 @media (max-width: 1000px) {
@@ -429,24 +463,27 @@ hr {
     justify-content: center;
     overflow: hidden;
   }
-  .img-container img, .img-container .dynamic-splash, .img-container .static-splash {
+  .img-container img,
+  .img-container .dynamic-splash,
+  .img-container .static-splash {
     /* Keeps the height and ensures no squishing due to 1000% width */
     height: 100vh;
     width: 1000%;
   }
 
-  .img-container .dynamic-splash h1, .img-container .static-splash h1 {
+  .img-container .dynamic-splash h1,
+  .img-container .static-splash h1 {
     font-size: 11vw;
   }
-  
+
   /* Content */
-  .flex-container, .testimonial-container {
+  .flex-container,
+  .testimonial-container {
     flex-direction: column;
     align-items: flex-start;
   }
   .flex-item-title {
     text-align: start;
-    
   }
   /* Testimonial */
   .testimony-container {
@@ -459,6 +496,31 @@ hr {
   .testimonial-head {
     padding-right: 4%;
   }
+  .about-us-messages-container {
+    flex-direction: column;
+  }
+  .mobile-padding-remove {
+    padding:0;
+  }
+
+  .about-us-main-container {
+    max-width: 90vw;
+    min-width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reverse-elements-column {
+    flex-direction: column-reverse;
+  }
+
+  .image-medium {
+    width: 300px;
+    height: 300px;
+    min-width: 300px;
+    min-height: 300px;
+  }
+
   /* Footer */
   .flex-item-footer {
     padding-bottom: 4vh;
