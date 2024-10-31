@@ -1,0 +1,10 @@
+.cta-right-content {
+  padding-right: 40px;
+}
+
+
+@media (max-width: 1000px) { 
+  .cta-right-content {
+    padding-right: 0;
+  }  
+}

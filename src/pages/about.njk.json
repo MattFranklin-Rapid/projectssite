@@ -1,5 +1,8 @@
 {
   "title": "About",
-  "pageName": "contact us"  ,
-  "value": "This is the about us page, this value is loaded dynamically from the page json file"
+  "know_more_options": {
+    "show_contact_form": true,
+    "value": "This is the about us page, this value is loaded dynamically from the page json file",
+    "title": "About us Contact form"
+  }
 }

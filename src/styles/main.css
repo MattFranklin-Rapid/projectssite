@@ -80,6 +80,16 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+#contact-us-submit-button {
+  background-color: white;
+  opacity: 80%;
+}
+
+#contact-us-submit-button:disabled {
+  background-color: grey;
+  opacity: 50%;
+}
+
 hr {
   display: block;
   height: 1px;
