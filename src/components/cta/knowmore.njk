@@ -24,26 +24,26 @@
 
                     const form = document.getElementById("contact-form");
                     form.addEventListener('submit', async (event) => {
-                    event.preventDefault();
-                    try {
-                        await fetch("https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission", {
-                        method: "POST",
-                        mode: "no-cors",
-                        headers: {
-                            "Content-Type": "application/x-www-form-urlencoded"
-                        },
-                        body: `first_name=${form[0]?.value}
-                            &last_name=${form[1]?.value}
-                            &email=${form[2]?.value}
-                            &message=${form[3]?.value}
-                            &h-captcha-response=${form[5]?.value}`
-                        })
-                    } catch (error) {
-                        console.log(error);
-                    } finally {
-                        form.parentNode.remove();
-                        document.getElementById("thank-you-after-submit").removeAttribute("style");
-                    }
+                        event.preventDefault();
+                        try {
+                            await fetch("https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission", {
+                            method: "POST",
+                            mode: "no-cors",
+                            headers: {
+                                "Content-Type": "application/x-www-form-urlencoded"
+                            },
+                            body: `first_name=${form[0]?.value}
+                                &last_name=${form[1]?.value}
+                                &email=${form[2]?.value}
+                                &message=${form[3]?.value}
+                                &h-captcha-response=${form[5]?.value}`
+                            })
+                        } catch (error) {
+                            console.log(error);
+                        } finally {
+                            form.parentNode.remove();
+                            document.getElementById("thank-you-after-submit").removeAttribute("style");
+                        }
                     });
                 </script>
                 <div style="padding: 10px">
