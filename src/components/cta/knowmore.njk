@@ -16,6 +16,21 @@
         <div class="cta-right-content">
             {% if know_more_options.show_contact_form == true %}
                 <script src="https://js.hcaptcha.com/1/api.js" async defer></script>      
+                <div style="padding: 10px">
+                    <p style="font-size: 30px;">{{ know_more_options.title }}</p>
+                    <div  style="background-color: #ffffffe0; padding: 10px; border-radius: 5px;">
+                        <form id="contact-form">
+                            <input class="contact-form-field" type="text" name="first_name" placeholder="First Name" />
+                            <input class="contact-form-field" type="text" name="last_name" placeholder="Last Name" />
+                            <input class="contact-form-field" type="email" name="email" placeholder="Email" />
+                            <textarea class="contact-form-field" style="height: 200px; min-height: 200px; resize: none;" placeholder="Your message" name="message"></textarea>
+                            <div class="h-captcha" data-sitekey="533653de-0d6e-4bc0-89a8-af3c97b6d310" data-callback="setToEnabled"></div>
+                            <br />
+                            <button class="contact-us-submit-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
+                        </form>
+                    </div>
+                    <p style="visibility: hidden;" id="thank-you-after-submit">Thank you for contacting us! We will get back to you shortly.</p>
+                </div>
                 <script>
                     function setToEnabled() {
                         const button = document.getElementById("contact-us-submit-button");
@@ -46,21 +61,6 @@
                         }
                     });
                 </script>
-                <div style="padding: 10px">
-                    <p style="font-size: 30px;">{{ know_more_options.title }}</p>
-                    <div  style="background-color: #ffffffe0; padding: 10px; border-radius: 5px;">
-                        <form id="contact-form">
-                            <input class="contact-form-field" type="text" name="first_name" placeholder="First Name" />
-                            <input class="contact-form-field" type="text" name="last_name" placeholder="Last Name" />
-                            <input class="contact-form-field" type="email" name="email" placeholder="Email" />
-                            <textarea class="contact-form-field" style="height: 200px; min-height: 200px; resize: none;" placeholder="Your message" name="message"></textarea>
-                            <div class="h-captcha" data-sitekey="533653de-0d6e-4bc0-89a8-af3c97b6d310" data-callback="setToEnabled"></div>
-                            <br />
-                            <button class="contact-us-submit-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
-                        </form>
-                    </div>
-                    <p style="visibility: hidden;" id="thank-you-after-submit">Thank you for contacting us! We will get back to you shortly.</p>
-                </div>
             {% else %}
                 <button>Button</button>
             {% endif %}
