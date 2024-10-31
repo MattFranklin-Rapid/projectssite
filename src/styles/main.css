@@ -283,6 +283,12 @@ hr {
   padding-right: 8%;
 }
 
+.know-more-container {
+  display: flex; 
+  flex-direction: row; 
+  flex: 1;
+}
+
 .testimonial-head img {
   height: 150px;
   width: 150px;
@@ -519,6 +525,12 @@ hr {
     height: 300px;
     min-width: 300px;
     min-height: 300px;
+  }
+
+  .know-more-container {
+    display: flex; 
+    flex-direction: column; 
+    flex: 1;
   }
 
   /* Footer */

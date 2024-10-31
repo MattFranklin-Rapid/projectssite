@@ -1,27 +1,59 @@
 <div class="cta-know-more block-half">
-    <div class="cta-left-content">
-
+    <div class="know-more-container">
+        <div class="cta-left-content" style="width: 50%; padding: 10px">
+            <p>Want to know more? 🚀<p>
+            <p>{{ value }}<p>
+        </div>
+        <div class="cta-right-content" style="padding-right: 40px">
+            {% if pageName == "contact us" %}
+                <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+                <div style="padding: 10px">
+                    <p style="font-size: 30px;">Contact Us</p>
+                    <div  style="background-color: #ffffffe0; padding: 10px; border-radius: 5px;">
+                        <form class="contact-form">
+                            <input style="width: 100%; background-color: white;" type="text" name="first_name" placeholder="First Name" />
+                            <input style="width: 100%; background-color: white;" type="text" name="last_name" placeholder="Last Name" />
+                            <input style="width: 100%; background-color: white;" type="email" name="email" placeholder="Email" />
+                            <textarea style="width: 100%; background-color: white; height: 200px; min-height: 200px; resize: none;" placeholder="Your message" name="message"></textarea>
+                            <div class="h-captcha" data-sitekey="533653de-0d6e-4bc0-89a8-af3c97b6d310" data-callback="setToEnabled"></div>
+                            <br />
+                            <button style="background-color: white; color: grey;" id="contact-us-submit-button" type="submit" disabled>Submit</button>
+                        </form>
+                    </div>
+                    <p style="visibility: hidden;" id="thank-you-after-submit">Thank you for contacting us! We will get back to you shortly.</p>
+                </div>
+                <script>
+                    function setToEnabled() {
+                        const button = document.getElementById("contact-us-submit-button");
+                        button.removeAttribute("disabled");
+                    }
+                    const form = document.querySelector(".contact-form");
+                    form.addEventListener('submit', async (event) => {
+                        event.preventDefault();
+                        try {
+                            await fetch("http://127.0.0.1:7071/api/websiteContactSubmission", {
+                                method: "POST",
+                                mode: "no-cors",
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                },
+                                body: `first_name=${form[0]?.value}
+                                &last_name=${form[1]?.value}
+                                &email=${form[2]?.value}
+                                &message=${form[3]?.value}
+                                &h-captcha-response=${form[5]?.value}`
+                            })                   
+                        } catch (error) {
+                            console.log(error);
+                        } finally {
+                            form.parentNode.remove();
+                            document.getElementById("thank-you-after-submit").removeAttribute("style");
+                        }
+                    });
+                </script>
+            {% else %}
+                <button>Button</button>
+            {% endif %}
+        </div>
     </div>
-    <div class="cta-right-content"></div>
-    <p>Want to know more? 🚀<p>
-    {% if pageName == "contact us" %}
-        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-        <form class="contact-form">
-            <input type="text" name="email" placeholder="Email" />
-            <input type="text" name="description" placeholder="Description" />
-            <div class="h-captcha" data-sitekey="533653de-0d6e-4bc0-89a8-af3c97b6d310"></div>
-            <br />
-            <button type="submit">Submit</button>
-        </form>
-         <script>
-            const form = document.querySelector(".contact-form");
-            form.addEventListener('submit', (event) => {
-                event.preventDefault();
-                const formData = new FormData(form);
-                console.log(formData);
-            });
-        </script>
-    {% else %}
-        <button>Button</button>
-    {% endif %}
 </div>

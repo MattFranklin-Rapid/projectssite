@@ -1,4 +1,5 @@
 {
   "title": "About",
-  "pageName": "contact us"  
+  "pageName": "contact us"  ,
+  "value": "This is the about us page, this value is loaded dynamically from the page json file"
 }
