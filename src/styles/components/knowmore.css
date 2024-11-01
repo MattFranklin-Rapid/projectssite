@@ -1,0 +1,28 @@
+.cta-right-content {
+  padding-right: 40px;
+}
+
+.contact-form-field {
+  width: 100%;
+}
+
+.know-more-button {
+  width: 100px;
+  font-size: 1em;
+  opacity: 80%;
+}
+
+#contact-us-submit-button:disabled {
+  opacity: 50%;
+}
+
+.cta-left-content {
+  padding-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .cta-right-content {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
