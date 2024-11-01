@@ -10,20 +10,15 @@
             {# Hero banner #}
             <div class='hero-cta'>
                 {# Hero Call to Action #}
-                <div  class='flex-columns center-content xlarge-spacer mobile-spacer-med' style='padding-inline: 10%' >
-                    <div class='campaign-major-message' >
-                        <span style='width:60%'>
+                <div  class='flex-columns center-content large-spacer mobile-spacer-small hero-margins'  >
+                    <div class='campaign-major-message large-spacer mobile-spacer-small' >
+                        <span>
                         {{splashTitle}}
                         <br> <h4 style='font-weight: 200'>At Rapid Platform we strive to do good and make good.<br>Join today and benefit from our many tools designed to help your business grow Rapidly!</h4>
                         </span> 
                     </div>
                     <div>
-                        <form style='color: white;'>
-                            <label for="fname">First name:</label><br>
-                            <input type="text" id="fname" name="fname"><br>
-                            <label for="lname">Last name:</label><br>
-                            <input type="text" id="lname" name="lname">
-                        </form>
+                        {% include '../components/cta/herocda.njk' %}
                     </div>
                 </div>
             </div>
@@ -63,8 +58,8 @@
 
         <div class='campaign-justification skeleton block-full '>
             {# Justify consensus in the market for buying #}
-            <div class='flex-columns flex-reverse-on-mobile' style='padding-left: 10%; padding-right:10%; padding-top: 80px; padding-bottom:80px'>
-                <div style='width:100%'>
+            <div class='flex-columns flex-reverse-mobile xlarge-spacer mobile-spacer-small' style='padding-left: 10%; padding-right:10%; padding-bottom:80px'>
+                <div class='mobile-spacer-small' style='width:100%'>
                 This area should discuss how we have helped people allready.<br><br>
                 It should include some stats of hours saved via process automation etc<br><br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella
                 </div>

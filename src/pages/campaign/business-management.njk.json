@@ -1,5 +1,10 @@
 {
     "title": "Business Management",
     "splashImage": "/images/Simplify-Systems-Splash.png",
-    "splashTitle": "Snappy business management tag-line"
+    "splashTitle": "Snappy business management tag-line",
+    "know_more_options": {
+        "show_contact_form": true,
+        "title": "Contact us today!"
+  }
+
 }
