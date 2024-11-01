@@ -1,8 +1,9 @@
 {
     "title": "Rapid Platform",
     "know_more_options": {
-        "show_contact_form": true,
-        "value": "<img src=\"https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg\"></img>",
-        "title": ""
+        "show_contact_form": false,
+        "value": "",
+        "title": "Title",
+        "cta_nav_heading": "Lorem ipsum odor amet, consectetuer adipiscing elit."
   }
 }
