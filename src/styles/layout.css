@@ -51,6 +51,7 @@
 
 .block-half {
     min-height: 50vh;
+    height: 50vh;
 }
 
 .block-quarter {
@@ -65,6 +66,9 @@ details {
 }
 
 @media (max-width: 1000px){
+  .block-half {
+    height: unset;
+  }
   details {
     max-width: 80vw;
   }
