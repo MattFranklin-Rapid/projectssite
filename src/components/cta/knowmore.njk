@@ -9,9 +9,9 @@
 #}
 <div class="cta-know-more block-half">
     <div class="know-more-container">
-        <div class="cta-left-content" style="width: 60%;">
+        <div class="cta-left-content" style="width: 60%; padding-right: 10px;">
             <p>Want to know more? 🚀<p>
-            <p>{{ know_more_options.value }}<p>
+            <p>{{ know_more_options.value|safe }}<p>
         </div>
         <div class="cta-right-content">
             {% if know_more_options.show_contact_form == true %}
@@ -39,6 +39,8 @@
 
                     const form = document.getElementById("contact-form");
                     form.addEventListener('submit', async (event) => {
+                        const button = document.getElementById("contact-us-submit-button");
+                        button.setAttribute("disabled", "true");
                         event.preventDefault();
                         try {
                             await fetch("https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission", {
