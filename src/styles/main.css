@@ -160,6 +160,7 @@ hr {
 
 .dynamic-splash {
   background-attachment: fixed;
+  background-color: #0c152a
 }
 
 .center-content {
@@ -168,11 +169,65 @@ hr {
 }
 
 .block-quote {
+  text-align: center;
   font-size: 32;
   font-family: 'poppins';
   font-weight: 600;
   color: 0091D0;
+  margin-inline: 20%;
 }
+
+@media (max-width: 1000px){
+  .block-quote {
+    margin-inline: 5%;
+  }
+}
+
+.campaign-major-message {
+  font-size: 50;
+  font-family: 'poppins';
+  font-weight: 400;
+  color: white;
+  max-width:900px;
+}
+
+.flex-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px){
+  .flex-columns {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5%;
+    align-items: space-evenly;
+  }
+}
+
+@media (max-width: 1000px){
+  .flex-reverse-on-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    gap: 5%;
+    align-items: space-evenly;
+  }
+}
+
 
 /* Standard widths for top level content */
 
@@ -214,8 +269,29 @@ hr {
   padding-top: 32vh;
 }
 
+.large-spacer {
+  padding-top: 100px;
+}
+
+.xlarge-spacer {
+  padding-top: 220px;
+}
+
 .spacer-half {
   padding-top: 16vh;
+}
+
+@media (max-width: 1000px){
+  .mobile-spacer-small {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1000px){
+  .mobile-spacer-med {
+    padding-top: 100px;
+  }
 }
 
 /* Flex boxes for content */
@@ -362,7 +438,7 @@ hr {
     color: #0091D0;
   }
   button {
-    background-color: #f4f4f4;
+    background-color: #6d76c5;
   }
 }
 

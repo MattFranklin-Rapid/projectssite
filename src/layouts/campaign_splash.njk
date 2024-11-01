@@ -6,20 +6,123 @@
         {% include '../components/nav.njk' %}
         <div id="wrap"> {# Content minimum height wrapper, place between nav and footer #}
 
-        <div class='hero-with-cta splash-big'>
+        <div class='hero-with-cta splash-big' style='background-color: #0c152a'>
             {# Hero banner #}
             <div class='hero-cta'>
                 {# Hero Call to Action #}
+                <div  class='flex-columns center-content xlarge-spacer mobile-spacer-med' style='padding-inline: 10%' >
+                    <div class='campaign-major-message' >
+                        <span style='width:60%'>
+                        {{splashTitle}}
+                        <br> <h4 style='font-weight: 200'>At Rapid Platform we strive to do good and make good.<br>Join today and benefit from our many tools designed to help your business grow Rapidly!</h4>
+                        </span> 
+                    </div>
+                    <div>
+                        <form style='color: white;'>
+                            <label for="fname">First name:</label><br>
+                            <input type="text" id="fname" name="fname"><br>
+                            <label for="lname">Last name:</label><br>
+                            <input type="text" id="lname" name="lname">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class='campaign-pain skeleton block-full'>
-            {# Speak to pain! #}
+        <div class='campaign-pain skeleton block-full '>
+            {# Speak to pain! header#}
+            <div class='block-quote' style='padding-top:110px; padding-bottom:90px'>
+                <span>A message of hope, speak of cohesion, transparency, manageability. Rapid can help your business thrive in an ever changing world etc</span>
+            </div>
+            {#Three images and three ways we can help#}
+            <div class='flex-columns' style='padding-left: 10%; padding-right:10%;'> 
+                <div>
+                        <img  src="https://rapidplatform.com/wp-content/uploads/msedge_q1IDs3mjTr-1.png" alt="A picture showing a table of data in rapid" />
+                    <div Style='text-align:center; padding-bottom:30px'>
+                        {# Speak to pain text 1#}
+                        <br>Describe how Rapid Platform help businesses keep everything important in one place
+                    </div>
+                </div>
+                <div>
+                        <img  src="https://rapidplatform.com/wp-content/uploads/msedge_mofM5PZvLS.png" alt="A picture showing workflow" />
+                    <div Style='text-align:center; padding-bottom:30px'>
+                            {# Speak to pain text 1#}
+                            <br>A snappy paragraph about workflow and how automation can save you time and money
+                    </div>
+                </div>
+                <div>
+                        <img  src="https://rapidplatform.com/wp-content/uploads/Three-Pillars-Reporting-1.png" alt="A picture showing reporting" />
+                    <div Style='text-align:center; padding-bottom:30px'>
+                            {# Speak to pain text 1#}
+                            <br>Talk about how reporting can help identify opportunities or highlight areas for improvement
+                    </div>
+                </div>
+            </div>   
+            <p style='text-align:center;' class='large-spacer mobile-spacer-small'>Want to learn more about our technology? <br><br><button type="button">Visit our technology page</button>
         </div>
 
-        <div class='campaign-justication skeleton block-full'>
+        <div class='campaign-justification skeleton block-full '>
             {# Justify consensus in the market for buying #}
+            <div class='flex-columns flex-reverse-on-mobile' style='padding-left: 10%; padding-right:10%; padding-top: 80px; padding-bottom:80px'>
+                <div style='width:100%'>
+                This area should discuss how we have helped people allready.<br><br>
+                It should include some stats of hours saved via process automation etc<br><br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella
+                </div>
+                <div><img class='mobile-spacer-small' src="https://i0.wp.com/www.codeconquest.com/wp-content/uploads/image-11.png?resize=1024%2C873&ssl=1" alt="A picture showing reporting" />
+                </div>
+            </div>
         </div>
+
+<div class='landing-justification skeleton block-full'>
+            {# Justification why other people think we're great #}
+            <!--Testimonials-->
+            <div class="testimony-container">
+                <!-- First Testimony -->
+                <div class="flex-item-testimony">
+                    <div class="testimony-speaker">
+                    <div class="testimonial-head">
+                        <img src="/images/testimonials/James-M.jpg">
+                    </div>
+                    <div>
+                        <span class="testimonial-name">James McCarthy</span><br>
+                        <span class="testimonial-company"><b>Guardian Childcare</b></span>
+                    </div>
+                    </div>
+                    <div class="quote-marks">
+                    <span class="quote-marks">&ldquo;</span>
+                    </div>
+                    <div class="testimony-text">
+                    <p>Our business challenge was about how to connect with our families in a more proactive way.
+                        We had no CRM, we had no formal database, we were using spreadsheets.
+                        We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.
+                    <br><br>If your business is going through a period of change and you're uncertain about what
+                        infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<b>I can't recommend Rapid enough</b>.</p>  
+                    </div>
+                </div>
+                <!-- Second Testimony -->
+                <div class="flex-item-testimony">
+                    <div class="testimony-speaker">
+                    <div class="testimonial-head">
+                        <img src="/images/testimonials/Darryl-H.png">
+                    </div>
+                    <div>
+                        <span class="testimonial-name">Darryl Hopkins</span><br>
+                        <span class="testimonial-company"><b>Torsion Homes</b></span>
+                    </div>
+                    </div>
+                    <div class="quote-marks">
+                    <span class="quote-marks">&ldquo;</span>
+                    </div>
+                    <div class="testimony-text">
+                    <p>Before Rapid we were using detailed Excel spreadsheets&mdash;I think a lot of people's file systems were probably their inbox.
+                    Now it's compiled, it's easy to access, we can run reports on all of that data.
+                    <br><br><b>It's a whole different world for us now.</b>
+                    </p>
+                    </div>
+                </div>     
+            </div>
+        </div>
+
 
         {% include '../components/cta/knowmore.njk' %}
         
