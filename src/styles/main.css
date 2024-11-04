@@ -385,11 +385,11 @@ h2 {
   background: #0c152a;
   align-content: flex-end;
   justify-content: center;
-  padding-top: 75px;
+  padding-top: 50px;
   position: relative;
-  margin-top: -438px;
+  margin-top: -500px;
   /* negative value of footer height */
-  height: 437;
+  height: 500;
   clear: both;
 }
 
@@ -408,7 +408,7 @@ h2 {
 .footer p {
   color: #f4f4f4;
   padding-right: 10px;
-  font-size: 10;
+  font-size: 12;
 }
 
 .footer h3 {
@@ -470,6 +470,9 @@ h2 {
   .padding-top-medium {
     padding-top: 8vh;
   }
+  .testimonial-head {
+    clip-path: circle(50px at center);
+  }
 }
 
 @media (max-width: 1000px) {
@@ -497,7 +500,7 @@ h2 {
 
   .img-container .dynamic-splash h1,
   .img-container .static-splash h1 {
-    font-size: 11vw;
+    font-size: 50pt;
   }
 
   /* Content */
@@ -509,6 +512,7 @@ h2 {
   .flex-item-title {
     text-align: start;
   }
+
   /* Testimonial */
   .testimony-container {
     flex-direction: column;
@@ -526,18 +530,15 @@ h2 {
   .mobile-padding-remove {
     padding: 0;
   }
-
   .about-us-main-container {
     max-width: 90vw;
     min-width: 90vw;
     margin-left: auto;
     margin-right: auto;
   }
-
   .reverse-elements-column {
     flex-direction: column-reverse;
   }
-
   .image-medium {
     width: 300px;
     height: 300px;
@@ -546,12 +547,12 @@ h2 {
   }
 
   /* Footer */
+  .footer {
+    align-items: flex-start;
+  }
   .flex-item-footer {
     padding-bottom: 4vh;
     padding-left: 4vw;
-  }
-  .footer {
-    align-items: flex-start;
   }
   .footer-menu {
     flex-direction: column;
