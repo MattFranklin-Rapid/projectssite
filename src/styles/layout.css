@@ -73,5 +73,5 @@ details {
 #wrap {
   margin-top: 100px;  /* Nav menu height */
   min-height: calc(100% - 100px - 475px);
-  margin-bottom: 475px; /* Footer height */
+  margin-bottom: 400px; /* Footer height */
 }
