@@ -125,6 +125,22 @@ h2 {
   margin-inline: 20%;
 }
 
+.section-title-centered {
+  text-align: center;
+  font-size: 42;
+  font-family: "poppins";
+  font-weight: 600;
+  color: black;
+  margin-inline: 20%;
+}
+
+@media (max-width: 1000px){
+  .section-title-centered {
+    font-size: 32;
+  }
+  
+}
+
 @media (max-width: 1000px){
   .block-quote {
     margin-inline: 5%;
@@ -225,6 +241,10 @@ h2 {
 /* Spacer */
 .spacer {
   padding-top: 32vh;
+}
+
+.small-spacer {
+  padding-top: 30px;
 }
 
 .med-spacer {

@@ -14,7 +14,7 @@
                     <div class='campaign-major-message large-spacer mobile-spacer-small' >
                         <span>
                         {{splashTitle}}
-                        <br> <h4 style='font-weight: 200'>At Rapid Platform we strive to do good and make good.<br>Join today and benefit from our many tools designed to help you manage your business!</h4>
+                        <br> <h4 style='font-weight: 200'>{{marketTargetedTagline}}</h4>
                         </span> 
                     </div>
                     <div>
@@ -27,47 +27,46 @@
         <div class='campaign-pain skeleton block-full '>
             {# Speak to pain! header#}
             <div class='block-quote' style='padding-top:110px; padding-bottom:90px'>
-                <span>A message of hope, speak of cohesion, transparency, manageability. Rapid can help your business thrive in an ever changing world etc</span>
+                <span>{{majorArgument}}</span>
             </div>
             {#Three images and three ways we can help#}
             <div class='flex-columns' style='padding-left: 10%; padding-right:10%;'> 
                 <div>
-                        <img  src="https://rapidplatform.com/wp-content/uploads/msedge_q1IDs3mjTr-1.png" alt="A picture showing a table of data in rapid" />
+                        <div style="background-image: url({{imageOneOffer}}); background-size: cover; width:100%; aspect-ratio: 2.05"></div>
                     <div Style='text-align:center; padding-bottom:30px'>
                         {# Speak to pain text 1#}
-                        <br>Describe how Rapid Platform help businesses keep everything important in one place
+                        <br>{{offerOne}}
                     </div>
                 </div>
                 <div>
-                        <img  src="https://rapidplatform.com/wp-content/uploads/msedge_mofM5PZvLS.png" alt="A picture showing workflow" />
+                        <div style="background-image: url({{imageTwoOffer}}); background-size: cover; width:100%; aspect-ratio: 2.05"></div>
                     <div Style='text-align:center; padding-bottom:30px'>
                             {# Speak to pain text 1#}
-                            <br>A snappy paragraph about workflow and how automation can save you time and money
+                            <br>{{offerTwo}}
                     </div>
                 </div>
                 <div>
-                        <img  src="https://rapidplatform.com/wp-content/uploads/Three-Pillars-Reporting-1.png" alt="A picture showing reporting" />
+                        <div style="background-image: url({{imageThreeOffer}}) ;background-size: cover; width:100%; aspect-ratio: 2"></div>
                     <div Style='text-align:center; padding-bottom:30px'>
                             {# Speak to pain text 1#}
-                            <br>Talk about how reporting can help identify opportunities or highlight areas for improvement
+                            <br>{{offerThree}}
                     </div>
                 </div>
             </div>   
-            <div style='text-align:center;' class='med-spacer mobile-spacer-small'>
-                <p>Want to learn more about our technology? <br></p><button type="button">Visit our technology page</button>
-            </div>
         </div>
 
         <div class='campaign-justification skeleton block-full '>
             {# Justify consensus in the market for buying #}
-            <div class='flex-columns flex-reverse-mobile xlarge-spacer mobile-spacer-small' style='padding-left: 10%; padding-right:10%; padding-bottom:80px'>
+            <div class='small-spacer mobile-spacer-med section-title-centered' style='padding-inline: 5%;' >
+                {{justificationHeader}}
+                </div>
+            <div class='flex-columns flex-reverse-mobile large-spacer mobile-spacer-small' style='padding-left: 10%; padding-right:10%; padding-bottom:80px'>
                 <div class='mobile-spacer-small' style='width:100%'>
-                This area should discuss how we have helped people allready.<br><br>
-                It should include some stats of hours saved via process automation etc<br><br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella
+                    {{justificationBody|safe}}
                 </div>
-                <div><img class='mobile-spacer-small' src="https://i0.wp.com/www.codeconquest.com/wp-content/uploads/image-11.png?resize=1024%2C873&ssl=1" alt="A picture showing reporting" />
-                </div>
+                    <div class="mobile-spacer-small" style="background-image: url({{jusitificationImage}});background-size: cover; width:80%; aspect-ratio: 1.2"></div>
             </div>
+            
         </div>
 
 <div class='landing-justification skeleton block-full'>
