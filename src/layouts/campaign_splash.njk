@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     {% include '../components/global_head.njk' %}
+    <link rel="stylesheet" href="/src/styles/campaign.css">
 </head>
     <body>
         {% include '../components/nav.njk' %}
@@ -10,8 +11,8 @@
             {# Hero banner #}
             <div class='hero-cta'>
                 {# Hero Call to Action #}
-                <div  class='flex-columns center-content large-spacer mobile-spacer-small hero-margins'  >
-                    <div class='campaign-major-message large-spacer mobile-spacer-small' >
+                <div  class='flex-columns center-content spacer-lrg mobile-spacer-small hero-margins'  >
+                    <div class='campaign-major-message spacer-lrg mobile-spacer-small' >
                         <span>
                         {{splashTitle}}
                         <br> <h4 style='font-weight: 200'>{{marketTargetedTagline}}</h4>
@@ -26,11 +27,11 @@
         
         <div class='campaign-pain skeleton block-full '>
             {# Speak to pain! header#}
-            <div class='block-quote' style='padding-top:110px; padding-bottom:90px'>
+            <div class='block-quote spacer-lrg' style='padding-bottom:90px'>
                 <span>{{majorArgument}}</span>
             </div>
             {#Three images and three ways we can help#}
-            <div class='flex-columns' style='padding-left: 10%; padding-right:10%;'> 
+            <div class='flex-columns spacer-med' style='padding-left: 10%; padding-right:10%;'> 
                 <div>
                         <div style="background-image: url({{imageOneOffer}}); background-size: cover; width:100%; aspect-ratio: 2.05"></div>
                     <div Style='text-align:center; padding-bottom:30px'>
@@ -53,18 +54,21 @@
                     </div>
                 </div>
             </div>   
+                        <div class='block-quote' style='padding-top:110px; padding-bottom:90px'>
+                <span>{{closingArgument}}</span>
+            </div>
         </div>
 
         <div class='campaign-justification skeleton block-full '>
             {# Justify consensus in the market for buying #}
-            <div class='small-spacer mobile-spacer-med section-title-centered' style='padding-inline: 5%;' >
+            <div class='spacer-med  section-title-centered' style='padding-inline: 5%;' >
                 {{justificationHeader}}
                 </div>
-            <div class='flex-columns flex-reverse-mobile large-spacer mobile-spacer-small' style='padding-left: 10%; padding-right:10%; padding-bottom:80px'>
+            <div class='flex-columns flex-reverse-mobile spacer-lrg mobile-spacer-small' style='padding-left: 10%; padding-right:10%; padding-bottom:80px'>
                 <div class='mobile-spacer-small' style='width:100%'>
                     {{justificationBody|safe}}
                 </div>
-                    <div class="mobile-spacer-small" style="background-image: url({{jusitificationImage}});background-size: cover; width:80%; aspect-ratio: 1.2"></div>
+                    <div class="mobile-spacer-small campaign-justification-image" style="background-image: url({{jusitificationImage}});"></div>
             </div>
             
         </div>
