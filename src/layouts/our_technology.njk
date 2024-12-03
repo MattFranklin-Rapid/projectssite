@@ -6,45 +6,360 @@
         {% include '../components/nav.njk' %}
         <div id="wrap"> {# Content minimum height wrapper, place between nav and footer #}
 
-        <div class='hero-with-content splash-small'>
+        <div class='hero-with-content splash-small' style="background-image: url('/images/Technology-Banner-Placeholder.jpg');">
             {# Hero banner #}
             <div class='hero-content'>
-                {# Hero Content #}
             </div>
         </div>
         
         <div class='tech-elevator skeleton block-quarter'>
             {# Elevator Pitch #}
             <div class= 'center-content' style= 'text-align:center; padding-top: 30px; padding-bottom: 15px;'>
-            <span class= 'block-quote'>
-            Elevator pitch <br> eritatis et quasi architecto beatae vitae <br> ratione voluptatem sequi nesciunt.
-            </span>
+                <div class= 'block-quote'>
+                    Rapidly automate all your data.
+                </div>
             </div>
         </div>
-
+        <div class="tech-demo">
+            <div class="tech-demo-pair">
+                <div class="tech-demo-item">
+                    <!-- START EVENT -->
+                    <svg viewBox="0 0 100 100" style="max-width:100px;" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <circle id="startCircle" r="40" cx="50" cy="50" stroke="#3caa94" stroke-width="4" fill="#e0faf3" />
+                            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="15" font-weight="bold" style="fill:#64758c">Start</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="tech-demo-item">
+                    <!-- TASK 1 -->
+                    <svg id="task1" viewBox="-2 -2 104 84" style="max-width:200px;" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect id="task1Box" x="0" y="0" width="100" height="80" rx="15" stroke="#64758c" stroke-width="2" fill="#f4f4f4" />
+                            <text x="10" y="20" font-family="Verdana" font-size="8" font-weight="bold" style="fill:#64758c">Accounts Team</text>
+                            <text x="10" y="35" font-family="Verdana" font-size="8" font-weight="normal" style="fill:#0C152A">Check application</text>
+                        </g>
+                    </svg>
+                    <form>
+                        <select name="Approve" id="approvedValue" onChange="approvePath()" style="margin-top:-70px;">
+                            <option value="Approve" style="color:grey;" default>Approve</option>
+                            <option value="Yes" style="color:#3caa94;">Yes</option>
+                            <option value="No" style="color:red;">No</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="tech-demo-pair">
+                <div class="tech-demo-item">
+                    <!-- GATE -->
+                    <svg id="gate" viewBox="-2 -2 104 104" style="max-width:100px;" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect id="gateDiamond" x="15" y="15" width="70" height="70" stroke="#64758c" stroke-width="4" fill="#f4f4f4" />
+                            <text x="33" y="65" font-family="Verdana" font-size="45" font-weight="bold" style="fill:#64758c">X</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="tech-demo-item">
+                    <!-- EXIT 1 -->
+                    <svg id="exit-container-1" viewBox="0 0 100 100" style="max-width:100px;" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <circle id="exit" r="40" cx="50" cy="50" stroke="#64758c" stroke-width="8" fill="#f4f4f4" />
+                            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="15" font-weight="bold" style="fill:#64758c">End</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="tech-demo-pair">
+                <div class="tech-demo-item">
+                    <!-- TASK 2 -->
+                    <svg id="task2" viewBox="-2 -2 104 84" style="max-width:200px;" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect id="task2Box" x="0" y="0" width="100" height="80" rx="15" stroke="#64758c" stroke-width="2" fill="#f4f4f4" />
+                            <text x="10" y="20" font-family="Verdana" font-size="8" font-weight="bold" style="fill:#64758c">John Doe</text>
+                            <text x="10" y="35" font-family="Verdana" font-size="8" font-weight="normal" style="fill:#0C152A">Contract Signing</text>
+                        </g>
+                    </svg>
+                </div>
+                <div class="tech-demo-item">
+                    <!-- TASK 3 -->
+                    <svg id="task3" viewBox="-2 -2 104 84" style="max-width:200px;" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <rect id="task3Box" x="0" y="0" width="100" height="80" rx="15" stroke="#64758c" stroke-width="2" fill="#f4f4f4" />
+                            <text x="10" y="20" font-family="Verdana" font-size="8" font-weight="bold" style="fill:#64758c">Accounts Team</text>
+                            <text x="10" y="35" font-family="Verdana" font-size="8" font-weight="normal" style="fill:#0C152A">Approve</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="tech-demo-pair">
+                <div class="tech-demo-item-empty">
+                    <!-- EMPTY SPACER -->
+                </div>
+                <div class="tech-demo-item">
+                    <!-- EXIT 2 -->
+                    <svg id="exit-container-2" viewBox="0 0 100 100" style="max-width:100px;" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <circle id="exit2" r="40" cx="50" cy="50" stroke="#64758c" stroke-width="8" fill="#f4f4f4" />
+                            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="15" font-weight="bold" style="fill:#64758c">End</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
         <div class='tech-core-feature skeleton block-full'>
             {# First core feature chunk #}
+            <img src="/images/Flowchart-Placeholder.png" />
         </div>
 
         <div class='tech-core-feature skeleton block-full'>
+            <div class='feature-trio-container'>
+                <div class='feature-trio'>
+                    <div class='feature-trio-img'>
+                        <i class="fa fa-database" style="font-size:100pt;"></i>
+                    </div>
+                    <div class='feature-trio-blurb'>
+                        <h3>Custom Data</h3>
+                        <p>Every business is different. Build your system to suit your business, not the other way around.</p>
+                    </div>
+                </div>
+                <div class='feature-trio'>
+                    <div class='feature-trio-img'>
+                        <i class="fa fa-paper-plane-o" style="font-size:100pt;"></i>
+                    </div>
+                    <div class='feature-trio-blurb'>
+                        <h3>Page Building</h3>
+                        <p>Create interfaces for your business. Present and capture your data in a way that makes sense to your team.</p>
+                    </div>
+                </div>
+                <div class='feature-trio'>
+                    <div class='feature-trio-img'>
+                        <i class="fa fa-search-plus" style="font-size:100pt;"></i>
+                    </div>
+                    <div class='feature-trio-blurb'>
+                        <h3>View, Filter &amp; Search</h3>
+                        <p>Create custom views to focus on the things that matter. Search and filter your data to quickly find what you need.</p>
+                    </div>
+                </div>
+            </div>
+            
             {# Second core feature chunk #}
+            <img src="/images/Floating-Screenshot-Placeholder.png" />
+            <p>Three words indicating the impact customisation has: build, track, own?</p>
+            <p>Customisation block covering:</p>
+            <p>- Track data your way with on-the-fly editing.</p>
+            <p>- Build your own forms, pages and views to get what you need, when you need.</p>
         </div>
 
         <div class='tech-core-feature skeleton block-full'>
             {# Third core feature chunk #}
+            <p>Understand what's going on with:</p>
+            <p>- Live reporting with native PowerBI embedding and live editing.</p>
+            <p>- Keep everyone up to date with notes and notifications.</p>
+            <p>- Keep consistant with full history and rollback, no more.</p>
+            <p>Headaches on what's up to date.</p>
         </div>
 
         <div class='tech-core-feature skeleton block-full'>
             {# Fourth core feature chunk #}
+            <p>Stay at the cutting edge with cloud technology:</p>
+            <p>- Be safe with enterprise grade security backed by Azure.</p>
+            <p>- Integrate with your existing services through our full API control.</p>
+            <p>No special functions. A machine can do anything the UI can do.</p>
         </div>
 
         <div class='tech-sales-pitch skeleton block-half'>
             {# Sales pitch based on the features #}
+            <p>Sales pitch, explore these features yourself.</p>
+            <p>Call to action to signup for free.</p>
+            <p>Connect with one of our experts to help build your future.</p>
+            <p>Call sales.</p>
         </div>
 
         {% include '../components/cta/knowmore.njk' %}
         
         </div> {# End of Wrap div #}
         {% include '../components/footer.njk' %}
+        <script>
+            const startCircle = document.getElementById('startCircle');
+            const task1 = document.getElementById('task1Box');
+            const task2 = document.getElementById('task2Box');
+            const task3 = document.getElementById('task3Box');
+            const gate = document.getElementById('gate');
+            const gateDiamond = document.getElementById('gateDiamond');
+            const exit = document.getElementById('exit');
+            const exit2 = document.getElementById('exit2');
+            
+            line1 = new LeaderLine(
+                startCircle,
+                task1Box, {
+                    color: '#3caa94', 
+                    size: 4, 
+                    path:'straight',
+                    dash: {animation: true}
+                }
+            );
+            line2 = new LeaderLine(
+                task1Box,
+                gate, {
+                    color: '#64758c', 
+                    size: 4, 
+                    path:'grid',
+                    startSocket: 'bottom',
+                    endSocket: 'left'
+                }
+            );
+            line3 = new LeaderLine(
+                gate,
+                exit, {
+                    color: '#64758c', 
+                    size: 4, 
+                    path:'grid',
+                    //startLabel: LeaderLine.pathLabel('Not Approved', {color: '#64758c', offset:[0,0]})
+                }
+            );
+            line4 = new LeaderLine(
+                gate,
+                task2Box, {
+                    color: '#64758c', 
+                    size: 4, 
+                    path:'straight',
+                    //startLabel: LeaderLine.pathLabel('Approved', {color: '#64758c', offset:[0,-10]})
+                }
+            );
+            line5 = new LeaderLine(
+                task2Box,
+                task3Box, {
+                    color: '#64758c', 
+                    size: 4, 
+                    path:'grid',
+                    startSocket: 'bottom'
+                }
+            );
+            line6 = new LeaderLine(
+                task3Box,
+                exit2, {
+                    color: '#64758c', 
+                    size: 4, 
+                    path:'straight'
+                }
+            );
+            // Dynamically rotate the gate svg
+            const diamond = document.getElementById('gateDiamond');
+            const x = parseFloat(diamond.getAttribute('x'));
+            const y = parseFloat(diamond.getAttribute('y'));
+            const width = parseFloat(diamond.getAttribute('width'));
+            const height = parseFloat(diamond.getAttribute('height'));
+            const centerX = x + width / 2;
+            const centerY = y + height / 2;
+            diamond.setAttribute('transform', `rotate(45, ${centerX}, ${centerY})`);
+            
+            //
+
+            function approvePath() {
+                var e = document.getElementById('approvedValue');
+                var value = e.value;
+                var text = e.options[e.selectedIndex].text;
+                if (text == "Yes") {
+                    line2.setOptions(
+                        {
+                            color: '#3caa94',
+                            dash: {animation: true}
+                        }
+                    );
+                    line3.setOptions(
+                        {
+                            color: '#64758c',
+                            dash: false
+                        }
+                    );
+                    line4.setOptions(
+                        {
+                            color: '#3caa94',
+                            dash: {animation: true}
+                        }
+                    );
+                    line5.position();
+                    task1.style.stroke='#3caa94';
+                    task1.style.fill='#e0faf3';
+                    gateDiamond.style.stroke='#3caa94';
+                    gateDiamond.style.fill='#e0faf3';
+                    exit.style.stroke='#64758c';
+                    exit.style.fill='#f4f4f4';
+                } else if (text == "Approve"){
+                    line2.setOptions(
+                        {
+                            color: '#64758c',
+                            dash: false
+                        }
+                    );
+                    line3.setOptions(
+                        {
+                            color: '#64758c',
+                            dash: false
+                        }
+                    );
+                    line4.setOptions(
+                        {
+                            color: '#64758c',
+                            dash: false
+                        }
+                    );
+                    task1.style.stroke='#64758c';
+                    task1.style.fill='#f4f4f4';
+                    gateDiamond.style.stroke='#64758c';
+                    gateDiamond.style.fill='#f4f4f4';
+                    exit.style.stroke='#64758c';
+                    exit.style.fill='#f4f4f4';
+                } else {
+                    line2.setOptions(
+                        {
+                            color: 'red',
+                            dash: {animation: true}
+                        }
+                    );
+                    line3.setOptions(
+                        {
+                            color: 'red',
+                            dash: {animation: true}
+                        }
+                    );
+                    line4.setOptions(
+                        {
+                            color: '#64758c',
+                            dash: false
+                        }
+                    );
+                    task1.style.stroke='#cd4e4e';
+                    task1.style.fill='#ffe8e8';
+                    gateDiamond.style.stroke='#cd4e4e';
+                    gateDiamond.style.fill='#ffe8e8';
+                    exit.style.stroke='#cd4e4e';
+                    exit.style.fill='#ffe8e8';
+                }
+            }
+            
+            /*
+            // Function to fix issues
+            function fixLine () {
+                line1.position();
+                line2.position();
+                line3.position();
+                line4.position();
+                line5.position();
+                line6.position();
+                
+            }
+            // Declare shapes as draggable
+            
+            new PlainDraggable(startEvent, {onMove: fixLine});
+            new PlainDraggable(task1, {onMove: fixLine});
+            new PlainDraggable(task2, {onMove: fixLine});
+            new PlainDraggable(task3, {onMove: fixLine});
+            new PlainDraggable(gate, {onMove: fixLine});
+            new PlainDraggable(exit1, {onMove: fixLine});
+            new PlainDraggable(exit2, {onMove: fixLine});
+            */
+            
+        </script>
     </body>
 </html>
