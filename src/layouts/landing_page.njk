@@ -1,153 +1,172 @@
 <html lang="en">
-<head>
-    {% include '../components/global_head.njk' %}
-</head>
+    <head>
+        {% include '../components/global_head.njk' %}
+    </head>
     <body>
         {% include '../components/nav.njk' %}
-        <div id="wrap"> {# Content minimum height wrapper, place between nav and footer #}
-        <div class='hero-with-cta splash-big'>
-            {# Hero banner #}
-            <div class="img-container">
-                <div class="dynamic-splash" style="background-image: url('/images/Simplify-Systems-Splash.png')">
-                    <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">
+        <div id="wrap">
+            {# Content minimum height wrapper, place between nav and footer #}
+            <div class='hero-with-cta splash-big'>
+                {# Hero banner #}
+                <div class="img-container">
+                    <div class="dynamic-splash" style="background-image: url('/images/Simplify-Systems-Splash.png')">
+                        <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">
                     Let's face it,<br>you need better<br>systems.
                     </h1>
-                </div>
-            </div>
-            <div class='hero-cta'>
-                {# Hero Call to Action #}
-            </div>
-        </div>
-        
-        <div class='landing-product-overview skeleton block-full'>
-            {# Product Overview #}
-            <div class="flex-container" id="flexible-tech-consulting">
-                <div class="flex-item">
-                    <div class="flex-item-title">
-                    <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">
-                        flexible <br>tech <br>consulting
-                    </h1>
-                    <img class="partner-logo" src="/images/logos/microsoft-partner.png">
                     </div>
                 </div>
-                <div class="flex-item">
-                    <div class="padding-top-medium">
-                        <h2 style="color: #0091d0; line-height: 0vw;">Fast</h2>
-                        <p>Your custom solution can be built in weeks, not months.</p>
-                    </div>
-                    <div class="padding-top-medium">
-                        <h2 style="color: #0091d0; line-height: 0vw;">Secure</h2>
-                        <p>We are a security-first company. Our tools encrypt and secure your data.</p>    
-                    </div>
-                    <div class="padding-top-medium">
-                        <h2 style="color: #0091d0; line-height: 0vw;">Modular</h2>
-                        <p>We can build projects in modular blocks, so you can see the value we provide and pay as you go.</p>
-                    </div>
-                    
-                    <div class="padding-top-medium">
-                        <h2 style="color: #0091d0; line-height: 0vw;">Aussie</h2>
-                        <p>Our consulting company is owned and operated by Australians.</p>    
-                    </div>
+                <div class='hero-cta'>
+                    {# Hero Call to Action #}
                 </div>
             </div>
-        </div>
 
-        <div class='landing-purpose skeleton block-full'>
-            {# Why we exist #}
-            <div class="flex-container">
-                <div class="flex-item">
-                    <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">
-                    <div class="flex-item-title">
+            <div class='landing-product-overview skeleton block-full' >
+                {# Product Overview #}
+                <div class="flex-container" id="flexible-tech-consulting" style=" padding-inline:20%" >
+                    <div class="div-sticky">
+                        <div class="text-column-h1">
+                            Built for your needs
+                        </div>
+                    </div>
+                    <div style=" width: 50%; padding-left: 10%">
+                        <div class="">
+                            <p class="text-column-h2">Modular</p>
+                            <p class="text-column-h3">Replace your entire system or just use Rapid to plug the holes.</p>
+                            <p class='text-column-body'>We can build projects in modular blocks, so you can see the value we provide, and pay as you go.</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p class="text-column-h2">Secure<p>
+                            <p class="text-column-h3">Worry-free data. Our security-first platform secures your data with the best that Microsoft has to offer.</p>
+                            <p class='text-column-body'>Hosted in the Azure cloud, get enterprise grade safety without the enterprise grade development costs.</p>
+                            <p class='text-column-body'>Never have to worry about losing data with item level roll-back and full edit history as standard.</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p class="text-column-h2">Flexible</p>
+                            <p class="text-column-h3">Need to wait for approval or sign-off? Your custom solution will be built according to your schedule, not ours.</p>
+                            <p class='text-column-body'>Our team aren’t called Rapid for nothing. With agile cycles and a focus on immediacy of result, avoid getting trapped in dead ends.</p>
+                            <p class='text-column-body'>How can we build so fast? Check out our <u>Technology</u>.</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p class="text-column-h2">Responsible</p>
+                            <p class="text-column-h3">Technology impacts lives and we’re all in this together.</p>
+                            <p class='text-column-body'>We empower organisations through technology, but never lose sight of the human element.</p>
+                            <p class='text-column-body'>We support NFPs, like <u>Simpli,</u> and are committed to supporting people trying to improve the world.</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p class="text-column-h2">Aussie</p>
+                            <p class="text-column-h3">Proudly Australian owned &amp; operated, delivering excellence nationwide.</p>
+                            <p class='text-column-body'>Being an Aussie company means we understand the unique needs and values of the Australian market.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='landing-purpose skeleton block-full'>
+                {# Why we exist #}
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">
+                            <div class="flex-item-title">
                         streamline<br>your<br>business
                     </div>
-                    </h1>
-                </div>
-                <div class="flex-item">
-                    <p>We specialise in <b>streamlining systems</b>, <b>improving processes</b>, and helping companies <b>go paperless</b>.</p>
-                    <p><a href="/technology">Show me some examples</a></p>
+                        </h1>
+                    </div>
+                    <div class="flex-item">
+                        <p>We specialise in <b>streamlining systems</b>, <b>improving processes</b>, and helping companies <b>go paperless</b>.</p>
+                        <p>
+                            <a href="/technology">Show me some examples</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class='landing-benifit skeleton block-full'>
-            {# Why you benifit from us #}
-            <div class="flex-container">
-                <div class="flex-item">
-                    <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">
-                    <div class="flex-item-title">
+            <div class='landing-benifit skeleton block-full'>
+                {# Why you benifit from us #}
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">
+                            <div class="flex-item-title">
                         rapidly<br>solve your<br>headaches.
                     </div>
-                    </h1>
-                </div>
-                <div class="flex-item">
-                    <p>Your custom solution can be built in <b>weeks, not months.</b> With nearly a <b>decade of industry experience</b>, we're systems experts.</p>
-                    <p><a href="/technology">How do you build so quickly?</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class='landing-call-to-action skeleton block-full'>
-            {# Main call to action #}
-            <div class="img-container">
-                <div class="dynamic-splash" style="background-image: url('/images/Simplify-Systems-CTA.png')">
-                    <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">Test</h1>
+                        </h1>
+                    </div>
+                    <div class="flex-item">
+                        <p>Your custom solution can be built in <b>weeks, not months.</b> With nearly a <b>decade of industry experience</b>, we're systems experts.</p>
+                        <p>
+                            <a href="/technology">How do you build so quickly?</a>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class='landing-justification skeleton block-full'>
-            {# Justification why other people think we're great #}
-            <!--Testimonials-->
-            <div class="testimony-container">
-                <!-- First Testimony -->
-                <div class="flex-item-testimony">
-                    <div class="testimony-speaker">
-                    <div class="testimonial-head">
-                        <img src="/images/testimonials/James-M.jpg">
+            <div class='landing-call-to-action skeleton block-full'>
+                {# Main call to action #}
+                <div class="img-container">
+                    <div class="dynamic-splash" style="background-image: url('/images/Simplify-Systems-CTA.png')">
+                        <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">Test</h1>
                     </div>
-                    <div>
-                        <span class="testimonial-name">James McCarthy</span><br>
-                        <span class="testimonial-company"><b>Guardian Childcare</b></span>
-                    </div>
-                    </div>
-                    <div class="quote-marks">
-                    <span class="quote-marks">&ldquo;</span>
-                    </div>
-                    <div class="testimony-text">
-                    <p>Our business challenge was about how to connect with our families in a more proactive way.
+                </div>
+            </div>
+
+            <div class='landing-justification skeleton block-full'>
+                {# Justification why other people think we're great #}
+                <!--Testimonials-->
+                <div class="testimony-container">
+                    <!-- First Testimony -->
+                    <div class="flex-item-testimony">
+                        <div class="testimony-speaker">
+                            <div class="testimonial-head">
+                                <img src="/images/testimonials/James-M.jpg">
+                            </div>
+                            <div>
+                                <span class="testimonial-name">James McCarthy</span><br>
+                                <span class="testimonial-company">
+                                    <b>Guardian Childcare</b>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="quote-marks">
+                            <span class="quote-marks">&ldquo;</span>
+                        </div>
+                        <div class="testimony-text">
+                            <p>Our business challenge was about how to connect with our families in a more proactive way.
                         We had no CRM, we had no formal database, we were using spreadsheets.
                         We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.
                     <br><br>If your business is going through a period of change and you're uncertain about what
-                        infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<b>I can't recommend Rapid enough</b>.</p>  
+                        infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<b>I can't recommend Rapid enough</b>.</p>
+                        </div>
+                    </div>
+                    <!-- Second Testimony -->
+                    <div class="flex-item-testimony">
+                        <div class="testimony-speaker">
+                            <div class="testimonial-head">
+                                <img src="/images/testimonials/Darryl-H.png">
+                            </div>
+                            <div>
+                                <span class="testimonial-name">Darryl Hopkins</span><br>
+                                <span class="testimonial-company">
+                                    <b>Torsion Homes</b>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="quote-marks">
+                            <span class="quote-marks">&ldquo;</span>
+                        </div>
+                        <div class="testimony-text">
+                            <p>Before Rapid we were using detailed Excel spreadsheets&mdash;I think a lot of people's file systems were probably their inbox.
+                    Now it's compiled, it's easy to access, we can run reports on all of that data.
+                    <br><br>
+                                <b>It's a whole different world for us now.</b>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <!-- Second Testimony -->
-                <div class="flex-item-testimony">
-                    <div class="testimony-speaker">
-                    <div class="testimonial-head">
-                        <img src="/images/testimonials/Darryl-H.png">
-                    </div>
-                    <div>
-                        <span class="testimonial-name">Darryl Hopkins</span><br>
-                        <span class="testimonial-company"><b>Torsion Homes</b></span>
-                    </div>
-                    </div>
-                    <div class="quote-marks">
-                    <span class="quote-marks">&ldquo;</span>
-                    </div>
-                    <div class="testimony-text">
-                    <p>Before Rapid we were using detailed Excel spreadsheets&mdash;I think a lot of people's file systems were probably their inbox.
-                    Now it's compiled, it's easy to access, we can run reports on all of that data.
-                    <br><br><b>It's a whole different world for us now.</b>
-                    </p>
-                    </div>
-                </div>     
+                {% include '../components/cta/knowmore.njk' %}
             </div>
-            {% include '../components/cta/knowmore.njk' %}
-        </div>
 
-        </div> {# End of Wrap div #}
-        
+        </div>
+        {# End of Wrap div #}
+
         {% include '../components/footer.njk' %}
     </body>
 </html>

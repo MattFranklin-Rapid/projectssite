@@ -27,10 +27,6 @@ body {
   background-position: -19px -19px;
 }
 
-h1 {
-  font-size: 50pt;
-}
-
 h2 {
   font-size: 34pt;
   font-weight: normal;
@@ -69,6 +65,26 @@ h2 {
   margin: 0;
   padding-right: 20px;
   color: #0c152a;
+}
+
+.text-column-h1 {
+
+  font-weight: 800;
+  font-size: 52px;
+  line-height: 3.31em;
+}
+.text-column-h2 {
+  line-height: 1.3em;
+  font-size: 40px;
+  font-weight: 500px;
+}
+.text-column-h3 {
+  line-height: 1.3em;
+  font-size: 24px;
+  font-weight: 500px;
+}
+.text-column-body {
+  font-size: 16px;
 }
 
 .header a:hover {
@@ -172,34 +188,9 @@ h2 {
   font-size: 16px;
 }
 
-.hero-margins {
-  margin-inline: 15%;
-}
-
-@media (max-width: 1000px){
-  .hero-margins {
-    margin-inline: 4%;
-  }
-}
-
-@media (max-width: 1000px){
-  .flex-columns {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 5%;
-    align-items: space-evenly;
-  }
-}
-
-@media (max-width: 1000px){
-  .flex-reverse-mobile {
-    display: flex;
-    flex-direction: column-reverse;
-    flex: 1;
-    gap: 5%;
-    align-items: space-evenly;
-  }
+.div-sticky {
+  position: sticky;
+  top: 120;
 }
 
 
@@ -245,19 +236,6 @@ h2 {
 
 .spacer-half {
   padding-top: 16vh;
-}
-
-@media (max-width: 1000px){
-  .mobile-spacer-small {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
-@media (max-width: 1000px){
-  .mobile-spacer-med {
-    padding-top: 100px;
-  }
 }
 
 /* Flex boxes for content */
