@@ -15,10 +15,8 @@
 
     --background-light: var(--color-tech-canvas);
     --background-dark: var(--color-deep-navy);
-    --text-light: white;
-    --text-dark: var(--color-deep-navy);
-
-
+    --text-light: var(--color-deep-navy);
+    --text-dark: white;
 }
 
 .text-light {
