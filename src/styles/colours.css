@@ -46,9 +46,9 @@
 }
 
 .background-light {
-    background-color: var(--color-tech-canvas);
+    background-color: var(--background-light);
 }
 
 .background-dark {
-    background-color: var(--color-deep-navy);
+    background-color: var(--background-dark);
 }
