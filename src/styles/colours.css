@@ -1,0 +1,54 @@
+:root{
+    --color-deep-navy: #0C152A;
+    --color-rapid-blue: #0091D0;
+    --color-deep-purple: #292562;
+    --color-ai-zure: #323694;
+    --color-tech-wave: #4a71b7;
+    --color-ice-blue: #43c7f4;
+    --color-infra-red: #DB4139;
+    --color-digital-ember: #F36F21;
+    --color-code-gold: #F0B41C;
+    --color-bright-glow: #FFDD16;
+    --color-bright-green: #008E47;
+    --color-pixel-zest: #B2D234;
+    --color-tech-canvas: #F4F4F4;
+
+    --background-light: var(--color-tech-canvas);
+    --background-dark: var(--color-deep-navy);
+    --text-light: white;
+    --text-dark: var(--color-deep-navy);
+
+
+}
+
+.text-light {
+    color: var(--text-light)
+}
+
+.text-dark {
+    color: var(--text-dark)
+}
+
+.text-highlight-cool-light {
+    color: var(--color-rapid-blue);
+}
+
+.text-highlight-cool-dark {
+    color: var(--color-ice-blue);
+}
+
+.text-highlight-warm-light {
+    color: var(--color-digital-ember);
+}
+
+.text-highlight-warm-dark {
+    color: var(--color-code-gold);
+}
+
+.background-light {
+    background-color: var(--color-tech-canvas);
+}
+
+.background-dark {
+    background-color: var(--color-deep-navy);
+}
