@@ -50,3 +50,11 @@
 .background-dark {
     background-color: var(--background-dark);
 }
+
+.link-dark {
+    color: var(--color-ice-blue);
+}
+
+.link-light {
+    color: var(--color-rapid-blue);
+}

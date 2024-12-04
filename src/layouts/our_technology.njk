@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     {% include '../components/global_head.njk' %}
+    <link rel="stylesheet" href="/src/styles/technology.css">
 </head>
     <body>
         {% include '../components/nav.njk' %}
@@ -15,101 +16,44 @@
         <div class='tech-elevator skeleton block-quarter'>
             {# Elevator Pitch #}
             <div class= 'center-content' style= 'text-align:center; padding-top: 30px; padding-bottom: 15px;'>
-                <div class= 'block-quote'>
-                    <h1 class='text-highlight-cool-light'>Everything you need in a single place</h1>
-                    <h4 class='text-light'>Stop system sprawl and empower your team with a single source of truth</h4>
-                </div>
+                <h2 class='text-highlight-cool-light'>Everything you need in a single place</h2>
+                <h4 class='text-light'>Stop system sprawl and empower your team with a single source of truth</h4>
             </div>
         </div>
-        <div class="tech-demo">
-            <div class="tech-demo-pair">
-                <div class="tech-demo-item">
-                    <!-- START EVENT -->
-                    <svg viewBox="0 0 100 100" style="max-width:100px;" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <circle id="startCircle" r="40" cx="50" cy="50" stroke="#3caa94" stroke-width="4" fill="#e0faf3" />
-                            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="15" font-weight="bold" style="fill:#64758c">Start</text>
-                        </g>
-                    </svg>
-                </div>
-                <div class="tech-demo-item">
-                    <!-- TASK 1 -->
-                    <svg id="task1" viewBox="-2 -2 104 84" style="max-width:200px;" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <rect id="task1Box" x="0" y="0" width="100" height="80" rx="15" stroke="#64758c" stroke-width="2" fill="#f4f4f4" />
-                            <text x="10" y="20" font-family="Verdana" font-size="8" font-weight="bold" style="fill:#64758c">Accounts Team</text>
-                            <text x="10" y="35" font-family="Verdana" font-size="8" font-weight="normal" style="fill:#0C152A">Check application</text>
-                        </g>
-                    </svg>
-                    <form>
-                        <select name="Approve" id="approvedValue" onChange="approvePath()" style="margin-top:-70px;">
-                            <option value="Approve" style="color:grey;" default>Approve</option>
-                            <option value="Yes" style="color:#3caa94;">Yes</option>
-                            <option value="No" style="color:red;">No</option>
-                        </select>
-                    </form>
-                </div>
-            </div>
-            <div class="tech-demo-pair">
-                <div class="tech-demo-item">
-                    <!-- GATE -->
-                    <svg id="gate" viewBox="-2 -2 104 104" style="max-width:100px;" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <rect id="gateDiamond" x="15" y="15" width="70" height="70" stroke="#64758c" stroke-width="4" fill="#f4f4f4" />
-                            <text x="33" y="65" font-family="Verdana" font-size="45" font-weight="bold" style="fill:#64758c">X</text>
-                        </g>
-                    </svg>
-                </div>
-                <div class="tech-demo-item">
-                    <!-- EXIT 1 -->
-                    <svg id="exit-container-1" viewBox="0 0 100 100" style="max-width:100px;" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <circle id="exit" r="40" cx="50" cy="50" stroke="#64758c" stroke-width="8" fill="#f4f4f4" />
-                            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="15" font-weight="bold" style="fill:#64758c">End</text>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <div class="tech-demo-pair">
-                <div class="tech-demo-item">
-                    <!-- TASK 2 -->
-                    <svg id="task2" viewBox="-2 -2 104 84" style="max-width:200px;" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <rect id="task2Box" x="0" y="0" width="100" height="80" rx="15" stroke="#64758c" stroke-width="2" fill="#f4f4f4" />
-                            <text x="10" y="20" font-family="Verdana" font-size="8" font-weight="bold" style="fill:#64758c">John Doe</text>
-                            <text x="10" y="35" font-family="Verdana" font-size="8" font-weight="normal" style="fill:#0C152A">Contract Signing</text>
-                        </g>
-                    </svg>
-                </div>
-                <div class="tech-demo-item">
-                    <!-- TASK 3 -->
-                    <svg id="task3" viewBox="-2 -2 104 84" style="max-width:200px;" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <rect id="task3Box" x="0" y="0" width="100" height="80" rx="15" stroke="#64758c" stroke-width="2" fill="#f4f4f4" />
-                            <text x="10" y="20" font-family="Verdana" font-size="8" font-weight="bold" style="fill:#64758c">Accounts Team</text>
-                            <text x="10" y="35" font-family="Verdana" font-size="8" font-weight="normal" style="fill:#0C152A">Approve</text>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <div class="tech-demo-pair">
-                <div class="tech-demo-item-empty">
-                    <!-- EMPTY SPACER -->
-                </div>
-                <div class="tech-demo-item">
-                    <!-- EXIT 2 -->
-                    <svg id="exit-container-2" viewBox="0 0 100 100" style="max-width:100px;" xmlns="http://www.w3.org/2000/svg">
-                        <g>
-                            <circle id="exit2" r="40" cx="50" cy="50" stroke="#64758c" stroke-width="8" fill="#f4f4f4" />
-                            <text x="50%" y="50%" text-anchor="middle" alignment-baseline="middle" font-family="Verdana" font-size="15" font-weight="bold" style="fill:#64758c">End</text>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <div class='tech-core-feature skeleton block-full'>
+        
+        <div class='tech-core-feature skeleton block-full background-dark text-dark'>
             {# First core feature chunk #}
-            <img src="/images/Flowchart-Placeholder.png" />
+            <div class='content-full-column'>
+                {# Heading Blurb #}
+                <p>Running a business can often feel like juggling a million tasks at once, its understandable that things will slip through the cracks despite your best efforts. Whether it's missed deadlines, miscommunications within your team, or a lack of clarity with external partners, these issues can cause costly delays and frustration.</p>
+                <p>With Rapid Platform's process automation, you gain full control over your workflows, automating processes and ensuring nothing gets overlooked.</p>
+            </div>
+            <div class='content-full-column'>
+                {# BPMN Image #}
+                <img src="/images/Flowchart-Placeholder.png" />
+            </div>
+            <div class='container-three-columns content-full-column'>
+                {# Explainer Container #}
+                <div>
+                    {# Explainer Left #}
+                    <div id='bpmn-logo'></div>
+                    <p>With Rapid Platform, you can leverage <a class='link-dark' href='https://www.bpmn.org/'>BPMN 2.0</a>, an internationally recognized standard, to create clear, living documentation that evolves with your business. This powerful tool not only allows you to visualize and document processes, but also makes them fully executable, bridging the gap between planning and action.</p>
+                    <p>By using BPMN, your workflows are not just static diagrams; they are dynamic, real-time processes that can be easily updated, tracked, and optimized. This ensures that everyone in your organization is aligned and working from the same source of truth, reducing confusion and driving greater efficiency across all operations.</p>
+                </div>
+                <div>
+                    {# Explainer Mid #}
+                    <p>With Rapid Platform’s automatic task generation, your team never has to worry about missing a beat. By automatically creating tasks based on predefined workflows and triggers, everyone stays on top of their responsibilities without having to manually track every detail. This ensures that nothing slips through the cracks, deadlines are met, and priorities are clear.</p>
+                    <p>When you remove the guesswork and manual tracking, your team can focus on what truly matters—delivering high-quality results—while knowing the system is handling the behind-the-scenes organization.</p>
+                </div>
+                <div>
+                    {# Explainer Right #}
+                    <div id='email-logos'></div>
+                    <p>Rapid Platform enhances your external communication by seamlessly integrating with SendGrid and Outlook, making email outreach more efficient and effective.</p>
+                    <p>Whether you're sending automated notifications, client updates, or follow-ups, you can easily manage all your email communications from one central platform.</p>
+                    <p>Coupled with native forms that collect data directly from your customers or partners, Rapid Platform ensures that the information you need is captured accurately and in real-time.</p>
+                </div>
+            </div>
+            
         </div>
 
         <div class='tech-core-feature skeleton block-full'>

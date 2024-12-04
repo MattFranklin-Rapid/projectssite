@@ -2,14 +2,7 @@
 .skeleton{
 
 }
-/* TESTING PURPOSES ONLY 
-.skeleton:nth-of-type(even){
-  background-color: #0091D020;
-}
-.skeleton:nth-of-type(odd){
-  background-color: #43c7f420;
-}
-*/
+
 /* TO REVIEW : Added styles that might make no sense while cobbling this together */
 .first-element{ /* Element at the top of the page 'below' the sticky nav menu */
   margin-top: 100px;
@@ -77,4 +70,44 @@ details {
   margin-top: 90px;  /* Nav menu height */
   min-height: calc(100% - 100px - 475px);
   margin-bottom: 500px; /* Footer height */
+}
+
+/* Content layout assistants */
+
+.content-full-column {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-full-column:first-child {
+  padding-top: 2rem;
+}
+
+.content-full-column:last-child {
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 1000px){
+  .content-full-column{
+    max-width: 95vw;
+  }
+}
+
+.container-three-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.container-three-columns > div {
+  align-self: stretch;
+  padding: 1rem;
+}
+
+@media (max-width: 1000px){
+  .container-three-columns{
+      grid-template-columns: 1fr;
+  }
+
 }
