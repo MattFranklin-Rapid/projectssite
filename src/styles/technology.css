@@ -1,3 +1,14 @@
+#bpmn-image-desktop {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bpmn-image-mobile {
+    max-height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #bpmn-logo {
     background: url(https://www.bpmn.org/81d57dc41967b3cd4119.png);
     height: 54px;
@@ -14,4 +25,18 @@
     float: left;
     margin-top: 25px;
     margin-right: 5px;
+}
+
+.image-mobile {
+    display: none;
+}
+
+@media (max-width: 1000px){
+    .image-desktop {
+        display: none;
+    }
+
+    .image-mobile {
+        display: inherit;
+    }
 }
