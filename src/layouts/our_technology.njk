@@ -7,18 +7,31 @@
         {% include '../components/nav.njk' %}
         <div id="wrap"> {# Content minimum height wrapper, place between nav and footer #}
 
-        <div class='hero-with-content splash-small' style="background-image: url('/images/Technology-Banner-Placeholder.jpg');">
+        <div class='hero-with-contents splash-small background-dark text-dark'>
             {# Hero banner #}
-            <div class='hero-content'>
+            <div class="content-full-column">
+                <div class="container-columns">
+                    <div>
+                        <h1>Deliver solutions in <span class="text-highlight-cool-dark">hours</span> not days</h1>
+                        <p>Technology doesn’t have to get in your way, and with the hyper flexible Rapid Platform you can operate your way.</p>
+                        <!-- [Optional] <p>Build it yourself or work with our expert team to finally have a system that can keep up with your business.</p> -->
+                        <a href="{{url_free_trial}}" target="_blank"><button class="button-cool-light button-large">Try it for free</button></a>
+                        <a href="{{url_get_started}}" target="_blank"><button class="button-warm-light button-large">Get started with us</button></a>
+                    </div>
+                    <div>
+                        <iframe class="video-hero-technology" width="560" height="315" src="https://www.youtube.com/embed/oieul5GuLXE?si=dtYKq7Vh6LcBgoix" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class='tech-elevator skeleton block-quarter'>
+        <div class="container-diagonal-slash"></div>
+        <div class='tech-elevator skeleton block-quarter background-light text-light'>
             {# Elevator Pitch #}
             <div class= 'center-content' style= 'text-align:center; padding-top: 30px; padding-bottom: 15px;'>
                 <h2 class='text-highlight-cool-light'>Everything you need in a single place</h2>
                 <h4 class='text-light'>Stop system sprawl and empower your team with a single source of truth</h4>
             </div>
+            <div class="spacer-small"></div>
         </div>
         
         <div class='tech-core-feature skeleton block-full background-dark text-dark'>
@@ -57,44 +70,120 @@
             
         </div>
 
-        <div class='tech-core-feature skeleton block-full'>
+        <div class='tech-core-feature skeleton block-full background-light text-light'>
             {# Second core feature chunk #}
-            <div class="">
+            <div class="content-full-column text-center">
                 {# Heading #}
                 <h1 class="text-highlight-light">Build, Track, Own</h1>
-            </div>
-            <div class="container-three-columns">
-                {# Columns #}
-                <div>WEB</div>
-                <div>DEV</div>
-                <div>TIME</div>
-            </div>
             
+                <div class="container-three-columns">
+                    {# Columns #}
+                    <div>
+                        <div>
+                            <img src="/src/assets/images/Placeholderimage.png">
+                        </div>
+                        <div>
+                            <p>Capture and organize data in a way that aligns with your operations. With Rapid Platform, you can truly build the system to support your unique business needs.</p>
+                            <p>Every business is different, and with this level of customization, you no longer need to contort your processes to fit the limitations of a rigid system.</p>
+                            <p>Have the freedom to build a solution that mirrors the way you work, ensuring that your data is structured, accessible, and actionable exactly as you need it.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="/src/assets/images/Placeholderimage.png">
+                        </div>
+                        <div>
+                            <p>Build custom interfaces that perfectly fit your business needs, allowing you to present and capture data in a way that makes sense to your team.</p>
+                            <p>With complete flexibility, you can organize information in the order that works best for you. Whether it's through personalized dashboards, forms, or workflows, Rapid Platform helps you track key data with ease—putting your business processes into high gear and giving you the control to optimize how things are done.</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="/src/assets/images/Placeholderimage.png">
+                        </div>
+                        <div>
+                            <p>Quickly track the information you need, cutting through the noise and ensuring you're always working with the most relevant insights. </p>
+                            <p>By creating personalized views tailored to your business, you empower your team to focus on what drives outcomes, streamlining your processes and improving decision-making. </p>
+                            <p>With Rapid Platform’s powerful search functionality, finding the information you need has never been easier. No more endless scrolling or sifting through irrelevant data—simply enter a keyword, and you’ll be able to instantly access the items that matter most.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class='tech-core-feature skeleton block-full'>
+        <div class='tech-core-feature skeleton block-full background-dark text-dark'>
             {# Third core feature chunk #}
-            <p>Understand what's going on with:</p>
-            <p>- Live reporting with native PowerBI embedding and live editing.</p>
-            <p>- Keep everyone up to date with notes and notifications.</p>
-            <p>- Keep consistant with full history and rollback, no more.</p>
-            <p>Headaches on what's up to date.</p>
+            <div class='content-full-column'>
+                <div class='container-columns'>
+                        <div class="container-vertical-center">
+                            <img src='/src/assets/images/Placeholderimage.png' />
+                        </div>
+                        <div>
+                            <h4>Create custom dashboards for your team</h4>
+                            <p>Rapid Platform allows you to create custom dashboards tailored to your team’s specific needs, providing real-time insights and a clear view of key metrics. With native integration for PowerBI, you can leverage enterprise-grade reporting tools to visualize data in powerful ways, making complex information easy to understand and act upon. </p>
+                            <p>Whether you need detailed analytics or high-level overviews, Rapid ensures that your team always has access to the right data so they can make informed decisions quickly.</p>
+                        </div>
+                </div>
+                <div class='container-columns container-column-reverse'>
+                    <div class="container-vertical-center">
+                        <img src='/src/assets/images/Placeholderimage.png' />
+                    </div>
+                    <div>
+                        <h4>Keep on-top of things with notifications</h4>
+                        <p>Stay on top of everything with Rapid Platform’s intuitive notification system, ensuring you never miss an important update. Keep your team informed through mentions so you can easily collaborate in real time. Stay informed with the activity feed giving full visibility of past actions, providing a complete history of interactions and updates.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class='tech-core-feature skeleton block-full'>
+        <div class='tech-core-feature skeleton block-full background-light text-light'>
             {# Fourth core feature chunk #}
-            <p>Stay at the cutting edge with cloud technology:</p>
-            <p>- Be safe with enterprise grade security backed by Azure.</p>
-            <p>- Integrate with your existing services through our full API control.</p>
-            <p>No special functions. A machine can do anything the UI can do.</p>
+            <div class="content-full-column">
+                <div>
+                    <div class="text-center">
+                        <h4>Stay safe in the cloud with enterprise security</h4>
+                        <p>Rapid Platform ensures your business stays safe in the cloud with enterprise-grade security, built on Microsoft Azure's trusted cloud infrastructure.</p>
+                    </div>
+                    <div>
+                        <div id="image-azure-logo"><img src="/src/assets/images/Microsoft-Azure-Logo.png" /></div>
+                    </div>
+                </div>
+                <div class="container-three-columns">
+                    <div>
+                        <div class="text-center"><i class="fa fa-cloud icon-large"></i></div>
+                        <div>
+                            <p>Living on the cloud your business is protected by automatic data backups and robust recovery options. In the event of an issue, you can rely on full item-level rollback to restore data quickly and accurately.</p>
+                            <p>Ensure that your data is safeguarded and easily retrievable, giving you confidence that your business can recover seamlessly from any unforeseen challenges.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-center"><i class="fa fa-database icon-large"></i></div>
+                        <div>
+                            <p>Have the flexibility to deploy your own database, giving you complete control over your data and ensuring it remains securely managed within your environment.</p>
+                            <p>Provision your own reporting servers, allowing you to set up custom reporting solutions that meet your team's specific needs. Provide IT teams with the confidence that they can manage and scale the platform to fit their unique requirements.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-center"><i class="fa fa-lock icon-large"></i></div>
+                        <div>
+                            <p>Rapid Platform offers complete freedom with no vendor lock-in, allowing you to retain full ownership of your data and any custom solutions you develop.</p>
+                            <p>With full API access your IT team can create and integrate their own solutions, maintaining first-party level control over the platform.</p>
+                            <p>Empower your team to build, modify, and scale solutions. Collaborate with our expert consultants to fosters innovation while safeguarding your long-term interests.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class='tech-sales-pitch skeleton block-half'>
+        <div class='tech-sales-pitch skeleton block-half background-dark text-dark'>
             {# Sales pitch based on the features #}
-            <p>Sales pitch, explore these features yourself.</p>
-            <p>Call to action to signup for free.</p>
-            <p>Connect with one of our experts to help build your future.</p>
-            <p>Call sales.</p>
+            <div class="content-full-column">
+                <p>With Rapid Platform, you’re not just adopting a tool or hiring a consultant —you’re gaining a customizable, secure, and scalable solution that evolves with your business. </p>
+                <p>From automating processes and streamlining team collaboration to offering full control over your data and infrastructure, our platform and team are ready to give you the flexibility and security you need to stay ahead</p>
+                <p>Built on Azure’s trusted cloud infrastructure, we ensure enterprise-grade expertise, giving you peace of mind at every step. With full API access and no vendor lock-in, your IT team can create tailored solutions and retain complete ownership of your data. </p>
+                <p>Whether you’re looking to improve efficiency, enhance collaboration, or build custom workflows, Rapid Platform gives you the tools to drive success—today and in the future. </p>
+            </div>
         </div>
 
         {% include '../components/cta/knowmore.njk' %}

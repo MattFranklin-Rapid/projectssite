@@ -94,6 +94,35 @@ details {
   }
 }
 
+.container-columns {
+  display: flex;
+  flex-direction: row
+}
+
+.container-column-reverse {
+  flex-direction: row-reverse
+}
+
+.container-columns > div {
+  width: 50%;
+  padding: 1rem;
+}
+
+@media (max-width: 1000px){
+  .container-columns{
+      flex-direction: column;
+  }
+  
+  .container-column-reverse{
+    flex-direction: column;
+  }
+
+  .container-columns > div {
+    width: 100%;
+  }
+
+}
+
 .container-three-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -110,4 +139,13 @@ details {
       grid-template-columns: 1fr;
   }
 
+}
+
+.container-vertical-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.spacer-small {
+  height: 4rem;
 }

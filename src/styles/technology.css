@@ -27,6 +27,18 @@
     margin-right: 5px;
 }
 
+#image-azure-logo{
+    background: url(/src/assets/images/Microsoft-Azure-Logo.png);
+    height: 84px;
+    width: 150px;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+}
+
+.icon-large{
+    font-size: 4rem;
+}
+
 .image-mobile {
     display: none;
 }
@@ -39,4 +51,19 @@
     .image-mobile {
         display: inherit;
     }
+}
+
+.button-large{
+    margin-right: 1.5rem;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+
+.container-diagonal-slash{
+    background-color: var(--background-dark);
+    height: 100px;
+    width: 99vw;
+    transform: skewY(-3deg);
+    position: relative;
+    top: -50px;
 }

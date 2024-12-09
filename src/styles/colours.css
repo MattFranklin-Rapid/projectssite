@@ -68,3 +68,23 @@
 .link-light {
     color: var(--color-rapid-blue);
 }
+
+.button-cool-light {
+    background-color: var(--color-rapid-blue);
+    color: var(--text-dark);
+}
+
+.button-cool-dark {
+    background-color: var(--color-ice-blue);
+    color: var(--text-light);
+}
+
+.button-warm-light {
+    background-color: var(--color-digital-ember);
+    color: black;
+}
+
+.button-warm-dark {
+    background-color: var(--color-code-gold);
+    color: var(--text-light);
+}

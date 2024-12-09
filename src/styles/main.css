@@ -789,7 +789,7 @@ h2 {
 
 .div-sticky {
   position: sticky;
-  top: 120;
+  top: 40vh;
 }
 
 
