@@ -17,14 +17,24 @@
     --background-dark: var(--color-deep-navy);
     --text-light: var(--color-deep-navy);
     --text-dark: white;
+    --border-light: 1px solid #ccc;
+    --border-dark: 1px solid #363636;
+}
+
+.border-light {
+    border: var(--border-light);
+}
+
+.border-dark {
+    border: var(--border-dark);
 }
 
 .text-light {
-    color: var(--text-light)
+    color: var(--text-light);
 }
 
 .text-dark {
-    color: var(--text-dark)
+    color: var(--text-dark);
 }
 
 .text-highlight-cool-light {

@@ -38,6 +38,10 @@ h2 {
   font-weight: normal;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* Header */
 .sticky-container {
   position: sticky;
@@ -593,7 +597,7 @@ h2 {
     line-height: 0;
     padding-left: 4vw;
   }
-}@import "https://cdn.jsdelivr.net/npm/simpledotcss@2.2.0/simple.min.css";
+};
 
 /* Start of imported styles */
 :root {
