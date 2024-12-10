@@ -33,9 +33,28 @@ h1 {
   font-size: 50pt;
 }
 
+@media(max-width:1000px){
+  h1 {
+    font-size: 35pt;
+  }
+}
+
 h2 {
   font-size: 34pt;
   font-weight: normal;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media(max-width:1000px){
+  h2 {
+    font-size: 21pt;
+  }
+}
+
+h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .text-center {
@@ -492,12 +511,6 @@ h2 {
     max-height: 40px;
   }
   /* Content */
-  h1 {
-    font-size: 35pt;
-  }
-  h2 {
-    font-size: 21pt;
-  }
 
   .flex-item-1 p,
   .flex-item-2 p,
@@ -685,26 +698,6 @@ h2 {
   margin: 0;
   padding-right: 20px;
   color: #0c152a;
-}
-
-.text-column-h1 {
-
-  font-weight: 800;
-  font-size: 52px;
-  line-height: 3.31em;
-}
-.text-column-h2 {
-  line-height: 1.3em;
-  font-size: 40px;
-  font-weight: 500px;
-}
-.text-column-h3 {
-  line-height: 1.3em;
-  font-size: 24px;
-  font-weight: 500px;
-}
-.text-column-body {
-  font-size: 16px;
 }
 
 .header a:hover {

@@ -45,6 +45,14 @@
     color: var(--color-ice-blue);
 }
 
+.text-lowlight-cool-light {
+    color: var(--color-deep-purple)
+}
+
+.text-lowlight-cool-dark {
+    color: var(--color-ai-zure)
+}
+
 .text-highlight-warm-light {
     color: var(--color-digital-ember);
 }
