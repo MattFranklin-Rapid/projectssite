@@ -223,12 +223,18 @@ h2 {
 }
 
 .container-diagonal-slash{
-  background-color: var(--background-dark);
-  height: 100px;
-  width: 99vw;
-  transform: skewY(-3deg);
-  position: relative;
-  top: -50px;
+  border-color: transparent transparent  var(--background-dark) transparent;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 0 0 4rem 98vw;
+  transform: rotate(180deg);
+}
+
+@media(max-width:1000px){
+  .container-diagonal-slash{
+    border-width: 0 0 4rem 96vw;
+  }
 }
 
 /* Standard widths for top level content */
