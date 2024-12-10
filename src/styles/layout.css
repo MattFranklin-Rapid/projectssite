@@ -3,17 +3,6 @@
 
 }
 
-/* TO REVIEW : Added styles that might make no sense while cobbling this together */
-.first-element{ /* Element at the top of the page 'below' the sticky nav menu */
-  margin-top: 100px;
-}
-
-@media (max-width: 1000px){
-  .first-element{ /* Repeated in case we want to make the nav menu skinny in 🍔 mode */
-    margin-top: 100px;
-  }
-}
-
 /* Big splash takes up ~3/4 of the page on desktop, full screen on mobile */
 .splash-big{
   min-height: 65vh;
@@ -27,20 +16,12 @@
 }
 
 /* Small splash takes up ~1/3 of the page on desktop, half screen on mobile */
-/* Jonno: I can't get the image to scale to 50%. The parent div expands but not the background image.*/
-
 .splash-small{
   min-height: 30vh;
   background-position: center;
   background-color: green;
 }
-/*
-@media (max-width: 1000px){
-  .splash-small{
-    min-height: 50vh;
-  }
-}
-*/
+
 .block-full {
     min-height: 100vh;
 }
@@ -72,11 +53,144 @@ details {
   margin-bottom: 500px; /* Footer height */
 }
 
+/* Navigation Menu */
+.nav-container {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  padding-inline:6rem
+}
+
+.header {
+  top: 0;
+  margin-top: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex: 1;
+
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+.header img {
+  padding-left: 10px;
+  margin: 0;
+  flex: 1;
+  max-height: 50px;
+}
+
+.header a {
+  margin: 0;
+  padding-right: 20px;
+  color: #0c152a;
+  text-decoration: none;
+  font-size: 12pt;
+}
+
+.header a:hover {
+  color: #f0b41c;
+}
+
+@media (max-width: 1000px) {
+  /* Header */
+  .mobile-header {
+    display: flex;
+  }
+  .regular-header {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Header */
+  .mobile-header {
+    display: flex;
+  }
+  .regular-header {
+    display: none;
+  }
+  .header img {
+    margin: 0;
+    flex: 1;
+    max-height: 40px;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background: #0c152a;
+  align-content: flex-end;
+  justify-content: center;
+  padding-top: 50px;
+  position: relative;
+  margin-top: -600px;
+  /* negative value of footer height */
+  height: 600;
+  clear: both;
+}
+
+.flex-item-footer {
+  padding-bottom: 4vh;
+  padding-left: 75px;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+}
+
+.footer h3,
+.footer p {
+  color: #f4f4f4;
+  padding-right: 10px;
+  font-size: 12pt;
+}
+
+.footer h3 {
+  color: #43c7f4;
+}
+
+.footer a {
+  color: #f4f4f4;
+  text-decoration: none;
+  
+}
+
+.footer a:hover {
+  color: #f0b41c;
+}
+
+@media(max-width:1000px){
+  /* Footer */
+  .footer {
+    align-items: flex-start;
+  }
+  .flex-item-footer {
+    padding-bottom: 4vh;
+    padding-left: 4vw;
+  }
+  .footer-menu {
+    flex-direction: column;
+    line-height: 0;
+    padding-left: 4vw;
+  }
+}
+
+
 /* Content layout assistants */
 
 .content-center {
   margin-left: auto;
   margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .content-full-column {
