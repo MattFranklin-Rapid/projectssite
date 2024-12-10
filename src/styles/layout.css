@@ -16,7 +16,7 @@
 
 /* Big splash takes up ~3/4 of the page on desktop, full screen on mobile */
 .splash-big{
-  min-height: 75vh;
+  min-height: 65vh;
   background-color: green;
 }
 

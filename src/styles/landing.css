@@ -1,7 +1,3 @@
-:root{
-    --heading-blue: #43c7f4;
-}
-
 .landing h1{
     line-height: 1.1; 
     color: #FFFFFF; 
@@ -11,16 +7,16 @@
 
 .how-you-benefit-grid-container > div {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);  /* Create 4 equal columns */
-    grid-template-rows: repeat(2, 1fr);     /* Create 2 equal rows */
-    gap: 10px;  /* Optional: Add space between grid items */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .how-you-benefit-grid-item > div {
-    background-color: var(--background-light); /* Background color for grid items */
-    padding: 20px;              /* Add padding for content */
-    text-align: center;         /* Center text */
-    border: var(--border-light);    /* Optional: Add borders */
+    background-color: var(--background-light);
+    padding: 20px;
+    text-align: center;
+    border: var(--border-light);
     border-radius: 10px;
 }
 
@@ -37,10 +33,22 @@
     min-height: 4.6rem;
 }
 
-
 @media (max-width:1000px) {
     .how-you-benefit-grid-container > div {
       grid-template-columns: 1fr;  /* Stack the items in 1 column */
       grid-template-rows: repeat(6, 1fr); /* Make sure there are 6 rows for 6 items */
     }
   }
+
+.video-hero-landing{
+    float: right;
+    
+}
+
+@media (max-width:1000px){
+    .video-hero-landing{
+        height: 283px;
+        width: 504px;
+
+    }
+}

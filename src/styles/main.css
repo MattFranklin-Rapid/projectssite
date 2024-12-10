@@ -216,6 +216,21 @@ h2 {
   }
 }
 
+.button-large{
+  margin-right: 1.5rem;
+  padding: 1.25rem;
+  font-weight: 700;
+}
+
+.container-diagonal-slash{
+  background-color: var(--background-dark);
+  height: 100px;
+  width: 99vw;
+  transform: skewY(-3deg);
+  position: relative;
+  top: -50px;
+}
+
 /* Standard widths for top level content */
 
 .content-wide {

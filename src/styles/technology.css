@@ -35,6 +35,10 @@
     margin-bottom: 4rem;
 }
 
+.video-hero-technology {
+    margin-top: 3rem;
+}
+
 .icon-large{
     font-size: 4rem;
 }
@@ -51,19 +55,4 @@
     .image-mobile {
         display: inherit;
     }
-}
-
-.button-large{
-    margin-right: 1.5rem;
-    padding: 1.25rem;
-    font-weight: 700;
-}
-
-.container-diagonal-slash{
-    background-color: var(--background-dark);;
-    height: 100px;
-    width: 99vw;
-    transform: skewY(-3deg);
-    position: relative;
-    top: -50px;
 }

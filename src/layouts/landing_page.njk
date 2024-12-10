@@ -6,19 +6,24 @@
         {% include '../components/nav.njk' %}
         <div id="wrap">
             {# Content minimum height wrapper, place between nav and footer #}
-            <div class='hero-with-cta splash-big'>
+            <div class='hero-with-cta splash-big background-dark text-dark'>
                 {# Hero banner #}
-                <div class="img-container">
-                    <div class="dynamic-splash" style="background-image: url('/images/Simplify-Systems-Splash.png')">
-                        <h1 style="line-height: 1.1; color: #43c7f4; margin-block-start: 0; margin-block-end: 0;">
-                    Let's face it,<br>you need better<br>systems.
-                    </h1>
+                <div class="content-full-column">
+                    <h1> Streamline your systems, <span class="text-highlight-cool-dark">affordably</span>.</h1>
+                    <div class="container-columns">
+                    <div>
+                        <p>Your CRM should streamline and automate your sales, not just track them.</p>
+                        <p>Flexible enterprise CRM at an affordable price</p>
+                        <a href="{{url_get_started}}" target="_blank"><button class="button-warm-light button-large">Get started with us</button></a>
+                    </div>
+                    <div>
+                        <iframe class="video-hero-landing" width="560" height="315" src="{{url_video_embed}}" title="{{title_video_embed}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                     </div>
                 </div>
-                <div class='hero-cta'>
-                    {# Hero Call to Action #}
-                </div>
             </div>
+
+            <div class="container-diagonal-slash"></div>
 
             <div class='landing-product-overview skeleton block-full' >
                 {# Product Overview #}
