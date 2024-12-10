@@ -94,6 +94,10 @@ details {
   color: #f0b41c;
 }
 
+.mobile-header {
+  display: none;
+}
+
 @media (max-width: 1000px) {
   /* Header */
   .mobile-header {
@@ -104,14 +108,9 @@ details {
   }
 }
 
+
+
 @media (max-width: 500px) {
-  /* Header */
-  .mobile-header {
-    display: flex;
-  }
-  .regular-header {
-    display: none;
-  }
   .header img {
     margin: 0;
     flex: 1;
@@ -184,9 +183,9 @@ details {
 
 /* Content layout assistants */
 
-.content-center {
-  margin-left: auto;
-  margin-right: auto;
+.center-content {
+  max-width: fit-content;
+  margin-inline: auto;
 }
 
 .text-center {
