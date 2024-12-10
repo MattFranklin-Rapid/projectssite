@@ -1,47 +1,37 @@
 <html lang="en">
 <head>
     {% include '../components/global_head.njk' %}
+    <link rel="stylesheet" href="/src/styles/about.css">
 </head>
     <body>
         {% include '../components/nav.njk' %}
         <div id="wrap"> {# Content minimum height wrapper, place between nav and footer #}
 
-        <div class='hero-with-content splash-small'>
+        <div class='hero-with-content splash-small text-dark background-dark'>
             {# Hero banner #}
-            <div class='hero-content'>
+            <div class="content-narrow-column">
                 {# Hero Content #}
-                <div class='center-content' style="padding: 32px; background-color: #ffffffe0;">
-                    <h2 style="text-align: center;">About Us</h2>
-                    <p style="color: black">
-                        A brief history of rapid platform; <br /> 
-                        Lorem ipsum odor amet, consectetuer adipiscing elit. Pulvinar arcu commodo, mi curae porttitor condimentum. <br /> 
-                        Euismod arcu class habitasse et consequat nisi. Nullam eget ante class vulputate egestas molestie pretium nisl. <br />
-                        Congue ligula neque volutpat fringilla dignissim. Magnis nam aliquet dictumst tellus non dictum; euismod maecenas.<br />
-                        Euismod arcu class habitasse et consequat nisi. Nullam eget ante class vulputate egestas molestie pretium nisl. <br />
-                        Congue ligula neque volutpat fringilla dignissim. Magnis nam aliquet dictumst tellus non dictum; euismod maecenas.<br />
-                    </p>
+                <div>
+                    <h1><span class="text-highlight-cool-dark">Our mission</span> is to make your life easier</h1>
+                    <p>We are experts in process automation, enabling your business to leverage its data for rapid growth.</p>
                 </div>
             </div>
         </div>
         <div class='about-our-message skeleton block-full'>
             {# Our Message! #}
-            <div class='center-content about-us-main-container'>
-                <div class="about-us-messages-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8TuHYqJDUjkTqWKB9MHFVqH_sMak6503Sw&s" alt="an image of mitch" class="image-medium" />
-                    <div class="padding-left-small mobile-padding-remove">
-                        <p>Why does rapid exist, what purpose does it serve; <br /> Lorem ipsum dolor sit amet. Ea laudantium facere sed optio nisi et totam deleniti hic voluptate sunt et voluptatum nulla eos tempore repellat. Ut consequatur quia non officiis corrupti est nisi earum in ratione dolores. Qui voluptatem minima est tenetur perspiciatis nam voluptas quaerat eum unde quidem et repudiandae incidunt et voluptas quae. Qui totam unde et fugit illum hic facilis omnis et quaerat autem et totam ipsum aut nihil voluptas. Quo impedit ipsam et rerum consequatur et dolores voluptatem et voluptas sunt non inventore porro. Ea molestiae beatae et omnis.</p>
+            <div class='content-full-column text-light background-light'>
+                <div class='container-two-columns-lefthanded'>
+                    <div>
+                        <h2 class="text-highlight-cool-light">It all started with a fascination with technology.</h2>
+                        <p>Rapid Platform was established in 2011 by founder and CEO Mitchell Hunt, and is driven by his passion for empowering people and organisations to achieve their full potential.</p>
+                        <p>The idea for Rapid Platform started with the property development and construction industry. Organising people, activities and documents is always a challenge and every department had their own specific details to track. Mitchell found himself looking for tools with the flexibility to serve each group and the power to facilitate communication, but nothing covered all the bases.</p>
+                        <p>Rapid Platform was developed working with customers and keeping their diverse needs in mind. Juggling multiple perspectives drove the design to be highly configurable and bring the control to the people that need it. Organising between people and needing to communicate expectations led to the development of a BPMN workflow engine. </p>
+                        <p>After a few years the platform had gotten so general, powerful and user driven it had outgrown any single industry. Automation and a single source of truth all wrapped in a highly configurable package; it could do it all. The past few years rolling out Rapid Platform into more and more industries has been a joy. Heading into a business that is systemically struggling and being able to help quickly and sustainably is a genuine source of motivation to everyone here.</p>
+                        <p>Looking forward to the future, it is our mission to empower others. Systems don’t have to be manual. Communication doesn’t need to be ad-hoc. Expectations within your organisation and for your customers can be met. You know your business better than anyone. We know how to systemise that knowledge.</p>
+                        <p>Technology doesn’t have to get in your way.</p>
                     </div>
-                </div>
-                <div class="about-us-messages-container reverse-elements-column">
-                    <div class="padding-right-small mobile-padding-remove">
-                        <p>What rapid has created, what are our achivements; <br /> Qui necessitatibus eligendi ut corporis beatae hic rerum commodi. Sed mollitia saepe vel ipsa dolor et consequatur repellendus et quaerat rerum qui rerum internos ut quaerat consectetur id similique quam. In dicta atque aut dolor provident cum veniam maiores. Et vero corporis in eius iste sed molestiae nesciunt. Est nostrum eligendi in modi temporibus qui molestiae doloribus ab incidunt culpa? Aut eveniet asperiores ut sint odit sed dolores rerum. Aut sint molestiae qui corrupti quas 33 saepe laborum ut dicta maiores sit exercitationem minima et expedita molestias?</p>
-                    </div>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8TuHYqJDUjkTqWKB9MHFVqH_sMak6503Sw&s" alt="guardian child care image" class="image-medium" />
-                </div>
-                <div class="about-us-messages-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh8TuHYqJDUjkTqWKB9MHFVqH_sMak6503Sw&s" alt="3d tech future style image of the horizon" class="image-medium" />
-                    <div class="padding-left-small mobile-padding-remove">
-                        <p>Our aspirations for the future; <br /> Qui eaque earum ea ducimus laudantium quo nihil adipisci est excepturi autem eum assumenda nesciunt At accusamus vitae. Et enim quia vel exercitationem ratione aut optio voluptatibus et perspiciatis facere sit modi eveniet et unde quia sit sunt internos. Est dolores libero id consequatur molestiae vel corporis tempore? In recusandae officiis id saepe perspiciatis ut suscipit tempore aut sint adipisci qui modi animi eum doloribus unde rem neque nihil. Qui possimus quod et velit modi a quia quasi ut praesentium velit At velit error ut deleniti autem. Aut reprehenderit.</p>
+                    <div>
+                        <img id="image-mitch" src="/src/assets/images/mitch.png"></img>
                     </div>
                 </div>
             </div>

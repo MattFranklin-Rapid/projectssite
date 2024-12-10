@@ -60,7 +60,7 @@
 }
 
 .container-diagonal-slash{
-    background-color: var(--background-dark);
+    background-color: var(--background-dark);;
     height: 100px;
     width: 99vw;
     transform: skewY(-3deg);
