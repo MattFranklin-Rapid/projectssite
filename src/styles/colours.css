@@ -1,0 +1,98 @@
+:root{
+    --color-deep-navy: #0C152A;
+    --color-rapid-blue: #0091D0;
+    --color-deep-purple: #292562;
+    --color-ai-zure: #323694;
+    --color-tech-wave: #4a71b7;
+    --color-ice-blue: #43c7f4;
+    --color-infra-red: #DB4139;
+    --color-digital-ember: #F36F21;
+    --color-code-gold: #F0B41C;
+    --color-bright-glow: #FFDD16;
+    --color-bright-green: #008E47;
+    --color-pixel-zest: #B2D234;
+    --color-tech-canvas: #F4F4F4;
+
+    --background-light: var(--color-tech-canvas);
+    --background-dark: var(--color-deep-navy);
+    --text-light: var(--color-deep-navy);
+    --text-dark: white;
+    --border-light: 1px solid #ccc;
+    --border-dark: 1px solid #363636;
+}
+
+.border-light {
+    border: var(--border-light);
+}
+
+.border-dark {
+    border: var(--border-dark);
+}
+
+.text-light {
+    color: var(--text-light);
+}
+
+.text-dark {
+    color: var(--text-dark);
+}
+
+.text-highlight-cool-light {
+    color: var(--color-rapid-blue);
+}
+
+.text-highlight-cool-dark {
+    color: var(--color-ice-blue);
+}
+
+.text-lowlight-cool-light {
+    color: var(--color-deep-purple)
+}
+
+.text-lowlight-cool-dark {
+    color: var(--color-ai-zure)
+}
+
+.text-highlight-warm-light {
+    color: var(--color-digital-ember);
+}
+
+.text-highlight-warm-dark {
+    color: var(--color-code-gold);
+}
+
+.background-light {
+    background-color: var(--background-light);
+}
+
+.background-dark {
+    background-color: var(--background-dark);
+}
+
+.link-dark {
+    color: var(--color-ice-blue);
+}
+
+.link-light {
+    color: var(--color-rapid-blue);
+}
+
+.button-cool-light {
+    background-color: var(--color-rapid-blue);
+    color: var(--text-dark);
+}
+
+.button-cool-dark {
+    background-color: var(--color-ice-blue);
+    color: var(--text-light);
+}
+
+.button-warm-light {
+    background-color: var(--color-digital-ember);
+    color: black;
+}
+
+.button-warm-dark {
+    background-color: var(--color-code-gold);
+    color: var(--text-light);
+}

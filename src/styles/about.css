@@ -1,0 +1,12 @@
+#image-mitch{
+    height: 308px;
+    min-width: 259px;
+    margin-top: 8rem;
+}
+
+@media (max-width: 1000px){
+    #image-mitch{
+        display: none;
+        min-width:0;
+    }
+}

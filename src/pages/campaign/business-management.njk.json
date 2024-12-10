@@ -1,0 +1,23 @@
+{
+    "title": "Business Management",
+    "splashImage": "/images/Simplify-Systems-Splash.png",
+    "splashTitle": "Snappy business management tag-line",
+    "marketTargetedTagline": "market targeted tag line, people coming here are hot, reiterate the marketing angle and get them on board",
+    "majorArgument":"A message of understanding, empathise with the customers pains",
+    "offerOne":"Describe how Rapid Platform help businesses keep everything important in one place",
+    "imageOneOffer": "https://rapidplatform.com/wp-content/uploads/msedge_q1IDs3mjTr-1.png",
+    "offerTwo":"A snappy paragraph about workflow and how automation can save you time and money",
+    "imageTwoOffer": "https://rapidplatform.com/wp-content/uploads/msedge_mofM5PZvLS.png",
+    "offerThree":"Talk about how reporting can help identify opportunities or highlight areas for improvement",
+    "closingArgument": "A message of hope, speak of cohesion, transparency, manageability. Rapid can help your business thrive in an ever changing world etc",
+    "imageThreeOffer": "https://rapidplatform.com/wp-content/uploads/msedge_v3Q8mydVSw.png",
+    "justificationHeader":"Justification Header, still got questions? etc",
+    "justificationBody": " This area should discuss how we have helped people allready.<br><br> It should include some stats of hours saved via process automation etc<br><br>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella",
+    "jusitificationImage": "https://i0.wp.com/www.codeconquest.com/wp-content/uploads/image-11.png?resize=1024%2C873&ssl=1",
+    "know_more_options": {
+        "show_contact_form": true,
+        "title": "Contact us today!",
+        "postSubSuccess": "Thank you for contacting us! We will get back to you shortly."
+  }
+
+}

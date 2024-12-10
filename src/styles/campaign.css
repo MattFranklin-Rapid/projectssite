@@ -1,0 +1,10 @@
+/* */
+.campaign-justification-image {
+    background-size: contain; width:80%; min-height:600px; background-repeat: no-repeat;
+ }
+
+ @media (max-width: 1000px) {
+ .campaign-justification-image {
+    background-size: contain; width:100%; min-height: 80vw; background-repeat: no-repeat;
+ }
+}
