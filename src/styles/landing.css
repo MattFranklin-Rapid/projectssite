@@ -2,6 +2,11 @@
     --heading-blue: #43c7f4;
 }
 
+.heading-sticky {
+    position: sticky;
+    top: 30vh;
+}
+
 .how-you-benefit-grid-container > div {
     display: grid;
     grid-template-columns: repeat(4, 1fr);  /* Create 4 equal columns */
