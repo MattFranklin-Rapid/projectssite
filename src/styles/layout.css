@@ -59,7 +59,8 @@ details {
   top: 0;
   z-index: 100;
   width: 100vw;
-  padding-inline:6rem
+  padding-inline:6rem;
+  background-color: var(--background-light);
 }
 
 .header {
@@ -108,8 +109,6 @@ details {
   }
 }
 
-
-
 @media (max-width: 500px) {
   .header img {
     margin: 0;
@@ -128,13 +127,13 @@ details {
   position: relative;
   margin-top: -600px;
   /* negative value of footer height */
-  height: 600;
+  height: 30rem;
   clear: both;
 }
 
 .flex-item-footer {
-  padding-bottom: 4vh;
-  padding-left: 75px;
+  padding-bottom: 2rem;
+  padding-left: 6rem;
 }
 
 .footer-menu {
