@@ -118,9 +118,6 @@ details {
   background: #0c152a;
   align-content: flex-end;
   justify-content: center;
-  padding-top: 50px;
-  position: relative;
-  margin-top: -600px;
   /* negative value of footer height */
   height: 30rem;
   clear: both;

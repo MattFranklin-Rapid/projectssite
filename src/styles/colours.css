@@ -73,6 +73,12 @@
     background-color: var(--background-dark);
 }
 
+/* Image based background, used for Call to Actions */
+.background-splash {
+    background-image: url(/src/assets/Simplify-Systems-Splash.png);
+    background-repeat: no-repeat;
+}
+
 .link-dark {
     color: var(--color-ice-blue);
 }
