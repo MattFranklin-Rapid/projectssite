@@ -1,7 +1,6 @@
 /* Big splash takes up ~3/4 of the page on desktop, full screen on mobile */
 .splash-big{
   min-height: 65vh;
-  background-color: green;
 }
 
 @media (max-width: 1000px){
@@ -14,7 +13,6 @@
 .splash-small{
   min-height: 30vh;
   background-position: center;
-  background-color: green;
 }
 
 .block-full {
@@ -40,12 +38,6 @@ details {
   details {
     max-width: 80vw;
   }
-}
-
-#wrap {
-  margin-top: 90px;  /* Nav menu height */
-  min-height: calc(100% - 100px - 475px);
-  margin-bottom: 500px; /* Footer height */
 }
 
 /* Navigation Menu */

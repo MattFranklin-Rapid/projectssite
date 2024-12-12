@@ -4,250 +4,246 @@
     </head>
     <body>
         {% include '../components/nav.njk' %}
-        <!-- <div id="wrap"> -->
-            {# Content minimum height wrapper, place between nav and footer #}
-            <div class='hero-with-cta splash-big background-dark text-dark'>
-                {# Hero banner #}
-                <div class="content-full-column">
-                    <h1> Streamline your systems, <span class="text-highlight-cool-dark">affordably</span>.</h1>
-                    <div class="container-two-columns">
+        {# Content minimum height wrapper, place between nav and footer #}
+        <div class='hero-with-cta splash-big background-dark text-dark'>
+            {# Hero banner #}
+            <div class="content-full-column">
+                <h1> Streamline your systems, <span class="text-highlight-cool-dark">affordably</span>.</h1>
+                <div class="container-two-columns">
+                <div>
+                    <p>Your CRM should streamline and automate your sales, not just track them.</p>
+                    <p>Flexible enterprise CRM at an affordable price</p>
+                    <a href="{{url_get_started}}" target="_blank"><button class="button-warm-light button-large">Get started with us</button></a>
+                </div>
+                <div class="text-center">
+                    <iframe class="video-hero-landing" width="560" height="315" src="{{url_video_embed}}" title="{{title_video_embed}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-diagonal-slash"></div>
+
+        <div class='landing-product-overview skeleton block-full background-light' >
+            {# Product Overview #}
+            <div class="content-full-column">
+                <div class="container-columns">
                     <div>
-                        <p>Your CRM should streamline and automate your sales, not just track them.</p>
-                        <p>Flexible enterprise CRM at an affordable price</p>
-                        <a href="{{url_get_started}}" target="_blank"><button class="button-warm-light button-large">Get started with us</button></a>
+                        <h1 class="text-lowlight-cool-light heading-sticky">Built for your needs</h1>
                     </div>
-                    <div class="text-center">
-                        <iframe class="video-hero-landing" width="560" height="315" src="{{url_video_embed}}" title="{{title_video_embed}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
+                    <div>
+                        <div>
+                            <h2 class="text-highlight-cool-light">Modular</h2>
+                            <h5>Replace your entire system or just use Rapid to plug the holes.</h5>
+                            <p>We can build projects in modular blocks, so you can see the value we provide, and pay as you go.</p>
+                            
+                            <h2 class="text-highlight-cool-light">Secure</h2>
+                            <h5>Worry-free data. Our security-first platform secures your data with the best that Microsoft has to offer.</h5>
+                            <p>Hosted in the Azure cloud, get enterprise grade safety without the enterprise grade development costs.</p>
+                            <p>Never have to worry about losing data with item level roll-back and full edit history as standard.</p>
+                            
+                            <h2 class="text-highlight-cool-light">Flexible</h2>
+                            <h5>Need to wait for approval or sign-off? Your custom solution will be built according to your schedule, not ours.</h5>
+                            <p>Our team aren’t called Rapid for nothing. With agile cycles and a focus on immediacy of result, avoid getting trapped in dead ends.</p>
+                            <p>How can we build so fast? Check out our <a href="./technology">Technology</a>.</p>
+                            
+                            <h2 class="text-highlight-cool-light">Responsible</h2>
+                            <h5>Technology impacts lives and we’re all in this together.</h5>
+                            <p>We empower organisations through technology, but never lose sight of the human element.</p>
+                            <p>We support NFPs, like <a href="{{url_simpli_homepage}}" target="_blank">Simpli,</a> and are committed to supporting people trying to improve the world.</p>
+                            
+                            <h2 class="text-highlight-cool-light">Aussie</h2>
+                            <h5>Proudly Australian owned &amp; operated, delivering excellence nationwide.</h5>
+                            <p>Being an Aussie company means we understand the unique needs and values of the Australian market.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="container-diagonal-slash"></div>
+        <div class='landing-purpose skeleton block-half background-dark'>
+            {# Why we exist #}
+            <div class='content-full-column text-dark'>
+                <p>We exist to make technology <strong>affordable and accessible</strong>, to drive growth and efficiency in organisations.</p>
+                <p>We exist to help organisations provide <strong>best in class experience for their customers</strong> from their first interaction to their last.</p>
+                <p>We exist to <strong>reduce the cost and complexity</strong> of enterprise CRM systems and technology so that customers can <strong>focus on making their business</strong> great rather than fighting their systems.</p>
+                <p>We exist to make cutting edge technology <strong>more accessible and effective</strong> for mid market organisations.</p>
+                <p>We exist to help organisations who have <strong>outgrown their current systems</strong> but don’t want the complexity and cost of existing enterprise solutions.</p>
+                <h4 class="text-center text-highlight-cool-dark"><u>We exist to make your life easier.</u></h4>
+            </div>
+        </div>
 
-            <div class='landing-product-overview skeleton block-full background-light' >
-                {# Product Overview #}
-                <div class="content-full-column">
-                    <div class="container-columns">
-                        <div>
-                            <h1 class="text-lowlight-cool-light heading-sticky">Built for your needs</h1>
-                        </div>
-                        <div>
+        <div class='landing-benifit skeleton block-full background-light'>
+            {# Why you benifit from us #}
+            <div class="flex-container content-full-column">
+                <div class="flex-item">
+                    <div class="how-you-benefit-grid-container">
+                        <div class="how-you-benefit-grid-item">
                             <div>
-                                <h2 class="text-highlight-cool-light">Modular</h2>
-                                <h5>Replace your entire system or just use Rapid to plug the holes.</h5>
-                                <p>We can build projects in modular blocks, so you can see the value we provide, and pay as you go.</p>
-                                
-                                <h2 class="text-highlight-cool-light">Secure</h2>
-                                <h5>Worry-free data. Our security-first platform secures your data with the best that Microsoft has to offer.</h5>
-                                <p>Hosted in the Azure cloud, get enterprise grade safety without the enterprise grade development costs.</p>
-                                <p>Never have to worry about losing data with item level roll-back and full edit history as standard.</p>
-                                
-                                <h2 class="text-highlight-cool-light">Flexible</h2>
-                                <h5>Need to wait for approval or sign-off? Your custom solution will be built according to your schedule, not ours.</h5>
-                                <p>Our team aren’t called Rapid for nothing. With agile cycles and a focus on immediacy of result, avoid getting trapped in dead ends.</p>
-                                <p>How can we build so fast? Check out our <a href="./technology">Technology</a>.</p>
-                                
-                                <h2 class="text-highlight-cool-light">Responsible</h2>
-                                <h5>Technology impacts lives and we’re all in this together.</h5>
-                                <p>We empower organisations through technology, but never lose sight of the human element.</p>
-                                <p>We support NFPs, like <a href="{{url_simpli_homepage}}" target="_blank">Simpli,</a> and are committed to supporting people trying to improve the world.</p>
-                                
-                                <h2 class="text-highlight-cool-light">Aussie</h2>
-                                <h5>Proudly Australian owned &amp; operated, delivering excellence nationwide.</h5>
-                                <p>Being an Aussie company means we understand the unique needs and values of the Australian market.</p>
+                                <div class="how-you-benefit-icon">
+                                    <i class="fa fa-rocket"></i>
+                                </div>
+                                <div class="how-you-benefit-heading">
+                                    <h4>Automate your processes</h4>
+                                </div>
+                                <div class="how-you-benefit-description">
+                                    <p>Reduce manual time and errors by up to 90%.</p>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class='landing-purpose skeleton block-half background-dark'>
-                {# Why we exist #}
-                <div class='content-full-column text-dark'>
-                    <p>We exist to make technology <strong>affordable and accessible</strong>, to drive growth and efficiency in organisations.</p>
-                    <p>We exist to help organisations provide <strong>best in class experience for their customers</strong> from their first interaction to their last.</p>
-                    <p>We exist to <strong>reduce the cost and complexity</strong> of enterprise CRM systems and technology so that customers can <strong>focus on making their business</strong> great rather than fighting their systems.</p>
-                    <p>We exist to make cutting edge technology <strong>more accessible and effective</strong> for mid market organisations.</p>
-                    <p>We exist to help organisations who have <strong>outgrown their current systems</strong> but don’t want the complexity and cost of existing enterprise solutions.</p>
-                    <h4 class="text-center text-highlight-cool-dark"><u>We exist to make your life easier.</u></h4>
-                </div>
-            </div>
-
-            <div class='landing-benifit skeleton block-full background-light'>
-                {# Why you benifit from us #}
-                <div class="flex-container content-full-column">
-                    <div class="flex-item">
-                        <div class="how-you-benefit-grid-container">
-                            <div class="how-you-benefit-grid-item">
-                                <div>
-                                    <div class="how-you-benefit-icon">
-                                        <i class="fa fa-rocket"></i>
-                                    </div>
-                                    <div class="how-you-benefit-heading">
-                                        <h4>Automate your processes</h4>
-                                    </div>
-                                    <div class="how-you-benefit-description">
-                                        <p>Reduce manual time and errors by up to 90%.</p>
-                                    </div>
+                            <div>
+                                <div class="how-you-benefit-icon">
+                                    <i class="fa fa-gear"></i>
                                 </div>
-                                <div>
-                                    <div class="how-you-benefit-icon">
-                                        <i class="fa fa-gear"></i>
-                                    </div>
-                                    <div class="how-you-benefit-heading">
-                                        <h4>Streamline processes</h4>
-                                    </div>
-                                    <div class="how-you-benefit-description">
-                                        <p>Automating manual tasks and saving your team time while providing your clients with a more polished experience</p>
-                                    </div>
+                                <div class="how-you-benefit-heading">
+                                    <h4>Streamline processes</h4>
                                 </div>
-                                <div>
-                                    <div class="how-you-benefit-icon">
-                                        <i class="fa fa-database"></i>
-                                    </div>
-                                    <div class="how-you-benefit-heading">
-                                        <h4>A single source of truth</h4>
-                                    </div>
-                                    <div class="how-you-benefit-description">
-                                        <p>Be in control, no need to rely on spreadsheets and disconnected data to make decisions.</p>
-                                    </div>
+                                <div class="how-you-benefit-description">
+                                    <p>Automating manual tasks and saving your team time while providing your clients with a more polished experience</p>
                                 </div>
-                                <div>
-                                    <div class="how-you-benefit-icon">
-                                        <i class="fa fa-medal"></i>
-                                    </div>
-                                    <div class="how-you-benefit-heading">
-                                        <h4>Achieve more</h4>
-                                    </div>
-                                    <div class="how-you-benefit-description">
-                                        <p>Improve delivery without an increase in staff.</p>
-                                    </div>
+                            </div>
+                            <div>
+                                <div class="how-you-benefit-icon">
+                                    <i class="fa fa-database"></i>
                                 </div>
-                                <div>
-                                    <div class="how-you-benefit-icon">
-                                        <i class="fa fa-magnet"></i>
-                                    </div>
-                                    <div class="how-you-benefit-heading">
-                                        <h4>Improve customer engagement</h4>
-                                    </div>
-                                    <div class="how-you-benefit-description">
-                                        <p>Automatic follow-ups to keep the process moving without your team’s intervention.</p>
-                                    </div>
+                                <div class="how-you-benefit-heading">
+                                    <h4>A single source of truth</h4>
                                 </div>
-                                <div>
-                                    <div class="how-you-benefit-icon">
-                                        <i class="fa fa-eye"></i>
-                                    </div>
-                                    <div class="how-you-benefit-heading">
-                                        <h4>Total visibility</h4>
-                                    </div>
-                                    <div class="how-you-benefit-description">
-                                        <p>Know exactly where each client is up to from sale to delivery and be able to identify blockages before they happen.</p>
-                                    </div>
-                                </div>                                
-                                <div>
-                                    <div class="how-you-benefit-icon">
-                                        <i class="fa fa-infinity"></i>
-                                    </div>
-                                    <div class="how-you-benefit-heading">
-                                        <h4>No limits</h4>
-                                    </div>
-                                    <div class="how-you-benefit-description">
-                                        <p>Your system will grow with the needs of your business</p>
-                                    </div>
+                                <div class="how-you-benefit-description">
+                                    <p>Be in control, no need to rely on spreadsheets and disconnected data to make decisions.</p>
                                 </div>
-                                <div>
-                                    <div class="how-you-benefit-icon">
-                                        <i class="fa fa-handshake"></i>
-                                    </div>
-                                    <div class="how-you-benefit-heading">
-                                        <h4>Be supported</h4>
-                                    </div>
-                                    <div class="how-you-benefit-description">
-                                        <p>Our experts are here to help you achieve your goals.</p>
-                                    </div>
+                            </div>
+                            <div>
+                                <div class="how-you-benefit-icon">
+                                    <i class="fa fa-medal"></i>
+                                </div>
+                                <div class="how-you-benefit-heading">
+                                    <h4>Achieve more</h4>
+                                </div>
+                                <div class="how-you-benefit-description">
+                                    <p>Improve delivery without an increase in staff.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="how-you-benefit-icon">
+                                    <i class="fa fa-magnet"></i>
+                                </div>
+                                <div class="how-you-benefit-heading">
+                                    <h4>Improve customer engagement</h4>
+                                </div>
+                                <div class="how-you-benefit-description">
+                                    <p>Automatic follow-ups to keep the process moving without your team’s intervention.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="how-you-benefit-icon">
+                                    <i class="fa fa-eye"></i>
+                                </div>
+                                <div class="how-you-benefit-heading">
+                                    <h4>Total visibility</h4>
+                                </div>
+                                <div class="how-you-benefit-description">
+                                    <p>Know exactly where each client is up to from sale to delivery and be able to identify blockages before they happen.</p>
+                                </div>
+                            </div>                                
+                            <div>
+                                <div class="how-you-benefit-icon">
+                                    <i class="fa fa-infinity"></i>
+                                </div>
+                                <div class="how-you-benefit-heading">
+                                    <h4>No limits</h4>
+                                </div>
+                                <div class="how-you-benefit-description">
+                                    <p>Your system will grow with the needs of your business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="how-you-benefit-icon">
+                                    <i class="fa fa-handshake"></i>
+                                </div>
+                                <div class="how-you-benefit-heading">
+                                    <h4>Be supported</h4>
+                                </div>
+                                <div class="how-you-benefit-description">
+                                    <p>Our experts are here to help you achieve your goals.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class='landing-call-to-action skeleton block-half background-dark text-dark'>
-                {# Main call to action #}
-                <div class="content-full-column">
-                    <div>
-                        <p>You don’t have time to take risks — you need a solution that works right from the start. </p>
-                        <p>Watch this video to see how we have transformed how our clients interact with their customers.</p>
+        <div class='landing-call-to-action skeleton block-half background-dark text-dark'>
+            {# Main call to action #}
+            <div class="content-full-column">
+                <div>
+                    <p>You don’t have time to take risks — you need a solution that works right from the start. </p>
+                    <p>Watch this video to see how we have transformed how our clients interact with their customers.</p>
+                </div>
+                <div class="center-content">
+                    <iframe width="800" height="450" src="https://www.youtube.com/embed/4Rni97X0K50?si=PgKR6YqSgCMSp-Db" title="Rapid CRM Workshop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div>
+                    <p>If you're ready for results like that, lets talk.</p>
+                    <p>Book a call now, and we'll discuss how Rapid Platform can exceed your needs.</p>
+                </div>
+                <div class="center-content container-row container-width-narrow">
+                    <input type="text" id="email" name="email" placeholder="Email"></input>
+                    <a href="{{url_get_started}}" target="_blank"><button class="button-warm-light button-large" id="button-lets-talk">Lets Talk</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class='landing-justification skeleton block-half'>
+            {# Justification why other people think we're great #}
+            <div class="content-full-column">
+                <p>Technology is changing but the giants aren’t. It’s in their best interest to lock you into long term big dollar contracts so you have no choice. : Don’t fall into the trap of being just someone’s consumer, contorting your business to their offering.</p>
+                <p>There is a better way. See how we’ve helped others achieve their goals.</p>
+            </div>
+            <!--Testimonials-->
+            <div class="container-columns testimony">
+                <!-- First Testimony -->
+                <div class="testimony-card">
+                    <div class="container-row">
+                        <img src="/images/testimonials/James-M.jpg">
+                        <div class="container-vertical-center">
+                            <span id="testimonial-name">James McCarthy</span><br>
+                            <span id="testimonial-company">
+                                <b>Guardian Childcare</b>
+                            </span>
+                        </div>
                     </div>
-                    <div class="center-content">
-                        <iframe width="800" height="450" src="https://www.youtube.com/embed/4Rni97X0K50?si=PgKR6YqSgCMSp-Db" title="Rapid CRM Workshop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="quote-marks text-highlight-cool-light">
+                        <span>&ldquo;</span>
                     </div>
                     <div>
-                        <p>If you're ready for results like that, lets talk.</p>
-                        <p>Book a call now, and we'll discuss how Rapid Platform can exceed your needs.</p>
+                        <p>Our business challenge was about how to connect with our families in a more proactive way. We had no CRM, we had no formal database, we were using spreadsheets. We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.</p>
+                        <p>If your business is going through a period of change and you're uncertain about what infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<b>I can't recommend Rapid enough</b>.</p>
                     </div>
-                    <div class="center-content container-row container-width-narrow">
-                        <input type="text" id="email" name="email" placeholder="Email"></input>
-                        <a href="{{url_get_started}}" target="_blank"><button class="button-warm-light button-large" id="button-lets-talk">Lets Talk</button></a>
+                </div>
+                <!-- Second Testimony -->
+                <div class="testimony-card">
+                    <div class="container-row">
+                        <img src="/images/testimonials/Darryl-H.png">
+                        <div class="container-vertical-center">
+                            <span id="testimonial-name">Darryl Hopkins</span><br>
+                            <span id="testimonial-company">
+                                <b>Torsion Homes</b>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="quote-marks text-highlight-cool-light">
+                        <span>&ldquo;</span>
+                    </div>
+                    <div>
+                        <p>Before Rapid we were using detailed Excel spreadsheets&mdash;I think a lot of people's file systems were probably their inbox. Now it's compiled, it's easy to access, we can run reports on all of that data.</p>
+                        <p><b>It's a whole different world for us now.</b></p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class='landing-justification skeleton block-half'>
-                {# Justification why other people think we're great #}
-                <div class="content-full-column">
-                    <p>Technology is changing but the giants aren’t. It’s in their best interest to lock you into long term big dollar contracts so you have no choice. : Don’t fall into the trap of being just someone’s consumer, contorting your business to their offering.</p>
-                    <p>There is a better way. See how we’ve helped others achieve their goals.</p>
-                </div>
-                <!--Testimonials-->
-                <div class="container-columns testimony">
-                    <!-- First Testimony -->
-                    <div class="testimony-card">
-                        <div class="container-row">
-                            <img src="/images/testimonials/James-M.jpg">
-                            <div class="container-vertical-center">
-                                <span id="testimonial-name">James McCarthy</span><br>
-                                <span id="testimonial-company">
-                                    <b>Guardian Childcare</b>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="quote-marks text-highlight-cool-light">
-                            <span>&ldquo;</span>
-                        </div>
-                        <div>
-                            <p>Our business challenge was about how to connect with our families in a more proactive way. We had no CRM, we had no formal database, we were using spreadsheets. We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.</p>
-                            <p>If your business is going through a period of change and you're uncertain about what infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<b>I can't recommend Rapid enough</b>.</p>
-                        </div>
-                    </div>
-                    <!-- Second Testimony -->
-                    <div class="testimony-card">
-                        <div class="container-row">
-                            <img src="/images/testimonials/Darryl-H.png">
-                            <div class="container-vertical-center">
-                                <span id="testimonial-name">Darryl Hopkins</span><br>
-                                <span id="testimonial-company">
-                                    <b>Torsion Homes</b>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="quote-marks text-highlight-cool-light">
-                            <span>&ldquo;</span>
-                        </div>
-                        <div>
-                            <p>Before Rapid we were using detailed Excel spreadsheets&mdash;I think a lot of people's file systems were probably their inbox. Now it's compiled, it's easy to access, we can run reports on all of that data.</p>
-                            <p><b>It's a whole different world for us now.</b></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {% include '../components/cta/knowmore.njk' %}
-
-        <!-- </div> -->
-        {# End of Wrap div #}
+        {% include '../components/cta/knowmore.njk' %}
 
         {% include '../components/footer.njk' %}
     </body>
