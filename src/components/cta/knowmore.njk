@@ -11,7 +11,7 @@
 <div class="cta-know-more block-half background-splash text-dark">
     <div class="content-full-column">
         <div class="container-columns">
-            <div>
+            <div class="container-vertical-center">
                 <div>
                     <h2>{{ know_more_options.heading|safe }}</h2>
                     <p>{{ know_more_options.copy|safe }}<p>
@@ -20,8 +20,9 @@
             <div>
                 {% if know_more_options.show_contact_form == true %}
                     <script src="https://js.hcaptcha.com/1/api.js" async defer></script>      
-                    <div style="padding-right: 10px; padding-left: 10px;">
-                        <p style="font-size: 30px;">{{ know_more_options.title }}</p>
+                    <div>
+                        <h3>{{ know_more_options.title }}</h3>
+                        <br>
                         <div>
                             <form id="contact-form">
                                 <input class="contact-form-field" type="text" name="first_name" placeholder="First Name" />

@@ -59,3 +59,15 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
+.iframe-youtube-large{
+    width: 800px;
+    height: 450px;
+}
+
+@media(max-width:1000px){
+    .iframe-youtube-large{
+        width: 95vw;
+        height: calc(95vw * 0.5625);
+    }
+}

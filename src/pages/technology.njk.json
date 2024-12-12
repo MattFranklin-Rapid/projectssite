@@ -3,5 +3,12 @@
     "url_free_trial": "http://www.google.com",
     "url_get_started": "http://www.google.com",
     "url_video_embed": "https://www.youtube.com/embed/oieul5GuLXE?si=dtYKq7Vh6LcBgoix",
-    "title_video_embed": "Rapid Technology"
+    "title_video_embed": "Rapid Technology",
+    "know_more_options": {
+        "show_contact_form": true,
+        "heading": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?",
+        "copy": "",
+        "title": "Get in touch",
+        "cta_nav_heading": "Landing Page"
+  }
 }
