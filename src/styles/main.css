@@ -54,6 +54,7 @@ h2 {
 h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 .button-large{
@@ -77,12 +78,27 @@ h3, h4, h5, h6 {
   }
 }
 
+.hero-with-content {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: var(--size-navigation);
+}
+
+.hero-with-cta {
+  margin-top: var(--size-navigation);
+}
+
+.herocda-confirmation-text {
+  color: white;
+  font-size: 20;
+}
+
 /* Testimonials */
 .testimony-card {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin: 8rem;
+  
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
@@ -90,7 +106,8 @@ h3, h4, h5, h6 {
 @media (max-width: 1000px) {
   /* Testimonial */
   .testimony-card {
-    margin: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 };
 
@@ -130,19 +147,4 @@ h3, h4, h5, h6 {
   font-family: "Sarabun", sans-serif;
   font-weight: 700;
   font-size: 34pt;
-}
-
-.hero-with-content {
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-top: var(--size-navigation);
-}
-
-.hero-with-cta {
-  margin-top: var(--size-navigation);
-}
-
-.herocda-confirmation-text {
-  color: white;
-  font-size: 20;
 }
