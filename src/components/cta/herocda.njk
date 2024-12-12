@@ -1,18 +1,20 @@
 
 {# 
-    knowmore component has configuration options
-    "know_more_options": {
+    Hero Call To Taction component has configuration options
+    "hero_cta": {
         "show_contact_form": true|false,
         "value": "main content",
-        "title": "title of contact us form"
+        "title": "title of contact us form",
+        "signupURL": "URL",
+        "signupButtonText": "Button Label"
   }
 #}
 
         <div>
-            {% if know_more_options.show_contact_form == true %}
+            {% if hero_cta.show_contact_form == true %}
                 <script src="https://js.hcaptcha.com/1/api.js" async defer></script>      
                 <div>
-                    <p style="font-size: 30px; color: white;">{{ know_more_options.title }}</p>
+                    <p style="font-size: 30px; color: white;">{{ hero_cta.title }}</p>
                     <div>
                         <form id="contact-form">
                             <input class="contact-form-field" type="text" name="first_name" placeholder="First Name" />
@@ -60,8 +62,8 @@
                 </script>
             {% else %}
                 <div class="call-to-action-container">
-                    <a href="https://app.rapidplatform.com/signup" >
-                        <button class="light-button-styling" >Sign up now</button>
+                    <a href="{{hero_cta.signupURL}}" >
+                        <button class="light-button-styling" >{{hero_cta.signupButtonText}}</button>
                     </a>
                 </div>
             {% endif %}

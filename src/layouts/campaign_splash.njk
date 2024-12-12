@@ -6,15 +6,16 @@
     <body>
         {% include '../components/nav.njk' %}
 
-        <div class='hero-with-cta splash-big' style='background-color: #0c152a'>
+        <div class='hero-with-cta splash-big background-dark text-dark' style="background-image: url({{splashImage}}), background-repeat: no-repeat;">
             {# Hero banner #}
             <div class='hero-cta'>
                 {# Hero Call to Action #}
-                <div  class='flex-columns center-content spacer-lrg spacer-sm-mobile hero-margins'  >
-                    <div class='campaign-major-message spacer-lrg spacer-sm-mobile' >
+                <div class='content-full-column text-center'>
+                    <div>
                         <span>
-                        {{splashTitle}}
-                        <br> <h4 style='font-weight: 200'>{{marketTargetedTagline}}</h4>
+                        <h1>{{splashTitle|safe}}</h1>
+                        <br> 
+                        <h4>{{marketTargetedTagline|safe}}</h4>
                         </span> 
                     </div>
                     <div>
@@ -24,92 +25,51 @@
             </div>
         </div>
         
-        <div class='campaign-pain skeleton block-full '>
+        <div class='campaign-pain skeleton block-full background-light text-light'>
             {# Speak to pain! header#}
-            <div class='block-quote spacer-lrg' style='padding-bottom:90px'>
-                <span>{{majorArgument}}</span>
-            </div>
-            {#Three images and three ways we can help#}
-            <div class='flex-columns spacer-med' style='padding-left: 10%; padding-right:10%;'> 
+            <div class="content-full-column">
                 <div>
-                        <div style="background-image: url({{imageOneOffer}}); background-size: cover; width:100%; aspect-ratio: 2.05"></div>
-                    <div Style='text-align:center; padding-bottom:30px'>
-                        {# Speak to pain text 1#}
-                        <br>{{offerOne}}
-                    </div>
+                    <span>{{pain.majorArgument|safe}}</span>
                 </div>
-                <div>
-                        <div style="background-image: url({{imageTwoOffer}}); background-size: cover; width:100%; aspect-ratio: 2.05"></div>
-                    <div Style='text-align:center; padding-bottom:30px'>
+                {#Three images and three ways we can help#}
+                <div> 
+                    <div>
+                        <div class= "image-offer" style="background-image: url({{pain.imageOneOffer}});"></div>
+                        <div Style='text-align:center; padding-bottom:30px'>
                             {# Speak to pain text 1#}
-                            <br>{{offerTwo}}
+                            <br>{{pain.offerOne|safe}}
+                        </div>
                     </div>
-                </div>
-                <div>
-                        <div style="background-image: url({{imageThreeOffer}}) ;background-size: cover; width:100%; aspect-ratio: 2"></div>
-                    <div Style='text-align:center; padding-bottom:30px'>
+                    <div>
+                        <div class= "image-offer" style="background-image: url({{pain.imageTwoOffer}});"></div>
+                        <div Style='text-align:center; padding-bottom:30px'>
                             {# Speak to pain text 1#}
-                            <br>{{offerThree}}
+                            <br>{{pain.offerTwo|safe}}
+                        </div>
+                    </div>
+                    <div>
+                        <div class= "image-offer" style="background-image: url({{pain.imageThreeOffer}});"></div>
+                        <div Style='text-align:center; padding-bottom:30px'>
+                            {# Speak to pain text 1#}
+                            <br>{{pain.offerThree|safe}}
+                        </div>
+                    </div>
+                </div>   
+                <div class='block-quote' style='padding-top:110px; padding-bottom:90px'>
+                    <div>
+                        {{pain.closingArgument|safe}}
                     </div>
                 </div>
-            </div>   
-                        <div class='block-quote' style='padding-top:110px; padding-bottom:90px'>
-                <span>{{closingArgument}}</span>
             </div>
         </div>
 
-        <div class='campaign-justification skeleton block-full '>
+        <div class='campaign-justification skeleton block-half background-dark text-dark'>
             {# Justify consensus in the market for buying #}
         </div>
 
-<div class='landing-justification skeleton block-full'>
+        <div class='landing-justification skeleton block-half background-light text-light'>
             {# Justification why other people think we're great #}
-            <!--Testimonials-->
-            <div class="testimony-container">
-                <!-- First Testimony -->
-                <div class="flex-item-testimony">
-                    <div class="testimony-speaker">
-                    <div class="testimonial-head">
-                        <img src="/images/testimonials/James-M.jpg">
-                    </div>
-                    <div>
-                        <span class="testimonial-name">James McCarthy</span><br>
-                        <span class="testimonial-company"><b>Guardian Childcare</b></span>
-                    </div>
-                    </div>
-                    <div class="quote-marks">
-                    <span class="quote-marks">&ldquo;</span>
-                    </div>
-                    <div class="testimony-text">
-                    <p>Our business challenge was about how to connect with our families in a more proactive way.
-                        We had no CRM, we had no formal database, we were using spreadsheets.
-                        We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.
-                    <br><br>If your business is going through a period of change and you're uncertain about what
-                        infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<b>I can't recommend Rapid enough</b>.</p>  
-                    </div>
-                </div>
-                <!-- Second Testimony -->
-                <div class="flex-item-testimony">
-                    <div class="testimony-speaker">
-                    <div class="testimonial-head">
-                        <img src="/images/testimonials/Darryl-H.png">
-                    </div>
-                    <div>
-                        <span class="testimonial-name">Darryl Hopkins</span><br>
-                        <span class="testimonial-company"><b>Torsion Homes</b></span>
-                    </div>
-                    </div>
-                    <div class="quote-marks">
-                    <span class="quote-marks">&ldquo;</span>
-                    </div>
-                    <div class="testimony-text">
-                    <p>Before Rapid we were using detailed Excel spreadsheets&mdash;I think a lot of people's file systems were probably their inbox.
-                    Now it's compiled, it's easy to access, we can run reports on all of that data.
-                    <br><br><b>It's a whole different world for us now.</b>
-                    </p>
-                    </div>
-                </div>     
-            </div>
+
         </div>
 
 
