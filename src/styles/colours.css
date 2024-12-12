@@ -63,6 +63,10 @@
 
 .background-light {
     background-color: var(--background-light);
+    /* Fancy grid background for visual interest */
+    background-image: radial-gradient(#00000020 1px, transparent 0);
+    background-size: 40px 40px;
+    background-position: -19px -19px;
 }
 
 .background-dark {

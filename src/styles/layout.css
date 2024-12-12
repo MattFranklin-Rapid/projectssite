@@ -191,6 +191,11 @@ details {
   text-align: center;
 }
 
+.container-align-right {
+  display: flex;
+  justify-content: right;
+}
+
 .content-full-column {
   max-width: 80vw;
   margin-left: auto;
