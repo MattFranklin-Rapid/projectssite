@@ -1,3 +1,28 @@
 {
-    "title": "Rapid for Government"
+    "title": "Rapid for Government",
+    "splashImage": "https://img.pixers.pics/pho_wat(s3:700/FO/63/83/65/71/700_FO63836571_01be5e01fbe8a10dd2c3aa58841a4169.jpg,700,470,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,420,jpg)/wall-murals-milk-splash.jpg.jpg",
+    "splashTitle": "Hello",
+    "marketTargetedTagline": "Tagline",
+    "pain": {
+        "majorArgument": "Steve",
+        "imageOneOffer": "https://open-images.acast.com/shows/652225ef35acc00011d7ce2f/1725101025672-f7f84c47-aa17-44a7-8ed1-aa11ca3862b7.jpeg",
+        "offerOne": "Offer One",
+        "imageTwoOffer": "https://open-images.acast.com/shows/652225ef35acc00011d7ce2f/1725101025672-f7f84c47-aa17-44a7-8ed1-aa11ca3862b7.jpeg",
+        "offerTwo": "Offer Two",
+        "imageThreeOffer": "https://open-images.acast.com/shows/652225ef35acc00011d7ce2f/1725101025672-f7f84c47-aa17-44a7-8ed1-aa11ca3862b7.jpeg",
+        "offerThree": "Offer Three",
+        "closingArgument": "Goodbye"
+    },
+    "know_more_options": {
+        "show_contact_form": true,
+        "copy": "",
+        "title": "Get in touch"
+    },
+    "hero_cta": {
+        "show_contact_form": false,
+        "copy": "Some Copy",
+        "title": "Some Title",
+        "signupURL": "./contact",
+        "signupButtonText": "Get in contact"
+  }
 }
