@@ -1,12 +1,6 @@
-/* Layout guide for skeleton blocks */
-.skeleton{
-
-}
-
 /* Big splash takes up ~3/4 of the page on desktop, full screen on mobile */
 .splash-big{
   min-height: 65vh;
-  background-color: green;
 }
 
 @media (max-width: 1000px){
@@ -19,7 +13,6 @@
 .splash-small{
   min-height: 30vh;
   background-position: center;
-  background-color: green;
 }
 
 .block-full {
@@ -45,12 +38,6 @@ details {
   details {
     max-width: 80vw;
   }
-}
-
-#wrap {
-  margin-top: 90px;  /* Nav menu height */
-  min-height: calc(100% - 100px - 475px);
-  margin-bottom: 500px; /* Footer height */
 }
 
 /* Navigation Menu */
@@ -123,9 +110,6 @@ details {
   background: #0c152a;
   align-content: flex-end;
   justify-content: center;
-  padding-top: 50px;
-  position: relative;
-  margin-top: -600px;
   /* negative value of footer height */
   height: 30rem;
   clear: both;
@@ -182,6 +166,16 @@ details {
 
 /* Content layout assistants */
 
+.container-width-narrow {
+  min-width: 30vw;
+}
+
+@media(max-width:1000px){
+  .container-width-narrow {
+    min-width: 50vw;
+  } 
+}
+
 .center-content {
   max-width: fit-content;
   margin-inline: auto;
@@ -189,6 +183,16 @@ details {
 
 .text-center {
   text-align: center;
+}
+
+.container-align-right {
+  display: flex;
+  justify-content: right;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .content-full-column {

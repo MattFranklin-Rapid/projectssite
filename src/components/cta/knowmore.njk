@@ -8,79 +8,81 @@
         "cta_nav_heading": ""
   }
 #}
-<div class="cta-know-more block-half">
-    <div class="know-more-container">
-        <div class="cta-left-content" style="width: 60%;">
-            <div style="padding-right: 10px; padding-left: 10px;">
-                <p>Want to know more? 🚀<p>        
-                <p>{{ know_more_options.value|safe }}<p>
+<div class="cta-know-more block-half background-splash text-dark">
+    <div class="content-full-column">
+        <div class="container-columns">
+            <div>
+                <div>
+                    <h2>{{ know_more_options.heading|safe }}</h2>
+                    <p>{{ know_more_options.copy|safe }}<p>
+                </div>
+            </div>
+            <div>
+                {% if know_more_options.show_contact_form == true %}
+                    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>      
+                    <div style="padding-right: 10px; padding-left: 10px;">
+                        <p style="font-size: 30px;">{{ know_more_options.title }}</p>
+                        <div>
+                            <form id="contact-form">
+                                <input class="contact-form-field" type="text" name="first_name" placeholder="First Name" />
+                                <input class="contact-form-field" type="text" name="last_name" placeholder="Last Name" />
+                                <input class="contact-form-field" type="email" name="email" placeholder="Email" />
+                                <textarea class="contact-form-field" style="height: 8rem; min-height: 8rem; resize: none;" placeholder="Your message" name="message"></textarea>
+                                <div style="display: grid; grid-template-columns: 1fr 0.2fr 1fr 1fr;">
+                                    <div class="h-captcha" data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78" data-callback="setToEnabled"></div>
+                                    <div></div>
+                                    <button style="" class="know-more-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
+                                    <div></div>
+                                </div>
+                            </form>
+                        </div>
+                        <p style="visibility: hidden;" id="thank-you-after-submit">Thank you for contacting us! We will get back to you shortly.</p>
+                    </div>
+                    <script>
+                        function setToEnabled() {
+                            const button = document.getElementById("contact-us-submit-button");
+                            button.removeAttribute("disabled");
+                        }
+
+                        const form = document.getElementById("contact-form");
+                        form.addEventListener('submit', async (event) => {
+                            const button = document.getElementById("contact-us-submit-button");
+                            button.setAttribute("disabled", "true");
+                            event.preventDefault();
+                            try {
+                                await fetch("https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission", {
+                                method: "POST",
+                                mode: "no-cors",
+                                headers: {
+                                    "Content-Type": "application/x-www-form-urlencoded"
+                                },
+                                body: `first_name=${form[0]?.value}
+                                    &last_name=${form[1]?.value}
+                                    &email=${form[2]?.value}
+                                    &message=${form[3]?.value}
+                                    &h-captcha-response=${form[5]?.value}`
+                                })
+                            } catch (error) {
+                                console.log(error);
+                            } finally {
+                                form.parentNode.remove();
+                                document.getElementById("thank-you-after-submit").removeAttribute("style");
+                            }
+                        });
+                    </script>
+                {% else %}
+                    <div>
+                        <div>
+                            <h2>{{ know_more_options.cta_nav_heading|safe }}</h2>
+                        </div>
+                        <div>
+                            <a href="https://app.rapidplatform.com/signup" >
+                                <button class="light-button-styling" >Sign up now</button>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         </div>
-        <div class="cta-right-content">
-            {% if know_more_options.show_contact_form == true %}
-                <script src="https://js.hcaptcha.com/1/api.js" async defer></script>      
-                <div style="padding-right: 10px; padding-left: 10px;">
-                    <p style="font-size: 30px;">{{ know_more_options.title }}</p>
-                    <div>
-                        <form id="contact-form">
-                            <input class="contact-form-field" type="text" name="first_name" placeholder="First Name" />
-                            <input class="contact-form-field" type="text" name="last_name" placeholder="Last Name" />
-                            <input class="contact-form-field" type="email" name="email" placeholder="Email" />
-                            <textarea class="contact-form-field" style="height: 8rem; min-height: 8rem; resize: none;" placeholder="Your message" name="message"></textarea>
-                            <div style="display: grid; grid-template-columns: 1fr 0.2fr 1fr 1fr;">
-                                <div class="h-captcha" data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78" data-callback="setToEnabled"></div>
-                                <div></div>
-                                <button style="" class="know-more-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
-                                <div></div>
-                            </div>
-                        </form>
-                    </div>
-                    <p style="visibility: hidden;" id="thank-you-after-submit">Thank you for contacting us! We will get back to you shortly.</p>
-                </div>
-                <script>
-                    function setToEnabled() {
-                        const button = document.getElementById("contact-us-submit-button");
-                        button.removeAttribute("disabled");
-                    }
-
-                    const form = document.getElementById("contact-form");
-                    form.addEventListener('submit', async (event) => {
-                        const button = document.getElementById("contact-us-submit-button");
-                        button.setAttribute("disabled", "true");
-                        event.preventDefault();
-                        try {
-                            await fetch("https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission", {
-                            method: "POST",
-                            mode: "no-cors",
-                            headers: {
-                                "Content-Type": "application/x-www-form-urlencoded"
-                            },
-                            body: `first_name=${form[0]?.value}
-                                &last_name=${form[1]?.value}
-                                &email=${form[2]?.value}
-                                &message=${form[3]?.value}
-                                &h-captcha-response=${form[5]?.value}`
-                            })
-                        } catch (error) {
-                            console.log(error);
-                        } finally {
-                            form.parentNode.remove();
-                            document.getElementById("thank-you-after-submit").removeAttribute("style");
-                        }
-                    });
-                </script>
-            {% else %}
-                <div class="call-to-action-container" style="background-color: green">
-                    <div style="color: white;">
-                        <h2 style="margin: 0; padding: 10px">{{ know_more_options.cta_nav_heading|safe }}</h2>
-                    </div>
-                    <div style="bottom: 0;">
-                        <a href="https://app.rapidplatform.com/signup" >
-                            <button class="light-button-styling" >Sign up now</button>
-                        </a>
-                    </div>
-                </div>
-            {% endif %}
-        </div>
-    </div>
+     </div>
 </div>

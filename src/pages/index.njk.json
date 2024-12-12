@@ -5,9 +5,10 @@
     "title_video_embed": "Rapid Platform",
     "url_simpli_homepage": "http://www.google.com",
     "know_more_options": {
-        "show_contact_form": false,
-        "value": "Landing Page",
-        "title": "Title",
+        "show_contact_form": true,
+        "heading": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?",
+        "copy": "Landing Page",
+        "title": "Get in touch",
         "cta_nav_heading": "Landing Page"
   }
 }
