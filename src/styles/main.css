@@ -76,15 +76,13 @@ h3, h4, h5, h6 {
 }
 
 /* Testimonials */
-.testimony{
-  /* Something */
-}
-
 .testimony-card {
   display: flex;
   flex-direction: column;
   align-items: left;
   margin: 8rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 1000px) {
