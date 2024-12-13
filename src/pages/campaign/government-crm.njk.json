@@ -16,7 +16,8 @@
     "know_more_options": {
         "show_contact_form": true,
         "copy": "",
-        "title": "Get in touch"
+        "title": "Get in touch",
+        "heading": "Looking to see how we can get you better outcomes both <span class='text-highlight-warm-dark'>inside</span> and <span class='text-highlight-cool-dark'>out</span>?"
     },
     "hero_cta": {
         "show_contact_form": false,
