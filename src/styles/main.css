@@ -93,6 +93,24 @@ h3, h4, h5, h6 {
   font-size: 20;
 }
 
+.card-partner-logo {
+  padding: 1rem;
+  border: var(--border-dark);
+  border-radius: 8px;
+  margin: 1rem;
+  width: calc(200px + 1rem);
+  height: calc(150px + 1rem);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: white;
+}
+
+.image-partner-logo {
+  max-width: 200px;
+  max-height: 150px;
+}
+
 /* Testimonials */
 .testimony-card {
   display: flex;
