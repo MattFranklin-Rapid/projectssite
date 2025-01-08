@@ -26,5 +26,8 @@
         "title": "Some Title",
         "signupURL": "./contact",
         "signupButtonText": "Get in contact"
+  },
+  "seo":{
+    "description": ""
   }
 }

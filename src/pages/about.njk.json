@@ -4,5 +4,8 @@
     "show_contact_form": true,
     "copy": "",
     "title": "Get in touch"
+  },
+  "seo":{
+    "description": ""
   }
 }
