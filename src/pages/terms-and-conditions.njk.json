@@ -163,5 +163,8 @@
                 }
             ]
         }
-    ]
+    ],
+    "seo":{
+      "description": "Rapid Platform Terms and Conditions for each Rapid Product."
+    }
 }

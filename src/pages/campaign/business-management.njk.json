@@ -18,6 +18,9 @@
         "show_contact_form": true,
         "title": "Contact us today!",
         "postSubSuccess": "Thank you for contacting us! We will get back to you shortly."
+  },
+  "seo":{
+    "description": ""
   }
 
 }

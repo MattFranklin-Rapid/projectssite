@@ -1,4 +1,7 @@
 {
     "title": "404 Page not Found",
-    "content": "404 Page not found"
+    "content": "404 Page not found",
+    "seo":{
+        "description": "404 Error Page"
+    }
 }

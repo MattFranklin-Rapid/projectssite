@@ -10,5 +10,8 @@
         "copy": "",
         "title": "Get in touch",
         "cta_nav_heading": "Landing Page"
+  },
+  "seo":{
+    "description": ""
   }
 }
