@@ -26,15 +26,13 @@
                         <br>
                         <div>
                             <form id="contact-form">
-                                <input class="contact-form-field" type="text" name="first_name" placeholder="First Name" />
-                                <input class="contact-form-field" type="text" name="last_name" placeholder="Last Name" />
-                                <input class="contact-form-field" type="email" name="email" placeholder="Email" />
-                                <textarea class="contact-form-field" style="height: 8rem; min-height: 8rem; resize: none;" placeholder="Your message" name="message"></textarea>
-                                <div style="display: grid; grid-template-columns: 1fr 0.2fr 1fr 1fr;">
+                                <input type="text" name="first_name" placeholder="First Name" />
+                                <input type="text" name="last_name" placeholder="Last Name" />
+                                <input type="email" name="email" placeholder="Email" />
+                                <textarea class="text-area-medium-fixed" placeholder="Your message" name="message"></textarea>
+                                <div>
                                     <div class="h-captcha" data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78" data-callback="setToEnabled"></div>
-                                    <div></div>
-                                    <button style="" class="know-more-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
-                                    <div></div>
+                                    <button class="know-more-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
                                 </div>
                             </form>
                         </div>

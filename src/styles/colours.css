@@ -79,6 +79,14 @@
     background-repeat: no-repeat;
 }
 
+.background-dark a {
+    color: var(--color-ice-blue);
+}
+
+.background-light a {
+    color: var(--color-rapid-blue);
+}
+
 .link-dark {
     color: var(--color-ice-blue);
 }
