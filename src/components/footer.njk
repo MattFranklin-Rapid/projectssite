@@ -1,25 +1,39 @@
-<div class="footer">
-    <div class="flex-container-footer">
-    <div class="flex-item-footer">
-        <h3>CONTACT US</h3>
-        <p><a href="mailto:info@rapidplatform.com?subject=Rapid Projects - Consulting Inquiry">info@rapidplatform.com</a></p>
+<footer class="footer text-dark background-dark">
+    <div class="footer-container">
+        {# Contact Us Container #}
+        <div class="footer-column left-align">
+            {# <h3>Location</h3> #}
+            <p>Unit 2 Building 10,<br />
+            107 Miles Platting Road <br />
+            Eight Mile Plains, QLD 4113</p>
+        </div>
+
+        {# Social Media Container #}    
+        <div class="footer-column social">
+            {# <h3>Socials</h3> #}
+            <a target="_blank" href="https://au.linkedin.com/company/rapid-platform">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/rapidplatform/?hl=en">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/@rapidplatform">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+
+        {# Legal Container #}
+        <div class="footer-column legal left-align">
+            {# <h3>Legal</h3> #}
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms-and-conditions">Terms and Conditions</a>
+        </div>
     </div>
-    <div class="flex-item-footer">
-        <h3>OUR LOCATION</h3>
-        <p>Unit 10, 107 Miles Platting Rd</p>
-        <p>Eight Mile Plains, QLD 4113</p>
-    </div>
-    </div>
-    <hr>
-    <div class="footer-menu">
     <div>
-        <p>Copyright &copy; 2024 - All Rights Reserved</p>
+        <span>Copyright © <span id="currentYear"></span> Rapid Platform</span>
     </div>
-    <div>
-        <p><a href="/terms-and-conditions">Terms & Conditions</a></p>
-    </div>
-    <div>
-        <p><a href="/privacy">Privacy</a></p>
-    </div>
-    </div>
-</div>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</footer>

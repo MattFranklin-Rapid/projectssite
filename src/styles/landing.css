@@ -43,8 +43,8 @@
 
 @media (max-width:1000px){
     .video-hero-landing{
-        height: 283px;
-        width: 504px;
+        width: 100%;
+        height: calc(95vw * 0.5625);
     }
 }
 
@@ -67,7 +67,7 @@
 
 @media(max-width:1000px){
     .iframe-youtube-large{
-        width: 95vw;
+        width: 100%;
         height: calc(95vw * 0.5625);
     }
 }
