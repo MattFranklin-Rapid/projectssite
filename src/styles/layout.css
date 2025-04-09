@@ -296,6 +296,14 @@ details {
   height: 4rem;
 }
 
+.spacer-med {
+  height: 12rem;
+}
+
+.spacer-lrg {
+  height: 36rem;
+}
+
 .text-area-medium-fixed {
   height: 8rem; 
   min-height: 8rem; 
