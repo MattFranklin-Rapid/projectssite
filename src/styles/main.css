@@ -169,3 +169,18 @@ a .decorated {
   font-weight: 700;
   font-size: 34pt;
 }
+
+.iframe-youtube-fill{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.check-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-list img{
+  margin-right: 1rem;
+}
