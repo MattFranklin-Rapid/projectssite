@@ -1,35 +1,20 @@
-
-{# 
-    knowmore component has configuration options
-    "know_more_options": {
-        "show_contact_form": true|false,
-        "heading": "main title",
-        "copy": "main content",
-        "title": "title of contact us form",
-        "cta_nav_heading": ""
-  }
-#}
-<div class="cta-know-more block-half background-splash text-dark">
-    <div class="content-full-column">
-        <div class="container-columns">
-            <div class="container-vertical-center">
-                <div>
-                    <h2>{{ know_more_options.heading|safe }}</h2>
-                    <p>{{ know_more_options.copy|safe }}<p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <h2>{{ know_more_options.cta_nav_heading|safe }}</h2>
-                    </div>
-                    <div>
-                        <a href="https://app.rapidplatform.com/signup" >
-                            <button class="light-button-styling" >Sign up now</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<div class='content-full-column'>
+    <div class='spacer-small'></div>
+    <div class='container-columns container-column-reverse'>
+        <div class="container-vertical-center">
+            <img src='/src/assets/images/Assets-Register-Dashboard.png' />
         </div>
-     </div>
+        <div class="container-vertical-center">
+            <h6>BOOK A DEMO</h6>
+            <p><h3><Strong>Start your digital transformation with us today.</strong></h3></p>
+            <p>Book in a 30-minute demo and you'll:</p>
+            <p>✅ See Rapid in action<br>
+            ✅ A breakdown of the different solutions we can deliver<br>
+            ✅ An introduction to our <strong>Tech+Team</strong> approach<br>
+            ✅ Clarity on any questions you have
+            </p>
+            <a href="{{url_get_started}}"><button class="button-cool-light button-large">BOOK DEMO</button></a>
+        </div>
+    </div>
+    <div class='spacer-small'></div>
 </div>
