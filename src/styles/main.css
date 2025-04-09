@@ -62,7 +62,6 @@ a .decorated {
 }
 
 .button-large{
-  margin-right: 1.5rem;
   padding: 1.25rem;
   font-weight: 700;
 }
@@ -169,4 +168,73 @@ a .decorated {
   font-family: "Sarabun", sans-serif;
   font-weight: 700;
   font-size: 34pt;
+}
+
+.iframe-youtube-fill{
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.check-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-list img{
+  margin-right: 1rem;
+}
+
+/* Tabstrip Component */
+
+.tabstrip-quote{
+  padding: .5rem;
+  background-color: var(--color-ai-zure);
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabstrip-heading-quote{
+  border-bottom: solid 1px var(--color-tech-canvas);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tablink-quote{
+  background-color: var(--color-tech-canvas);
+  color: black;
+}
+
+.tablink-quote.active{
+  background-color: var(--color-ice-blue);
+}
+
+.tabcontent-quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quote-form{
+  margin-top: 2rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.quote-form>div{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 100%;
+}
+
+/* Fall back to the default nice system layout for forms at mobile scale */
+@media only screen and (max-width: 720px){
+  .quote-form div{
+    display: block;
+  }
 }

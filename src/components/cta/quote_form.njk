@@ -1,0 +1,161 @@
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+<div class="tabstrip-quote">
+    <div class="tabstrip-heading-quote">
+        <button class="tablink-quote active" onclick="openTab(event, 'Company Info')">Company Info</button>
+        <button class="tablink-quote" onclick="openTab(event, 'Operations')">Operations</button>
+        <button class="tablink-quote" onclick="openTab(event, 'Summary')">Summary</button>
+        <button class="tablink-quote" onclick="openTab(event, 'Thank you')">Thank you</button>
+
+    </div>
+
+    <div id="Company Info" class="tabcontent-quote">
+        <form id="quote-form" class="quote-form">
+            <div>
+                <span>First name</span>
+                <input type="text" name="first_name" placeholder="First Name" />
+            </div>
+            <div>
+                <span>Last name</span>
+                <input type="text" name="last_name" placeholder="Last Name" />
+            </div>
+            <div>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="somone@example.com" />
+            </div>
+            <div>
+                <span>Phone number</span>
+                <input type="text" name="phone_number" placeholder="+614 xxxx xxxx" />
+            </div>
+            <div>
+                <span>Company name</span>
+                <input type="text" name="company_name" placeholder="Company Name" />
+            </div>
+        </form>
+    </div>
+
+    <div id="Operations" class="tabcontent-quote" style="display:none">
+        <h3>Operations Form</h3>
+    </div>
+
+    <div id="Summary" class="tabcontent-quote" style="display:none">
+        <h3>Summary Form</h3>
+    </div>
+
+    <div id="Thank you" class="tabcontent-quote" style="display:none">
+        <form id="quote-form" class="quote-form">
+            <div>
+                <p>What even goes here?</p>
+                <div class="h-captcha" data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78" data-callback="setToEnabled"></div>
+            </div>
+            <div>
+                <button class="know-more-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- Tab Controller -->
+<script>
+    function openTab(evt, contentName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent-quote");
+        for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink-quote");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(contentName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+<!-- H Captcha -->
+<script>
+    function setToEnabled() {
+        const button = document.getElementById("contact-us-submit-button");
+        button.removeAttribute("disabled");
+    }
+
+    const form = document.getElementById("contact-form");
+    form.addEventListener('submit', async (event) => {
+        const button = document.getElementById("contact-us-submit-button");
+        button.setAttribute("disabled", "true");
+        event.preventDefault();
+        try {
+            await fetch("https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission", {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: `first_name=${form[0]?.value}
+                &last_name=${form[1]?.value}
+                &email=${form[2]?.value}
+                &message=${form[3]?.value}
+                &h-captcha-response=${form[5]?.value}`
+            })
+        } catch (error) {
+            console.log(error);
+        } finally {
+            form.parentNode.remove();
+            document.getElementById("thank-you-after-submit").removeAttribute("style");
+        }
+    });
+</script>
+
+
+{# Something like? #}
+{# <script src="https://js.hcaptcha.com/1/api.js" async defer></script>      
+<div>
+    <h3>{{ know_more_options.title }}</h3>
+    <br>
+    <div>
+        <form id="quote-form">
+            <input type="text" name="first_name" placeholder="First Name" />
+            <input type="text" name="last_name" placeholder="Last Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <textarea class="text-area-medium-fixed" placeholder="Your message" name="message"></textarea>
+            <div>
+                <div class="h-captcha" data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78" data-callback="setToEnabled"></div>
+                <button class="know-more-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
+            </div>
+        </form>
+    </div>
+    <p style="visibility: hidden;" id="thank-you-after-submit">Thank you for contacting us! We will get back to you shortly.</p>
+</div>
+<script>
+    function setToEnabled() {
+        const button = document.getElementById("contact-us-submit-button");
+        button.removeAttribute("disabled");
+    }
+
+    const form = document.getElementById("contact-form");
+    form.addEventListener('submit', async (event) => {
+        const button = document.getElementById("contact-us-submit-button");
+        button.setAttribute("disabled", "true");
+        event.preventDefault();
+        try {
+            await fetch("https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission", {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            body: `first_name=${form[0]?.value}
+                &last_name=${form[1]?.value}
+                &email=${form[2]?.value}
+                &message=${form[3]?.value}
+                &h-captcha-response=${form[5]?.value}`
+            })
+        } catch (error) {
+            console.log(error);
+        } finally {
+            form.parentNode.remove();
+            document.getElementById("thank-you-after-submit").removeAttribute("style");
+        }
+    });
+</script> #}
