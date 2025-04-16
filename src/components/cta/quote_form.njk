@@ -2,7 +2,7 @@
 
 <div class="tabstrip-quote">
     <div class="tabstrip-heading-quote">
-        <button class="tablink-quote active" onclick="openTab(event, 'Company Info')">Company Info</button>
+        <button class="tablink-quote button-active" onclick="openTab(event, 'Company Info')">Company Info</button>
         <button class="tablink-quote" onclick="openTab(event, 'Operations')">Operations</button>
         <button class="tablink-quote" onclick="openTab(event, 'Summary')">Summary</button>
         <button class="tablink-quote" onclick="openTab(event, 'Thank you')">Thank you</button>
@@ -66,10 +66,10 @@
         }
         tablinks = document.getElementsByClassName("tablink-quote");
         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
+            tablinks[i].className = tablinks[i].className.replace(" button-active", "");
         }
         document.getElementById(contentName).style.display = "block";
-        evt.currentTarget.className += " active";
+        evt.currentTarget.className += " button-active";
     }
 </script>
 

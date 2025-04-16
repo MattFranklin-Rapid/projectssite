@@ -36,7 +36,7 @@
                     <div>
                         {# Benefits List #}
                         <h3>{{benefits.title}}</h3>
-                        {% for item in benefits.bulletPoints %}
+                        {% for item in benefits.bullet_points %}
                         <div class="check-list">
                             <img src="/src/assets/images/decorations/list-check.png" />
                             <p><strong>{{item.label}}</strong> {{item.message}}</p>
@@ -61,6 +61,7 @@
             {# Show off what you get #}
             <div class="content-full-column">
                 {% include '../components/feature_tabs.njk' %}
+                <div class="spacer-small"></div>
             </div>
         </div>
 

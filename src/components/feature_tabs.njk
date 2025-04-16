@@ -1,1 +1,68 @@
-<div>FEATURE TABS GO HERE</div>
+
+{# 
+ feature tabs component has configuration options
+ "feature": {
+  "minor_heading": "string",
+  "major_heading": "string",
+  "heading_paragraph": "string/html",
+  "features": [
+    {
+      "active_status": "button-active" | "button-not-active",
+      "label": "string",
+      "display": "none" | "block",
+      "image_source": "string",
+      "bulletPoints": [
+        {
+          "label": "string",
+          "message": "string"
+        }
+      ]
+    }
+  ]
+ }
+#}
+
+<script>
+  function openTabs(evt, contentName) {
+    let i, tabContent, tabLinks;
+    tabContent = document.getElementById("feature-tabs-content").children;
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+    tabLinks = document.getElementById("tabstrip-feature").children;
+    for (i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace("button-active", "button-not-active");
+    }
+    document.getElementById(contentName).style.display = "block";
+    evt.currentTarget.className = evt.currentTarget.className.replace("button-not-active", "button-active");
+  }
+</script>
+
+<div class="feature-container center-content">
+  <h6>{{ feature.minor_heading }}</h6>
+  <h3>{{ feature.major_heading }}</h3>
+  <p>{{feature.heading_paragraph|safe}}</p>
+  <div class="feature-tab-container">
+    <div id="tabstrip-feature">
+      {% for item in feature.features %}
+        <button class="tablink-feature {{ item.active_status }}" onclick="openTabs(event, '{{item.label}}')">{{item.label}}</button>
+      {% endfor %}
+    </div>
+    <div id="feature-tabs-content">
+      {% for item in feature.features %}
+        <div style="display: {{ item.display }}" id="{{ item.label }}">
+          <img src="{{ item.image_source }}"/>
+          <div class="feature-checkboxs">
+            {% for bullet in item.bullet_points %}
+              <div class="check-list">
+                <img src="/src/assets/images/decorations/list-check.png" />
+                <p><strong>{{ bullet.label }}</strong> {{ bullet.message }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>

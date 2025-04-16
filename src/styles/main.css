@@ -207,7 +207,7 @@ a .decorated {
   color: black;
 }
 
-.tablink-quote.active{
+.button-active {
   background-color: var(--color-ice-blue);
 }
 
