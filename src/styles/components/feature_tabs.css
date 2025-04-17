@@ -1,0 +1,55 @@
+.feature-container {
+  max-width: 1200px;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 16px;
+}
+
+.feature-tab-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.feature-tab-container > div {
+  align-self: stretch;
+  padding: 1rem;
+}
+
+#tabstrip-feature {
+  display: flex;
+  flex-direction: column;
+}
+
+#tabstrip-feature > button {
+  margin: .5rem;
+  background-color: var(--color-tech-canvas);
+  border-left: 3px solid var(--color-ai-zure);
+  color: black;
+}
+
+#tabstrip-feature > button:hover {
+  filter: brightness(1.2);
+}
+
+#tabstrip-feature .button-active {
+  background-color: var(--color-ice-blue);
+  filter: brightness(1.2)
+}
+
+#feature-tabs-content {
+  min-height: 600px;
+}
+
+.feature-checkboxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1000px) {
+  #tabstrip-feature {
+    flex-direction: row;
+  }
+  .feature-tab-container {
+      grid-template-columns: 1fr;
+  }
+}
