@@ -1,3 +1,41 @@
+/* General Tabs Styles */
+
+.tabstrip-quote{
+  padding: .5rem;
+  background-color: white;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabstrip-heading-quote{
+  border-bottom: solid 1px var(--color-ai-zure);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tablink-quote{
+  background-color: var(--color-tech-canvas);
+  color: black;
+  border-bottom: solid 3px var(--color-ai-zure);
+}
+
+.button-active {
+  background-color: var(--color-ice-blue);
+  border-bottom: solid 0px transparent;
+}
+
+.tabcontent-quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 250px;
+}
+
+/* Feature Component */
+
 .feature-container {
   max-width: 1200px;
   background-color: white;
@@ -43,6 +81,7 @@
 .feature-checkboxs {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: left;
 }
 
 @media (max-width: 1000px) {
@@ -53,3 +92,27 @@
       grid-template-columns: 1fr;
   }
 }
+
+/* Quote Component */
+
+.quote-form{
+  margin-top: 2rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.quote-form>div{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 100%;
+}
+
+/* Fall back to the default nice system layout for forms at mobile scale */
+@media only screen and (max-width: 720px){
+  .quote-form div{
+    display: block;
+  }
+}
+
