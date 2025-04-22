@@ -1,0 +1,127 @@
+{
+  "title": "Construction",
+  "splashImage": "/images/Simplify-Systems-Splash.png",
+  "splashTitle": "Power software solutions for the construction industry",
+  "marketTargetedTagline": "We get that the construction industry can be complex. That's why our technology is designed to make your operations easier, boost collaboration, and give you real-time insights to help keep your projects on track and within budget.",
+  "url_book_demo": "/",
+  "seo": {
+    "description": "Transform your Construction business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
+  },
+  "feature": {
+    "minor_heading": "RAPID TECHNOLOGY",
+    "major_heading": "Smart technology, effortless integration",
+    "heading_paragraph": "Rapid streamlines your centre operations, boosting leads, conversations, and family experience with seamless automation",
+    "features": [
+      {
+        "active_status": "button-active",
+        "label": "Automated Workflows",
+        "display": "block",
+        "image_source": "/src/assets/images/industries/childcare/features/CRM.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Streamlining approvals"
+          },
+          {
+            "label": "",
+            "message": "Compliance tracking"
+          },
+          {
+            "label": "",
+            "message": "Update orders"
+          },
+          {
+            "label": "",
+            "message": "Track progress and budgets"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Project Management",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/vacancy.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Inventory & Asset Tracking",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/forms.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Cloud-based Document Storage",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/workflow.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      }
+    ]
+  },
+  "testimonial": {
+    "faceURL": "/images/testimonials/Darryl-H.png",
+    "name": "DARRYL HOPKINS",
+    "company": "Torsion Homes",
+    "quote": "<p>Rapid Platform is a great communication system for us to track everything from the beginning of a job - in the contract stage - all the way through to the maintenance stage.</p><p>Before Rapid we were using detailed Excel spredsheets - I think a lot of people's file systems were probably in their inbox. Now it's compiled, it's easy to access, we can run reports on all that data. It's a whole different world for us now</p>"
+  },
+  "benefits": {
+    "title": "Projects delivered on time, within budget",
+    "videoTitle": "Rapid Platform",
+    "videoURL": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+    "bulletPoints": [
+      {
+        "label": "Boost Your bottom Line:",
+        "message": " Reduce inefficiencies, minimise delays, and maximise profitability with a smarter, more connected system."
+      },
+      {
+        "label": "Unify Your Teams:",
+        "message": " Bridge the gap between office and field teams with real-time updates and seamless communication."
+      },
+      {
+        "label": "Keep Projects on Track:",
+        "message": " Avoid costly missteps with automated workflows that ensure every phase runs smoothly."
+      },
+      {
+        "label": "Deliver Transparency that Clients Love:",
+        "message": " Give stakeholders clear project visibility, building trust and confidence along the way."
+      }
+    ],
+    "metrics": [
+      {
+        "heading": "Faster Project Completion",
+        "message": "By streamlining task management and resource allocation, Rapid helps construction teams meet deadlines more consistently.",
+        "image": "/src/assets/images/industries/childcare/clock.png"
+      },
+      {
+        "heading": "Reduce Sales Overheads by 50%",
+        "message": "Our system optimises sales resource scheduling and estimation tasks, reducing downtime and boosting overall productivity.",
+        "image": "/src/assets/images/industries/construction/arrows-down.png"
+      },
+      {
+        "heading": "Fewer Delays, Less Bottlenecks",
+        "message": "With real-time insights into resource availability and project prioritisation, we help eliminate delays and ensure smooth project flow.",
+        "image": "/src/assets/images/industries/construction/cog-funnel.png"
+      }
+    ]
+  },
+  "pitch": {
+    "heading": "Why construction companies choose Rapid?",
+    "message": "<p>Rapid takes the guesswork out of project management, helping you streamline operations, reduce risks, and focus on delivering high-quality builds. </p><p>With cloud-based solutions, automation, and deep integration with your existing systems, you can manage projects with confidence—anytime, anywhere.</p>"
+  }
+}
