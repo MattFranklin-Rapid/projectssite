@@ -1,0 +1,128 @@
+{
+  "title": "Communities",
+  "splashImage": "/images/Simplify-Systems-Splash.png",
+  "splashTitle": "Technology that empowers your people and strengthens communities",
+  "marketTargetedTagline": "Community organisations are evolving to meet the needs of their members in an increasingly digital world. Rapid provides the tools to enhance service delivery, streamline operations, and foster stronger connections with community—through low-risk digital projects."
+,
+  "url_book_demo": "/",
+  "seo": {
+    "description": "Rapid Platform empowers community organisations and government agencies to enhance efficiency, improve service delivery, and strengthen community engagement through innovative digital solutions. Our low-risk technology seamlessly integrates into your existing operations, automating workflows and reducing administrative tasks. Benefit from secure, compliant systems that provide real-time insights and analytics, enabling data-driven decisions and optimized resource allocation. Drive community impact, streamline operations, and foster stronger member connections with Rapid's intuitive, powerful digital tools designed specifically for councils, agencies, and community organisations."
+  },
+  "feature": {
+    "minor_heading": "RAPID TECHNOLOGY",
+    "major_heading": "Smart technology, effortless integration",
+    "heading_paragraph": "Our technology is built to simplify your day-to-day operations, strengthen team collaboration, and give you real-time insights",
+    "features": [
+      {
+        "active_status": "button-active",
+        "label": "Centralised Communication",
+        "display": "block",
+        "image_source": "/src/assets/images/industries/childcare/features/CRM.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Streamlining approvals"
+          },
+          {
+            "label": "",
+            "message": "Compliance tracking"
+          },
+          {
+            "label": "",
+            "message": "Update orders"
+          },
+          {
+            "label": "",
+            "message": "Track progress and budgets"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Project Management",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/vacancy.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Impact reporting & dashboards",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/forms.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Event & ticketing management",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/workflow.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      }
+    ]
+  },
+  "testimonial": {
+    "faceURL": "/images/testimonials/James-M.jpg",
+    "name": "Bec XXXX",
+    "company": "Goondiwindi Chamber of Commerce",
+    "quote": "<p>Our business challenge was about how to connect with our families in a more proactive way. We had no CRM, we had no formal database, we were using spreadsheets. We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.</p><p>If your business is going through a period of change and you're uncertain about what infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<br><b>I can't recommend Rapid enough</b>.</p>"
+  },
+  "benefits": {
+    "title": "Driving success for community organisations",
+    "videoTitle": "Rapid Platform",
+    "videoURL": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+    "bulletPoints": [
+      {
+        "label": "Low-risk digital projects:",
+        "message": " Implement new technology with minimal disruption through phased adoption, seamless integrations, and dedicated support."
+      },
+      {
+        "label": "Improved efficiency & automation:",
+        "message": " Automate workflows, reduce administrative burden, and free up resources to have more impact."
+      },
+      {
+        "label": "Secure & compliant:",
+        "message": " Ensure data security and compliance with industry regulations while maintaining transparency and accountability."
+      },
+      {
+        "label": "Data-driven decision making:",
+        "message": " Gain real-time insights with powerful reporting and analytics to improve service delivery and resource allocation."
+      }
+    ],
+    "metrics": [
+      {
+        "heading": "Increased Engagement",
+        "message": "Rapid helps community organisations boost member participation through automated communication and updates.",
+        "image": "/src/assets/images/industries/childcare/clock.png"
+      },
+      {
+        "heading": "Reduce time on Admin",
+        "message": "With automated reporting and streamlined task management, save time on administrative work and focus on high-value work.",
+        "image": "/src/assets/images/industries/childcare/up-arrows.png"
+      },
+      {
+        "heading": "Grow Event Attendance",
+        "message": "Rapid’s event tracking and resource management features increase attendance at community events and networking opportunities.",
+        "image": "/src/assets/images/industries/childcare/talk-box.png"
+      }
+    ]
+  },
+  "pitch": {
+    "heading": "Building connected communities, together.",
+    "message": "<p>Rapid technology is already helping councils and government agencies improve efficiency, reduce costs, and deliver better services to their communities.<br><br>Whether managing infrastructure projects, automating citizen services, or ensuring compliance, Rapid empowers you to do more with less.</p>"
+  }
+}
