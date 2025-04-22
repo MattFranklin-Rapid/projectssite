@@ -25,11 +25,11 @@
 <script>
   function openTabs(evt, contentName) {
     let i, tabContent, tabLinks;
-    tabContent = document.getElementsByClass("tab-topstrip-content");
+    tabContent = document.getElementById("feature-tabs-content").children;
     for (i = 0; i < tabContent.length; i++) {
       tabContent[i].style.display = "none";
     }
-    tabLinks = document.getElementsByClass("tab-topstrip-buttons");
+    tabLinks = document.getElementById("tabstrip-feature").children;
     for (i = 0; i < tabLinks.length; i++) {
       tabLinks[i].className = tabLinks[i].className.replace("button-active", "button-not-active");
     }
@@ -43,7 +43,7 @@
   <h3>{{ feature.major_heading }}</h3>
   <p>{{feature.heading_paragraph|safe}}</p>
   <div class="feature-tab-container">
-    <div id="tabstrip-feature" class="tabstrip-buttons-vertical">
+    <div id="tabstrip-feature">
       {% for item in feature.features %}
         <button class="tablink-feature {{ item.active_status }}" onclick="openTabs(event, '{{item.label}}')">{{item.label}}</button>
       {% endfor %}

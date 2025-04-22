@@ -43,10 +43,9 @@
                 <div class="center-content container-width-narrow text-center ">
                     <a href="{{url_get_started}}"><button class="button-cool-light button-large">TECH+TEAM APPROACH</button></a>
                 </div>
+                <div class="spacer-small"></div>
+                <img src="/src/assets/images/landing/board-on-laptop.png"/>
             </div>
-            <br>
-            <br>
-            <br>
         </div>
 
         
@@ -64,8 +63,14 @@
             {# Book a Demo CTA #}
             {% include '../components/cta/book_demo.njk' %}
         </div>
+
+        <div class='landing-benifit skeleton block-half background-dark'>
+            <div class="content-full-column">
+                {% include '../components/feature_multi_tabs.njk' %}
+            </div>
+        </div>
         
-        <div class='landing-justification skeleton block-half background-dark text-dark'>
+        <div class='landing-justification skeleton block-half background-light text-light'>
             {# Justification why other people think we're great #}
             <div class="content-full-column">
                 <p>Technology is changing but the giants aren’t. It’s in their best interest to lock you into long term big dollar contracts so you have no choice. Don’t fall into the trap of being just someone’s consumer, contorting your business to their offering.</p>
@@ -116,11 +121,11 @@
             </div>
         </div>
         
-        <div class='landing-promise skeleton block-half background-light'>
+        <div class='landing-promise skeleton block-half background-dark'>
             {# Our brand promise #}
             <div class='content-full'>
                 <div class='spacer-small'></div>
-                    <div class='content-full-column text-light text-center'>
+                    <div class='content-full-column text-dark text-center'>
                         <img src="src/assets/images/black-heart-tick.png" width="50">
                         <p><strong>Our promise to you</strong></p>
                         <p>We are dedicated to eleminating inefficiencies created by outdated systems and manual processes.</p>
@@ -130,6 +135,13 @@
                         <p>Wheather you're scaling or refining, we empower you to build momentum and gain the clarity needed to move
                         your business forward.</p>
                     </div>
+                <div class='spacer-small'></div>
+            </div>
+        </div>
+
+        <div class='landing-industries skeleton block-full background-light'>
+            <div class="content-full-column">
+                {% include '../components/industry_tabs.njk' %}
                 <div class='spacer-small'></div>
             </div>
         </div>
