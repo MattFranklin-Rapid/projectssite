@@ -12,6 +12,7 @@
     --color-bright-green: #008E47;
     --color-pixel-zest: #B2D234;
     --color-tech-canvas: #F4F4F4;
+    --color-tech-canvas-transparent: #F4F4F4B0;
 
     --background-light: var(--color-tech-canvas);
     --background-dark: var(--color-deep-navy);

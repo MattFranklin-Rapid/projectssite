@@ -13,5 +13,248 @@
   },
   "seo":{
     "description": "Rapid Platform helps businesses streamline systems with affordable, secure CRM solutions that automate processes and boost efficiency."
+  },
+  "feature":{
+    "minor_heading": "RAPID TECHNOLOGY",
+    "major_heading": "Real outcomes, real fast.",
+    "heading_paragraph": "<p>From operational efficiency to real-time insights, Rapid helps you solve meaningful business challenges - in weeks, not months.</p>",
+    "areas": [
+      {
+        "label": "Operational Efficiency",
+        "active_status": "button-active",
+        "display": "grid",
+        "features": [
+          {
+            "active_status": "button-active",
+            "label": "Eliminate manual work",
+            "display": "block",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Standardise business processes",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-community.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Reduce delays and bottlenecks",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-construction.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Boost team productivity",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-energy.png",
+            "more_link": "/"
+          }
+        ]
+      },
+      {
+        "label": "Workflow Automation",
+        "active_status": "button-not-active",
+        "display": "none",
+        "features": [
+          {
+            "active_status": "button-active",
+            "label": "Trigger actions automatically",
+            "display": "block",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Capture clean, structured data",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Save time across every department",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Maintain an operational flow",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          }
+        ]
+      },
+      {
+        "label": "Business Intelligence",
+        "active_status": "button-not-active",
+        "display": "none",
+        "features": [
+          {
+            "active_status": "button-active",
+            "label": "Track key data in real time",
+            "display": "block",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Replace spreadsheets with dashboards",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Automate reports and alerts",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Make faster, smarter decisions",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          }
+        ]
+      },
+      {
+        "label": "Adaptive Technology",
+        "active_status": "button-not-active",
+        "display": "none",
+        "features": [
+          {
+            "active_status": "button-active",
+            "label": "Implement solutions in weeks, not months",
+            "display": "block",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Scale from one use case ot many",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Integrate with your existing tools",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          },
+          {
+            "active_status": "button-not-active",
+            "label": "Access ongoing enablement, while training internal champions",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/industry-childcare.png",
+            "more_link": "/"
+          }
+        ]
+      }
+    ]
+   },
+  "industry": {
+    "minor_heading": "RAPID RESULTS",
+    "major_heading": "Our customers innovate at speed",
+    "heading_paragraph": "Discover how our customers ar eusing Rapid to drive growth. From targeted solutions to full-scale digital transformation, we partner with our customers every step of the way.",
+    "industries": [
+      {
+        "active_status": "button-active",
+        "label": "Guardian Childcare Centres",
+        "display": "block",
+        "image_source": "/src/assets/images/landing/industry-childcare.png",
+        "quote": "<p><strong>&quot;Rapid has transformed our lead-to-enrolment process, helping us capture more leads and convert them with ease. It's streamlined our operations and significantly imporved our results.&quot;</strong></p><p>— John Bobs, Guardian Childcare</p>",
+        "more_page": "/industry/childcare",
+        "bullet_points": [
+          {
+            "label": "IMPACT",
+            "message": "42% boost in enrolments"
+          },
+          {
+            "label": "INDUSTRY",
+            "message": "Childcare centre management"
+          },
+          {
+            "label": "RAPID TECH",
+            "message": "Lead-to-enrolment workflow and automation solution"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Chambers of Commerce",
+        "display": "none",
+        "image_source": "/src/assets/images/landing/industry-community.png",
+        "quote": "<p><strong>&quot; &quot;</strong></p><p>— Someone, at somewhere</p>",
+        "more_page": "/industry/community",
+        "bullet_points": [
+          {
+            "label": "IMPACT",
+            "message": "Automated member communication"
+          },
+          {
+            "label": "INDUSTRY",
+            "message": "Local Communities"
+          },
+          {
+            "label": "RAPID TECH",
+            "message": "Membership and event management system"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "EDL Energy",
+        "display": "none",
+        "image_source": "/src/assets/images/landing/industry-energy.png",
+        "quote": "<p><strong>&quot; &quot;</strong></p><p>— Someone, at somewhere</p>",
+        "more_page": "/industry/utility",
+        "bullet_points": [
+          {
+            "label": "IMPACT",
+            "message": "Improved team collaboration across US and AUD time zones"
+          },
+          {
+            "label": "INDUSTRY",
+            "message": "Energy"
+          },
+          {
+            "label": "RAPID TECH",
+            "message": "Project management hub and resource tracking"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Torsion Homes",
+        "display": "none",
+        "image_source": "/src/assets/images/landing/industry-construction.png",
+        "quote": "<p><strong>&quot;Rapid is a great communication system for us to track everything from beginning of a job - in the contract stage - all the way through to the maintenance stage.Before Rapid, we were using detailed Excel spreadsheets - I think a lot of people’s file systems were probably their inbox. Now it’s compiled, it’s easy to access, we can run reports on all of that data. It’s a whole different world for us now.&quot;</p></strong><p>— Darryl Hopkins, Torsion Homes</p>",
+        "more_page": "/industry/construction",
+        "bullet_points": [
+          {
+            "label": "IMPACT",
+            "message": "70% time savings on pre-sales drafting"
+          },
+          {
+            "label": "INDUSTRY",
+            "message": "Construction"
+          },
+          {
+            "label": "RAPID TECH",
+            "message": "Sales to slab-on-ground management system"
+          }
+        ]
+      }
+    ]
   }
+
 }

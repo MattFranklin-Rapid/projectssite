@@ -1,0 +1,74 @@
+
+{# 
+ industry tabs component has configuration options
+ "industry": {
+  "minor_heading": "string",
+  "major_heading": "string",
+  "heading_paragraph": "string/html",
+  "quote": "string/html",
+  "more_page": "URL path",
+  "industries": [
+    {
+      "active_status": "button-active" | "button-not-active",
+      "label": "string",
+      "display": "none" | "block",
+      "image_source": "string",
+      "bulletPoints": [
+        {
+          "label": "string",
+          "message": "string"
+        }
+      ]
+    }
+  ]
+ }
+#}
+
+<script>
+  function openIndustryTabs(evt, contentName) {
+    let i, tabContent, tabLinks;
+    tabContent = document.getElementById("industry-tabs-content").children;
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+    tabLinks = document.getElementById("tabstrip-industry-links").children;
+    for (i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace("button-active", "button-not-active");
+    }
+    document.getElementById(contentName).style.display = "block";
+    evt.currentTarget.className = evt.currentTarget.className.replace("button-not-active", "button-active");
+  }
+
+</script>
+
+<div class="feature-container center-content">
+  <h6>{{ industry.minor_heading }}</h6>
+  <h3>{{ industry.major_heading }}</h3>
+  <p>{{industry.heading_paragraph|safe}}</p>
+  <div class="feature-tab-container">
+    <div id="tabstrip-industry-links" class="tabstrip-buttons-vertical">
+      {% for item in industry.industries %}
+        <button class="tablink-feature {{ item.active_status }}" onclick="openIndustryTabs(event, '{{item.label}}')">{{item.label}}</button>
+      {% endfor %}
+    </div>
+    <div id="industry-tabs-content">
+      {% for item in industry.industries %}
+        <div style="display: {{ item.display }}" id="{{ item.label }}">
+          <div class="industry-image" style="background-image:url({{ item.image_source }})">
+            <div class="industry-quote-floating">{{item.quote|safe}}</div>
+            <div class="industry-learn-floating"><a href="{{item.more_page}}">Learn More</a></div>
+          </div>
+          <div class="industry-tab-cards">
+            {% for bullet in item.bullet_points %}
+              <div>
+                  <p><strong>{{ bullet.label }}</strong></p>
+                  <p>{{ bullet.message }}</p>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>

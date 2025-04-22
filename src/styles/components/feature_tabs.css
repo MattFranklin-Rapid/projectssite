@@ -1,0 +1,177 @@
+/* General Tabs Styles */
+
+.tabstrip-quote{
+  padding: .5rem;
+  background-color: white;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabstrip-heading{
+  border-bottom: solid 1px var(--color-ai-zure);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tablink-quote{
+  background-color: var(--color-tech-canvas);
+  color: black;
+  border-bottom: solid 3px var(--color-ai-zure);
+}
+
+.button-active {
+  background-color: var(--color-ice-blue);
+  border-bottom: solid 0px transparent;
+}
+
+.tabcontent-quote{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 250px;
+}
+
+/* Feature Component */
+
+.feature-container {
+  max-width: 1200px;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 16px;
+}
+
+.feature-tab-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.feature-tab-container > div {
+  align-self: stretch;
+  padding: 1rem;
+}
+
+/*.tabstrip-buttons-horizontal*/
+.tabstrip-buttons-vertical{
+  display: flex;
+  flex-direction: column;
+}
+
+.tabstrip-buttons-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tabstrip-buttons-vertical > button,
+.tabstrip-buttons-horizontal > button {
+  margin: .5rem;
+  background-color: var(--color-tech-canvas);
+  border-left: 3px solid var(--color-ai-zure);
+  color: black;
+}
+
+.tabstrip-buttons-vertical > button:hover,
+.tabstrip-buttons-horizontal > button:hover {
+  filter: brightness(1.2);
+}
+
+.tabstrip-buttons-vertical .button-active,
+.tabstrip-buttons-horizontal .button-active {
+  background-color: var(--color-ice-blue);
+  filter: brightness(1.2)
+}
+
+#feature-tabs-content,
+#industry-tabs-content {
+  min-height: 600px;
+}
+
+.feature-checkboxs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: left;
+}
+
+@media (max-width: 1000px) {
+  #tabstrip-feature,
+  #tabstrip-industry-links {
+    flex-direction: row;
+  }
+  .feature-tab-container {
+      grid-template-columns: 1fr;
+  }
+}
+
+/* Quote Component */
+
+.quote-form{
+  margin-top: 2rem;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.quote-form>div{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  width: 100%;
+}
+
+/* Fall back to the default nice system layout for forms at mobile scale */
+@media only screen and (max-width: 720px){
+  .quote-form div{
+    display: block;
+  }
+}
+
+
+/* Industry Tabs specific */
+
+.industry-tab-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.industry-image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1337/836;
+  background-size: contain;
+}
+
+.industry-quote-floating {
+  position: relative;
+  background-color: var(--color-tech-canvas-transparent);
+  border-radius: 8px;
+  width: 55%;
+  inset: 1rem 1rem 40% 40%;
+  padding: 0.5rem;
+}
+
+.industry-learn-floating {
+  position: relative;
+  background-color: var(--color-ai-zure);
+  width: 150px;
+  text-align: center;
+  border-radius: 30px;
+  inset: 0 0 10% 85%;
+}
+
+.industry-learn-floating a{
+  color: white;
+  text-decoration: none;
+}
+
+/* Multi Tab Specific */
+
+.tabs-multi-container {
+  display:flex;
+  flex-direction: column;
+}

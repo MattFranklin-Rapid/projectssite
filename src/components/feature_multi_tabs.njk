@@ -1,0 +1,100 @@
+
+{# 
+ Feature multi tabs component has configuration options
+ "feature": {
+  "minor_heading": "string",
+  "major_heading": "string",
+  "heading_paragraph": "string/html",
+  "areas": [
+    {
+      "label": "string",
+      "active_status": "button-active" | "button-not-active",
+      "display": "none" | "block",
+      "features": [
+        {
+          "active_status": "button-active" | "button-not-active",
+          "label": "string",
+          "display": "none" | "block",
+          "image_source": "string",
+          "bulletPoints": [
+            {
+              "label": "string",
+              "message": "string"
+            }
+          ]
+        }
+      ]  
+    }
+  ]
+ }
+#}
+
+<script>
+
+  function openAreaTab(evt, contentName) {
+    let i, tabContent, tabLinks;
+    tabLinks = document.getElementById("tabstrip-top-links").children;
+    for (i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace("button-active", "button-not-active");
+    }
+    evt.currentTarget.className = evt.currentTarget.className.replace("button-not-active", "button-active");
+
+    tabContent = document.getElementById("tabs-multi-content-container").children;
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+    document.getElementById("tab-" + contentName).style.display = "grid";
+  }
+
+  function openFeatureTab(evt, contentName, areaName) {
+    let i, tabContent, tabLinks;
+    tabLinks = document.getElementById("links-" + areaName).children;
+    for (i = 0; i < tabLinks.length; i++) {
+      tabLinks[i].className = tabLinks[i].className.replace("button-active", "button-not-active");
+    }
+    evt.currentTarget.className = evt.currentTarget.className.replace("button-not-active", "button-active");
+
+    tabContent = document.getElementById("content-" + areaName).children;
+    for (i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = "none";
+    }
+    document.getElementById(contentName).style.display = "block";
+  }
+
+</script>
+
+<div class="feature-container center-content">
+  <h6>{{ industry.minor_heading }}</h6>
+  <h3>{{ industry.major_heading }}</h3>
+  <p>{{industry.heading_paragraph|safe}}</p>
+  <div class="tabs-multi-container">
+    <div id="tabstrip-top-links" class="tabstrip-buttons-horizontal">
+      {% for area in feature.areas %}
+        {# Link block for outer tabs #}
+        <button class="tablink-feature {{ area.active_status }}" onclick="openAreaTab(event, '{{area.label}}')">{{area.label}}</button>
+      {% endfor %}
+    </div>
+    <div id="tabs-multi-content-container" class="tabs-multi-content">
+      {% for area in feature.areas %}
+        {# Content block for inner tab controller #}
+        <div id="tab-{{area.label}}" class="feature-tab-container" style="display:{{area.display}}">
+          <div id="links-{{area.label}}" class="tabstrip-buttons-vertical">
+            {% for item in area.features %}
+              {# Link block for inner tabs #}
+              <button class="tablink-feature {{ item.active_status }}" onclick="openFeatureTab(event, '{{item.label}}', '{{area.label}}')">{{item.label}}</button>
+            {% endfor %}
+          </div>
+          <div id="content-{{area.label}}">
+            {% for item in area.features %}
+              {# Inner tab content #}
+              <div style="display: {{ item.display }}" id="{{ item.label }}">
+                <img src="{{ item.image_source }}"/>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>
