@@ -1,0 +1,127 @@
+{
+  "title": "Energy",
+  "splashImage": "/images/Simplify-Systems-Splash.png",
+  "splashTitle": "Project & resource management for energy teams",
+  "marketTargetedTagline": "We've developed digital solutions to help energy companies streamline operations, enhance collaboration, and gain better control over their resources.",
+  "url_book_demo": "/",
+  "seo": {
+    "description": "Transform your Energy business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
+  },
+  "feature": {
+    "minor_heading": "RAPID TECHNOLOGY",
+    "major_heading": "Smart technology, effortless integration",
+    "heading_paragraph": "Rapid streamlines your centre operations, boosting leads, conversations, and family experience with seamless automation",
+    "features": [
+      {
+        "active_status": "button-active",
+        "label": "Real-Time Monitoring",
+        "display": "block",
+        "image_source": "/src/assets/images/industries/childcare/features/CRM.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Streamlining approvals"
+          },
+          {
+            "label": "",
+            "message": "Compliance tracking"
+          },
+          {
+            "label": "",
+            "message": "Update orders"
+          },
+          {
+            "label": "",
+            "message": "Track progress and budgets"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Predictive Maintenance",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/vacancy.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Real-Time Monitoring & Analytics",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/forms.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      },
+      {
+        "active_status": "button-not-active",
+        "label": "Regulatory Compliance Portal",
+        "display": "none",
+        "image_source": "/src/assets/images/industries/childcare/features/workflow.png",
+        "bullet_points": [
+          {
+            "label": "",
+            "message": "Example"
+          }
+        ]
+      }
+    ]
+  },
+  "testimonial": {
+    "faceURL": "/images/testimonials/James-M.jpg",
+    "name": "James McCarthy",
+    "company": "Guardian Childcare",
+    "quote": "<p>Our business challenge was about how to connect with our families in a more proactive way. We had no CRM, we had no formal database, we were using spreadsheets. We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.</p><p>If your business is going through a period of change and you're uncertain about what infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<br><b>I can't recommend Rapid enough</b>.</p>"
+  },
+  "benefits": {
+    "title": "Digital solutions for energy leads",
+    "videoTitle": "Rapid Platform",
+    "videoURL": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+    "bulletPoints": [
+      {
+        "label": "Centralized Hub for Projects & Tasks:",
+        "message": " Easily track and oversee your entire project pipeline, ensuring smooth communication and progress from start to finish."
+      },
+      {
+        "label": "Resource Allocation & Capacity Management:",
+        "message": " Get an in-depth view of resource availability, helping you optimize workloads and avoid over or under-utilization."
+      },
+      {
+        "label": "Custom Reporting:",
+        "message": " Our reports are built around your specific needs, such as tracking the priority of projects or monitoring resource allocation across multiple teams."
+      },
+      {
+        "label": "Task & Gantt Charts:",
+        "message": " Stay on top of all tasks and deadlines with individual task management and Gantt charts at both the project and resource levels."
+      }
+    ],
+    "metrics": [
+      {
+        "heading": "Improve Project Delivery Times",
+        "message": "With centralised project tracking and resource management, Rapid helps energy companies streamline workflows and reduce delays.",
+        "image": "/src/assets/images/industries/childcare/clock.png"
+      },
+      {
+        "heading": "Smart Resource Allocation",
+        "message": "Rapid provides real-time visibility into resource capacity, enabling energy teams to reduce over- or under-utilisation.",
+        "image": "/src/assets/images/industries/childcare/up-arrows.png"
+      },
+      {
+        "heading": "Custom Reporting to Enhance Decisions",
+        "message": "Custom reports that track project priorities and resource availbility allow for data-driven decisions, improving overall project success rates.",
+        "image": "/src/assets/images/industries/childcare/talk-box.png"
+      }
+    ]
+  },
+  "pitch": {
+    "heading": "Scalable solutions for complex projects",
+    "message": "<p>Rapid is built for teams that need precision and scalability. Whether you're managing large-scale infrastructure projects or overseeing complex resource needs, our platform provides you with the tools to monitor progress, allocate resources, and make data-driven decisions.</p>"
+  }
+}
