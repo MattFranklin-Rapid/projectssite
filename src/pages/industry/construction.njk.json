@@ -44,7 +44,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Real-time project visibility"
+          },
+          {
+            "label": "",
+            "message": "Compliance management"
+          },
+          {
+            "label": "",
+            "message": "Resource management"
+          },
+          {
+            "label": "",
+            "message": "Streamline communication"
           }
         ]
       },
@@ -56,7 +68,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Real-time inventory tracking"
+          },
+          {
+            "label": "",
+            "message": "Budget Management"
+          },
+          {
+            "label": "",
+            "message": "Reduce equipment downtime"
+          },
+          {
+            "label": "",
+            "message": "Increased transparency"
           }
         ]
       },
@@ -68,7 +92,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Centralised documents"
+          },
+          {
+            "label": "",
+            "message": "Enhance document security"
+          },
+          {
+            "label": "",
+            "message": "Improve collaboration"
+          },
+          {
+            "label": "",
+            "message": "Document sharing with ease"
           }
         ]
       }

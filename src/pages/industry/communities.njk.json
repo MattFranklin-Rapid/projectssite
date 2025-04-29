@@ -45,7 +45,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Efficient resource allocation"
+          },
+          {
+            "label": "",
+            "message": "Fundraising and budget tracking"
+          },
+          {
+            "label": "",
+            "message": "Effective collaboration"
+          },
+          {
+            "label": "",
+            "message": "Impact measurement"
           }
         ]
       },
@@ -57,7 +69,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Real-time data visualisation"
+          },
+          {
+            "label": "",
+            "message": "Increased transparency"
+          },
+          {
+            "label": "",
+            "message": "Reporting for stakeholders"
+          },
+          {
+            "label": "",
+            "message": "Measure and improve impact"
           }
         ]
       },
@@ -69,7 +93,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Streamline registration"
+          },
+          {
+            "label": "",
+            "message": "Real-time ticket tracking"
+          },
+          {
+            "label": "",
+            "message": "Event checklists"
+          },
+          {
+            "label": "",
+            "message": "On-site management tools"
           }
         ]
       }

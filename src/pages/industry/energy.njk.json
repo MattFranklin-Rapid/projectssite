@@ -44,7 +44,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Reduced downtime"
+          },
+          {
+            "label": "",
+            "message": "Enhanced safety"
+          },
+          {
+            "label": "",
+            "message": "Cost savings on maintenance"
+          },
+          {
+            "label": "",
+            "message": "Increased operational efficiency"
           }
         ]
       },
@@ -56,7 +68,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Improve decision-making"
+          },
+          {
+            "label": "",
+            "message": "Optimise asset management"
+          },
+          {
+            "label": "",
+            "message": "Faster incident response"
+          },
+          {
+            "label": "",
+            "message": "Reporting made easy"
           }
         ]
       },
@@ -68,7 +92,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Centralised compliance"
+          },
+          {
+            "label": "",
+            "message": "Streamline reporting and auditing"
+          },
+          {
+            "label": "",
+            "message": "Automated compliance alerts"
+          },
+          {
+            "label": "",
+            "message": "Improve risk management"
           }
         ]
       }

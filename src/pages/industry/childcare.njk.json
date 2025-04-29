@@ -44,7 +44,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Vacancy alerts"
+          },
+          {
+            "label": "",
+            "message": "Enrolment planning"
+          },
+          {
+            "label": "",
+            "message": "Smart availability predictor"
+          },
+          {
+            "label": "",
+            "message": "Integrates with existing CMS"
           }
         ]
       },
@@ -56,7 +68,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "User-friendly family experience"
+          },
+          {
+            "label": "",
+            "message": "Zero manual paperwork"
+          },
+          {
+            "label": "",
+            "message": "Simple, trackable online forms"
+          },
+          {
+            "label": "",
+            "message": "Automated sequences"
           }
         ]
       },
@@ -68,7 +92,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Automate enrolment forms"
+          },
+          {
+            "label": "",
+            "message": "Centralised data management"
+          },
+          {
+            "label": "",
+            "message": "Build enrolment checklists"
+          },
+          {
+            "label": "",
+            "message": "Integrates with existing CMS"
           }
         ]
       }
