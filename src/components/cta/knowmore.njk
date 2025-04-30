@@ -26,12 +26,12 @@
                         <br>
                         <div>
                             <form id="contact-form">
-                                <input id="knowmore_first_name" type="text" name="first_name" placeholder="First Name" />
-                                <input id="knowmore_last_name" type="text" name="last_name" placeholder="Last Name" />
-                                <input id="knowmore_email" type="email" name="email" placeholder="Email" />
-                                <input id="knowmore_mobile_phone" type="tel" name="mobile_phone" placeholder="Mobile Phone" />
-                                <textarea id="knowmore_message" class="text-area-medium-fixed" placeholder="Your message" name="message"></textarea>
-                                <div id="knowmore_h_captcha_response" class="container-two-columns">
+                                <input type="text" name="first_name" placeholder="First Name" />
+                                <input type="text" name="last_name" placeholder="Last Name" />
+                                <input type="email" name="email" placeholder="Email" />
+                                <input type="tel" name="mobile_phone" placeholder="Mobile Phone" />
+                                <textarea class="text-area-medium-fixed" placeholder="Your message" name="message"></textarea>
+                                <div class="container-two-columns">
                                     <div class="h-captcha" data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78" data-callback="setToEnabled"></div>
                                     <button class="know-more-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
                                 </div>
@@ -57,12 +57,12 @@
                                 headers: {
                                     "Content-Type": "application/x-www-form-urlencoded"
                                 },
-                                body: `first_name=${getElementById("knowmore_first_name")}
-                                    &last_name=${getElementById("knowmore_last_name")}
-                                    &email=${getElementById("knowmore_email")}
-                                    &message=${getElementById("knowmore_message")}
-                                    $mobile_phone=${getElementById("knowmore_mobile_phone")}
-                                    &h-captcha-response=${getElementById("knowmore_h_captcha_response")}`
+                                body: `first_name=${form[0]?.value}
+                                    &last_name=${form[1]?.value}
+                                    &email=${form[2]?.value}
+                                    $mobile_phone=${form[3]?.value}
+                                    &message=${form[4]?.value}
+                                    &h-captcha-response=${form[5]?.value}`
                                 })
                             } catch (error) {
                                 console.log(error);
