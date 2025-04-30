@@ -1,0 +1,46 @@
+{
+    "title": "Tech+Team",
+    "url_book_demo": "/",
+    "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+    "title_video_embed": "Rapid Platform",
+    "know_more_options": {
+      "show_contact_form": true,
+      "copy": "",
+      "title": "Get in Touch"
+    },
+    "seo":{
+      "description": "See how Rapid Platform fuses first in class dynamic technologies with deep business knowledge to empower lasting solutions."
+    },
+    "team": [
+      {
+        "name": "Amy Wong",
+        "position": "Senior Consultant",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Bob Smith",
+        "position": "Senior Consultant",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Phil Bjornsson",
+        "position": "Senior Consultant",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Eli Barron",
+        "position": "Tech Consultant",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Kim Harris",
+        "position": "BA",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Tony Tiro",
+        "position": "Solutions Architect",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      }
+    ]
+  }

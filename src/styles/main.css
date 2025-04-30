@@ -184,3 +184,59 @@ a .decorated {
 .check-list img{
   margin-right: 1rem;
 }
+
+/* Approach specific */
+
+.container-quarter-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.container-main-quarter {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.card-large-icon {
+  aspect-ratio: 1/1;
+  max-width: 128px;
+}
+
+.card-padded {
+  margin: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .card-padded{
+    margin: 2rem;
+  }
+}
+
+.approach-container-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.approach-container-logos img,
+.approach-container-logos span {
+  max-width: 96px;
+  aspect-ratio: 1/1;
+}
+
+.approach-container-logos span {
+  font-size: 66px;
+}
+
+.card-vertical {
+  display: block;
+}
+
+.card-vertical img {
+  aspect-ratio: 1/1;
+  max-width: 256px;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 16px;
+}

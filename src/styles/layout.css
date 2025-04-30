@@ -273,8 +273,15 @@ details {
   width: 100%;
 }
 
+.container-four-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
 .container-two-columns > div,
 .container-three-columns > div,
+.container-four-columns > div,
 .container-two-columns-lefthanded > div {
   align-self: stretch;
   padding: 1rem;
@@ -285,6 +292,10 @@ details {
   .container-two-columns,
   .container-three-columns{
       grid-template-columns: 1fr;
+  }
+
+  .container-four-columns{
+    grid-template-columns: 1fr 1fr;
   }
 
   .container-two-columns-lefthanded{
@@ -319,4 +330,10 @@ details {
   height: 8rem; 
   min-height: 8rem; 
   resize: none;
+}
+
+.card-grid {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
 }
