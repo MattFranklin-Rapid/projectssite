@@ -13,18 +13,16 @@
     <div class="container-columns">
       <div class="container-vertical-center">
         <div>
-          <h3><strong>EMAIL:</strong></h3>
-          <p>
-            <a href="mailto:{{ know_more_options.email|safe }}">
+          <h4>EMAIL:</h4>
+          <a class="link-dark" href="mailto:{{ know_more_options.email|safe }}">
+            <p>
               {{ know_more_options.email|safe }}
-            </a>
-          </p>
+            </p>
+          </a>
           <br />
-          <h3><strong>LOCATION:</strong></h3>
+          <h4>LOCATION:</h3>
           <p>
-            <a href="https://maps.app.goo.gl/GmsYjEQNXWhQFxX77">
-              {{ know_more_options.location|safe }}
-            </a>
+            {{ know_more_options.location|safe }}
           </p>
           <br />
           <div class="googlemaps-iframe">
