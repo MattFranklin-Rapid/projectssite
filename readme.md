@@ -33,6 +33,7 @@ This project is a scaffold for future development as well as a static site gener
 - Figure out how to bind .json files from `src/data/` instead of having them be in the `src/pages/` folder
 - Shift the project from my personal github
 - Figure out how to bind the domain to the [Azure App Service](https://portal.azure.com/#@rapidplatform.com/resource/subscriptions/1240b94b-1abb-40e8-87e0-17cb115b8459/resourceGroups/rapid-projects/providers/Microsoft.Web/staticSites/projectssite/staticsite)
+- Update SEO product listing and Organisation details
 
 ## Style Guide
 
@@ -62,3 +63,14 @@ See `colours.css` for re-usuable common colours. Try to stick to these variable 
 ## Page CSS
 Specific pages need their on custom styling for some specific components. Re-usuable elements should go in `main.css`, otherwise make a `{layout}.css` file
 
+## GDPR Google Analytics
+We have Google Analytics set up for the site currently. This is managed via the Google Analytics portal.
+We also have GDPF compliant cookie banner installed, as we are tracking individual details due to the analytics.
+
+Both of these will need to be updated before porting the site to a production URL
+
+### SEO
+There is some awesome stuff Google provide for SEO 'juice'
+Check out the google components and the global header component for the general site SEO details
+
+Individual pages can also have their on SEO descriptions, these will show up as the description field on Google search results for that page.
