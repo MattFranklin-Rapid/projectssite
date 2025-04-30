@@ -58,3 +58,7 @@ See `colours.css` for re-usuable common colours. Try to stick to these variable 
 `<h1>` is used for title headings
 `<h3>` is used for content block headings
 `<h6>` is used for those tiny content sub headings
+
+## Page CSS
+Specific pages need their on custom styling for some specific components. Re-usuable elements should go in `main.css`, otherwise make a `{layout}.css` file
+
