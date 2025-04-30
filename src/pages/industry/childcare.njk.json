@@ -3,7 +3,8 @@
   "splashImage": "/images/Simplify-Systems-Splash.png",
   "splashTitle": "Technology to streamline childcare enrollment processes",
   "marketTargetedTagline": "We understand the unique challenges childcare centres face when it comes to managing leads, enrolment and waitlists. With Rapid, you'll experience an efficient, automated system that seamlessly integrates with your existing CMS and supports you in providing the best experience for families.",
-  "url_book_demo": "/",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_book_demo": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
   "seo": {
     "description": "Transform your Childcare business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
   },

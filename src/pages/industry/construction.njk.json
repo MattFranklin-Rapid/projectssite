@@ -3,7 +3,8 @@
   "splashImage": "/images/Simplify-Systems-Splash.png",
   "splashTitle": "Power software solutions for the construction industry",
   "marketTargetedTagline": "We get that the construction industry can be complex. That's why our technology is designed to make your operations easier, boost collaboration, and give you real-time insights to help keep your projects on track and within budget.",
-  "url_book_demo": "/",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_book_demo": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
   "seo": {
     "description": "Transform your Construction business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
   },

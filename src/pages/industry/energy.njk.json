@@ -3,7 +3,8 @@
   "splashImage": "/images/Simplify-Systems-Splash.png",
   "splashTitle": "Project & resource management for energy teams",
   "marketTargetedTagline": "We've developed digital solutions to help energy companies streamline operations, enhance collaboration, and gain better control over their resources.",
-  "url_book_demo": "/",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_book_demo": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
   "seo": {
     "description": "Transform your Energy business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
   },
