@@ -29,6 +29,7 @@
                                 <input type="text" name="first_name" placeholder="First Name" />
                                 <input type="text" name="last_name" placeholder="Last Name" />
                                 <input type="email" name="email" placeholder="Email" />
+                                <input type="tel" name="mobile_phone" placeholder="Mobile Phone"
                                 <textarea class="text-area-medium-fixed" placeholder="Your message" name="message"></textarea>
                                 <div class="container-two-columns">
                                     <div class="h-captcha" data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78" data-callback="setToEnabled"></div>
@@ -60,7 +61,8 @@
                                     &last_name=${form[1]?.value}
                                     &email=${form[2]?.value}
                                     &message=${form[3]?.value}
-                                    &h-captcha-response=${form[5]?.value}`
+                                    $mobile_phone=${form[4]?.value}
+                                    &h-captcha-response=${form[6]?.value}`
                                 })
                             } catch (error) {
                                 console.log(error);
