@@ -6,9 +6,7 @@
     "url_simpli_homepage": "https://simpli.org",
     "know_more_options": {
         "show_contact_form": true,
-        "heading": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?",
-        "copy": "",
-        "title": "Get in touch",
+        "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
         "cta_nav_heading": "Landing Page"
   },
   "seo":{
