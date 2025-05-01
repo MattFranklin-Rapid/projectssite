@@ -3,7 +3,8 @@
   "splashImage": "/images/Simplify-Systems-Splash.png",
   "splashTitle": "Technology to streamline childcare enrollment processes",
   "marketTargetedTagline": "We understand the unique challenges childcare centres face when it comes to managing leads, enrolment and waitlists. With Rapid, you'll experience an efficient, automated system that seamlessly integrates with your existing CMS and supports you in providing the best experience for families.",
-  "url_book_demo": "/",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_book_demo": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
   "seo": {
     "description": "Transform your Childcare business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
   },
@@ -44,7 +45,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Vacancy alerts"
+          },
+          {
+            "label": "",
+            "message": "Enrolment planning"
+          },
+          {
+            "label": "",
+            "message": "Smart availability predictor"
+          },
+          {
+            "label": "",
+            "message": "Integrates with existing CMS"
           }
         ]
       },
@@ -56,7 +69,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "User-friendly family experience"
+          },
+          {
+            "label": "",
+            "message": "Zero manual paperwork"
+          },
+          {
+            "label": "",
+            "message": "Simple, trackable online forms"
+          },
+          {
+            "label": "",
+            "message": "Automated sequences"
           }
         ]
       },
@@ -68,7 +93,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Automate enrolment forms"
+          },
+          {
+            "label": "",
+            "message": "Centralised data management"
+          },
+          {
+            "label": "",
+            "message": "Build enrolment checklists"
+          },
+          {
+            "label": "",
+            "message": "Integrates with existing CMS"
           }
         ]
       }

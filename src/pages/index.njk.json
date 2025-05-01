@@ -1,14 +1,12 @@
 {
     "title": "Rapid Platform",
-    "url_get_started": "./contact",
+    "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
     "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
     "title_video_embed": "Rapid Platform",
     "url_simpli_homepage": "https://simpli.org",
     "know_more_options": {
         "show_contact_form": true,
-        "heading": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?",
-        "copy": "",
-        "title": "Get in touch",
+        "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
         "cta_nav_heading": "Landing Page"
   },
   "seo":{

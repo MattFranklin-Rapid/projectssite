@@ -3,7 +3,8 @@
   "splashImage": "/images/Simplify-Systems-Splash.png",
   "splashTitle": "Project & resource management for energy teams",
   "marketTargetedTagline": "We've developed digital solutions to help energy companies streamline operations, enhance collaboration, and gain better control over their resources.",
-  "url_book_demo": "/",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_book_demo": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
   "seo": {
     "description": "Transform your Energy business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
   },
@@ -44,7 +45,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Reduced downtime"
+          },
+          {
+            "label": "",
+            "message": "Enhanced safety"
+          },
+          {
+            "label": "",
+            "message": "Cost savings on maintenance"
+          },
+          {
+            "label": "",
+            "message": "Increased operational efficiency"
           }
         ]
       },
@@ -56,7 +69,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Improve decision-making"
+          },
+          {
+            "label": "",
+            "message": "Optimise asset management"
+          },
+          {
+            "label": "",
+            "message": "Faster incident response"
+          },
+          {
+            "label": "",
+            "message": "Reporting made easy"
           }
         ]
       },
@@ -68,7 +93,19 @@
         "bullet_points": [
           {
             "label": "",
-            "message": "Example"
+            "message": "Centralised compliance"
+          },
+          {
+            "label": "",
+            "message": "Streamline reporting and auditing"
+          },
+          {
+            "label": "",
+            "message": "Automated compliance alerts"
+          },
+          {
+            "label": "",
+            "message": "Improve risk management"
           }
         ]
       }
@@ -77,7 +114,7 @@
   "testimonial": {
     "faceURL": "/images/testimonials/James-M.jpg",
     "name": "James McCarthy",
-    "company": "Guardian Childcare",
+    "company": "EDL Energy",
     "quote": "<p>Our business challenge was about how to connect with our families in a more proactive way. We had no CRM, we had no formal database, we were using spreadsheets. We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.</p><p>If your business is going through a period of change and you're uncertain about what infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<br><b>I can't recommend Rapid enough</b>.</p>"
   },
   "benefits": {

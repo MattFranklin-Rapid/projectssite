@@ -1,88 +1,133 @@
-
 {# 
     knowmore component has configuration options
     "know_more_options": {
         "show_contact_form": true|false,
-        "heading": "main title",
-        "copy": "main content",
+        "location": "location",
+        "email": "email",
         "title": "title of contact us form",
         "cta_nav_heading": ""
   }
 #}
 <div class="cta-know-more block-half background-splash text-dark">
-    <div class="content-full-column">
-        <div class="container-columns">
-            <div class="container-vertical-center">
-                <div>
-                    <h2>{{ know_more_options.heading|safe }}</h2>
-                    <p>{{ know_more_options.copy|safe }}<p>
-                </div>
-            </div>
-            <div>
-                {% if know_more_options.show_contact_form == true %}
-                    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>      
-                    <div>
-                        <h3>{{ know_more_options.title }}</h3>
-                        <br>
-                        <div>
-                            <form id="contact-form">
-                                <input type="text" name="first_name" placeholder="First Name" />
-                                <input type="text" name="last_name" placeholder="Last Name" />
-                                <input type="email" name="email" placeholder="Email" />
-                                <textarea class="text-area-medium-fixed" placeholder="Your message" name="message"></textarea>
-                                <div>
-                                    <div class="h-captcha" data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78" data-callback="setToEnabled"></div>
-                                    <button class="know-more-button" id="contact-us-submit-button" type="submit" disabled>Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                        <p style="visibility: hidden;" id="thank-you-after-submit">Thank you for contacting us! We will get back to you shortly.</p>
-                    </div>
-                    <script>
-                        function setToEnabled() {
-                            const button = document.getElementById("contact-us-submit-button");
-                            button.removeAttribute("disabled");
-                        }
-
-                        const form = document.getElementById("contact-form");
-                        form.addEventListener('submit', async (event) => {
-                            const button = document.getElementById("contact-us-submit-button");
-                            button.setAttribute("disabled", "true");
-                            event.preventDefault();
-                            try {
-                                await fetch("https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission", {
-                                method: "POST",
-                                mode: "no-cors",
-                                headers: {
-                                    "Content-Type": "application/x-www-form-urlencoded"
-                                },
-                                body: `first_name=${form[0]?.value}
-                                    &last_name=${form[1]?.value}
-                                    &email=${form[2]?.value}
-                                    &message=${form[3]?.value}
-                                    &h-captcha-response=${form[5]?.value}`
-                                })
-                            } catch (error) {
-                                console.log(error);
-                            } finally {
-                                form.parentNode.remove();
-                                document.getElementById("thank-you-after-submit").removeAttribute("style");
-                            }
-                        });
-                    </script>
-                {% else %}
-                    <div>
-                        <div>
-                            <h2>{{ know_more_options.cta_nav_heading|safe }}</h2>
-                        </div>
-                        <div>
-                            <a href="https://app.rapidplatform.com/signup" >
-                                <button class="light-button-styling" >Sign up now</button>
-                            </a>
-                        </div>
-                    </div>
-                {% endif %}
-            </div>
+  <div class="content-full-column">
+    <div class="container-columns">
+      <div class="container-vertical-center">
+        <div>
+          <h4>EMAIL:</h4>
+          <a class="link-dark" href="mailto:{{ know_more_options.email|safe }}">
+            <p>
+              {{ know_more_options.email|safe }}
+            </p>
+          </a>
+          <br />
+          <h4>LOCATION:</h3>
+          <p>
+            {{ know_more_options.location|safe }}
+          </p>
+          <br />
+          <div class="googlemaps-iframe">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.1330525658561!2d153.09785366964815!3d-27.577024909775076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9144a55dcc2933%3A0x3d3102697594ed64!2s10b%2F107%20Miles%20Platting%20Rd%2C%20Eight%20Mile%20Plains%20QLD%204113!5e0!3m2!1sen!2sau!4v1745986343566!5m2!1sen!2sau"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-     </div>
+      </div>
+      <div>
+        {% if know_more_options.show_contact_form == true %}
+        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+        <div>
+          <h3>{{ know_more_options.title|safe }}</h3>
+          <br />
+          <div>
+            <form id="contact-form">
+              <input type="text" name="first_name" placeholder="First Name" />
+              <input type="text" name="last_name" placeholder="Last Name" />
+              <input type="email" name="email" placeholder="Email" />
+              <input
+                type="tel"
+                name="mobile_phone"
+                placeholder="Mobile Phone"
+              />
+              <textarea
+                class="text-area-medium-fixed"
+                placeholder="Your message"
+                name="message"
+              ></textarea>
+              <div class="container-two-columns">
+                <div
+                  class="h-captcha"
+                  data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78"
+                  data-callback="setToEnabled"
+                ></div>
+                <button
+                  class="know-more-button"
+                  id="contact-us-submit-button"
+                  type="submit"
+                  disabled
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <p style="visibility: hidden" id="thank-you-after-submit">
+            Thank you for contacting us! We will get back to you shortly.
+          </p>
+        </div>
+        <script>
+          function setToEnabled() {
+            const button = document.getElementById("contact-us-submit-button")
+            button.removeAttribute("disabled")
+          }
+          const form = document.getElementById("contact-form")
+          form.addEventListener("submit", async (event) => {
+            const button = document.getElementById("contact-us-submit-button")
+            button.setAttribute("disabled", "true")
+            event.preventDefault()
+            try {
+              await fetch(
+                "https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission",
+                {
+                  method: "POST",
+                  mode: "no-cors",
+                  headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                  },
+                  body: `first_name=${form[0]?.value}
+                        &last_name=${form[1]?.value}
+                        &email=${form[2]?.value}
+                        &mobile_phone=${form[3]?.value}
+                        &message=${form[4]?.value}
+                        &h-captcha-response=${form[5]?.value}`,
+                }
+              )
+            } catch (error) {
+              console.log(error)
+            } finally {
+              form.parentNode.remove()
+              document.getElementById("thank-you-after-submit").removeAttribute("style")
+            }
+          })
+        </script>
+        {% else %}
+        <div>
+          <div>
+            <h2>{{ know_more_options.cta_nav_heading|safe }}</h2>
+          </div>
+          <div>
+            <a href="https://app.rapidplatform.com/signup">
+              <button class="light-button-styling">Sign up now</button>
+            </a>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
