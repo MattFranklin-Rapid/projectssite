@@ -1,0 +1,140 @@
+<div class="center-content">
+  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+  <div>
+    <div>
+      <form id="contact-quote-form-id" class="container-two-columns">
+        <div id="contact-form-quote">
+          <h4>Your details</h4>
+          <hr class="hr-quote" />
+          <input type="text" name="first_name" placeholder="First Name" />
+          <input type="text" name="last_name" placeholder="Last Name" />
+          <input type="email" name="email" placeholder="Email" />
+          <input type="tel" name="mobile_phone" placeholder="Mobile Phone" />
+          <br />
+          <h4>Organisation information</h4>
+          <hr class="hr-quote" />
+          <label for="no-of-employee">
+            How many total employees does your organisation have?
+          </label>
+          <select name="no_of_employee" id="no-of-employee">
+            <option value="">--Please choose an option--</option>
+            <option value="1-50">1-50</option>
+            <option value="50-100">50-100</option>
+            <option value="100-200">100-200</option>
+            <option value="200-1000">200-1000</option>
+            <option value="More than 1000">1000+</option>
+          </select>
+
+          <label for="ops_distribution"
+            >Are your operations centralised or spread across multiple locations
+            or regions?</label
+          >
+          <select id="ops_distribution" name="checkbox">
+            <option value="">--Please choose an option--</option>
+            <option value="We're central">We're central</option>
+            <option value="Some of us work from home">
+              Some of us work from home
+            </option>
+            <option value="We have many locations">We have many locations</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="goals-quote"
+            >Describe the main tasks or business processes you’d like to
+            implement using our platform?</label
+          >
+          <textarea
+            id="goals-quote"
+            class="text-area-medium-fixed"
+            placeholder="Describe here"
+            name="goals"
+          ></textarea>
+
+          <label for="other-systems"
+            >Do you currently use other systems that you’d like to connect to
+            our platform?</label
+          >
+          <textarea
+            id="other-systems"
+            class="text-area-medium-fixed"
+            placeholder="List systems here"
+            name="other_systems"
+          ></textarea>
+
+          <label for="description-of-business-data"
+            >Describe the type and volume of data you'll need to store in our
+            system</label
+          >
+          <textarea
+            id="description-of-business-data"
+            class="text-area-medium-fixed"
+            placeholder="Describe here"
+            name="description_of_business_data"
+          ></textarea>
+        </div>
+        <div></div>
+        <div class="container-two-columns">
+          <div
+            class="h-captcha"
+            data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78"
+            data-callback="setToEnabledQuote"
+          ></div>
+          <button
+            class="know-more-button"
+            id="contact-us-submit-button-quote"
+            type="submit"
+            disabled
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <p style="visibility: hidden" id="thank-you-after-submit-quote">
+      Thank you for contacting us! We will get back to you shortly.
+    </p>
+  </div>
+  <script>
+    function setToEnabledQuote() {
+      let button = document.getElementById("contact-us-submit-button-quote")
+      button.removeAttribute("disabled")
+    }
+    let quoteForm = document.getElementById("contact-quote-form-id")
+    quoteForm.addEventListener("submit", async (event) => {
+      let button = document.getElementById("contact-us-submit-button-quote")
+      button.setAttribute("disabled", "true")
+      event.preventDefault()
+      try {
+        await fetch(
+          "https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission",
+          {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: `first_name=${quoteForm[0]?.value}
+                  &last_name=${quoteForm[1]?.value}
+                  &email=${quoteForm[2]?.value}
+                  &mobile_phone=${quoteForm[3]?.value}
+                  &no_of_employee=${quoteForm[4]?.value}
+                  &ops_distribution=${quoteForm[5]?.value}
+                  &goals=${quoteForm[6]?.value}
+                  &other_systems=${quoteForm[7]?.value}
+                  &description_of_business_data=${quoteForm[8]?.value}
+                  &h-captcha-response=${quoteForm[9]?.value}
+                  &is_quote=true`,
+          }
+        )
+      } catch (error) {
+        console.log(error)
+      } finally {
+        quoteForm.parentNode.remove()
+        document
+          .getElementById("thank-you-after-submit-quote")
+          .removeAttribute("style")
+      }
+    })
+  </script>
+</div>

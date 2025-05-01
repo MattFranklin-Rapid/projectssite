@@ -36,8 +36,8 @@
   opacity: 50%;
 }
 
-.cta-left-content {
-
+.form-card {
+  max-width: 600px;
 }
 
 .call-to-action-container {
@@ -53,8 +53,5 @@
 @media (max-width: 1000px) {
   .cta-right-content {
     width: 100%;
-  }
-  .cta-right-content {
-
   }
 }
