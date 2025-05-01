@@ -19,8 +19,9 @@
       },
       {
         "logo_url": "/src/assets/images/approach/tech-chip.png",
-        "heading": "AI accelerating efficiency",
-        "content": "Harness the power of artificial intelligence to drive efficiency. Rapid Platform is designed with built-in AI, reducing time-on-task by up to 30% for key workflows—empowering your team to accomplish more, faster."
+        "heading": "Accelerate Team Efficiency",
+        "content": "Free your people from repetitive tasks with Rapid Platform’s smart automation. Our platform simplifies complex processes, reducing manual effort so your teams can focus on what matters most. With low-code tools, you have full control to adapt and customise the experience to your unique business needs."
+
       },
       {
         "logo_url": "/src/assets/images/approach/tech-orb.png",
@@ -29,14 +30,14 @@
       },
       {
         "logo_url": "/src/assets/images/approach/tech-arrows.png",
-        "heading": "Empowering your team with automation",
-        "content": "Free your people from repetitive tasks with Rapid Platform’s smart automation. Our platform simplifies complex processes, reducing manual effort so your teams can focus on what matters most. With low-code tools, you have full control to adapt and customise the experience to your unique business needs."
+        "heading": "Advanced Analytics",
+        "content": "Harness the power of advanced analytics via dashboards and reports. Rapid Platform is designed with built-in PowerBI capabilities — empowering you to make better data-driven decisions on the run."
       }
     ],
     "team": [
       {
-        "name": "Amy Wong",
-        "position": "Senior Consultant",
+        "name": "Mitch Hunt",
+        "position": "CEO & Founder",
         "image_url": "/src/assets/testimonials/James-M.jpg"
       },
       {
