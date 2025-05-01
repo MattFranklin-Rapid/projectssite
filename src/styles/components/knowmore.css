@@ -36,8 +36,8 @@
   opacity: 50%;
 }
 
-.cta-left-content {
-
+.form-card {
+  max-width: 600px;
 }
 
 .call-to-action-container {
