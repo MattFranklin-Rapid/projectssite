@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% include '../components/global_head.njk' %} {% include
-    '../components/google/organization.njk' %}
+    {% include '../components/global_head.njk' %} 
+    {% include '../components/google/organization.njk' %}
   </head>
   <body>
     {% include '../components/nav.njk' %} {# Content minimum height wrapper,
@@ -17,11 +17,9 @@
               Streamline the way you work. We eliminate roadblocks and optimise
               your workflow - fast, reliable and results-driven.
             </p>
-            <a href="{{url_get_started}}" target="_blank"
-              ><button class="button-warm-dark button-large">
-                Book a Demo
-              </button></a
-            >
+            <a href="{{url_get_started}}" target="_blank">
+              <button class="button-warm-dark button-large">Book a Demo</button>
+            </a>
           </div>
           <div>
             <iframe
@@ -69,13 +67,13 @@
         <div class='spacer-small'></div>
     </div>
 
-    <div class='landing-demo skeleton block-half background-light'>
+    <div class='landing-demo skeleton block-half background-light text-light'>
       {# Book a Demo CTA #}
       {% include '../components/cta/book_demo.njk' %}
       <div class="spacer-small"></div>
     </div>
     
-    <div class="landing-benifit skeleton block-half background-dark">
+    <div class="landing-benifit skeleton block-half background-dark text-dark">
       {# Benfits video #}
       <div class="center-content">
         <div class="spacer-small"></div>
@@ -92,17 +90,13 @@
       <div class="spacer-small"></div>
     </div>
 
-    <div class="landing-demo skeleton block-half background-light">
-      {# Book a Demo CTA #} {% include '../components/cta/book_demo.njk' %}
-    </div>
-
-    <div class="landing-benifit skeleton block-half background-dark">
+    <div class="landing-benifit skeleton block-half background-dark text-light">
       <div class="content-full-column">
         {% include '../components/feature_multi_tabs.njk' %}
       </div>
     </div>
 
-    <div class="landing-promise skeleton block-half background-dark">
+    <div class="landing-promise skeleton block-half background-dark text-dark">
       {# Our brand promise #}
       <div class="content-full">
         <div class="spacer-small"></div>
