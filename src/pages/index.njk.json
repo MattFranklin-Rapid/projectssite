@@ -136,7 +136,7 @@
         "display": "none",
         "image_source": "/src/assets/images/landing/industry-community.png",
         "quote": "<p><strong>&quot; &quot;</strong></p><p>— Someone, at somewhere</p>",
-        "more_page": "/industry/community",
+        "more_page": "/industry/communities",
         "bullet_points": [
           {
             "label": "IMPACT",
@@ -158,7 +158,7 @@
         "display": "none",
         "image_source": "/src/assets/images/landing/industry-energy.png",
         "quote": "<p><strong>&quot; &quot;</strong></p><p>— Someone, at somewhere</p>",
-        "more_page": "/industry/utility",
+        "more_page": "/industry/energy",
         "bullet_points": [
           {
             "label": "IMPACT",
