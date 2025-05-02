@@ -1,18 +1,18 @@
 {
-    "title": "Rapid Platform",
-    "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
-    "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
-    "title_video_embed": "Rapid Platform",
-    "url_simpli_homepage": "https://simpli.org",
-    "know_more_options": {
-        "show_contact_form": true,
-        "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
-        "cta_nav_heading": "Landing Page"
+  "title": "Rapid Platform",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+  "title_video_embed": "Rapid Platform",
+  "url_simpli_homepage": "https://simpli.org",
+  "know_more_options": {
+    "show_contact_form": true,
+    "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
+    "cta_nav_heading": "Landing Page"
   },
-  "seo":{
+  "seo": {
     "description": "Rapid Platform helps businesses streamline systems with affordable, secure CRM solutions that automate processes and boost efficiency."
   },
-  "feature":{
+  "multi_feature": {
     "minor_heading": "RAPID TECHNOLOGY",
     "major_heading": "Real outcomes, real fast.",
     "heading_paragraph": "<p>From operational efficiency to real-time insights, Rapid helps you solve meaningful business challenges - in weeks, not months.</p>",
@@ -21,34 +21,20 @@
         "label": "Operational Efficiency",
         "active_status": "button-active",
         "display": "grid",
+        "image_source": "/src/assets/images/landing/industry-construction.png",
+        "more_link": "/",
         "features": [
           {
-            "active_status": "button-active",
-            "label": "Eliminate manual work",
-            "display": "block",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Eliminate manual work"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Standardise business processes",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-community.png",
-            "more_link": "/"
+            "label": "Standardise business processes"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Reduce delays and bottlenecks",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-construction.png",
-            "more_link": "/"
+            "label": "Reduce delays and bottlenecks"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Boost team productivity",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-energy.png",
-            "more_link": "/"
+            "label": "Boost team productivity"
           }
         ]
       },
@@ -56,34 +42,20 @@
         "label": "Workflow Automation",
         "active_status": "button-not-active",
         "display": "none",
+        "image_source": "/src/assets/images/landing/industry-childcare.png",
+        "more_link": "/",
         "features": [
           {
-            "active_status": "button-active",
-            "label": "Trigger actions automatically",
-            "display": "block",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Trigger actions automatically"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Capture clean, structured data",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Capture clean, structured data"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Save time across every department",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Save time across every department"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Maintain an operational flow",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Maintain an operational flow"
           }
         ]
       },
@@ -91,34 +63,20 @@
         "label": "Business Intelligence",
         "active_status": "button-not-active",
         "display": "none",
+        "image_source": "/src/assets/images/landing/board-on-laptop.png",
+        "more_link": "/",
         "features": [
           {
-            "active_status": "button-active",
-            "label": "Track key data in real time",
-            "display": "block",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Track key data in real time"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Replace spreadsheets with dashboards",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Replace spreadsheets with dashboards"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Automate reports and alerts",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Automate reports and alerts"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Make faster, smarter decisions",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Make faster, smarter decisions"
           }
         ]
       },
@@ -126,39 +84,25 @@
         "label": "Adaptive Technology",
         "active_status": "button-not-active",
         "display": "none",
+        "image_source": "/src/assets/images/landing/industry-childcare.png",
+        "more_link": "/",
         "features": [
           {
-            "active_status": "button-active",
-            "label": "Implement solutions in weeks, not months",
-            "display": "block",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Implement solutions in weeks, not months"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Scale from one use case ot many",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Scale from one use case ot many"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Integrate with your existing tools",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Integrate with your existing tools"
           },
           {
-            "active_status": "button-not-active",
-            "label": "Access ongoing enablement, while training internal champions",
-            "display": "none",
-            "image_source": "/src/assets/images/landing/industry-childcare.png",
-            "more_link": "/"
+            "label": "Access ongoing enablement, while training internal champions"
           }
         ]
       }
     ]
-   },
+  },
   "industry": {
     "minor_heading": "RAPID RESULTS",
     "major_heading": "Our customers innovate at speed",
@@ -254,5 +198,4 @@
       }
     ]
   }
-
 }
