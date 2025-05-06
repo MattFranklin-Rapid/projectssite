@@ -240,3 +240,8 @@ a .decorated {
   padding: 0.5rem;
   border-radius: 16px;
 }
+
+.approach-plus-images {
+  max-width: 191px;
+  aspect-ratio: 191 / 147;
+}

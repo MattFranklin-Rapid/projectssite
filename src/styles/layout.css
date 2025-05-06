@@ -166,11 +166,25 @@ details {
 
 /* Content layout assistants */
 
+.container-width-full {
+  width: 100%;
+}
+
+.container-width-medium {
+  min-width: 50vw;
+  max-width: 60vw;
+}
+
 .container-width-narrow {
   min-width: 30vw;
+  max-width: 40vw;
 }
 
 @media(max-width:1000px){
+  .container-width-medium {
+    min-width: 70vw;
+  } 
+
   .container-width-narrow {
     min-width: 50vw;
   } 
@@ -183,6 +197,11 @@ details {
 
 .text-center {
   text-align: center;
+}
+
+.self-horizontal-center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .container-align-right {
@@ -336,4 +355,14 @@ details {
   display: grid;
   padding: 2rem;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-centre-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-centre-img > img {
+  margin-left: auto;
+  margin-right: auto;
 }

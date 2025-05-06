@@ -52,7 +52,6 @@
     <div id="feature-tabs-content">
       {% for item in feature.features %}
         <div style="display: {{ item.display }}" id="{{ item.label }}">
-          <img src="{{ item.image_source }}"/>
           <div class="feature-checkboxs">
             {% for bullet in item.bullet_points %}
               <div class="check-list">
@@ -61,6 +60,7 @@
               </div>
             {% endfor %}
           </div>
+          <img src="{{ item.image_source }}"/>
         </div>
       {% endfor %}
     </div>

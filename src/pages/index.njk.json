@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "title": "Rapid Platform",
     "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
     "url_video_embed": "https://www.youtube.com/embed/rNe9q82nVnI?si=0zS4b8tMIu2umtes",
@@ -11,8 +12,22 @@
   },
   "seo":{
     "description": "Rapid Platform is a low-code, cloud-based business operations platform that helps mid-market and enterprise organisations streamline operations, automate workflows, and gain real-time insights — fast. Built on Microsoft Azure, Rapid combines flexible enterprise technology with expert delivery support to enable scalable, secure, and efficient and effortless digital transformation."
+=======
+  "title": "Rapid Platform",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+  "title_video_embed": "Rapid Platform",
+  "url_simpli_homepage": "https://simpli.org",
+  "know_more_options": {
+    "show_contact_form": true,
+    "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
+    "cta_nav_heading": "Landing Page"
   },
-  "feature":{
+  "seo": {
+    "description": "Rapid Platform helps businesses streamline systems with affordable, secure CRM solutions that automate processes and boost efficiency."
+>>>>>>> ad2665f9abe9a92c54b96cfc83f66646cc4a8312
+  },
+  "multi_feature": {
     "minor_heading": "RAPID TECHNOLOGY",
     "major_heading": "Real outcomes, real fast.",
     "heading_paragraph": "<p>From operational efficiency to real-time insights, Rapid helps you solve meaningful business challenges - in days, not months.</p>",
@@ -21,8 +36,11 @@
         "label": "Operational Efficiency",
         "active_status": "button-active",
         "display": "grid",
+        "image_source": "/src/assets/images/landing/industry-construction.png",
+        "more_link": "/",
         "features": [
           {
+<<<<<<< HEAD
             "active_status": "button-active",
             "label": "Eliminate repetitive tasks and manual workflows that slow down teams.",
             "display": "block",
@@ -49,6 +67,18 @@
             "display": "none",
             "image_source": "/src/assets/images/landing/Rapid Board View.png",
             "more_link": "/"
+=======
+            "label": "Eliminate manual work"
+          },
+          {
+            "label": "Standardise business processes"
+          },
+          {
+            "label": "Reduce delays and bottlenecks"
+          },
+          {
+            "label": "Boost team productivity"
+>>>>>>> ad2665f9abe9a92c54b96cfc83f66646cc4a8312
           }
         ]
       },
@@ -56,8 +86,11 @@
         "label": "Workflow Automation",
         "active_status": "button-not-active",
         "display": "none",
+        "image_source": "/src/assets/images/landing/industry-childcare.png",
+        "more_link": "/",
         "features": [
           {
+<<<<<<< HEAD
             "active_status": "button-active",
             "label": "Automate internal processes like approvals, task assignments, and notifications.",
             "display": "block",
@@ -84,6 +117,18 @@
             "display": "none",
             "image_source": "/src/assets/images/landing/Workflow Example.png",
             "more_link": "/"
+=======
+            "label": "Trigger actions automatically"
+          },
+          {
+            "label": "Capture clean, structured data"
+          },
+          {
+            "label": "Save time across every department"
+          },
+          {
+            "label": "Maintain an operational flow"
+>>>>>>> ad2665f9abe9a92c54b96cfc83f66646cc4a8312
           }
         ]
       },
@@ -91,8 +136,11 @@
         "label": "Business Intelligence",
         "active_status": "button-not-active",
         "display": "none",
+        "image_source": "/src/assets/images/landing/board-on-laptop.png",
+        "more_link": "/",
         "features": [
           {
+<<<<<<< HEAD
             "active_status": "button-active",
             "label": "Unlock real-time insights across teams, workflows, and KPIs.",
             "display": "block",
@@ -119,6 +167,18 @@
             "display": "none",
             "image_source": "/src/assets/images/landing/Projects Dashboard.png",
             "more_link": "/"
+=======
+            "label": "Track key data in real time"
+          },
+          {
+            "label": "Replace spreadsheets with dashboards"
+          },
+          {
+            "label": "Automate reports and alerts"
+          },
+          {
+            "label": "Make faster, smarter decisions"
+>>>>>>> ad2665f9abe9a92c54b96cfc83f66646cc4a8312
           }
         ]
       },
@@ -126,8 +186,11 @@
         "label": "Adaptive Technology",
         "active_status": "button-not-active",
         "display": "none",
+        "image_source": "/src/assets/images/landing/industry-childcare.png",
+        "more_link": "/",
         "features": [
           {
+<<<<<<< HEAD
             "active_status": "button-active",
             "label": "Customise solutions to match your unique workflows — without writing code.",
             "display": "block",
@@ -154,11 +217,23 @@
             "display": "none",
             "image_source": "src/assets/images/landing/Menu Selection.png",
             "more_link": "/"
+=======
+            "label": "Implement solutions in weeks, not months"
+          },
+          {
+            "label": "Scale from one use case ot many"
+          },
+          {
+            "label": "Integrate with your existing tools"
+          },
+          {
+            "label": "Access ongoing enablement, while training internal champions"
+>>>>>>> ad2665f9abe9a92c54b96cfc83f66646cc4a8312
           }
         ]
       }
     ]
-   },
+  },
   "industry": {
     "minor_heading": "RAPID RESULTS",
     "major_heading": "Our customers innovate at speed",
@@ -254,5 +329,4 @@
       }
     ]
   }
-
 }
