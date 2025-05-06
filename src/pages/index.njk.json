@@ -1,21 +1,21 @@
 {
-  "title": "Rapid Platform",
-  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
-  "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
-  "title_video_embed": "Rapid Platform",
-  "url_simpli_homepage": "https://simpli.org",
-  "know_more_options": {
-    "show_contact_form": true,
-    "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
-    "cta_nav_heading": "Landing Page"
+    "title": "Rapid Platform",
+    "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+    "url_video_embed": "https://www.youtube.com/embed/rNe9q82nVnI?si=0zS4b8tMIu2umtes",
+    "title_video_embed": "Rapid Platform",
+    "url_simpli_homepage": "https://simpli.org",
+    "know_more_options": {
+        "show_contact_form": true,
+        "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
+        "cta_nav_heading": "Landing Page"
   },
-  "seo": {
-    "description": "Rapid Platform helps businesses streamline systems with affordable, secure CRM solutions that automate processes and boost efficiency."
+  "seo":{
+    "description": "Rapid Platform is a low-code, cloud-based business operations platform that helps mid-market and enterprise organisations streamline operations, automate workflows, and gain real-time insights — fast. Built on Microsoft Azure, Rapid combines flexible enterprise technology with expert delivery support to enable scalable, secure, and efficient and effortless digital transformation."
   },
   "multi_feature": {
     "minor_heading": "RAPID TECHNOLOGY",
     "major_heading": "Real outcomes, real fast.",
-    "heading_paragraph": "<p>From operational efficiency to real-time insights, Rapid helps you solve meaningful business challenges - in weeks, not months.</p>",
+    "heading_paragraph": "<p>From operational efficiency to real-time insights, Rapid helps you solve meaningful business challenges - in days, not months.</p>",
     "areas": [
       {
         "label": "Operational Efficiency",
@@ -25,16 +25,32 @@
         "more_link": "/",
         "features": [
           {
-            "label": "Eliminate manual work"
+            "active_status": "button-active",
+            "label": "Eliminate repetitive tasks and manual workflows that slow down teams.",
+            "display": "block",
+            "image_source": "/src/assets/images/landing/Rapid Board View.png",
+            "more_link": "/"
           },
           {
-            "label": "Standardise business processes"
+            "active_status": "button-not-active",
+            "label": "Reduce bottlenecks by standardising processes across departments.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Rapid Board View.png",
+            "more_link": "/"
           },
           {
-            "label": "Reduce delays and bottlenecks"
+            "active_status": "button-not-active",
+            "label": "Improve team productivity with faster approvals and smoother handoffs.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Rapid Board View.png",
+            "more_link": "/"
           },
           {
-            "label": "Boost team productivity"
+            "active_status": "button-not-active",
+            "label": "Free up resources to focus on high-impact, strategic work.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Rapid Board View.png",
+            "more_link": "/"
           }
         ]
       },
@@ -46,16 +62,32 @@
         "more_link": "/",
         "features": [
           {
-            "label": "Trigger actions automatically"
+            "active_status": "button-active",
+            "label": "Automate internal processes like approvals, task assignments, and notifications.",
+            "display": "block",
+            "image_source": "/src/assets/images/landing/Workflow Example.png",
+            "more_link": "/"
           },
           {
-            "label": "Capture clean, structured data"
+            "active_status": "button-not-active",
+            "label": "Accelerate project delivery by keeping workflows moving without manual intervention.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Workflow Example.png",
+            "more_link": "/"
           },
           {
-            "label": "Save time across every department"
+            "active_status": "button-not-active",
+            "label": "Capture clean, consistent data at every step, improving reporting accuracy.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Workflow Example.png",
+            "more_link": "/"
           },
           {
-            "label": "Maintain an operational flow"
+            "active_status": "button-not-active",
+            "label": "Customise workflows quickly — no coding, no IT bottlenecks.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Workflow Example.png",
+            "more_link": "/"
           }
         ]
       },
@@ -67,16 +99,32 @@
         "more_link": "/",
         "features": [
           {
-            "label": "Track key data in real time"
+            "active_status": "button-active",
+            "label": "Unlock real-time insights across teams, workflows, and KPIs.",
+            "display": "block",
+            "image_source": "/src/assets/images/landing/Projects Dashboard.png",
+            "more_link": "/"
           },
           {
-            "label": "Replace spreadsheets with dashboards"
+            "active_status": "button-not-active",
+            "label": "Replace spreadsheets with dynamic, actionable dashboards.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Projects Dashboard.png",
+            "more_link": "/"
           },
           {
-            "label": "Automate reports and alerts"
+            "active_status": "button-not-active",
+            "label": "Monitor progress and identify bottlenecks before they impact results.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Projects Dashboard.png",
+            "more_link": "/"
           },
           {
-            "label": "Make faster, smarter decisions"
+            "active_status": "button-not-active",
+            "label": "Enable faster, smarter decisions with instant access to operational data.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Projects Dashboard.png",
+            "more_link": "/"
           }
         ]
       },
@@ -88,16 +136,32 @@
         "more_link": "/",
         "features": [
           {
-            "label": "Implement solutions in weeks, not months"
+            "active_status": "button-active",
+            "label": "Customise solutions to match your unique workflows — without writing code.",
+            "display": "block",
+            "image_source": "/src/assets/images/landing/Menu Selection.png",
+            "more_link": "/"
           },
           {
-            "label": "Scale from one use case ot many"
+            "active_status": "button-not-active",
+            "label": "Scale from single use cases to full business systems as you grow.",
+            "display": "none",
+            "image_source": "/src/assets/images/landing/Menu Selection.png",
+            "more_link": "/"
           },
           {
-            "label": "Integrate with your existing tools"
+            "active_status": "button-not-active",
+            "label": "Adjust quickly as your processes, teams, or goals evolve.",
+            "display": "none",
+            "image_source": "src/assets/images/landing/Menu Selection.png",
+            "more_link": "/"
           },
           {
-            "label": "Access ongoing enablement, while training internal champions"
+            "active_status": "button-not-active",
+            "label": "Integrate with your existing tools.",
+            "display": "none",
+            "image_source": "src/assets/images/landing/Menu Selection.png",
+            "more_link": "/"
           }
         ]
       }
@@ -106,7 +170,7 @@
   "industry": {
     "minor_heading": "RAPID RESULTS",
     "major_heading": "Our customers innovate at speed",
-    "heading_paragraph": "Discover how our customers ar eusing Rapid to drive growth. From targeted solutions to full-scale digital transformation, we partner with our customers every step of the way.",
+    "heading_paragraph": "Discover how our customers are using Rapid to drive growth. From targeted solutions to full-scale digital transformation, we partner with our customers every step of the way.",
     "industries": [
       {
         "active_status": "button-active",
@@ -117,16 +181,16 @@
         "more_page": "/industry/childcare",
         "bullet_points": [
           {
-            "label": "IMPACT",
+            "label": "CHALLENGE",
+            "message": "Leads were slipping through the cracks."
+          },
+          {
+            "label": "SOLUTION",
+            "message": "Automated lead-to-enrolment workflows and tracking system."
+          },
+          {
+            "label": "RESULT",
             "message": "42% boost in enrolments"
-          },
-          {
-            "label": "INDUSTRY",
-            "message": "Childcare centre management"
-          },
-          {
-            "label": "RAPID TECH",
-            "message": "Lead-to-enrolment workflow and automation solution"
           }
         ]
       },
@@ -134,21 +198,21 @@
         "active_status": "button-not-active",
         "label": "Chambers of Commerce",
         "display": "none",
-        "image_source": "/src/assets/images/landing/industry-community.png",
+        "image_source": "/src/assets/images/landing/industry-communities.png",
         "quote": "<p><strong>&quot; &quot;</strong></p><p>— Someone, at somewhere</p>",
         "more_page": "/industry/communities",
         "bullet_points": [
           {
-            "label": "IMPACT",
-            "message": "Automated member communication"
+            "label": "CHALLENGE",
+            "message": "Manual membership processes slowed growth."
           },
           {
-            "label": "INDUSTRY",
-            "message": "Local Communities"
+            "label": "SOLUTION",
+            "message": "Automated memberships and renewals in one platform."
           },
           {
-            "label": "RAPID TECH",
-            "message": "Membership and event management system"
+            "label": "RESULT",
+            "message": "Self-service members, scalable operations."
           }
         ]
       },
@@ -161,16 +225,16 @@
         "more_page": "/industry/energy",
         "bullet_points": [
           {
-            "label": "IMPACT",
-            "message": "Improved team collaboration across US and AUD time zones"
+            "label": "CHALLENGE",
+            "message": "Projects and resources were disconnected."
           },
           {
-            "label": "INDUSTRY",
-            "message": "Energy"
+            "label": "SOLUTION",
+            "message": "Centralized project and resource management."
           },
           {
-            "label": "RAPID TECH",
-            "message": "Project management hub and resource tracking"
+            "label": "RESULT",
+            "message": "Faster prioritization, better capacity planning."
           }
         ]
       },
@@ -183,16 +247,16 @@
         "more_page": "/industry/construction",
         "bullet_points": [
           {
-            "label": "IMPACT",
-            "message": "70% time savings on pre-sales drafting"
+            "label": "CHALLENGE",
+            "message": "Sales-to-build pipeline was costing time and money."
           },
           {
-            "label": "INDUSTRY",
-            "message": "Construction"
+            "label": "SOLUTION",
+            "message": "Streamlined workflow solution from sale to construction."
           },
           {
-            "label": "RAPID TECH",
-            "message": "Sales to slab-on-ground management system"
+            "label": "RESULT",
+            "message": "Lower costs, fewer errors and a 70% time savings on pre-sales drafting."
           }
         ]
       }
