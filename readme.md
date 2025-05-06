@@ -34,6 +34,7 @@ This project is a scaffold for future development as well as a static site gener
 - Shift the project from my personal github
 - Figure out how to bind the domain to the [Azure App Service](https://portal.azure.com/#@rapidplatform.com/resource/subscriptions/1240b94b-1abb-40e8-87e0-17cb115b8459/resourceGroups/rapid-projects/providers/Microsoft.Web/staticSites/projectssite/staticsite)
 - Update SEO product listing and Organisation details
+- ⚠ Fix styling on stupid tab components to work on mobile
 
 ## Style Guide
 
