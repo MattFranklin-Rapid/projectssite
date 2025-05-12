@@ -1,0 +1,34 @@
+/* 
+
+  This file contains:
+    - easing functions for smoother animations
+      useage = transition: opacity 150ms var(--NAME_OF_EASING_FUNCTION);
+
+    - keyframe definitions for use in animation:
+
+    - classes who have animation attached
+
+*/
+
+:root {
+  /* https://easings.net/#easeOutExpo */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate {
+  &.fade-up {
+    animation: fadeUp 0.8s var(--ease-out-expo) forwards;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

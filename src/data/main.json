@@ -1,42 +1,55 @@
 {
   "template": "layouts/main.njk",
-  "nav": {
-    "logo": {
-      "desktopSrc": "/images/logos/RPD_logo_2D.svg",
-      "mobileSrc": "/images/logos/r.svg",
-      "link": "/",
-      "alt": "Rapid platform logo"
-    },
+  "ourApproach": {
+    "title": "Our Approach",
+    "subTitle": "Not just a software company.",
+    "content": "<p>Our unique <strong>Tech+Team</strong> approach sets us apart</p><p>Our in-house <strong>Tech+</strong> is highly customisable, reliable and fast to implement - build and refined over 8 years of development. Paired with our <strong>+Team</strong> of expert consultants and developers, we provide ongoing support to ensure your success.</p><p>This powerful combination allows us to deliver fast, low-risk digital solutions across everything from CRMs to ERPs to project management and advanced analytics solutions</p>",
     "ctaButton": {
-      "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
-      "text": "Book a Demo"
+      "link": "/approach",
+      "text": "Tech+Team Approach"
     },
-    "menu": [
-      {
-        "text": "Our Approach",
-        "link": "/approach"
+    "image": {
+      "src": "/src/assets/images/landing/board-on-laptop.png",
+      "alt": "A laptop computer displaying the rapid platform explorer application"
+    },
+    "nav": {
+      "logo": {
+        "desktopSrc": "/images/logos/RPD_logo_2D.svg",
+        "mobileSrc": "/images/logos/r.svg",
+        "link": "/",
+        "alt": "Rapid platform logo"
       },
-      {
-        "text": "Industries",
-        "children": [
-          {
-            "text": "Childcare",
-            "link": "/industry/childcare"
-          },
-          {
-            "text": "Construction",
-            "link": "/industry/construction"
-          },
-          {
-            "text": "Utilities",
-            "link": "/industry/energy"
-          },
-          {
-            "text": "Community",
-            "link": "/industry/communities"
-          }
-        ]
-      }
-    ]
+      "ctaButton": {
+        "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+        "text": "Book a Demo"
+      },
+      "menu": [
+        {
+          "text": "Our Approach",
+          "link": "/approach"
+        },
+        {
+          "text": "Industries",
+          "children": [
+            {
+              "text": "Childcare",
+              "link": "/industry/childcare"
+            },
+            {
+              "text": "Construction",
+              "link": "/industry/construction"
+            },
+            {
+              "text": "Utilities",
+              "link": "/industry/energy"
+            },
+            {
+              "text": "Community",
+              "link": "/industry/communities"
+            }
+          ]
+        }
+      ]
+    }
   }
 }
