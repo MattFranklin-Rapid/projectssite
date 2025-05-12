@@ -7,25 +7,27 @@
     <body>
         {% include '../components/nav.njk' %}
 
-        <div class='hero-with-content splash-small text-dark background-dark'>
-            {# Hero banner #}
-             <div class="content-full-column">
-                
-                <div class="container-two-columns">
-                    <div>
-                    <h1> Enterprise technology, 
-                    <br>delivered by the team who built it.</h1>
-                    <p>Tech in the cloud, team on the ground.</P>
-                        <a href="{{url_get_started}}" target="_blank"><button class="button-warm-dark button-large">BOOK A DEMO</button></a>
-                    </div>
-                    <div>
-                        <br>
-                        <br>
-                        <iframe class="video-hero-landing" width="700" height="394" src="{{url_video_embed}}" title="{{title_video_embed}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% include '../components/hero.njk' %}
+
+        <!-- <div class='hero-with-content splash-small text-dark background-dark'> -->
+        <!--     {# Hero banner #} -->
+        <!--      <div class="content-full-column"> -->
+        <!---->
+        <!--         <div class="container-two-columns"> -->
+        <!--             <div> -->
+        <!--             <h1> Enterprise technology,  -->
+        <!--             <br>delivered by the team who built it.</h1> -->
+        <!--             <p>Tech in the cloud, team on the ground.</P> -->
+        <!--                 <a href="{{url_get_started}}" target="_blank"><button class="button-warm-dark button-large">BOOK A DEMO</button></a> -->
+        <!--             </div> -->
+        <!--             <div> -->
+        <!--                 <br> -->
+        <!--                 <br> -->
+        <!--                 <iframe class="video-hero-landing" width="700" height="394" src="{{url_video_embed}}" title="{{title_video_embed}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+        <!--             </div> -->
+        <!--         </div> -->
+        <!--     </div> -->
+        <!-- </div> -->
         
         <div class="approach-methodology skeleton block-half text-light background-light">
             {# Our Method #}

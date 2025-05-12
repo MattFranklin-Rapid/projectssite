@@ -1,0 +1,24 @@
+<svg class="angle" viewBox="0 0 1280 343" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" >
+  <path d="M0 342.975L1280 0V342.975H0Z"/>
+</svg>
+
+<style>
+{#
+  the parent section needs to be position: relative;
+#}
+
+
+  .angle {
+    width: 100%;
+    height: var(--angle-height, 300px);
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    /* To cover the single px dark background that shows through */
+    margin-bottom: -1px;
+
+    path {
+      fill: var(--background-light);
+    }
+  }
+</style>

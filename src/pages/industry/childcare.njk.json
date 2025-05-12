@@ -5,6 +5,15 @@
   "marketTargetedTagline": "We understand the unique challenges childcare centres face. From managing enrolments, to staffing and family experience, we’ve got solutions that remove bottlenecks and streamline operations.",
   "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
   "url_book_demo": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "hero": {
+    "title": "Technology solutions for childcare providers",
+    "subtitle": "We understand the unique challenges childcare centres face. From managing enrolments, to staffing and family experience, we’ve got solutions that remove bottlenecks and streamline operations.",
+    "url_video_embed": "https://www.youtube.com/embed/N2tRuVxGBuM?si=mOqq29WcuGbYuV-p",
+    "overlay_url_video_embed": "/src/assets/images/hero-overlay-image.jpg",
+    "title_video_embed": "Rapid Platform",
+    "content__padding-top": 300,
+    "content__padding-bottom": 300
+  },
   "seo": {
     "description": "Transform your Childcare business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
   },
@@ -162,3 +171,4 @@
     "message": "<p>Our goal is to give you the tools to focus on what matters most — caring for children.</p><p>With Rapid's technology, you'll save time, increase efficiency, and deliver a better experience for both families and your staf. Plus, our cloud-based solution ensures your team can access up-to-date information, no matter where they are.</p>"
   }
 }
+

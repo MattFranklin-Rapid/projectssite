@@ -1,0 +1,109 @@
+{# Hero banner
+
+add "hero" into page definition:
+
+hero: {
+  title: string;
+  subtitle: string;
+  url_video_embed: string;
+  title_video_embed: string;
+  overlay_url_video_embed: string;
+}
+
+#}
+
+
+<div class="hero">
+  <div class="hero__content content-full-column">
+    <div class="hero__container container-two-columns">
+      <div class="hero__title" >
+        <h1>{{ hero.title }}</h1>
+        <p>
+          {{ hero.subtitle }}
+        </p>
+      </div>
+      <div class="hero__video-container" >
+        <iframe
+          class="hero__video-frame"
+          width="700"
+          height="394"
+          src="{{hero.url_video_embed}}"
+          title="{{hero.url_video_title}}"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          id="hero-player"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  {% include "../components/angle.njk" %}
+
+</div>
+
+<style>
+.hero {
+  background: var(--background-dark);
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+
+  {# required for angle to work correctly #}
+  position: relative;
+
+  .hero__content {
+    margin-top: var(--hero__content-margin-top);
+    margin-bottom: var(--hero__content-margin-bottom, 100px);
+  }
+
+.hero__title {
+  p {
+    color: var(--color-rapid-blue);
+    text-align: justify;
+  }
+}
+
+  .hero__title,
+  .hero__video-container {
+    z-index: 1;
+  }
+
+  .hero__video-container { 
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    transition: ease-in-out 150ms transform;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  /* 
+  This will be used for the image overlay
+  */
+  /* .hero__video-container::after { */
+  /*   content: ''; */
+  /*   position: absolute; */
+  /*   top: 0; */
+  /*   bottom: 0; */
+  /*   left: 0; */
+  /*   right: 0; */
+  /*   background-image: url("/src/assets/images/hero-overlay-image.jpg"); */
+  /*   background-position: center; */
+  /*   background-size: cover; */
+  /*   z-index: 10; */
+  /*   cursor: pointer; */
+  /*   pointer-events: none; */
+  /*   transition: ease-in-out 150ms opacity; */
+  /* } */
+  /**/
+  /* .playing.hero__video-container::after { */
+  /*   opacity: 0; */
+  /* } */
+
+}
+</style>
