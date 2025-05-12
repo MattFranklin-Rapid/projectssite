@@ -27,7 +27,7 @@
       "content": "A cloud-native solution built on Microsoft Azure. Rapid Platform leverages cutting-edge cloud integration capabilities, helping organisations accelerate innovation, scale seamlessly, and adapt to new challenges in real time."
     },
     {
-      "logo_url": "/src/assets/images/approach/tech-chip.png",
+      "logo_url": "/src/assets/images/approach/tech-arrows.png",
       "heading": "Accelerate Team Efficiency",
       "content": "Free your people from repetitive tasks with Rapid Platform’s smart automation. Our platform simplifies complex processes, reducing manual effort so your teams can focus on what matters most. With low-code tools, you have full control to adapt and customise the experience to your unique business needs."
     },
@@ -37,9 +37,14 @@
       "content": "Stay aligned with a flexible, adaptable data model that ensures all your processes are integrated into one central hub. Rapid Platform guarantees you always have a single source of truth, enabling quick, informed decision-making."
     },
     {
-      "logo_url": "/src/assets/images/approach/tech-arrows.png",
+      "logo_url": "/src/assets/images/approach/tech-chart.svg",
       "heading": "Advanced Analytics",
       "content": "Harness the power of advanced analytics via dashboards and reports. Rapid Platform is designed with built-in PowerBI capabilities — empowering you to make better data-driven decisions on the run."
+    },
+    {
+      "logo_url": "/src/assets/images/approach/tech-chip.png",
+      "heading": "Security",
+      "content": "Rapid Platform is built with security at its core. Hosted on Microsoft Azure, we leverage enterprise-grade security protocols, encrypted data transmission, and role-based access controls to protect your critical business information."
     }
   ],
   "team": [
