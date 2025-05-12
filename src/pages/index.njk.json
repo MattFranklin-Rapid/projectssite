@@ -1,15 +1,24 @@
 {
-    "title": "Rapid Platform",
-    "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
-    "url_video_embed": "https://www.youtube.com/embed/rNe9q82nVnI?si=0zS4b8tMIu2umtes",
-    "title_video_embed": "Rapid Platform",
-    "url_simpli_homepage": "https://simpli.org",
-    "know_more_options": {
-        "show_contact_form": true,
-        "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
-        "cta_nav_heading": "Landing Page"
+  "title": "Rapid Platform",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_video_embed": "https://www.youtube.com/embed/rNe9q82nVnI?si=0zS4b8tMIu2umtes",
+  "title_video_embed": "Rapid Platform",
+  "url_simpli_homepage": "https://simpli.org",
+  "know_more_options": {
+    "show_contact_form": true,
+    "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
+    "cta_nav_heading": "Landing Page"
   },
-  "seo":{
+  "hero": {
+    "title": "Enterprise technology, delivered by the team who built it.",
+    "subtitle": "Tech in the cloud, team on the ground.",
+    "url_video_embed": "https://www.youtube.com/embed/rNe9q82nVnI?si=0zS4b8tMIu2umtes",
+    "overlay_url_video_embed": "/src/assets/images/hero-overlay-image.jpg",
+    "title_video_embed": "Rapid Platform",
+    "content__padding-top": 300,
+    "content__padding-bottom": 300
+  },
+  "seo": {
     "description": "Rapid Platform is a low-code, cloud-based business operations platform that helps mid-market and enterprise organisations streamline operations, automate workflows, and gain real-time insights — fast. Built on Microsoft Azure, Rapid combines flexible enterprise technology with expert delivery support to enable scalable, secure, and efficient and effortless digital transformation."
   },
   "multi_feature": {

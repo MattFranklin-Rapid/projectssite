@@ -1,0 +1,127 @@
+
+{# 
+   This renders a full width video block
+    
+   to work correctly it requires a video to
+   be added to /src/data/videos.json
+
+   then imported like this
+
+   {% set videoId = "ID_IN_VIDEOS_JSON" %}
+   {% include "../path/to/full-width-video.njk" %}
+
+   That video id will be used to find the config in videos.json
+
+#}
+
+{% set video = videos[videoId] %}
+
+<div class='skeleton full-width-video'>
+  <iframe 
+    src="{{video.src}}&amp;enablejsapi=1" 
+    title="{{video.title}}"
+    class="full-width-player" 
+    frameborder="0" 
+    id="full-width-player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen
+  ></iframe>
+</div>
+
+<style>
+  .full-width-video {
+    width: 100%;
+    position: relative;
+    
+    iframe.full-width-player {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+    }
+
+
+    &::before {
+      content: "";
+      display: block;
+      width: 72px;
+      height: 72px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+      opacity: 1;
+      background: url(data:image/svg+xml;base64,Cjxzdmcgd2lkdGg9IjcycHgiIGhlaWdodD0iNzJweCIgdmlld0JveD0iMCAwIDcyIDcyIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGcgaWQ9IlNDSS13ZWJzaXRlIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iU3Ryb25naG9sZC1Ib21lcGFnZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTExNTEuMDAwMDAwLCAtMTIwOS4wMDAwMDApIiBzdHJva2U9IiNGRkZGRkYiPgogICAgICAgICAgICA8ZyBpZD0iSW50cm8tVGV4dC0mYW1wOy1WaWRlbyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDAwMDAsIDEwNTAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iVklERU8tc2VjdGlvbiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTY3LjAwMDAwMCwgMzAuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9Ikdyb3VwLTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4NS4wMDAwMDAsIDEzMC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgY3g9IjM1IiBjeT0iMzUiIHI9IjM1Ij48L2NpcmNsZT4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTI1LjcxNDI4NTcsNDcuNDM4NzIxIEMyNS43MTQyODU3LDQ4Ljg2Mzc4MTYgMjcuMjYxMTg1OSw0OS43NTA1NzI4IDI4LjQ4OTkzNDMsNDkuMDI5NTYzMyBMNDkuNjg4MzMwMSwzNi41OTAzOTE0IEM1MC45MDI0MjQyLDM1Ljg3Nzk1MzMgNTAuOTAyNDI0MiwzNC4xMjIwNDU5IDQ5LjY4ODMzMDEsMzMuNDA5NjA3NyBMMjguNDg5OTM0MywyMC45NzA0MzU1IEMyNy4yNjExODU5LDIwLjI0OTQyNiAyNS43MTQyODU3LDIxLjEzNjIxNzEgMjUuNzE0Mjg1NywyMi41NjEyNzc3IEwyNS43MTQyODU3LDIyLjU2MTI3NzcgTDI1LjcxNDI4NTcsNDcuNDM4NzIxIFoiIGlkPSJWZWN0b3IiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLWRhc2hhcnJheT0iMCwwIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgICAgICA8L2c+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 100;
+      transition: ease-in-out 150ms opacity;
+      cursor: pointer;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url("{{video.overlayImageSrc}}");
+      background-position: center;
+      background-size: cover;
+      z-index: 10;
+      cursor: pointer;
+      transition: ease-in-out 150ms opacity;
+    }
+
+    &.playing {
+      &::after, 
+      &::before {
+        opacity: 0;
+        pointer-events: none;
+      }
+    }
+  }
+</style>
+
+<script>
+let player;
+
+// Function that gets called when YouTube API is ready
+// This is just "magicly" called by the ifram_api script in the head
+function onYouTubeIframeAPIReady() {
+  // Initialize the player
+  player = new YT.Player('full-width-player', {
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+
+// When player is ready
+function onPlayerReady(event) {
+  console.log('Fullscreen video is ready');
+}
+
+// When player state changes
+function onPlayerStateChange(event) {
+  // 0 = ended, 1 = playing, 2 = paused, 3 = buffering, 5 = video cued
+  if (event.data === 0 || event.data === 2) {
+    container.classList.remove('playing');
+  }
+}
+
+function playVideo() {
+  if (player && player.playVideo) {
+    player.playVideo();
+  }
+}
+
+const container = document.querySelector('.full-width-video');
+
+container.addEventListener('click', () => {
+  container.classList.add('playing');
+  playVideo();
+});
+</script>
