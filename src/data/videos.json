@@ -1,0 +1,10 @@
+{
+  "videos": {
+    "building-a-crm": {
+      "src": "https://www.youtube.com/embed/4Rni97X0K50?si=PgKR6YqSgCMSp-Db",
+      "alt": "",
+      "title": "Rapid CRM Workshop",
+      "overlayImageSrc": "/src/assets/images/build-a-crm-overlay.webp"
+    }
+  }
+}
