@@ -1,3 +1,13 @@
+:root {
+  --page-width: 90vw;
+}
+
+@media (max-width: 1000px) {
+  :root {
+    --page-width: 95vw;
+  }
+}
+
 /* Big splash takes up ~3/4 of the page on desktop, full screen on mobile */
 .splash-big {
   min-height: 65vh;
@@ -46,7 +56,7 @@ details {
   top: 0;
   z-index: 100;
   width: 100vw;
-  padding-inline: 8rem;
+  /* padding-inline: 8rem; */
   transition: height ease-in-out 200ms;
   background-color: var(--background-light);
 }
@@ -58,7 +68,7 @@ details {
   display: flex;
   flex: 1;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   z-index: 1;
   width: 100%;
   color: var(--text-light);
@@ -80,8 +90,12 @@ details {
   color: #0c152a;
 }
 
-.header a:hover {
-  color: #f0b41c;
+.regular-header,
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: var(--page-width);
 }
 
 .mobile-header {
@@ -364,4 +378,3 @@ details {
   margin-left: auto;
   margin-right: auto;
 }
-

@@ -1,25 +1,99 @@
+{# 
+  Change menu items in /src/data/main.json
+
+
+/src/data/main.json
+{
+...other content
+  nav: {
+    logo: {
+      // large logo to show on desktop 
+      desktopSrc: string;
+      // small logo to show on mobile 
+      mobileSrc: string;
+      link: string;
+      alt: string;
+    },
+    ctaButton: {
+      link: string;
+      text: string;
+    },
+    menu: [
+      {
+        label: string;
+        link: string;
+        // Currently only one level of nesting is supported
+        children?: [
+          {
+            text: string;
+            link: string;
+            // So the children can't have children
+          }
+        ]
+      }
+    ]
+  }
+...other content
+}
+#}
+
 <div class="nav-container"> 
     <div class="header" id="mainHeader">
-        <div class="header-logo">
-            <a href='/'><img src="/images/logos/RPD_logo_2D.svg"></a>
-        </div>
+
         <div class="regular-header"> 
+          <div class="header-logo">
+            <a href="{{nav.logo.link}}"><img src="{{nav.logo.desktopSrc}}" alt="{{nav.logo.alt}}"></a>
+          </div>
+
             <div class="navbar">
-                <a href="/approach">Our Approach</a>
-                <div class="dropdown">
-                    <button class="dropbtn">Industries
-                    <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                    <a href="/industry/childcare">Childcare</a>
-                    <a href="/industry/construction">Construction</a>
-                    <a href="/industry/energy">Utilities</a>
-                    <a href="/industry/communities">Community</a>
-                    </div>
-                </div>
+              {% for menuItem in nav.menu %}
+
+                {% if menuItem.children == blank %}
+
+                  <a href="{{menuItem.link}}">{{menuItem.text}}</a>
+
+                {% else %}
+
+                  <div class="dropdown">
+
+                      <button class="dropbtn">
+                        {{menuItem.text}}
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+
+                      <div class="dropdown-content">
+
+                      {% for subMenuItem in menuItem.children %}
+                        <a href="{{subMenuItem.link}}">{{subMenuItem.text}}</a>
+                      {% endfor %}
+
+                      </div>
+
+                  </div>
+
+                {% endif %}
+
+              {% endfor %}
             </div>
+
+            <a href="{{nav.ctaButton.link}}" >
+              <button>
+                {{nav.ctaButton.text}}
+              </button>
+            </a> 
         </div>
+
         <div class="mobile-header"> 
+            <div class="header-logo">
+              <a href="{{nav.logo.link}}"><img src="{{nav.logo.mobileSrc}}" alt="{{nav.logo.alt}}"></a>
+            </div>
+
+            <a href="{{nav.ctaButton.link}}" >
+              <button>
+                {{nav.ctaButton.text}}
+              </button>
+            </a> 
+
             <nav role="navigation">
                 <div id="menuToggle">
                     <input type="checkbox" />
@@ -28,18 +102,35 @@
                     <span></span>
                     <span></span>
                     <ul id="menu">
-                        <a href="/approach">
-                        <li>Our Approach</li>
-                        </a>
-                        <li>Industries</li>
-                        <div class= "sub-menu">
-                           <li> <a href="/industry/childcare">Childcare</a></li>
-                           <li> <a href="/industry/construction">Construction</a></li>
-                           <li> <a href="/industry/energy">Utilities</a></li>
-                           <li> <a href="/industry/communities">Community</a></li>
-                           </div>
-                        </div>
-                        </li>
+                      {% for menuItem in nav.menu %}
+
+                        {% if menuItem.children == blank %}
+
+                          <li>
+                            <a href="{{menuItem.link}}">{{menuItem.text}}</a>
+                          </li>
+
+                        {% else %}
+
+                          <li class="dropdown">
+
+                              {{menuItem.text}}
+
+                              <ul class="sub-menu">
+
+                              {% for subMenuItem in menuItem.children %}
+                                <li>
+                                  <a href="{{subMenuItem.link}}">{{subMenuItem.text}}</a>
+                                </li>
+                              {% endfor %}
+
+                              </ul>
+
+                          </li>
+
+                        {% endif %}
+
+                      {% endfor %}
                     </ul>
                 </div>
             </nav>

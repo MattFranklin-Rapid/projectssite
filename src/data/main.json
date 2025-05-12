@@ -1,3 +1,42 @@
 {
-  "template": "layouts/main.njk"
+  "template": "layouts/main.njk",
+  "nav": {
+    "logo": {
+      "desktopSrc": "/images/logos/RPD_logo_2D.svg",
+      "mobileSrc": "/images/logos/r.svg",
+      "link": "/",
+      "alt": "Rapid platform logo"
+    },
+    "ctaButton": {
+      "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+      "text": "Book a Demo"
+    },
+    "menu": [
+      {
+        "text": "Our Approach",
+        "link": "/approach"
+      },
+      {
+        "text": "Industries",
+        "children": [
+          {
+            "text": "Childcare",
+            "link": "/industry/childcare"
+          },
+          {
+            "text": "Construction",
+            "link": "/industry/construction"
+          },
+          {
+            "text": "Utilities",
+            "link": "/industry/energy"
+          },
+          {
+            "text": "Community",
+            "link": "/industry/communities"
+          }
+        ]
+      }
+    ]
+  }
 }

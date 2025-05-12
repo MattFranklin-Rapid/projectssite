@@ -4,7 +4,6 @@
  * MIT License
  */
 
-
 #menuToggle {
   display: block;
   position: relative;
@@ -46,8 +45,10 @@
   border-radius: 3px;
   z-index: 1;
   transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition:
+    transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    opacity 0.55s ease;
 }
 
 #menuToggle span:first-child {
@@ -98,7 +99,6 @@
   transform: none;
 }
 
-
 /* TEMP custom classes for nav bar dropdown
 
 /* Navbar container */
@@ -123,7 +123,6 @@
 .dropdown {
   float: left;
   overflow: hidden;
-
 }
 
 /* Dropdown button */
@@ -139,10 +138,11 @@
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: #888888;
   filter: brightness(1);
-  color: #f0b41c;
+  color: var(--color-ice-blue);
 }
 
 /* Dropdown content (hidden by default) */
@@ -171,5 +171,7 @@
 }
 
 .sub-menu {
-  padding-left: 10%;
+  padding-left: 0;
+
+  list-style: none;
 }
