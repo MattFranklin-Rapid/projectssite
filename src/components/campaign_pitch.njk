@@ -1,0 +1,19 @@
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/icon.njk" import Icon %}
+{% import "../components/atoms/typography.njk" as typography  %}
+{% import "./layouts.njk" as layouts %}
+
+{% call layouts.section('dark', 'quarter') -%}
+  {% call layouts.centerContainer('px-4 py-5 flex flex-col items-center mt-10') -%}
+
+    {{ typography.title(pitch.title) }}
+
+    {{ typography.subTitle(pitch.subTitle) }}
+
+    {{ pitch.message | safe }}
+
+    {{ Button(pitch.ctaButton.link, pitch.ctaButton.text, 'my-10') }}
+
+  {%- endcall %}
+{%- endcall %}
+

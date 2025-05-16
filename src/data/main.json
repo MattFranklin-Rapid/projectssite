@@ -18,6 +18,12 @@
       "alt": "",
       "title": "Our Approach",
       "overlayImageSrc": "/src/assets/images/approach_overlay.jpg"
+    },
+    "childcare": {
+      "src": "https://www.youtube.com/embed/N2tRuVxGBuM?si=mOqq29WcuGbYuV-p",
+      "alt": "",
+      "title": "Childcare",
+      "overlayImageSrc": "/src/assets/images/childcare_overlay.jpg"
     }
   },
   "logo": {

@@ -15,14 +15,12 @@
   "hero": {
     "title": "Enterprise technology, delivered by the team who built it.",
     "subtitle": "tech in plus the cloud, team on the ground.",
-    "videoId": "homepage-splash",
-    "content__padding-top": 300,
-    "content__padding-bottom": 300
+    "videoId": "homepage-splash"
   },
   "multi_feature": {
-    "minor_heading": "rapid technology",
-    "major_heading": "real outcomes, real fast.",
-    "heading_paragraph": "<p>from operational efficiency to real-time insights, rapid helps you solve meaningful business challenges - in days, not months.</p>",
+    "title": "rapid technology",
+    "subTitle": "real outcomes, real fast.",
+    "content": "<p>from operational efficiency to real-time insights, rapid helps you solve meaningful business challenges - in days, not months.</p>",
     "areas": [
       {
         "label": "operational efficiency",

@@ -50,4 +50,62 @@
 
     {% include '../components/footer.njk' %}
   </body>
+
+
+  <script>
+    
+    // Attach player APIs to all youtube iframes
+
+    function setUpPlayer(player, container) {
+      function playVideo() {
+        if (player && player.playVideo) {
+          player.playVideo();
+        }
+      }
+
+      container.addEventListener('click', () => {
+        container.classList.add('playing');
+        playVideo();
+      });
+    }
+
+    function attachToIframe(id) {
+      const container = document.getElementById(`${id}__container`);
+
+      // Initialize the player
+      const player = new YT.Player(id, {
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange(container)
+        }
+      });
+
+      // When player is ready
+      function onPlayerReady(event) {
+        setUpPlayer(player, container);
+      }
+
+      // When player state changes
+      function onPlayerStateChange(event) {
+        // 0 = ended, 1 = playing, 2 = paused, 3 = buffering, 5 = video cued
+        if (event.data === 0 || event.data === 2) {
+          container.classList.remove('playing');
+        }
+      }
+    }
+
+    // Function that gets called when YouTube API is ready
+    // This is just "magicly" called by the ifram_api script in the head
+    function onYouTubeIframeAPIReady() {
+      if (!Array.isArray(globalThis.videos)) {
+        return;
+      }
+      
+      for (const id of globalThis.videos) {
+        attachToIframe(id);
+      }
+      
+    }
+  </script>
+
 </html>

@@ -15,6 +15,11 @@ export default {
     nunjucks({
       root: "./src",
       data: ["src/**/*.json"],
+      globals: {
+        uuid: () => {
+          return crypto.randomUUID();
+        },
+      },
       filters: {
         log: (value) => {
           console.log(value);

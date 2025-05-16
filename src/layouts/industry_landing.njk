@@ -1,66 +1,22 @@
 {% extends "./layout.njk" %}
 
+{% from "../components/atoms/angle.njk" import angle %}
+{% from "components/feature_multi_tabs.njk" import FeatureMulti with context %}
+
 {% block content%}
   {% include '../components/hero.njk' %}
 
-  <!-- <div class='hero-with-cta splash-big background-dark text-dark' style="background-image: url({{splashImage}}); background-repeat: no-repeat;"> -->
-  <!--     {# Hero banner #} -->
-  <!--     <div class='hero-cta'> -->
-  <!--         {# Hero Call to Action #} -->
-  <!--         <div class='content-full-column text-center'> -->
-  <!--             <div> -->
-  <!--                 <span> -->
-  <!--                 <h1>{{splashTitle|safe}}</h1> -->
-  <!--                 <br>  -->
-  <!--                 <h4>{{marketTargetedTagline|safe}}</h4> -->
-  <!--                 </span>  -->
-  <!--             </div> -->
-  <!--             <div> -->
-  <!--                 <a href="{{url_get_started}}" target="_blank"><button class="button-warm-dark button-large">BOOK A DEMO</button></a> -->
-  <!--             </div> -->
-  <!--         </div> -->
-  <!--     </div> -->
-  <!-- </div> -->
-  
-  <div class='campaign-pain skeleton block-half background-light text-light'>
-      {# Speak to pain! header#}
-      <div class="content-full-column">
-          <!-- <div class="container-columns"> -->
-              <!-- <div> -->
-              <!--     {# Video #} -->
-              <!--     <iframe class="iframe-youtube-fill" src="{{benefits.videoURL}}" title="{{benefits.videoTitle}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-              <!-- </div> -->
-              <div>
-                  {# Benefits List #}
-                  <h3>{{benefits.title}}</h3>
-                  {% for item in benefits.bulletPoints %}
-                  <div class="check-list">
-                      <img src="/src/assets/images/decorations/list-check.png" />
-                      <p><strong>{{item.label}}</strong> {{item.message}}</p>
-                  </div>
-                  {% endfor %}
-              </div>
-          <!-- </div> -->
-      </div>
-  </div>
+  {% include '../components/benefits.njk' %}
 
-  <div class='campaign-pitch skeleton block-half background-dark text-dark'>
-      {# Pitch the solution #}
-      <div class="content-full-column text-center container-flex-vertical-center">
-          <div class="spacer-small"></div>
-          <h3>{{pitch.heading}}</h3>
-          <p>{{pitch.message|safe }}</p>
-          <a href="{{url_book_demo}}" target="_blank"><button class="button-cool-light button-large">BOOK A DEMO</button></a>
-      </div>
-  </div>
+  {{angle('top')}}
 
-  <div class='campaign-features skeleton block-full background-light text-light'>
-      {# Show off what you get #}
-      <div class="content-full-column">
-          {% include '../components/feature_tabs.njk' %}
-          <div class="spacer-small"></div>
-      </div>
-  </div>
+  {% include '../components/campaign_pitch.njk' %}
+
+  {{angle('bottom')}}
+
+  {{ FeatureMulti('light', industry_features) }}
+
+  <div class="hidden">
 
   <div class='campaign-benefits skeleton block-half background-dark text-dark'>
       {# Describe the benefits you get #}
@@ -119,4 +75,5 @@
   </div>
 
   {% include '../components/cta/book_demo.njk' %}
+</div>
 {% endblock %}
