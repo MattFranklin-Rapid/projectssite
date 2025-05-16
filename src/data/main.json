@@ -111,7 +111,7 @@
     "content": "<p>We don't just provide tech solutions - we partner with you to understand your unique challenges, create tailored solutions, and ensure seamless execution. Our goal is to see your vision come to life, unlocking the power of technology so your business can thrive as it grows and changes.</p>",
     "image": {
       "src": "/src/assets/images/approach/mitch.png",
-      "caption": "<h4 class='text-rapid-blue font-bold text-lg' >Mitch Hunt</h4> <br> CEO &amp; Founder of Rapid Platform",
+      "caption": "<h4 class='font-bold text-2xl m-0' >Mitch Hunt</h4>  <h3>CEO &amp; Founder of Rapid Platform</h3>",
       "alt": ""
     }
   },
