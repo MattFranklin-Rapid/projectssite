@@ -1,0 +1,30 @@
+{# 
+ 
+  Promise section
+
+#}
+
+{% import "./layouts.njk" as layouts %}
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/icon.njk" import Icon %}
+{% from "../components/atoms/angle.njk" import angle %}
+
+{% call layouts.section('light', 'quarter', 'overflow-y-visible overflow-x-clip mb-[-100px]') -%}
+
+  {% call layouts.centerContainer('px-4 flex flex-col text-center items-center z-10 relative') -%}
+    <p class="text-justify my-5 text-sm p-5" >
+      {{promise.preamble|safe}}
+    </p>
+
+    {% call layouts.centerContainer('m-5') -%}
+      <div class="relative flex flex-col text-justify items-start bg-rapid-blue text-white rounded-lg shadow-sm shadow-black w-full p-5" >
+
+        {{ Icon("shield-heart", "text-ice-blue absolute -right-9 -top-8 text-[150pt]") }}
+        <h4 class="font-semibold mb-5 pr-35 md:pr-0 lg:pr-35" >{{promise.title | safe}}</h4>
+        <p class="md:pr-45" >{{promise.subTitle | safe}}</p>
+
+      </div>
+    {%- endcall %}
+  {%- endcall %}
+
+{%- endcall %}

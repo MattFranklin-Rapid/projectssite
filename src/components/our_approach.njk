@@ -1,0 +1,47 @@
+{# 
+  Change otherContent details in in /src/data/main.json
+/src/data/main.json
+{
+...other content
+  ourApproach: {
+    subTitle: string;
+    title: string;
+    // To allow for custom styling options i.e. strong
+    // this string is rendered as HTML
+    content: HTMLString;
+    
+    image: {
+      src: string;
+      link: string;
+      alt: string;
+    },
+
+    ctaButton: {
+      link: string;
+      text: string;
+    },
+  }
+...other content
+}
+#}
+
+{% import "./layouts.njk" as layouts %}
+{% import "../components/atoms/typography.njk" as typography  %}
+{% from "../components/atoms/button.njk" import Button %}
+
+{% call layouts.section('light', 'half') -%}
+  {% call layouts.centerContainer('flex relative z-10 pt-5 px-4 flex-col-reverse lg:flex-row sm:pt-10') -%}
+    <img class="our-approach__image hidden sm:block sm:mt-10 lg:block lg:ml-[-200px] lg:pr-10" src="{{ourApproach.image.src}}" alt="{{ourApproach.image.alt}}"/>
+
+    <div class="our-approach__details flex-1/2 ml-auto" >
+      {{ typography.title(ourApproach.title, 'left') }}
+
+      {{ typography.subTitle(ourApproach.subTitle, 'left') }}
+
+      {{ typography.content(ourApproach.content, 'justify') }}
+
+      {{ Button( ourApproach.ctaButton.link,  ourApproach.ctaButton.text , "mt-10 w-full flex justify-center lg:w-max") }}
+    </div>
+  {%- endcall %}
+
+{%- endcall %}

@@ -1,0 +1,53 @@
+{# 
+  layout.njk is the base layout from which all others should extend
+  
+  it provides all the HTML boiler plate including
+  the default header and footer as well as
+  imports the correct CSS files and google stuffs.
+
+  Useage:
+  https://mozilla.github.io/nunjucks/templating.html#template-inheritance
+
+    - extend this layout in the page you're making
+    
+    {% extends "../layouts/layout.njk" %}
+
+    - add blocks you'd like to inject stuff into
+      simply don't use the block if you don't want it
+     
+    {% block head %}
+      // This content will be added to the head of the document
+      // use it for custom CSS, scripts, or anything else you 
+      // want in the document head on this page.
+    {% endblock %}
+
+    {% block content %}
+      // This content will be added to body of the document
+      // between the header and footer
+    {% endblock %}
+
+#}
+
+<!DOCTYPE html>
+<html lang="en" class="bg-deep-navy font-sans">
+  <head>
+    {% include '../components/global_head.njk' %} 
+    {% include '../components/google/organization.njk' %}
+
+    {# 
+      Block to allow templates extending this base one to be 
+      able to extend what is in the head of the document 
+    #}
+    {% block head %}
+    {% endblock %}
+
+  </head>
+  <body>
+    {% include '../components/nav.njk' %} 
+
+    {% block content %}
+    {% endblock %}
+
+    {% include '../components/footer.njk' %}
+  </body>
+</html>

@@ -1,39 +1,68 @@
-<footer class="footer text-dark background-dark">
-    <div class="footer-container">
-        {# Contact Us Container #}
-        <div class="footer-column left-align">
-            {# <h3>Location</h3> #}
-            <p>Unit 2 Building 10,<br />
-            107 Miles Platting Road <br />
-            Eight Mile Plains, QLD 4113</p>
-        </div>
+{% import "./layouts.njk" as layouts %}
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/angle.njk" import angle %}
+{% from "../components/atoms/icon.njk" import Icon %}
 
-        {# Social Media Container #}    
-        <div class="footer-column social">
-            {# <h3>Socials</h3> #}
-            <a target="_blank" href="https://au.linkedin.com/company/rapid-platform">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/rapidplatform/?hl=en">
-                <i class="fa-brands fa-square-instagram"></i>
-            </a>
-            <a target="_blank" href="https://www.youtube.com/@rapidplatform">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </div>
+{% call layouts.section('light', 'half', 'z-1 relative') -%}
+  {% call layouts.centerContainer('px-4 flex flex-col gap-5 items-center justify-center text-center') -%}
 
-        {# Legal Container #}
-        <div class="footer-column legal left-align">
-            {# <h3>Legal</h3> #}
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/terms-and-conditions">Terms and Conditions</a>
-            <a href="#" class="termly-display-preferences">Consent Preferences</a>
-        </div>
+      <h2 class="font-light uppercase text-rapid-blue" >{{simpleCta.title}}</h2>
+      <h4 class="font-bold text-4xl" >{{simpleCta.subTitle|safe}}</h4>
+      <p class="" >{{simpleCta.message|safe}}</p>
+
+
+  {%- endcall %}
+{%- endcall %}
+
+{% call layouts.section('dark', 'half', 'mt-[-200px] z-2 relative') -%}
+
+  {# This gives the sticky footer menu enough space to hide so we never see it move #}
+  <div class="w-full h-15 bg-white z-1 relative flex items-center justify-center" >
+      {{ Button(simpleCta.button.link, simpleCta.button.text) }}
+  </div>
+
+  {{angle('top')}}
+
+  {% call layouts.centerContainer('sticky bottom-0 -z-1 px-10 flex flex-col gap-5 items-center justify-center text-center') -%}
+
+    <div class="grid grid-cols-3 w-full" >
+      {# Contact Us Container #}
+      <div class="flex flex-col place-self-start text-justify text-sm">
+        {# <h3>Location</h3> #}
+        <p>Unit 2 Building 10,<br />
+        107 Miles Platting Road <br />
+        Eight Mile Plains, QLD 4113</p>
+      </div>
+
+      {# Social Media Container #}    
+      <div class="flex gap-5 place-self-center">
+        {# <h3>Socials</h3> #}
+        <a class="hover:text-rapid-blue" target="_blank" href="https://au.linkedin.com/company/rapid-platform">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/rapidplatform/?hl=en">
+            <i class="fa-brands fa-square-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.youtube.com/@rapidplatform">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+      </div>
+
+      {# Legal Container #}
+      <div class="flex flex-col text-left text-sm place-self-end">
+        {# <h3>Legal</h3> #}
+        <a class="hover:underline hover:text-rapid-blue cursor-pointer" href="/privacy">Privacy Policy</a>
+        <a class="hover:underline hover:text-rapid-blue cursor-pointer" href="/terms-and-conditions">Terms and Conditions</a>
+        <a class="hover:underline hover:text-rapid-blue cursor-pointer" href="#" class="termly-display-preferences">Consent Preferences</a>
+      </div>
     </div>
-    <div>
+
+    <div class="font-light text-[8pt] text-rapid-blue opacity-70 p-3" >
         <span>Copyright © <span id="currentYear"></span> Rapid Platform</span>
     </div>
     <script>
         document.getElementById('currentYear').textContent = new Date().getFullYear();
     </script>
-</footer>
+
+  {%- endcall %}
+{%- endcall %}

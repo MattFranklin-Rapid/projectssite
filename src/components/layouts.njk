@@ -1,0 +1,54 @@
+{# 
+
+A collection of styled layout macros for easy laying out
+
+Useage:
+  - import all layouts:
+    {% import "./path/to/layouts.njk" as layouts %}
+
+  - use a layout macro like:
+    {%- call layouts.section() %}
+      // Content to be laid out
+    {% end call -%}
+
+
+  - import one layout
+    {% from "./path/to/layouts.njk" import section %}
+
+  - use a layout macro like:
+    {%- call section() %}
+      // Content to be laid out
+    {% end call -%}
+#}
+
+{#
+  
+ Section
+
+Options:
+- theme: 'light' | 'dark' // Changes the theme for this section
+- size: 'full' | 'half' | 'quarter' // Changes the height of the block to 1 | 1/2 | 1/4 screen height
+- class: string // appened to class string
+
+#}
+
+{% macro section(theme,  size, className) %}
+<section class="
+  w-full 
+  h-max
+  {% if theme == 'dark' %} bg-deep-navy text-white {% else %} bg-white text-deep-navy {% endif %} '
+  {% if size == 'full' %}  min-h-screen
+  {% elseif size == 'half' %} min-h-[50vh]
+  {% elseif size == 'quarter' %} min-h-[25vh]
+  {% endif %}
+  {% if className != blank %} {{ className }} {% endif %}
+  " >
+    {{caller()}}
+</section>
+{% endmacro %}
+
+{% macro centerContainer(className) %}
+  <div class="container m-auto lg:max-w-[80rem] {% if className != blank %} {{ className }} {% endif %}" >
+    {{caller()}}
+  </div>
+{% endmacro %}

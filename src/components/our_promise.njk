@@ -1,0 +1,34 @@
+
+
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/icon.njk" import Icon %}
+{% from "../components/atoms/logo.njk" import Logo with context %}
+{% from "../components/atoms/angle.njk" import angle %}
+{% import "../components/atoms/typography.njk" as typography  %}
+{% import "./layouts.njk" as layouts %}
+
+{% call layouts.section('dark', 'half') -%}
+
+  {{angle('top')}}
+
+  {% call layouts.centerContainer('px-4 py-2 flex flex-col md:flex-row') -%}
+    <div class="flex-1/2">
+      <img src="{{ourPromise.image.src}}" alt="{{ourPromise.image.alt}}" class="rounded-lg "/>
+      <p>{{ourPromise.image.caption | safe}}</p>
+    </div>
+
+    <div class="flex-1/2">
+        
+        {{typography.title(ourPromise.title, 'left')}}
+
+        {{typography.subTitle(ourPromise.subTitle, 'left')}}
+
+        {{typography.content(ourPromise.content, 'left')}}
+
+    </div>
+
+  {%- endcall %}
+
+  {{angle('bottom')}}
+
+{%- endcall %}

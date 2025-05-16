@@ -11,73 +11,41 @@
   "hero": {
     "title": "Enterprise technology, delivered by the team who built it.",
     "subtitle": "Tech in the cloud, team on the ground.",
-    "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
-    "overlay_url_video_embed": "/src/assets/images/hero-overlay-image.jpg",
-    "title_video_embed": "Rapid Platform",
-    "content__padding-top": 300,
-    "content__padding-bottom": 300
+    "videoId": "approach"
   },
   "seo": {
     "description": "See how Rapid Platform fuses first in class dynamic technologies with deep business knowledge to empower lasting solutions."
   },
   "faculties": [
     {
+      "icon": "route",
       "logo_url": "/src/assets/images/approach/tech-abstract.png",
       "heading": "Future-focused SaaS platform",
       "content": "A cloud-native solution built on Microsoft Azure. Rapid Platform leverages cutting-edge cloud integration capabilities, helping organisations accelerate innovation, scale seamlessly, and adapt to new challenges in real time."
     },
     {
+      "icon": "person-running-fast",
       "logo_url": "/src/assets/images/approach/tech-arrows.png",
       "heading": "Accelerate Team Efficiency",
       "content": "Free your people from repetitive tasks with Rapid Platform’s smart automation. Our platform simplifies complex processes, reducing manual effort so your teams can focus on what matters most. With low-code tools, you have full control to adapt and customise the experience to your unique business needs."
     },
     {
+      "icon": "hexagon-nodes",
       "logo_url": "/src/assets/images/approach/tech-orb.png",
       "heading": "Teams and projects connected seamlessly",
       "content": "Stay aligned with a flexible, adaptable data model that ensures all your processes are integrated into one central hub. Rapid Platform guarantees you always have a single source of truth, enabling quick, informed decision-making."
     },
     {
+      "icon": "magnifying-glass-dollar",
       "logo_url": "/src/assets/images/approach/tech-chart.svg",
       "heading": "Advanced Analytics",
       "content": "Harness the power of advanced analytics via dashboards and reports. Rapid Platform is designed with built-in PowerBI capabilities — empowering you to make better data-driven decisions on the run."
     },
     {
+      "icon": "shield-halved",
       "logo_url": "/src/assets/images/approach/tech-chip.png",
       "heading": "Security",
       "content": "Rapid Platform is built with security at its core. Hosted on Microsoft Azure, we leverage enterprise-grade security protocols, encrypted data transmission, and role-based access controls to protect your critical business information."
     }
-  ],
-  "team": [
-    {
-      "name": "Mitch Hunt",
-      "position": "CEO & Founder",
-      "image_url": "/src/assets/testimonials/James-M.jpg"
-    },
-    {
-      "name": "Bob Smith",
-      "position": "Senior Consultant",
-      "image_url": "/src/assets/testimonials/James-M.jpg"
-    },
-    {
-      "name": "Phil Bjornsson",
-      "position": "Senior Consultant",
-      "image_url": "/src/assets/testimonials/James-M.jpg"
-    },
-    {
-      "name": "Eli Barron",
-      "position": "Tech Consultant",
-      "image_url": "/src/assets/testimonials/James-M.jpg"
-    },
-    {
-      "name": "Kim Harris",
-      "position": "BA",
-      "image_url": "/src/assets/testimonials/James-M.jpg"
-    },
-    {
-      "name": "Tony Tiro",
-      "position": "Solutions Architect",
-      "image_url": "/src/assets/testimonials/James-M.jpg"
-    }
   ]
 }
-

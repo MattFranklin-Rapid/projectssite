@@ -1,0 +1,21 @@
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/icon.njk" import Icon %}
+{% from "../components/atoms/logo.njk" import Logo with context %}
+{% import "../components/atoms/typography.njk" as typography  %}
+{% import "./layouts.njk" as layouts %}
+
+{% call layouts.section('light', 'half') -%}
+  {% call layouts.centerContainer('px-4 py-2 flex flex-col lg:flex-row-reverse items-center gap-10') -%}
+    <div class="flex flex-col flex-1/2" >
+      {{ typography.title(justification.title, 'left') }}
+      {{ typography.subTitle(justification.subTitle, 'left') }}
+      {{ typography.content(justification.content, 'justify', 'my-10') }}
+
+      {{ Button(justification.ctaButton.link, justification.ctaButton.text, "w-full flex justify-center lg:w-max") }}
+
+    </div>
+    <div class="flex-1/2" >
+      <img src="/src/assets/images/approach/team-laughing.png" class="w-full h-full aspect-auto" />
+    </div>
+  {%- endcall %}
+{%- endcall %}

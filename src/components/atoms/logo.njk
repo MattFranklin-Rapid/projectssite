@@ -1,0 +1,24 @@
+{#
+ Easily reuse the rapid platform logo
+
+  props:
+    - link: a url to navigate to on click
+    - size: 'small' | 'large'
+  
+  Useage:
+  - import into file using:
+    {% from "../components/atoms/logo.njk" import Logo with context %}
+
+    NOTE: the "with context" on the end of the import allows us to pull config from main.json 
+    for the logo files, link, and alt text
+
+  - Use the macro like:
+    {{ Logo({ link: logo.link, size: 'small' }) }}
+
+#}
+
+{% macro Logo(props) %}
+  <a href="{{props.link}}" class="flex center">
+    <img src="{% if props.size == 'small' %} {{logo.smallSrc}} {% else %} {{logo.largeSrc}} {% endif %}" alt="{{logo.alt}}" />
+  </a>
+{% endmacro %}

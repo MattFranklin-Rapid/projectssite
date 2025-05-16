@@ -1,1 +1,24 @@
-{% include 'layouts/approach.njk' %}
+{% extends 'layouts/layout.njk' %}
+
+{% block content %}
+        {% include 'components/hero.njk' %}
+        
+        {% include 'components/our_method.njk' %}
+
+        {% include 'components/justification.njk' %}
+
+        {% include 'components/blueprint.njk' %}
+
+        {% include 'components/team.njk' %}
+
+        {% include 'components/cta/book_demo.njk'%}
+
+        {% include 'components/our_promise.njk'%}
+
+        <div class="hidden">
+
+        {% include 'components/tech_plus_team.njk' %}
+
+      </div>
+        
+{% endblock %}

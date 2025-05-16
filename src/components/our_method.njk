@@ -1,0 +1,27 @@
+
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/icon.njk" import Icon %}
+{% from "../components/atoms/logo.njk" import Logo with context %}
+{% import "../components/atoms/typography.njk" as typography  %}
+{% import "./layouts.njk" as layouts %}
+
+{% call layouts.section('light', 'half') -%}
+  {% call layouts.centerContainer('px-4 py-2 flex flex-col lg:flex-row-reverse items-center') -%}
+    <div class="flex flex-col lg:flex-1/2 mb-10 lg:mb-0" >
+      {{ typography.title(ourMethod.title, 'left') }}
+      {{ typography.subTitle(ourMethod.subTitle, 'left') }}
+      {{ typography.content(ourMethod.content, 'justify') }}
+    </div>
+
+    <div class="lg:flex-1/2 w-full grid grid-cols-2 gap-10 place-self-end">
+
+        {% for method in ourMethod.methods %}
+          <div class="flex flex-col items-center justify-center">
+              {{ Icon(method.icon, 'fa-3x text-rapid-blue') }} 
+              <p class="font-bold text-center" >{{method.text}}</p>
+          </div>
+        {% endfor %}
+
+    </div>
+  {%- endcall %}
+{%- endcall %}

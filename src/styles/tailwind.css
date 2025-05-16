@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* 
+* This is a custom tailwind selector
+* find it's documentation here
+* https://tailwindcss.com/docs/theme
+* */
+@theme {
+  --font-sans: "Poppins", sans-serif;
+
+  --color-deep-navy: #0c152a;
+  --color-rapid-blue: #0091d0;
+  --color-deep-purple: #292562;
+  --color-ai-zure: #323694;
+  --color-tech-wave: #4a71b7;
+  --color-ice-blue: #43c7f4;
+  --color-infra-red: #db4139;
+  --color-digital-ember: #f36f21;
+  --color-code-gold: #f0b41c;
+  --color-bright-glow: #ffdd16;
+  --color-bright-green: #008e47;
+  --color-pixel-zest: #b2d234;
+  --color-tech-canvas: #f4f4f4;
+  --color-tech-canvas-transparent: #f4f4f4b0;
+
+  --background-light: var(--color-tech-canvas);
+  --background-dark: var(--color-deep-navy);
+  --text-light: var(--color-deep-navy);
+  --text-dark: white;
+  --border-light: 1px solid #ccc;
+  --border-dark: 1px solid #363636;
+
+  --angle-height: 250px;
+}
+
+@layer components {
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+
+  .scroller {
+    > div {
+      flex-wrap: wrap;
+    }
+
+    &[data-animated="true"] {
+      -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+      );
+      mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+      );
+
+      > div {
+        flex-wrap: nowrap;
+        animation: scroll 50s linear infinite;
+      }
+    }
+  }
+}
