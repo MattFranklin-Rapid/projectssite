@@ -37,103 +37,143 @@
 }
 #}
 
-<div class="nav-container"> 
-    <div class="header" id="mainHeader">
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/logo.njk" import Logo with context %}
+{% import "./layouts.njk" as layouts %}
 
-        <div class="regular-header"> 
-          <div class="header-logo">
-            <a href="{{nav.logo.link}}"><img src="{{nav.logo.desktopSrc}}" alt="{{nav.logo.alt}}"></a>
+<header class="bg-white shadow-md sticky top-0 z-50">
+  {% call layouts.centerContainer('px-4 py-2 justify-stretch') -%}
+    <div class="flex items-center justify-between w-full">
+      {# Desktop Logo #}
+      <div class="flex-shrink-0 h-9 hidden md:flex">
+        {{ 
+          Logo({
+              link: logo.link,
+              size: 'large'
+          }) 
+        }}
+      </div>
+      {# Mobile Logo #}
+      <div class="flex-shrink-0 h-9 flex md:hidden">
+        {{ 
+          Logo({
+              link: logo.link,
+              size: 'small'
+          }) 
+        }}
+      </div>
+
+      {# Mobile CTA button #}
+      <div class="md:hidden" >
+        {{ Button(nav.ctaButton.link, nav.ctaButton.text, "py-2") }}
+      </div>
+      
+      {# Mobile menu button #}
+      <div class="md:hidden">
+        <button id="mobile-menu-button" class="focus:outline-none">
+          <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+        </button>
+      </div>
 
-            <div class="navbar">
-              {% for menuItem in nav.menu %}
-
-                {% if menuItem.children == blank %}
-
-                  <a href="{{menuItem.link}}">{{menuItem.text}}</a>
-
-                {% else %}
-
-                  <div class="dropdown">
-
-                      <button class="dropbtn">
-                        {{menuItem.text}}
-                        <i class="fa fa-caret-down"></i>
-                      </button>
-
-                      <div class="dropdown-content">
-
-                      {% for subMenuItem in menuItem.children %}
-                        <a href="{{subMenuItem.link}}">{{subMenuItem.text}}</a>
-                      {% endfor %}
-
-                      </div>
-
-                  </div>
-
-                {% endif %}
-
-              {% endfor %}
-            </div>
-
-            <a href="{{nav.ctaButton.link}}" >
-              <button>
-                {{nav.ctaButton.text}}
+      
+      {# Desktop menu #}
+      <nav class="hidden md:flex md:items-center md:space-x-6">
+        {% for item in nav.menu %}
+          {% if item.children %}
+            <div class="relative group">
+              <button class="flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">
+                {{ item.text }}
+                <svg class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
               </button>
-            </a> 
-        </div>
-
-        <div class="mobile-header"> 
-            <div class="header-logo">
-              <a href="{{nav.logo.link}}"><img src="{{nav.logo.mobileSrc}}" alt="{{nav.logo.alt}}"></a>
-            </div>
-
-            <a href="{{nav.ctaButton.link}}" >
-              <button>
-                {{nav.ctaButton.text}}
-              </button>
-            </a> 
-
-            <nav role="navigation">
-                <div id="menuToggle">
-                    <input type="checkbox" />
-                    <!-- These spans are needed for displaying the hamburger icon -->
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <ul id="menu">
-                      {% for menuItem in nav.menu %}
-
-                        {% if menuItem.children == blank %}
-
-                          <li>
-                            <a href="{{menuItem.link}}">{{menuItem.text}}</a>
-                          </li>
-
-                        {% else %}
-
-                          <li class="dropdown">
-
-                              {{menuItem.text}}
-
-                              <ul class="sub-menu">
-
-                              {% for subMenuItem in menuItem.children %}
-                                <li>
-                                  <a href="{{subMenuItem.link}}">{{subMenuItem.text}}</a>
-                                </li>
-                              {% endfor %}
-
-                              </ul>
-
-                          </li>
-
-                        {% endif %}
-
-                      {% endfor %}
-                    </ul>
+              <div class="absolute z-10 left-0 mt-0 w-48 rounded-md shadow-lg bg-white hidden group-hover:block">
+                <div class="py-1">
+                  {% for child in item.children %}
+                    <a href="{{ child.link }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-100 hover:text-blue-600">
+                      {{ child.text }}
+                    </a>
+                  {% endfor %}
                 </div>
-            </nav>
-        </div>
+              </div>
+            </div>
+          {% else %}
+            <a href="{{ item.link }}" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md">
+              {{ item.text }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+
+
+      {# Desktop cts button #}
+      <div class="hidden md:block" >
+      {{ Button( nav.ctaButton.link, nav.ctaButton.text ) }}
+      </div>
     </div>
-</div>
+    
+    {# Mobile menu #}
+    <div id="mobile-menu" class="hidden md:hidden mt-4 w-full">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        {% for item in nav.menu %}
+          {% if item.children %}
+            <div class="mobile-dropdown">
+              <button class="mobile-dropdown-button w-full text-left flex items-center justify-between px-3 py-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100">
+                {{ item.text }}
+                <svg class="w-4 h-4 ml-1 transform transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              <div class="mobile-dropdown-content hidden pl-4 mt-1 space-y-1">
+                {% for child in item.children %}
+                  <a href="{{ child.link }}" class="block px-3 py-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100">
+                    {{ child.text }}
+                  </a>
+                {% endfor %}
+              </div>
+            </div>
+          {% else %}
+            <a href="{{ item.link }}" class="block px-3 py-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100">
+              {{ item.text }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+  {%- endcall %}
+</header>
+
+<script>
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+    
+    // Mobile dropdown toggles
+    const mobileDropdownButtons = document.querySelectorAll('.mobile-dropdown-button');
+    
+    mobileDropdownButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Toggle the dropdown content
+        const dropdownContent = button.nextElementSibling;
+        dropdownContent.classList.toggle('hidden');
+        
+        // Rotate the arrow icon
+        const arrow = button.querySelector('svg');
+        arrow.classList.toggle('rotate-180');
+      });
+    });
+  });
+</script>

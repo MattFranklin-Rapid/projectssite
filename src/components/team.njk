@@ -1,0 +1,26 @@
+
+
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/icon.njk" import Icon %}
+{% from "../components/atoms/angle.njk" import angle %}
+{% import "../components/atoms/typography.njk" as typography  %}
+{% import "./layouts.njk" as layouts %}
+
+{% call layouts.section('light', 'full') -%}
+  {% call layouts.centerContainer('px-4 py-2') -%}
+      {{typography.title(team.title, 'center')}}
+      <p class="pb-10 pt-3 text-center" >{{  team.subTitle }}</p>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-10">
+          {% for item in team.members %}
+          <div class="card-vertical">
+              <img src="{{item.image_url}}" class="rounded-lg" />
+              <div class="grid grid-cols-1 content-center md:grid-cols-[max-content_1fr_max-content] md:flex-row items-center md:justify-between py-3 text-gray-500" >
+                <p class="text-lg font-bold text-rapid-blue place-self-center md:place-self-start" >{{item.name}}</p> <span class="place-self-center md:place-self-center" >-</span> <p class="place-self-center md:place-self-end text-black text-sm">{{item.position}}</p>
+              </div>
+          </div>
+          {% endfor %}
+      </div>
+
+  {%- endcall %}
+{%- endcall %}

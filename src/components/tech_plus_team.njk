@@ -1,0 +1,51 @@
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/icon.njk" import Icon %}
+{% from "../components/atoms/logo.njk" import Logo with context %}
+{% import "../components/atoms/typography.njk" as typography  %}
+{% import "./layouts.njk" as layouts %}
+
+{% call layouts.section('light', 'half') -%}
+  {% call layouts.centerContainer('px-4 py-2 flex flex-col lg:flex-row-reverse items-center') -%}
+
+    <div class="container-columns container-width-narrow self-horizontal-center ">
+        <img class="approach-plus-images" src='/src/assets/images/approach/tech-plus.png' />
+        <p>Rapid technology built on Microsoft Azure. It's fast to configure, modular and built to adapt as your business grows. We maintain it in-house, you don't have to worry about maintenance and upgrades - it's all taken care of.</p>                    
+    </div>
+    <div class="container-width-narrow self-horizontal-center">
+        <br/>
+        <h3>The platform low-code components that power fast, flexible transformation.</h3>
+        <br/>
+    </div>
+    <div class="container-four-columns approach-container-logos">
+        <div class="container-centre-img">
+            <img src="/src/assets/images/approach/1.svg"/>
+            <br/>
+            <h4>Dynamic Database</h4>
+            <p>Model your data, customise logic, and adapt as you grow - no dev required.</p>
+        </div>
+        <div class="container-centre-img">
+            <img src="/src/assets/images/approach/2.svg"/>
+            <br/>
+            <h4>Workflow Engine</h4>
+            <p>Streamline operations with powerful workflows that move work forward.</p>
+        </div>
+        <div class="container-centre-img">
+            <img src="/src/assets/images/approach/3.svg"/>
+            <br/>
+            <h4>Digital Forms</h4>
+            <p>Collect the right info at the right time from teams, clients, or the public.</p>
+        </div>
+        <div class="container-centre-img">
+            <img src="/src/assets/images/approach/4.svg"/>
+            <br/>
+            <h4>Advanced BI</h4>
+            <p>Make fast, data-backed decisions with Power BI dashboards built in.</p>
+        </div>
+    </div>
+    <div class="container-columns container-width-narrow self-horizontal-center">
+        <p>We're with you every step of the way. Our consultants and developers become an extension of your team - guiding the process, solving problems and making sure your tech works seamlessly from day one.</p>
+        <img class="approach-plus-images" src='/src/assets/images/approach/plus-team.png' />
+    </div>
+    <div class="spacer-small"></div>
+  {%- endcall %}
+{%- endcall %}

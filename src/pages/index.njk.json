@@ -9,25 +9,23 @@
     "title": "Want to see how we can <span class='text-highlight-cool-dark'>accelerate</span> your business?<br/>Get in touch",
     "cta_nav_heading": "Landing Page"
   },
-  "hero": {
-    "title": "Enterprise technology, delivered by the team who built it.",
-    "subtitle": "Tech in the cloud, team on the ground.",
-    "url_video_embed": "https://www.youtube.com/embed/rNe9q82nVnI?si=0zS4b8tMIu2umtes",
-    "overlay_url_video_embed": "/src/assets/images/hero-overlay-image.jpg",
-    "title_video_embed": "Rapid Platform",
-    "content__padding-top": 300,
-    "content__padding-bottom": 300
-  },
   "seo": {
     "description": "Rapid Platform is a low-code, cloud-based business operations platform that helps mid-market and enterprise organisations streamline operations, automate workflows, and gain real-time insights — fast. Built on Microsoft Azure, Rapid combines flexible enterprise technology with expert delivery support to enable scalable, secure, and efficient and effortless digital transformation."
   },
+  "hero": {
+    "title": "Enterprise technology, delivered by the team who built it.",
+    "subtitle": "tech in plus the cloud, team on the ground.",
+    "videoId": "homepage-splash",
+    "content__padding-top": 300,
+    "content__padding-bottom": 300
+  },
   "multi_feature": {
-    "minor_heading": "RAPID TECHNOLOGY",
-    "major_heading": "Real outcomes, real fast.",
-    "heading_paragraph": "<p>From operational efficiency to real-time insights, Rapid helps you solve meaningful business challenges - in days, not months.</p>",
+    "minor_heading": "rapid technology",
+    "major_heading": "real outcomes, real fast.",
+    "heading_paragraph": "<p>from operational efficiency to real-time insights, rapid helps you solve meaningful business challenges - in days, not months.</p>",
     "areas": [
       {
-        "label": "Operational Efficiency",
+        "label": "operational efficiency",
         "active_status": "button-active",
         "display": "grid",
         "image_source": "/src/assets/images/landing/industry-construction.png",
@@ -35,36 +33,44 @@
         "features": [
           {
             "active_status": "button-active",
-            "label": "Eliminate repetitive tasks and manual workflows that slow down teams.",
+            "icon": "list-check",
+            "label": "eliminate repetitive tasks",
+            "message": "and manual workflows that slow down teams.",
             "display": "block",
-            "image_source": "/src/assets/images/landing/Rapid Board View.png",
+            "image_source": "/src/assets/images/landing/rapid board view.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Reduce bottlenecks by standardising processes across departments.",
+            "icon": "merge",
+            "label": "reduce bottlenecks",
+            "message": "by standardising processes across departments.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Rapid Board View.png",
+            "image_source": "/src/assets/images/landing/rapid board view.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Improve team productivity with faster approvals and smoother handoffs.",
+            "icon": "users-medical",
+            "label": "improve team productivity",
+            "message": "with faster approvals and smoother handoffs.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Rapid Board View.png",
+            "image_source": "/src/assets/images/landing/rapid board view.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Free up resources to focus on high-impact, strategic work.",
+            "icon": "bullseye-arrow",
+            "label": "free up resources",
+            "message": "to focus on high-impact, strategic work.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Rapid Board View.png",
+            "image_source": "/src/assets/images/landing/rapid board view.png",
             "more_link": "/"
           }
         ]
       },
       {
-        "label": "Workflow Automation",
+        "label": "workflow automation",
         "active_status": "button-not-active",
         "display": "none",
         "image_source": "/src/assets/images/landing/industry-childcare.png",
@@ -72,36 +78,44 @@
         "features": [
           {
             "active_status": "button-active",
-            "label": "Automate internal processes like approvals, task assignments, and notifications.",
+            "icon": "check-to-slot",
+            "label": "automate internal processes",
+            "message": "like approvals, task assignments, and notifications.",
             "display": "block",
-            "image_source": "/src/assets/images/landing/Workflow Example.png",
+            "image_source": "/src/assets/images/landing/workflow example.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Accelerate project delivery by keeping workflows moving without manual intervention.",
+            "icon": "truck-fast",
+            "label": "accelerate project delivery",
+            "message": "by keeping workflows moving without manual intervention.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Workflow Example.png",
+            "image_source": "/src/assets/images/landing/workflow example.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Capture clean, consistent data at every step, improving reporting accuracy.",
+            "icon": "file-check",
+            "label": "capture clean, consistent data",
+            "message": "at every step, improving reporting accuracy.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Workflow Example.png",
+            "image_source": "/src/assets/images/landing/workflow example.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Customise workflows quickly — no coding, no IT bottlenecks.",
+            "icon": "pen-ruler",
+            "label": "customise workflows quickly",
+            "message": "— no coding, no it bottlenecks.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Workflow Example.png",
+            "image_source": "/src/assets/images/landing/workflow example.png",
             "more_link": "/"
           }
         ]
       },
       {
-        "label": "Business Intelligence",
+        "label": "business intelligence",
         "active_status": "button-not-active",
         "display": "none",
         "image_source": "/src/assets/images/landing/board-on-laptop.png",
@@ -109,36 +123,44 @@
         "features": [
           {
             "active_status": "button-active",
-            "label": "Unlock real-time insights across teams, workflows, and KPIs.",
+            "icon": "chart-pie-simple-circle-dollar",
+            "label": "unlock real-time insights",
+            "message": "across teams, workflows, and kpis.",
             "display": "block",
-            "image_source": "/src/assets/images/landing/Projects Dashboard.png",
+            "image_source": "/src/assets/images/landing/projects dashboard.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Replace spreadsheets with dynamic, actionable dashboards.",
+            "icon": "table",
+            "label": "replace spreadsheets",
+            "message": "with dynamic, actionable dashboards.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Projects Dashboard.png",
+            "image_source": "/src/assets/images/landing/projects dashboard.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Monitor progress and identify bottlenecks before they impact results.",
+            "icon": "monitor-waveform",
+            "label": "monitor progress",
+            "message": "and identify bottlenecks before they impact results.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Projects Dashboard.png",
+            "image_source": "/src/assets/images/landing/projects dashboard.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Enable faster, smarter decisions with instant access to operational data.",
+            "icon": "brain-circuit",
+            "label": "enable faster, smarter decisions",
+            "message": "with instant access to operational data.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Projects Dashboard.png",
+            "image_source": "/src/assets/images/landing/projects dashboard.png",
             "more_link": "/"
           }
         ]
       },
       {
-        "label": "Adaptive Technology",
+        "label": "adaptive technology",
         "active_status": "button-not-active",
         "display": "none",
         "image_source": "/src/assets/images/landing/industry-childcare.png",
@@ -146,30 +168,38 @@
         "features": [
           {
             "active_status": "button-active",
-            "label": "Customise solutions to match your unique workflows — without writing code.",
+            "icon": "pen-ruler",
+            "label": "customise solutions",
+            "message": "to match your unique workflows — without writing code.",
             "display": "block",
-            "image_source": "/src/assets/images/landing/Menu Selection.png",
+            "image_source": "/src/assets/images/landing/menu selection.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Scale from single use cases to full business systems as you grow.",
+            "icon": "arrows-maximize",
+            "label": "scale from single use cases",
+            "message": "to full business systems as you grow.",
             "display": "none",
-            "image_source": "/src/assets/images/landing/Menu Selection.png",
+            "image_source": "/src/assets/images/landing/menu selection.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Adjust quickly as your processes, teams, or goals evolve.",
+            "icon": "person-running-fast",
+            "label": "adjust quickly",
+            "message": "as your processes, teams, or goals evolve.",
             "display": "none",
-            "image_source": "src/assets/images/landing/Menu Selection.png",
+            "image_source": "src/assets/images/landing/menu selection.png",
             "more_link": "/"
           },
           {
             "active_status": "button-not-active",
-            "label": "Integrate with your existing tools.",
+            "icon": "network-wired",
+            "label": "integrate",
+            "message": "with your existing tools.",
             "display": "none",
-            "image_source": "src/assets/images/landing/Menu Selection.png",
+            "image_source": "src/assets/images/landing/menu selection.png",
             "more_link": "/"
           }
         ]
@@ -177,95 +207,104 @@
     ]
   },
   "industry": {
-    "minor_heading": "RAPID RESULTS",
-    "major_heading": "Our customers innovate at speed",
-    "heading_paragraph": "Discover how our customers are using Rapid to drive growth. From targeted solutions to full-scale digital transformation, we partner with our customers every step of the way.",
+    "minor_heading": "rapid results",
+    "major_heading": "our customers innovate at speed",
+    "heading_paragraph": "discover how our customers are using rapid to drive growth. from targeted solutions to full-scale digital transformation, we partner with our customers every step of the way.",
+    "icons": {
+      "challenge": "mountain",
+      "solution": "lightbulb-on",
+      "result": "badge-check"
+    },
     "industries": [
       {
         "active_status": "button-active",
-        "label": "Guardian Childcare Centres",
+        "label": "guardian childcare centres",
         "display": "block",
         "image_source": "/src/assets/images/landing/industry-childcare.png",
-        "quote": "<p><strong>&quot;Rapid has transformed our lead-to-enrolment process, helping us capture more leads and convert them with ease. It's streamlined our operations and significantly imporved our results.&quot;</strong></p><p>— John Bobs, Guardian Childcare</p>",
+        "quote": "<p>rapid has transformed our lead-to-enrolment process, helping us capture more leads and convert them with ease. it's streamlined our operations and significantly imporved our results.</p>",
+        "quote_by": "John Bobs",
         "more_page": "/industry/childcare",
         "bullet_points": [
           {
-            "label": "CHALLENGE",
-            "message": "Leads were slipping through the cracks."
+            "label": "challenge",
+            "message": "leads were slipping through the cracks."
           },
           {
-            "label": "SOLUTION",
-            "message": "Automated lead-to-enrolment workflows and tracking system."
+            "label": "solution",
+            "message": "automated lead-to-enrolment workflows and tracking system."
           },
           {
-            "label": "RESULT",
+            "label": "result",
             "message": "42% boost in enrolments"
           }
         ]
       },
       {
         "active_status": "button-not-active",
-        "label": "Chambers of Commerce",
+        "label": "chambers of commerce",
         "display": "none",
         "image_source": "/src/assets/images/landing/industry-communities.png",
-        "quote": "<p><strong>&quot; &quot;</strong></p><p>— Someone, at somewhere</p>",
+        "quote": "<p>rapid has transformed our lead-to-enrolment process, helping us capture more leads and convert them with ease. it's streamlined our operations and significantly imporved our results.</p>",
+        "quote_by": "Bob Johns",
         "more_page": "/industry/communities",
         "bullet_points": [
           {
-            "label": "CHALLENGE",
-            "message": "Manual membership processes slowed growth."
+            "label": "challenge",
+            "message": "manual membership processes slowed growth."
           },
           {
-            "label": "SOLUTION",
-            "message": "Automated memberships and renewals in one platform."
+            "label": "solution",
+            "message": "automated memberships and renewals in one platform."
           },
           {
-            "label": "RESULT",
-            "message": "Self-service members, scalable operations."
+            "label": "result",
+            "message": "self-service members, scalable operations."
           }
         ]
       },
       {
         "active_status": "button-not-active",
-        "label": "EDL Energy",
+        "label": "edl energy",
         "display": "none",
         "image_source": "/src/assets/images/landing/industry-energy.png",
-        "quote": "<p><strong>&quot; &quot;</strong></p><p>— Someone, at somewhere</p>",
+        "quote": "<p>rapid is a great communication system for us to track everything from beginning of a job - in the contract stage - all the way through to the maintenance stage.before rapid, we were using detailed excel spreadsheets - i think a lot of people’s file systems were probably their inbox. now it’s compiled, it’s easy to access, we can run reports on all of that data. it’s a whole different world for us now.</p>",
+        "quote_by": "Hoppyl Darkins",
         "more_page": "/industry/energy",
         "bullet_points": [
           {
-            "label": "CHALLENGE",
-            "message": "Projects and resources were disconnected."
+            "label": "challenge",
+            "message": "projects and resources were disconnected."
           },
           {
-            "label": "SOLUTION",
-            "message": "Centralized project and resource management."
+            "label": "solution",
+            "message": "centralized project and resource management."
           },
           {
-            "label": "RESULT",
-            "message": "Faster prioritization, better capacity planning."
+            "label": "result",
+            "message": "faster prioritization, better capacity planning."
           }
         ]
       },
       {
         "active_status": "button-not-active",
-        "label": "Torsion Homes",
+        "label": "torsion homes",
         "display": "none",
         "image_source": "/src/assets/images/landing/industry-construction.png",
-        "quote": "<p><strong>&quot;Rapid is a great communication system for us to track everything from beginning of a job - in the contract stage - all the way through to the maintenance stage.Before Rapid, we were using detailed Excel spreadsheets - I think a lot of people’s file systems were probably their inbox. Now it’s compiled, it’s easy to access, we can run reports on all of that data. It’s a whole different world for us now.&quot;</p></strong><p>— Darryl Hopkins, Torsion Homes</p>",
+        "quote": "<p>rapid is a great communication system for us to track everything from beginning of a job - in the contract stage - all the way through to the maintenance stage.before rapid, we were using detailed excel spreadsheets - i think a lot of people’s file systems were probably their inbox. now it’s compiled, it’s easy to access, we can run reports on all of that data. it’s a whole different world for us now.</p>",
+        "quote_by": "Darryl Hopkins",
         "more_page": "/industry/construction",
         "bullet_points": [
           {
-            "label": "CHALLENGE",
-            "message": "Sales-to-build pipeline was costing time and money."
+            "label": "challenge",
+            "message": "sales-to-build pipeline was costing time and money."
           },
           {
-            "label": "SOLUTION",
-            "message": "Streamlined workflow solution from sale to construction."
+            "label": "solution",
+            "message": "streamlined workflow solution from sale to construction."
           },
           {
-            "label": "RESULT",
-            "message": "Lower costs, fewer errors and a 70% time savings on pre-sales drafting."
+            "label": "result",
+            "message": "lower costs, fewer errors and a 70% time savings on pre-sales drafting."
           }
         ]
       }

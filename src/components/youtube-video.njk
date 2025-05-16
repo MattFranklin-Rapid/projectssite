@@ -3,43 +3,82 @@
    This renders a full width video block
     
    to work correctly it requires a video to
-   be added to /src/data/videos.json
+   be added to "videos" in /src/data/main.json
 
    then imported like this
 
-   {% set videoId = "ID_IN_VIDEOS_JSON" %}
-   {% include "../path/to/full-width-video.njk" %}
+   {% set videoId = "ID_IN_MAIN_JSON" %}
+   {% from "../components/youtube-video.njk" import youtubeVideo with context %}
 
-   That video id will be used to find the config in videos.json
+   That video id will be used to find the config in main.json
 
+   and called this this:
+   {{ youtubeVideo(videoId, 'CSS CLASS NAMES') }}
 #}
+
+{% macro youtubeVideo(videoId, containerClass) %}
 
 {% set video = videos[videoId] %}
 
-<div class='skeleton full-width-video'>
+<div class='aspect-video {{videoId}}__container relative shadow-sm shadow-black {%  if containerClass != blank %} {{containerClass}} {% endif %} rounded-lg overflow-clip' id="{{ videoId }}__container">
   <iframe 
     src="{{video.src}}&amp;enablejsapi=1" 
     title="{{video.title}}"
-    class="full-width-player" 
+    class="youtube__player w-full aspect-video" 
     frameborder="0" 
-    id="full-width-player"
+    id="{{videoId}}"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen
   ></iframe>
 </div>
 
-<style>
-  .full-width-video {
-    width: 100%;
-    position: relative;
-    
-    iframe.full-width-player {
-      width: 100%;
-      aspect-ratio: 16 / 9;
+<script>
+let player;
+const id = "{{videoId}}";
+
+// Function that gets called when YouTube API is ready
+// This is just "magicly" called by the ifram_api script in the head
+function onYouTubeIframeAPIReady() {
+  // Initialize the player
+  player = new YT.Player(id, {
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
     }
+  });
+}
 
 
+// When player is ready
+function onPlayerReady(event) {
+  console.log('Fullscreen video is ready');
+}
+
+// When player state changes
+function onPlayerStateChange(event) {
+  // 0 = ended, 1 = playing, 2 = paused, 3 = buffering, 5 = video cued
+  if (event.data === 0 || event.data === 2) {
+    container.classList.remove('playing');
+  }
+}
+
+function playVideo() {
+  if (player && player.playVideo) {
+    player.playVideo();
+  }
+}
+
+const container = document.getElementById(`${id}__container`);
+
+container.addEventListener('click', () => {
+  container.classList.add('playing');
+  playVideo();
+});
+</script>
+
+<style>
+.{{videoId}}__container {
     &::before {
       content: "";
       display: block;
@@ -83,45 +122,7 @@
   }
 </style>
 
-<script>
-let player;
-
-// Function that gets called when YouTube API is ready
-// This is just "magicly" called by the ifram_api script in the head
-function onYouTubeIframeAPIReady() {
-  // Initialize the player
-  player = new YT.Player('full-width-player', {
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
+{% endmacro %}
 
 
-// When player is ready
-function onPlayerReady(event) {
-  console.log('Fullscreen video is ready');
-}
 
-// When player state changes
-function onPlayerStateChange(event) {
-  // 0 = ended, 1 = playing, 2 = paused, 3 = buffering, 5 = video cued
-  if (event.data === 0 || event.data === 2) {
-    container.classList.remove('playing');
-  }
-}
-
-function playVideo() {
-  if (player && player.playVideo) {
-    player.playVideo();
-  }
-}
-
-const container = document.querySelector('.full-width-video');
-
-container.addEventListener('click', () => {
-  container.classList.add('playing');
-  playVideo();
-});
-</script>

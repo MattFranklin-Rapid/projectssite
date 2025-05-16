@@ -1,0 +1,22 @@
+{# 
+Building a CRM Full page video
+#}
+
+{% import "./layouts.njk" as layouts %}
+{% from "../components/youtube-video.njk" import youtubeVideo with context %}
+{% from "../components/atoms/angle.njk" import angle %}
+
+{% call layouts.section('dark') -%}
+
+  {{ angle('top') }}
+
+{% call layouts.centerContainer('flex flex-1/2 items-center justify-center mt-[-100px] mb-[-100px]') -%}
+      
+      {{ youtubeVideo('building-a-crm', 'flex-1/2 lg:max-w-[60%]') }}
+
+  {%- endcall %}
+
+  {{ angle('bottom') }}
+
+{%- endcall %}
+

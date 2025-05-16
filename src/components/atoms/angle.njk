@@ -1,0 +1,5 @@
+{% macro angle(position) %}
+<svg class="angle w-full h-[var(--angle-height)] z-0 relative {% if position == 'top' %} rotate-180 mt-[-1px] {% else %} mb-[-1px] {%endif%}" viewBox="0 0 1280 343" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" >
+  <path class="fill-white" d="M0 342.975L1280 0V342.975H0Z"/>
+</svg>
+{% endmacro %}

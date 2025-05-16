@@ -1,0 +1,28 @@
+{# 
+ Font Awesome Icon
+
+ render yourself out an icon
+
+  Usage: 
+  - import at top of file with:
+  {% from "../PATH/TO/icon.njk" import Icon %}
+
+  - use in file with:
+  {{ Button(ICON_NAME, CLASS_OVERRIDES) }}
+
+  Arguments:
+    - iconName: The Fontawesome icon name, without fa- prefix i.e. arrow-left (not fa-arrow-left) https://fontawesome.com/search
+    - className: A class name to be added to the icon. Add any tailwind class OR font awesome class here 
+
+#}
+
+{% macro Icon(iconName, class) %}
+<i 
+  class="
+  fas fa-fw
+  fa-{{iconName}} 
+  {% if class != blank %} {{class}} {% endif %}
+  " 
+>
+</i> 
+{% endmacro %}

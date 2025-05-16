@@ -1,1 +1,15 @@
-{% include 'layouts/contact_us.njk' %}
+{% extends "layouts/layout.njk" %}
+
+{% block content %}
+  <div class='hero-with-content splash-small text-dark background-dark'>
+      {# Hero banner #}
+      <div class="content-narrow-column">
+          {# Hero Content #}
+          <div>
+              <h1>Get in contact with a <span class="text-highlight-cool-dark">Rapid</span> consultant</h1>
+          </div>
+      </div>
+  </div>
+
+  {% include 'components/cta/knowmore.njk' %}
+{% endblock %}

@@ -1,10 +1,6 @@
-<html lang="en">
-<head>
-    {% include '../components/global_head.njk' %}
-    <link rel="stylesheet" href="/src/styles/campaign.css">
-</head>
-    <body>
-        {% include '../components/nav.njk' %}
+{% extends "./layout.njk" %}
+
+{% block content %}
 
         <div class='hero-with-cta splash-big background-dark text-dark' style="background-image: url({{splashImage}}); background-repeat: no-repeat;">
             {# Hero banner #}
@@ -75,6 +71,4 @@
 
         {% include '../components/cta/knowmore.njk' %}
         
-        {% include '../components/footer.njk' %}
-    </body>
-</html>
+{% endblock %}

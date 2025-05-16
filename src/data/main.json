@@ -1,25 +1,32 @@
 {
   "template": "layouts/main.njk",
-  "ourApproach": {
-    "title": "Our Approach",
-    "subTitle": "Not just a software company.",
-    "content": "<p>Our unique <strong>Tech+Team</strong> approach sets us apart</p><p>Our in-house <strong>Tech+</strong> is highly customisable, reliable and fast to implement - build and refined over 8 years of development. Paired with our <strong>+Team</strong> of expert consultants and developers, we provide ongoing support to ensure your success.</p><p>This powerful combination allows us to deliver fast, low-risk digital solutions across everything from CRMs to ERPs to project management and advanced analytics solutions</p>",
-    "ctaButton": {
-      "link": "/approach",
-      "text": "Tech+Team Approach"
+  "videos": {
+    "building-a-crm": {
+      "src": "https://www.youtube.com/embed/4Rni97X0K50?si=PgKR6YqSgCMSp-Db",
+      "alt": "",
+      "title": "Rapid CRM Workshop",
+      "overlayImageSrc": "/src/assets/images/build-a-crm-overlay.webp"
     },
-    "image": {
-      "src": "/src/assets/images/landing/board-on-laptop.png",
-      "alt": "A laptop computer displaying the rapid platform explorer application"
+    "homepage-splash": {
+      "src": "https://www.youtube.com/embed/rNe9q82nVnI?si=0zS4b8tMIu2umtes",
+      "alt": "",
+      "title": "Welcome to Rapid Platform",
+      "overlayImageSrc": "/src/assets/images/hero-overlay-image.jpg"
+    },
+    "approach": {
+      "src": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+      "alt": "",
+      "title": "Our Approach",
+      "overlayImageSrc": "/src/assets/images/approach_overlay.jpg"
     }
   },
+  "logo": {
+    "largeSrc": "/images/logos/RPD_logo_2D.svg",
+    "smallSrc": "/images/logos/r.svg",
+    "link": "/",
+    "alt": "Rapid platform logo"
+  },
   "nav": {
-    "logo": {
-      "desktopSrc": "/images/logos/RPD_logo_2D.svg",
-      "mobileSrc": "/images/logos/r.svg",
-      "link": "/",
-      "alt": "Rapid platform logo"
-    },
     "ctaButton": {
       "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
       "text": "Book a Demo"
@@ -51,5 +58,187 @@
         ]
       }
     ]
+  },
+
+  "microsoftIntegrations": [
+    {
+      "src": "/src/assets/images/approach/ms-office-365.svg",
+      "title": "Office 365",
+      "alt": "Office 365 Logo"
+    },
+    {
+      "src": "/src/assets/images/approach/ms-outlook.svg",
+      "title": "Outlook",
+      "alt": "Outlook Logo"
+    },
+    {
+      "src": "/src/assets/images/approach/ms-power-automate.svg",
+      "title": "Power automate",
+      "alt": "Power automate Logo"
+    },
+    {
+      "src": "/src/assets/images/approach/ms-power-bi.svg",
+      "title": "Power BI",
+      "alt": "Power BI Logo"
+    }
+  ],
+
+  "simpleCta": {
+    "title": "don't wait",
+    "subTitle": "We are waiting for you",
+    "message": "You cannot escape us. Your business will be revolutaionized by Rapid it is inevitable.",
+    "button": {
+      "text": "Get in touch",
+      "link": "/contact"
+    }
+  },
+  "ourApproach": {
+    "title": "Our Approach",
+    "subTitle": "Not just a software company.",
+    "content": "<p>Our unique <strong>Tech+Team</strong> approach sets us apart. Our in-house <strong>Tech+</strong> is highly customisable, reliable and fast to implement - build and refined over 8 years of development. Paired with our <strong>+Team</strong> of expert consultants and developers, we provide ongoing support to ensure your success. This powerful combination allows us to deliver fast, low-risk digital solutions across everything from CRMs to ERPs to project management and advanced analytics solutions.</p>",
+    "ctaButton": {
+      "link": "/approach",
+      "text": "Tech+Team Approach"
+    },
+    "image": {
+      "src": "/src/assets/images/landing/board-on-laptop.png",
+      "alt": "A laptop computer displaying the rapid platform explorer application"
+    }
+  },
+  "ourPromise": {
+    "title": "Our Promise",
+    "subTitle": "From idea to implementation,<br class='hidden lg:inline' > we're with you every step of the way.",
+    "content": "<p>We don't just provide tech solutions - we partner with you to understand your unique challenges, create tailored solutions, and ensure seamless execution. Our goal is to see your vision come to life, unlocking the power of technology so your business can thrive as it grows and changes.</p>",
+    "image": {
+      "src": "/src/assets/images/approach/mitch.png",
+      "caption": "<h4 class='text-rapid-blue font-bold text-lg' >Mitch Hunt</h4> <br> CEO &amp; Founder of Rapid Platform",
+      "alt": ""
+    }
+  },
+  "ourMethod": {
+    "title": "Our Method",
+    "subTitle": "Our Tech<i class=\"fas fa-fw fa-plus text-rapid-blue\" ></i>Team approach",
+    "content": "    <p>Our proprietary technology was built in-house over the last 8 years. It’s highly configurable and designed to scale as you grow. Our expert team knows this technology inside and out. Agile, fast, and efficient, we configure it so it fits your business like a glove. Bottom line: We don’t just give you software. We take full ownership of your success, ensuring a smooth and fast transformation.</p>",
+    "methods": [
+      {
+        "icon": "rabbit-running",
+        "text": "Fast to implement"
+      },
+      {
+        "icon": "shield-check",
+        "text": "Low-risk"
+      },
+      {
+        "icon": "lightbulb-on",
+        "text": "Guided by experts"
+      },
+      {
+        "icon": "split",
+        "text": "Flexible solutions"
+      }
+    ]
+  },
+  "team": {
+    "title": "Meet the team",
+    "subTitle": "Our consultants deliver tech solutions that shift your business forward",
+    "members": [
+      {
+        "name": "Mitch Hunt",
+        "position": "CEO & Founder",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Bob Smith",
+        "position": "Senior Consultant",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Phil Bjornsson",
+        "position": "Senior Consultant",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Eli Barron",
+        "position": "Tech Consultant",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Kim Harris",
+        "position": "BA",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      },
+      {
+        "name": "Tony Tiro",
+        "position": "Solutions Architect",
+        "image_url": "/src/assets/testimonials/James-M.jpg"
+      }
+    ]
+  },
+  "blueprint": {
+    "title": "Best in class",
+    "subTitle": "Your blueprint for <span class=\"text-rapid-blue\">digital excellence</span>",
+    "content": "<p>We've seen the blowouts and breakdowns - so we built a better way. With 8 years behind our own platform, we deliver industry-ready solutions that evolve with you. Our iterative, low-risk approach means progress you can trust - one smart step at a time. No chaos. No curveballs. Just steady, smooth transformation.</p>",
+    "ctaButton": {
+      "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+      "text": "Book a Demo"
+    }
+  },
+  "justification": {
+    "title": "Jump In",
+    "subTitle": "Tech transformation doesn't have to be risky.",
+    "content": "<p>We've seen the blowouts and breakdowns - so we built a better way. With 8 years behind our own platform, we deliver industry-ready solutions that evolve with you. Our iterative, low-risk approach means progress you can trust - one smart step at a time. No chaos. No curveballs. Just steady, smooth transformation.</p>",
+    "ctaButton": {
+      "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+      "text": "Book a Demo"
+    }
+  },
+  "techPlusTeam": {
+    "title": "Tech Plus Team",
+    "subTitle": "Our Tech<i class=\"fas fa-fw fa-plus text-rapid-blue\" ></i>Team approach",
+    "content": "    <p>Our proprietary technology was built in-house over the last 8 years. It’s highly configurable and designed to scale as you grow. Our expert team knows this technology inside and out. Agile, fast, and efficient, we configure it so it fits your business like a glove. Bottom line: We don’t just give you software. We take full ownership of your success, ensuring a smooth and fast transformation.</p>",
+    "methods": [
+      {
+        "icon": "rabbit-running",
+        "text": "Fast to implement"
+      },
+      {
+        "icon": "shield-check",
+        "text": "Low-risk"
+      },
+      {
+        "icon": "lightbulb-on",
+        "text": "Guided by experts"
+      },
+      {
+        "icon": "split",
+        "text": "Flexible solutions"
+      }
+    ],
+    "ctaButton": {
+      "link": "/approach",
+      "text": "Tech+Team Approach"
+    },
+    "image": {
+      "src": "/src/assets/images/landing/board-on-laptop.png",
+      "alt": "A laptop computer displaying the rapid platform explorer application"
+    }
+  },
+  "bookDemo": {
+    "title": "Book A Demo",
+    "subTitle": "Discover how Rapid technology can streamline your operations",
+    "content": "<p>Book in a 30-minute demo and you'll:</p><ul class='px-5 pt-5' ><li> <i class=\"fa-solid fa-square-check text-pixel-zest fa-lg\"></i> See Rapid Platform in action</li><li> <i class=\"fa-solid fa-square-check text-pixel-zest fa-lg\"></i>  A breakdown of the different solutions we can deliver</li><li> <i class=\"fa-solid fa-square-check text-pixel-zest fa-lg\"></i>  An introduction to our <strong>Tech+Team</strong> approach</li><li> <i class=\"fa-solid fa-square-check text-pixel-zest fa-lg\"></i>  Clarity on any questions you have</li></ul>",
+    "ctaButton": {
+      "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+      "text": "Book Demo"
+    },
+    "image": {
+      "src": "/src/assets/images/landing/demo-consultant-face.png",
+      "alt": "A happy consultant sitting at a computer waiting to solve your problem with Rapid"
+    }
+  },
+  "promise": {
+    "preamble": "At Rapid, we're more than developers, consultants, and technologists — we're your partners in business. We know technology can unlock incredible growth — boosting sales, streamlining operations, and elevating customer experiences. But if done wrong, it creates complexity, delays, and chaos.",
+    "title": "<span class='text-sm' >Our promise is simple:</span> <br> <span class='text-2xl'> Enterprise-grade solutions that feel effortless.</span>",
+    "subTitle": " Delivered with speed, precision, and a deep focus on what moves your business forward. We listen first, move fast, and solve what matters most."
   }
 }

@@ -1,0 +1,17 @@
+{% macro title(title, align, class) %}
+  <h3 class="font-light text-rapid-blue uppercase text-center {%if align != blank %} lg:text-{{align}} {%endif%} {%if class != blank %} {{class}} {% endif %}" >
+    {{ title }}
+  </h3>
+{% endmacro %}
+
+{% macro subTitle(subTitle, align, class) %}
+<h4 class="text-4xl my-5 font-bold text-center {%if align != blank %} lg:text-{{align}} {%endif%} {%if class != blank %} {{class}} {% endif %}" >
+    {{ subTitle | safe}}
+  </h4>
+{% endmacro %}
+
+{% macro content(content, align, class) %}
+  <div class=" {%if align != blank %} text-{{align}} {%endif%} {%if class != blank %} {{class}} {% endif %} " >
+    {{ content | safe }}
+  </div>
+{% endmacro %}

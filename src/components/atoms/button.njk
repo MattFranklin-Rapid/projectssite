@@ -1,0 +1,41 @@
+{# 
+
+Button macro atom for use in other layouts 
+
+Usage: 
+- import at top of file with:
+{% from "../components/atoms/button.njk" import Button %}
+
+- use in file with:
+{{ Button(URL_TO_OPEN, TEXT_TO_SHOW) }}
+
+If you want link or text to be data variables simply use them as you would in javascript:
+{{ Button(nav.ctaButton.link,nav.ctaButton.text) }}
+
+
+- Button also takes a class extension which appends to the class of the element. 
+  this allows for easy tailwind overrides to be applied
+{{ Button(nav.ctaButton.link, nav.ctaButton.text , "class name overrides") }}
+
+#}
+
+{% macro Button(link, text, class, target = "_blank") %}
+<a 
+  href="{{ link }}" 
+  target="{{target}}"
+  class="
+    bg-rapid-blue 
+    transition
+    text-white
+    rounded-sm 
+    p-4
+    block
+    h-min 
+    text-nowrap 
+    hover:bg-ice-blue
+    {% if class != blank %} {{class}} {% else %} w-max {% endif %}
+  " 
+>
+    {{ text }}
+</a> 
+{% endmacro %}
