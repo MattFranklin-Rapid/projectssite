@@ -165,19 +165,19 @@
     ],
     "metrics": [
       {
-        "heading": "Reduced tour wait time by 500%",
-        "message": "Parents can make instant tour bookings directly from the website, saving staff time and delivering a better experience for families.",
-        "image": "/src/assets/images/industries/childcare/clock.png"
+        "title": "Reduced tour wait time by 500%",
+        "content": "Parents can make instant tour bookings directly from the website, saving staff time and delivering a better experience for families.",
+        "icon": "clock"
       },
       {
-        "heading": "Boost lead conversions by 20%",
-        "message": "By compression tour booking time, families have everything they need ot make a decision within hours, not days.",
-        "image": "/src/assets/images/industries/childcare/up-arrows.png"
+        "title": "Boost lead conversions by 20%",
+        "content": "By compression tour booking time, families have everything they need ot make a decision within hours, not days.",
+        "icon": "square-arrow-up"
       },
       {
-        "heading": "Improve family feedback",
-        "message": "With could-based enrolment forms and payment, families avoid paperwork hassles and enjoy secure payment options.",
-        "image": "/src/assets/images/industries/childcare/talk-box.png"
+        "title": "Improve family feedback",
+        "content": "With could-based enrolment forms and payment, families avoid paperwork hassles and enjoy secure payment options.",
+        "icon": "message-smile"
       }
     ]
   },

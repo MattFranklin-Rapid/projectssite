@@ -2,6 +2,7 @@
 
 {% from "../components/atoms/angle.njk" import angle %}
 {% from "components/feature_multi_tabs.njk" import FeatureMulti with context %}
+{% from "components/three_cards.njk" import ThreeCards with context %}
 
 {% block content%}
   {% include '../components/hero.njk' %}
@@ -16,28 +17,9 @@
 
   {{ FeatureMulti('light', industry_features) }}
 
-  <div class="hidden">
+  {{ ThreeCards(benefits.metrics) }}
 
-  <div class='campaign-benefits skeleton block-half background-dark text-dark'>
-      {# Describe the benefits you get #}
-      <div class="content-full-column text-center">
-          <div class="spacer-small"></div>
-          <div class="container-three-columns">
-              {# Columns #}
-              {% for item in benefits.metrics %}
-              <div>
-                  <div>
-                      <img src="{{item.image}}">
-                  </div>
-                  <div>
-                      <h4>{{item.heading}}</h4>
-                      <p>{{item.message}}</p>
-                  </div>
-              </div>
-              {% endfor %}
-          </div>
-      </div>
-  </div>
+  <div class="hidden">
 
   <div class='campaign-justification skeleton block-half background-light text-light'>
       {# Justify consensus in the market for buying #}
