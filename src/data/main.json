@@ -242,6 +242,11 @@
       "alt": "A happy consultant sitting at a computer waiting to solve your problem with Rapid"
     }
   },
+  "requestQuote": {
+    "title": "Request a quote",
+    "subTitle": "How much does Rapid cost?",
+    "content": "<p>Let us know a bit about your organisation and what you'd like to achieve &mdash; we'll get in contact with you shortly.</p>"
+  },
   "promise": {
     "preamble": "At Rapid, we're more than developers, consultants, and technologists — we're your partners in business. We know technology can unlock incredible growth — boosting sales, streamlining operations, and elevating customer experiences. But if done wrong, it creates complexity, delays, and chaos.",
     "title": "<span class='text-sm' >Our promise is simple:</span> <br> <span class='text-2xl'> Enterprise-grade solutions that feel effortless.</span>",

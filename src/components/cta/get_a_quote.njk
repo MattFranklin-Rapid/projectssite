@@ -1,110 +1,205 @@
-<div class="center-content">
-  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-  <div>
-    <div>
-      <form id="contact-quote-form-id" class="container-two-columns">
-        <div id="contact-form-quote">
-          <h4>Your details</h4>
-          <hr class="hr-quote" />
-          <input type="text" name="first_name" placeholder="First Name" />
-          <input type="text" name="last_name" placeholder="Last Name" />
-          <input type="email" name="email" placeholder="Email" />
-          <input type="tel" name="mobile_phone" placeholder="Mobile Phone" />
-          <br />
-          <h4>Organisation information</h4>
-          <hr class="hr-quote" />
-          <label for="no-of-employee">
-            How many total employees does your organisation have?
-          </label>
-          <select name="no_of_employee" id="no-of-employee">
-            <option value="">--Please choose an option--</option>
-            <option value="1-50">1-50</option>
-            <option value="50-100">50-100</option>
-            <option value="100-200">100-200</option>
-            <option value="200-1000">200-1000</option>
-            <option value="More than 1000">1000+</option>
-          </select>
+{% import "../layouts.njk" as layouts %}
 
-          <label for="ops_distribution"
-            >Are your operations centralised or spread across multiple locations
-            or regions?</label
-          >
-          <select id="ops_distribution" name="checkbox">
-            <option value="">--Please choose an option--</option>
-            <option value="We're central">We're central</option>
-            <option value="Some of us work from home">
-              Some of us work from home
-            </option>
-            <option value="We have many locations">We have many locations</option>
-          </select>
-        </div>
+{% call layouts.centerContainer('p-8') -%}
+  <form id="contact-quote-form-id" class="container-two-columns" data-section="0">
+    
+    <section data-section="0" id="client_details" class="flex flex-col" >
+      <h4>Your details</h4>
+      <hr class="hr-quote" />
+      <input type="text" name="first_name" placeholder="First Name" />
+      <input type="text" name="last_name" placeholder="Last Name" />
+      <input type="email" name="email" placeholder="Email" />
+      <input type="tel" name="mobile_phone" placeholder="Mobile Phone" />
 
-        <div>
-          <label for="goals-quote"
-            >Describe the main tasks or business processes you’d like to
-            implement using our platform?</label
-          >
-          <textarea
-            id="goals-quote"
-            class="text-area-medium-fixed"
-            placeholder="Describe here"
-            name="goals"
-          ></textarea>
+      <div class="w-full flex" >
+        <button class="next ml-auto"
+          type="button"
+      >next</button>
+      </div>
+    </section>
 
-          <label for="other-systems"
-            >Do you currently use other systems that you’d like to connect to
-            our platform?</label
-          >
-          <textarea
-            id="other-systems"
-            class="text-area-medium-fixed"
-            placeholder="List systems here"
-            name="other_systems"
-          ></textarea>
+    <section data-section="1" id="org_details" class="hidden flex-col" >
+      <h4>Organisation information</h4>
+      <hr class="hr-quote" />
+      <label for="no-of-employee">
+        How many total employees does your organisation have?
+      </label>
+      <select name="no_of_employee" id="no-of-employee">
+        <option value="">--Please choose an option--</option>
+        <option value="1-50">1-50</option>
+        <option value="50-100">50-100</option>
+        <option value="100-200">100-200</option>
+        <option value="200-1000">200-1000</option>
+        <option value="More than 1000">1000+</option>
+      </select>
 
-          <label for="description-of-business-data"
-            >Describe the type and volume of data you'll need to store in our
-            system</label
-          >
-          <textarea
-            id="description-of-business-data"
-            class="text-area-medium-fixed"
-            placeholder="Describe here"
-            name="description_of_business_data"
-          ></textarea>
-        </div>
-        <div></div>
-        <div class="container-two-columns">
-          <div
-            class="h-captcha"
-            data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78"
-            data-callback="setToEnabledQuote"
-          ></div>
-          <button
-            class="know-more-button"
-            id="contact-us-submit-button-quote"
-            type="submit"
-            disabled
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
-    <p style="visibility: hidden" id="thank-you-after-submit-quote">
-      Thank you for contacting us! We will get back to you shortly.
-    </p>
-  </div>
-  <script>
-    function setToEnabledQuote() {
-      let button = document.getElementById("contact-us-submit-button-quote")
-      button.removeAttribute("disabled")
+      <label for="ops_distribution"
+        >Are your operations centralised or spread across multiple locations
+        or regions?</label
+      >
+      <select id="ops_distribution" name="checkbox" >
+        <option value="">--Please choose an option--</option>
+        <option value="We're central">We're central</option>
+        <option value="Some of us work from home">
+          Some of us work from home
+        </option>
+        <option value="We have many locations">We have many locations</option>
+      </select>
+
+      <div class="w-full flex justify-between" >
+        <button class="prev"
+          type="button"
+      >prev</button>
+        <button class="next"
+          type="button"
+      >next</button>
+      </div>
+    </section>
+  
+    <section data-section="2" id="org_details" class="hidden flex-col" >
+      <label for="goals-quote"
+        >Describe the main tasks or business processes you’d like to
+        implement using our platform?</label
+      >
+      <textarea
+        id="goals-quote"
+        class="text-area-medium-fixed"
+        placeholder="Describe here"
+        name="goals"
+      ></textarea>
+
+      <label for="other-systems"
+        >Do you currently use other systems that you’d like to connect to
+        our platform?</label
+      >
+      <textarea
+        id="other-systems"
+        class="text-area-medium-fixed"
+        placeholder="List systems here"
+        name="other_systems"
+      ></textarea>
+
+      <label for="description-of-business-data"
+        >Describe the type and volume of data you'll need to store in our
+        system</label
+      >
+      <textarea
+        id="description-of-business-data"
+        class="text-area-medium-fixed"
+        placeholder="Describe here"
+        name="description_of_business_data"
+      ></textarea>
+
+
+      <div class="w-full flex justify-between" >
+        <button class="prev"
+          type="button"
+      >prev</button>
+
+        <div
+          class="h-captcha"
+          data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78"
+          data-callback="setToEnabledQuote"
+        ></div>
+        <button
+          class="know-more-button"
+          id="contact-us-submit-button-quote"
+          type="submit"
+          disabled
+        >
+          Submit
+        </button>
+      </div>
+    </section>
+
+  </form>
+
+  <p style="visibility: hidden" id="thank-you-after-submit-quote">
+    Thank you for contacting us! We will get back to you shortly.
+  </p>
+
+{%- endcall %}
+
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+<script>
+  function setToEnabledQuote() {
+    const button = document.getElementById("contact-us-submit-button-quote")
+    button.removeAttribute("disabled");
+  }
+
+  document.addEventListener('DOMContentLoaded', () => { 
+    const quoteForm = document.getElementById("contact-quote-form-id")
+
+    const sections = document.querySelectorAll('#contact-quote-form-id section[data-section]');
+
+    const prevButtons = document.getElementsByClassName("prev");
+
+    const nextButtons = document.getElementsByClassName("next");
+
+    for (const next of nextButtons) {
+
+      next.addEventListener('click', () => {
+        const currentIndex = +quoteForm.dataset.section;
+
+        const currentSection = sections[currentIndex];
+
+        const atEnd = (currentIndex + 1) < 0;
+
+        if (atEnd) {
+          return;
+        }
+
+        const nextIndex = currentIndex + 1;
+
+        const nextSection = sections[nextIndex];
+
+        currentSection.classList.add('hidden');
+        currentSection.classList.remove('flex');
+
+        nextSection.classList.remove('hidden');
+        nextSection.classList.add('flex');
+
+        quoteForm.setAttribute('data-section', nextIndex);
+      });
+
     }
-    let quoteForm = document.getElementById("contact-quote-form-id")
+
+    for (const prev of prevButtons) {
+
+      prev.addEventListener('click', () => {
+        const currentIndex = +quoteForm.dataset.section;
+
+        const currentSection = sections[currentIndex];
+
+        const atStart = (currentIndex + 1) < 0;
+
+        if (atStart) {
+          return;
+        }
+
+        const prevIndex =  currentIndex - 1 ;
+
+        const prevSection = sections[prevIndex];
+
+        currentSection.classList.add('hidden');
+        currentSection.classList.remove('flex');
+
+        prevSection.classList.remove('hidden');
+        prevSection.classList.add('flex');
+
+        quoteForm.setAttribute('data-section', prevIndex);
+      });
+
+    }
+
     quoteForm.addEventListener("submit", async (event) => {
-      let button = document.getElementById("contact-us-submit-button-quote")
-      button.setAttribute("disabled", "true")
-      event.preventDefault()
+      const button = document.getElementById("contact-us-submit-button-quote")
+
+      button.setAttribute("disabled", "true");
+
+      event.preventDefault();
+
       try {
         await fetch(
           "https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission",
@@ -136,5 +231,6 @@
           .removeAttribute("style")
       }
     })
-  </script>
-</div>
+  });
+
+</script>
