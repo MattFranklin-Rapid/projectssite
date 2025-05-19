@@ -1,0 +1,41 @@
+
+{% import "./layouts.njk" as layouts %}
+{% from "./atoms/angle.njk" import angle %}
+{% from "../components/atoms/icon.njk" import Icon %}
+
+{% call layouts.section('light', 'quarter') -%}
+
+  {% call layouts.centerContainer('p-8') -%}
+
+    <div class="container-row bg-rapid-blue p-10 rounded-lg relative text-white">
+
+        {{ Icon('quote-left', "
+          absolute text-ice-blue z-0 text-[100pt] left-[-25pt] top-[-25pt]
+          text-[100pt] left-[-25pt] top-[-25pt]
+          lg:top-[-50pt] lg:left-[-50pt] lg:text-[170pt] 
+        ") }}
+
+        <div class="text-justify pt-10 lg:pl-30 mb-8">
+
+            {{testimonial.quote|safe}}
+
+        </div>
+
+        <div class="text-right pr-20 flex flex-col" >
+            <span>{{testimonial.name}}</span>
+
+            <span>
+
+                <b>{{testimonial.company}}</b>
+
+            </span>
+        </div>
+
+        <img class="rounded-full absolute -bottom-2 -right-2 max-h-30" src="{{testimonial.faceURL}}">
+
+    </div>
+
+  {%- endcall %}
+
+{%- endcall %}
+

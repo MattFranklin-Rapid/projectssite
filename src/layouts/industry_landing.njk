@@ -19,31 +19,9 @@
 
   {{ ThreeCards(benefits.metrics) }}
 
-  <div class="hidden">
+  {% include '../components/testimonial.njk' %}
 
-  <div class='campaign-justification skeleton block-half background-light text-light'>
-      {# Justify consensus in the market for buying #}
-      <div class="content-full-column testimony">
-          <!--Testimonials-->
-          <div class="testimony-card">
-              <div class="container-row">
-                  <img src="{{testimonial.faceURL}}">
-                  <div class="container-vertical-center">
-                      <span id="testimonial-name">{{testimonial.name}}</span><br>
-                      <span id="testimonial-company">
-                          <b>{{testimonial.company}}</b>
-                      </span>
-                  </div>
-              </div>
-              <div class="quote-marks text-highlight-cool-light">
-                  <span>&ldquo;</span>
-              </div>
-              <div>
-                  {{testimonial.quote|safe}}
-              </div>
-          </div>
-      </div>
-  </div>
+  <div class="hidden">
 
   <div class='campaign-quote-form skeleton block-half background-dark text-dark'>
       {# Booking form to get a quote #}
