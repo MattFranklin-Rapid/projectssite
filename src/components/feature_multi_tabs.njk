@@ -55,7 +55,9 @@
 
   {% call layouts.section(theme, 'full') -%}
     
-    {{ angle('top') }}
+    {% if theme == 'dark' %} 
+      {{ angle('top') }}
+    {% endif %}
 
     {% call layouts.centerContainer('flex flex-col-reverse lg:flex-row sm:pt-10') -%}
       <div  class="
@@ -139,7 +141,9 @@
       </div>
     {%- endcall %}
 
-    {{ angle('bottom') }}
+    {% if theme == 'dark' %} 
+      {{ angle('bottom') }}
+    {% endif %}
 
   {%- endcall %}
     
