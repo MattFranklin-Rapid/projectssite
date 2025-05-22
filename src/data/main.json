@@ -1,5 +1,5 @@
 {
-  "template": "layouts/main.njk",
+  "template": "layouts/main.njk", 
   "videos": {
     "building-a-crm": {
       "src": "https://www.youtube.com/embed/4Rni97X0K50?si=PgKR6YqSgCMSp-Db",
