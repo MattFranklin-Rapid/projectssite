@@ -12,6 +12,7 @@ export default {
   },
   plugins: [
     vituum(),
+    Sitemap({ hostname: "https://rapidplatform.com" }),
     nunjucks({
       root: "./src",
       data: ["src/**/*.json"],
@@ -30,7 +31,6 @@ export default {
         },
       },
     }),
-    Sitemap({ hostname: "https://rapidplatform.com" }),
     tailwindcss({
       configPath: "./tailwind.config.js",
     }),
