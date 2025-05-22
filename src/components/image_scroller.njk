@@ -1,0 +1,71 @@
+{#
+ Image scroller
+
+
+ takes an array of images and makes em scroll infinitley
+
+ usage:
+  {% from "./path/to/image_scroller.njk" import ImageScroller with context %}
+
+ args:
+  - images: Array of images to render 
+  {
+    src: string;
+    alt: string;
+    title: string;
+  }
+
+  - scrollerClass: class applied to scroller container
+
+  - imgClass: class applied to images
+
+  - speed: speed of scroll in seconds, default = 50
+#}
+
+
+{% macro ImageScroller(images, scrollerClass, imgClass, speed) %}
+
+{% set id = uuid()  %}
+
+<div class="max-w-full {{id}} scroller overflow-clip {{scrollerClass}}" >
+  <div class="flex gap-10 w-fit {{id}}__inner">
+    {% for i in images %}
+    <img class="{{imgClass}}" src="{{i.src}}" alt="{{i.alt}}" title="{{i.title}}"/>
+    {% endfor%}
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const scrollers = document.querySelectorAll('.{{id}}');
+
+    const speed = {{speed}};
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
+
+    function addAnimation() {
+      for (const s of scrollers) {
+        if (speed) {
+          s.style.setProperty('--scroller-speed', `${speed}s`);
+        }
+
+        s.setAttribute('data-animated', true);
+
+        const scrollerInner = document.querySelector('.{{id}}__inner');
+        const scrollerContent = Array.from(scrollerInner.children);
+
+        for (const child of scrollerContent) {
+          const dup = child.cloneNode(true);
+
+          dup.setAttribute('aria-hidden', true);
+
+          scrollerInner.appendChild(dup);
+        }
+      }
+    }
+  });
+</script>
+
+{% endmacro %}

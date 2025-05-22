@@ -12,13 +12,15 @@ export default {
   },
   plugins: [
     vituum(),
-    Sitemap({ hostname: "https://rapidplatform.com"/*, generateRobotsTxt: false*/}),
+    Sitemap({
+      hostname: "https://rapidplatform.com" /*, generateRobotsTxt: false*/,
+    }),
     nunjucks({
       root: "./src",
       data: ["src/**/*.json"],
       globals: {
-        uuid: () => {
-          return crypto.randomUUID();
+        uuid: (prefix = "component") => {
+          return `${prefix}-${Math.random().toString(36).substring(2, 15)}`;
         },
       },
       filters: {

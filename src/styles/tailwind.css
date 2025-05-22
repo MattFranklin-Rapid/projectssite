@@ -33,6 +33,8 @@
   --border-dark: 1px solid #363636;
 
   --angle-height: 250px;
+
+  --scroller-speed: 50s;
 }
 
 @layer components {
@@ -65,7 +67,7 @@
 
       > div {
         flex-wrap: nowrap;
-        animation: scroll 50s linear infinite;
+        animation: scroll var(--scroller-speed) linear infinite;
       }
     }
   }

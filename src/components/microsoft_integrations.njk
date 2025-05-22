@@ -1,33 +1,4 @@
 
-<div class="max-w-full w-[500px] sm:w-[500px] md:w-[600px]  scroller place-self-center my-10 overflow-clip" >
-  <div class="flex gap-10 w-fit scroller__inner">
-    {% for i in microsoftIntegrations %}
-      <img class="w-[5rem] h-[5rem] max-w-none" src="{{i.src}}" alt="{{i.alt}}" title="{{i.title}}"/>
-    {% endfor%}
-  </div>
-</div>
+{% from "./image_scroller.njk" import ImageScroller with context %}
 
-<script>
-  const scrollers = document.querySelectorAll('.scroller');
-
-  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    addAnimation();
-  }
-
-  function addAnimation() {
-    scrollers.forEach(s => {
-      s.setAttribute('data-animated', true);
-
-      const scrollerInner = document.querySelector('.scroller__inner');
-      const scrollerContent = Array.from(scrollerInner.children);
-
-      for (const child of scrollerContent) {
-        const dup = child.cloneNode(true);
-
-        dup.setAttribute('aria-hidden', true);
-
-        scrollerInner.appendChild(dup);
-      }
-    })
-  }
-</script>
+{{ ImageScroller(microsoftIntegrations, 'w-[500px] sm:w-[500px] md:w-[600px]  place-self-center my-10', 'w-[5rem] h-[5rem] max-w-none') }}

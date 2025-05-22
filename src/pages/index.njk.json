@@ -17,6 +17,20 @@
     "subtitle": "tech in plus the cloud, team on the ground.",
     "videoId": "homepage-splash"
   },
+  "improvements": [
+    {
+      "message": "<span class='text-rapid-blue font-bold' >42%</span> boost in enrolments",
+      "client": "Guardian Childcare"
+    },
+    {
+      "message": "<span class='text-rapid-blue font-bold' >70%</span> reduction of manual work load",
+      "client": "Torsion Construction"
+    },
+    {
+      "message": "<span class='text-rapid-blue font-bold' >99%</span> of our spreadsheets centralized",
+      "client": "EDL Energy"
+    }
+  ],
   "multi_feature": {
     "title": "rapid technology",
     "subTitle": "real outcomes, real fast.",

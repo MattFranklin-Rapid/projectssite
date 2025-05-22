@@ -1,0 +1,21 @@
+{# 
+  Three improvement statements
+#}
+
+{% import "./layouts.njk" as layouts %}
+
+{% call layouts.section('light', 'quarter') %}
+
+  {% call layouts.centerContainer('p-4 grid gap-10 md:grid-cols-3') %}
+    
+    {% for i in improvements %}
+      <div class="flex flex-col items-center max-w-2/3 place-self-center" >
+        <h2 class="text-center font-bold text-xl" >{{i.message|safe}}</h2> 
+        <h3 class="text-center font-light" >{{i.client|safe}}</h3> 
+      </div>
+    {%endfor%}
+
+  {% endcall %}
+  
+
+{% endcall %}
