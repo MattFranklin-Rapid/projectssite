@@ -8,41 +8,41 @@
   "hero": {
     "title": "Technology solutions for childcare providers",
     "subtitle": "We understand the unique challenges childcare centres face. From managing enrolments, to staffing and family experience, we’ve got solutions that remove bottlenecks and streamline operations.",
-    "url_video_embed": "https://www.youtube.com/embed/N2tRuVxGBuM?si=mOqq29WcuGbYuV-p",
-    "overlay_url_video_embed": "/src/assets/images/hero-overlay-image.jpg",
-    "title_video_embed": "Rapid Platform",
-    "content__padding-top": 300,
-    "content__padding-bottom": 300
+    "videoId": "childcare"
   },
   "seo": {
     "description": "Transform your Childcare business with Rapid Platform’s tailored solutions to streamline processes, automate tasks, and boost productivity."
   },
-  "feature": {
-    "minor_heading": "RAPID TECHNOLOGY",
-    "major_heading": "Smart technology, effortless integration",
-    "heading_paragraph": "Rapid streamlines your centre operations, boosting leads, conversations, and family experience with seamless automation",
-    "features": [
+  "industry_features": {
+    "title": "Rapid Technology",
+    "subTitle": "Smart technology, effortless integration",
+    "content": "<p>Rapid streamlines your centre operations, boosting leads, conversations, and family experience with seamless automation</p>",
+    "areas": [
       {
         "active_status": "button-active",
         "label": "Lead capture",
         "display": "block",
         "image_source": "/src/assets/images/industries/childcare/features/CRM.png",
-        "bullet_points": [
+        "features": [
           {
-            "label": "",
-            "message": "Tracks lead via online website enquiries"
+            "icon": "chart-mixed",
+            "label": "Tracks leads",
+            "message": "via online website enquiries"
           },
           {
-            "label": "",
-            "message": "Improved family experience"
+            "icon": "family",
+            "label": "Improved",
+            "message": "family experience"
           },
           {
-            "label": "",
-            "message": "Offers self-service tour bookings"
+            "icon": "calendar-users",
+            "label": "Offers self-service",
+            "message": "tour bookings"
           },
           {
-            "label": "",
-            "message": "Integrates with existing CMS"
+            "icon": "network-wired",
+            "label": "Integrates",
+            "message": "with existing CMS"
           }
         ]
       },
@@ -51,22 +51,26 @@
         "label": "Vacancy monitoring",
         "display": "none",
         "image_source": "/src/assets/images/industries/childcare/features/vacancy.png",
-        "bullet_points": [
+        "features": [
           {
-            "label": "",
-            "message": "Vacancy alerts"
+            "icon": "bell",
+            "label": "Vacancy",
+            "message": "alerts"
           },
           {
-            "label": "",
-            "message": "Enrolment planning"
+            "icon": "calendar-lines-pen",
+            "label": "Enrolment",
+            "message": "planning"
           },
           {
-            "label": "",
-            "message": "Smart availability predictor"
+            "icon": "calendar-star",
+            "label": "Smart",
+            "message": "availability predictor"
           },
           {
-            "label": "",
-            "message": "Integrates with existing CMS"
+            "icon": "network-wired",
+            "label": "Integrates",
+            "message": "with existing CMS"
           }
         ]
       },
@@ -75,22 +79,26 @@
         "label": "Cloud-based forms",
         "display": "none",
         "image_source": "/src/assets/images/industries/childcare/features/forms.png",
-        "bullet_points": [
+        "features": [
           {
-            "label": "",
-            "message": "User-friendly family experience"
+            "icon": "users-medical",
+            "label": "User-friendly",
+            "message": "family experience"
           },
           {
-            "label": "",
-            "message": "Zero manual paperwork"
+            "icon": "toilet-paper-slash",
+            "label": "Zero",
+            "message": "manual paperwork"
           },
           {
-            "label": "",
-            "message": "Simple, trackable online forms"
+            "icon": "file-invoice",
+            "label": "Simple",
+            "message": ", trackable online forms"
           },
           {
-            "label": "",
-            "message": "Automated sequences"
+            "icon": "robot",
+            "label": "Automated",
+            "message": "sequences"
           }
         ]
       },
@@ -99,22 +107,26 @@
         "label": "Automated workflows",
         "display": "none",
         "image_source": "/src/assets/images/industries/childcare/features/workflow.png",
-        "bullet_points": [
+        "features": [
           {
-            "label": "",
-            "message": "Automate enrolment forms"
+            "icon": "robot",
+            "label": "Automate",
+            "message": "enrolment forms"
           },
           {
-            "label": "",
-            "message": "Centralised data management"
+            "icon": "chart-network",
+            "label": "Centralised",
+            "message": "data management"
           },
           {
-            "label": "",
-            "message": "Build enrolment checklists"
+            "icon": "hammer",
+            "label": "Build",
+            "message": "enrolment checklists"
           },
           {
-            "label": "",
-            "message": "Integrates with existing CMS"
+            "icon": "network-wired",
+            "label": "Integrates",
+            "message": "with existing CMS"
           }
         ]
       }
@@ -124,51 +136,58 @@
     "faceURL": "/images/testimonials/James-M.jpg",
     "name": "James McCarthy",
     "company": "Guardian Childcare",
-    "quote": "<p>Our business challenge was about how to connect with our families in a more proactive way. We had no CRM, we had no formal database, we were using spreadsheets. We weren't ready to invest in an off-the-shelf SAP or large-scale enterprise system.</p><p>If your business is going through a period of change and you're uncertain about what infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<br><b>I can't recommend Rapid enough</b>.</p>"
+    "quote": "<p>Our business challenge was about how to connect with our families in a more proactive way. We had no CRM, we had no formal database, we were using spreadsheets. We weren';'re uncertain about what infrastructure to take on board&mdash;particularly from a technology point of view&mdash;<br><b>I can't recommend Rapid enough</b>.</p>"
   },
   "benefits": {
-    "title": "Key Benefits for Childcare Centers:",
-    "videoTitle": "Rapid Platform",
-    "videoURL": "https://www.youtube.com/embed/N2tRuVxGBuM?si=mOqq29WcuGbYuV-p",
+    "title": "Being Good",
+    "subTitle": "Key Benefits for Childcare Centers:",
     "bulletPoints": [
       {
+        "icon": "arrow-up-right-dots",
         "label": "Increase Leads:",
         "message": " Capture more interest with an intuitive, user-friendly lead generation system that reaches more families."
       },
       {
+        "icon": "arrows-turn-to-dots",
         "label": "Higher Conversions:",
         "message": " Our system helps you turn more leads into enrolments - ensuring your cener grows and thrives."
       },
       {
+        "icon": "hexagon-nodes-bolt",
         "label": "Seamless Integration:",
         "message": " Rapid integrates effortlessly with your existing CMS, making the transition simple and smooth."
       },
       {
+        "icon": "hands-holding-child",
         "label": "Automated Waitlist Management:",
         "message": " Keep track of vacancies with automated waitlist tracking — no more manual updates. You'll always know when spots are available and which families are waiting."
       }
     ],
     "metrics": [
       {
-        "heading": "Reduced tour wait time by 500%",
-        "message": "Parents can make instant tour bookings directly from the website, saving staff time and delivering a better experience for families.",
-        "image": "/src/assets/images/industries/childcare/clock.png"
+        "title": "Reduced tour wait time by 500%",
+        "content": "Parents can make instant tour bookings directly from the website, saving staff time and delivering a better experience for families.",
+        "icon": "clock"
       },
       {
-        "heading": "Boost lead conversions by 20%",
-        "message": "By compression tour booking time, families have everything they need ot make a decision within hours, not days.",
-        "image": "/src/assets/images/industries/childcare/up-arrows.png"
+        "title": "Boost lead conversions by 20%",
+        "content": "By compression tour booking time, families have everything they need ot make a decision within hours, not days.",
+        "icon": "square-arrow-up"
       },
       {
-        "heading": "Improve family feedback",
-        "message": "With could-based enrolment forms and payment, families avoid paperwork hassles and enjoy secure payment options.",
-        "image": "/src/assets/images/industries/childcare/talk-box.png"
+        "title": "Improve family feedback",
+        "content": "With could-based enrolment forms and payment, families avoid paperwork hassles and enjoy secure payment options.",
+        "icon": "message-smile"
       }
     ]
   },
   "pitch": {
-    "heading": "Why choose Rapid for your childcare center management?",
-    "message": "<p>Our goal is to give you the tools to focus on what matters most — caring for children.</p><p>With Rapid's technology, you'll save time, increase efficiency, and deliver a better experience for both families and your staf. Plus, our cloud-based solution ensures your team can access up-to-date information, no matter where they are.</p>"
+    "title": "Our Goal",
+    "subTitle": "Why choose Rapid for your childcare center management?",
+    "message": "<p>Our goal is to give you the tools to focus on what matters most — caring for children. With Rapid's technology, you'll save time, increase efficiency, and deliver a better experience for both families and your staf. Plus, our cloud-based solution ensures your team can access up-to-date information, no matter where they are.</p>",
+    "ctaButton": {
+      "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+      "text": "Book a demo"
+    }
   }
 }
-

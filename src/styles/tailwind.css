@@ -23,6 +23,8 @@
   --color-tech-canvas: #f4f4f4;
   --color-tech-canvas-transparent: #f4f4f4b0;
 
+  --text-shadow-solid: 0 10px 10px var(--text-rapid-blue);
+
   --background-light: var(--color-tech-canvas);
   --background-dark: var(--color-deep-navy);
   --text-light: var(--color-deep-navy);

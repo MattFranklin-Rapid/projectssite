@@ -27,54 +27,25 @@
     class="youtube__player w-full aspect-video" 
     frameborder="0" 
     id="{{videoId}}"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     referrerpolicy="strict-origin-when-cross-origin" 
     allowfullscreen
   ></iframe>
 </div>
 
 <script>
-let player;
-const id = "{{videoId}}";
 
-// Function that gets called when YouTube API is ready
-// This is just "magicly" called by the ifram_api script in the head
-function onYouTubeIframeAPIReady() {
-  // Initialize the player
-  player = new YT.Player(id, {
-    events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
-    }
-  });
-}
+  // There is a script in layout.njk that uses 
+  // the id's in globalThis.videos to attach 
+  // player APIs to each of the youtube iframes
 
+  // Allowing for multiple on one page
 
-// When player is ready
-function onPlayerReady(event) {
-  console.log('Fullscreen video is ready');
-}
-
-// When player state changes
-function onPlayerStateChange(event) {
-  // 0 = ended, 1 = playing, 2 = paused, 3 = buffering, 5 = video cued
-  if (event.data === 0 || event.data === 2) {
-    container.classList.remove('playing');
+  if (!Array.isArray(globalThis.videos)) {
+    globalThis.videos = [];
   }
-}
 
-function playVideo() {
-  if (player && player.playVideo) {
-    player.playVideo();
-  }
-}
+  globalThis.videos.push("{{videoId}}");
 
-const container = document.getElementById(`${id}__container`);
-
-container.addEventListener('click', () => {
-  container.classList.add('playing');
-  playVideo();
-});
 </script>
 
 <style>

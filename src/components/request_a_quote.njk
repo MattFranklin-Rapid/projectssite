@@ -1,0 +1,21 @@
+{% import "./layouts.njk" as layouts %}
+{% import "./atoms/typography.njk" as typography %}
+{% from "./atoms/angle.njk" import angle %}
+{% from "../components/atoms/icon.njk" import Icon %}
+
+{% call layouts.section('light', 'half', 'flex items-center justify-center') -%}
+
+  {% call layouts.centerContainer('p-8 flex flex-col gap-10 h-full lg:flex-row items-center') -%}
+
+    <div class="flex flex-col" >
+      {{ typography.title(requestQuote.title, 'left') }}
+      {{ typography.subTitle(requestQuote.subTitle, 'left') }}
+      {{ typography.content(requestQuote.content, 'justify') }}
+    </div>
+
+    {% include '../components/cta/get_a_quote.njk' %}
+
+  {%- endcall %}
+
+{%- endcall %}
+

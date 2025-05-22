@@ -18,6 +18,12 @@
       "alt": "",
       "title": "Our Approach",
       "overlayImageSrc": "/src/assets/images/approach_overlay.jpg"
+    },
+    "childcare": {
+      "src": "https://www.youtube.com/embed/N2tRuVxGBuM?si=mOqq29WcuGbYuV-p",
+      "alt": "",
+      "title": "Childcare",
+      "overlayImageSrc": "/src/assets/images/childcare_overlay.jpg"
     }
   },
   "logo": {
@@ -111,7 +117,7 @@
     "content": "<p>We don't just provide tech solutions - we partner with you to understand your unique challenges, create tailored solutions, and ensure seamless execution. Our goal is to see your vision come to life, unlocking the power of technology so your business can thrive as it grows and changes.</p>",
     "image": {
       "src": "/src/assets/images/approach/mitch.png",
-      "caption": "<h4 class='text-rapid-blue font-bold text-lg' >Mitch Hunt</h4> <br> CEO &amp; Founder of Rapid Platform",
+      "caption": "<h4 class='font-bold text-2xl m-0' >Mitch Hunt</h4>  <h3>CEO &amp; Founder of Rapid Platform</h3>",
       "alt": ""
     }
   },
@@ -235,6 +241,11 @@
       "src": "/src/assets/images/landing/demo-consultant-face.png",
       "alt": "A happy consultant sitting at a computer waiting to solve your problem with Rapid"
     }
+  },
+  "requestQuote": {
+    "title": "Request a quote",
+    "subTitle": "How much does Rapid cost?",
+    "content": "<p>Let us know a bit about your organisation and what you'd like to achieve &mdash; we'll get in contact with you shortly.</p>"
   },
   "promise": {
     "preamble": "At Rapid, we're more than developers, consultants, and technologists — we're your partners in business. We know technology can unlock incredible growth — boosting sales, streamlining operations, and elevating customer experiences. But if done wrong, it creates complexity, delays, and chaos.",

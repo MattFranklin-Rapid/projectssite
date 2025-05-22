@@ -1,110 +1,297 @@
-<div class="center-content">
-  <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-  <div>
-    <div>
-      <form id="contact-quote-form-id" class="container-two-columns">
-        <div id="contact-form-quote">
-          <h4>Your details</h4>
-          <hr class="hr-quote" />
-          <input type="text" name="first_name" placeholder="First Name" />
-          <input type="text" name="last_name" placeholder="Last Name" />
-          <input type="email" name="email" placeholder="Email" />
-          <input type="tel" name="mobile_phone" placeholder="Mobile Phone" />
-          <br />
-          <h4>Organisation information</h4>
-          <hr class="hr-quote" />
-          <label for="no-of-employee">
-            How many total employees does your organisation have?
-          </label>
-          <select name="no_of_employee" id="no-of-employee">
-            <option value="">--Please choose an option--</option>
-            <option value="1-50">1-50</option>
-            <option value="50-100">50-100</option>
-            <option value="100-200">100-200</option>
-            <option value="200-1000">200-1000</option>
-            <option value="More than 1000">1000+</option>
-          </select>
+{% import "../layouts.njk" as layouts %}
 
-          <label for="ops_distribution"
-            >Are your operations centralised or spread across multiple locations
-            or regions?</label
-          >
-          <select id="ops_distribution" name="checkbox">
-            <option value="">--Please choose an option--</option>
-            <option value="We're central">We're central</option>
-            <option value="Some of us work from home">
-              Some of us work from home
-            </option>
-            <option value="We have many locations">We have many locations</option>
-          </select>
-        </div>
+{% set titleClass = "font-bold text-lg my-2" %}
+{% set sectionClass = "relative flex-col bg-rapid-blue rounded-xl p-2 pb-4 text-white gap-2 w-full" %}
+{% set inputClass = "text-black bg-white border border-ice-blue rounded-sm px-1 focus:outline-ice-blue focus:border-ice-blue" %}
+{% set buttonContainerClass = "absolute -bottom-10 -left-5 -right-5 flex justify-between" %}
+{% set buttonClass = "py-2 px-3 mt-5 bg-ice-blue hover:bg-ice-blue rounded-sm" %}
 
-        <div>
-          <label for="goals-quote"
-            >Describe the main tasks or business processes you’d like to
-            implement using our platform?</label
-          >
-          <textarea
-            id="goals-quote"
-            class="text-area-medium-fixed"
-            placeholder="Describe here"
-            name="goals"
-          ></textarea>
+{% call layouts.centerContainer('min-h-1/2') -%}
+  <form id="contact-quote-form-id" class="flex items-center justify-center relative pt-3 {{sectionClass}}" data-section="0">
+    
+    <progress id="progress" value="0" max="2" class="rounded-t-xl rounded-sm h-3 fill-ice-blue overflow-clip absolute top-0 left-0 right-0 w-full
+     [&::-webkit-progress-value]:rounded-sm   [&::-webkit-progress-bar]:bg-ice-blue [&::-webkit-progress-value]:bg-pixel-zest [&::-moz-progress-bar]:bg-pixel-zest 
+    " >Step 1</progress>
 
-          <label for="other-systems"
-            >Do you currently use other systems that you’d like to connect to
-            our platform?</label
-          >
-          <textarea
-            id="other-systems"
-            class="text-area-medium-fixed"
-            placeholder="List systems here"
-            name="other_systems"
-          ></textarea>
+    <section data-section="0" id="client_details" class="{{ sectionClass }}">
 
-          <label for="description-of-business-data"
-            >Describe the type and volume of data you'll need to store in our
-            system</label
-          >
-          <textarea
-            id="description-of-business-data"
-            class="text-area-medium-fixed"
-            placeholder="Describe here"
-            name="description_of_business_data"
-          ></textarea>
-        </div>
-        <div></div>
-        <div class="container-two-columns">
-          <div
-            class="h-captcha"
-            data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78"
-            data-callback="setToEnabledQuote"
-          ></div>
-          <button
-            class="know-more-button"
-            id="contact-us-submit-button-quote"
-            type="submit"
-            disabled
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+    <h4 class="{{titleClass}}" >Your details</h4>
+
+    <hr class="hr-quote border-ice-blue my-2" />
+
+    <div class="grid grid-cols-2 gap-x-3" >
+      
+      <label for="first_name" >
+        First name
+      </label>
+
+      <label for="last_name" >
+        Last name
+      </label>
+
+      <input type="text" name="first_name" class="{{ inputClass }}" />
+      <input type="text" name="last_name" class="{{ inputClass }}" />
+
+      <label for="email" class="mt-5" >
+        Email
+      </label>
+
+      <label for="mobile_phone" class="mt-5" >
+        Mobile phone
+      </label>
+
+      <input type="email" name="email" class="{{ inputClass }}" />
+      <input type="tel" name="mobile_phone" class="{{ inputClass }}" />
     </div>
-    <p style="visibility: hidden" id="thank-you-after-submit-quote">
+
+    <div class="{{buttonContainerClass}}" >
+        <button 
+        class="next ml-auto {{buttonClass}} "
+          type="button"
+        >
+          next
+        </button>
+      </div>
+    </section>
+
+  <section data-section="1" id="org_details" class="hidden {{sectionClass}}" >
+    <h4 class="{{titleClass}}" >Organisation information</h4>
+
+    <hr class="hr-quote border-ice-blue my-2" />
+
+      <label for="no-of-employee">
+        How many total employees does your organisation have?
+      </label>
+      <select name="no_of_employee" id="no-of-employee" placeholder="Select number of employees" class="{{inputClass}}">
+        <option value="" disabled selected class="disabled:text-ice-blue" > --Select an option-- </option>
+        <option value="1-50">1-50</option>
+        <option value="50-100">50-100</option>
+        <option value="100-200">100-200</option>
+        <option value="200-1000">200-1000</option>
+        <option value="More than 1000">1000+</option>
+      </select>
+
+      <label for="ops_distribution"
+        >Are your operations centralised or spread across multiple locations
+        or regions?</label
+      >
+      <select id="ops_distribution" name="ops_distribution" class="{{inputClass}}" >
+        <option value="" disalbed selected>--Select an option--</option>
+        <option value="We're central">We're central</option>
+        <option value="Some of us work from home">
+          Some of us work from home
+        </option>
+        <option value="We have many locations">We have many locations</option>
+      </select>
+
+    <div class="{{buttonContainerClass}}" >
+      <button class="prev {{buttonClass}}"
+          type="button"
+      >prev</button>
+        <button class="next {{buttonClass}}"
+
+          type="button"
+      >next</button>
+      </div>
+    </section>
+  
+    <section data-section="2" id="other_info" class="hidden {{sectionClass}}" >
+      <h4 class="{{titleClass}}" >Usage Information</h4>
+
+      <hr class="hr-quote border-ice-blue my-2" />
+
+      <label for="goals-quote"
+        >Describe the main tasks or business processes you’d like to
+        implement using our platform?</label
+      >
+      <textarea
+        id="goals-quote"
+      class="text-area-medium-fixed {{inputClass}} h-30"
+        placeholder="Describe here"
+        name="goals"
+      ></textarea>
+
+    <div class="{{buttonContainerClass}}" >
+        <button class="prev {{buttonClass}}"
+          type="button"
+      >prev</button>
+
+        <button class="next {{buttonClass}}"
+          type="button"
+      >next</button>
+
+      </div>    
+    </section>
+
+    <section data-section="3" id="other_info_2" class="hidden {{sectionClass}}" >
+      <h4 class="{{titleClass}}" >Usage Information</h4>
+
+      <hr class="hr-quote border-ice-blue my-2" />
+
+      <label for="other-systems"
+        >Do you currently use other systems that you’d like to connect to
+        our platform?</label
+      >
+      <textarea
+        id="other-systems"
+        class="text-area-medium-fixed {{inputClass}} h-30"
+        placeholder="List systems here"
+        name="other_systems"
+      ></textarea>
+
+
+    <div class="{{buttonContainerClass}}" >
+        <button class="prev {{buttonClass}}"
+          type="button"
+      >prev</button>
+
+        <button class="next {{buttonClass}}"
+          type="button"
+      >next</button>
+
+      </div>
+    </section>
+
+    <section data-section="4" id="other_info_2" class="hidden {{sectionClass}}" >
+      <h4 class="{{titleClass}}" >Usage Information</h4>
+
+      <hr class="hr-quote border-ice-blue my-2" />
+
+      <label for="description-of-business-data"
+        >Describe the type and volume of data you'll need to store in our
+        system</label
+      >
+      <textarea
+        id="description-of-business-data"
+        class="text-area-medium-fixed {{inputClass}} h-30"
+        placeholder="Describe here"
+        name="description_of_business_data"
+      ></textarea>
+
+        <div
+          class="h-captcha w-full flex items-center justify-center mt-2"
+          data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78"
+          data-callback="setToEnabledQuote"
+        ></div>
+
+
+    <div class="{{buttonContainerClass}}" >
+        <button class="prev {{buttonClass}}"
+          type="button"
+      >prev</button>
+
+        <button
+          class="know-more-button {{buttonClass}}"
+          id="contact-us-submit-button-quote"
+          type="submit"
+          disabled
+        >
+          Submit
+        </button>
+      </div>
+    </section>
+  </form>
+
+  <section id="thank-you-after-submit-quote"  class="hidden {{sectionClass}}" >
+    <h4 class="{{titleClass}}" >Thankyou for your submission</h4>
+
+    <hr class="hr-quote border-ice-blue my-2" />
+
+    <p >
       Thank you for contacting us! We will get back to you shortly.
     </p>
-  </div>
-  <script>
-    function setToEnabledQuote() {
-      let button = document.getElementById("contact-us-submit-button-quote")
-      button.removeAttribute("disabled")
+  </section>
+
+{%- endcall %}
+
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+
+<script>
+  function setToEnabledQuote() {
+    const button = document.getElementById("contact-us-submit-button-quote")
+    button.removeAttribute("disabled");
+  }
+
+  document.addEventListener('DOMContentLoaded', () => { 
+    const quoteForm = document.getElementById("contact-quote-form-id")
+
+    const progress = document.querySelector("#contact-quote-form-id #progress")
+
+    const sections = document.querySelectorAll('#contact-quote-form-id section[data-section]');
+
+    progress.setAttribute('max', sections.length - 1);
+
+    const prevButtons = document.getElementsByClassName("prev");
+
+    const nextButtons = document.getElementsByClassName("next");
+
+    for (const next of nextButtons) {
+
+      next.addEventListener('click', () => {
+        const currentIndex = +quoteForm.dataset.section;
+
+        const currentSection = sections[currentIndex];
+
+        const nextIndex = currentIndex + 1;
+
+        const atEnd = nextIndex < 0;
+
+        if (atEnd) {
+          return;
+        }
+
+        progress.value = nextIndex;
+
+        const nextSection = sections[nextIndex];
+
+        currentSection.classList.add('hidden');
+        currentSection.classList.remove('flex');
+
+        nextSection.classList.remove('hidden');
+        nextSection.classList.add('flex');
+
+        quoteForm.setAttribute('data-section', nextIndex);
+      });
+
     }
-    let quoteForm = document.getElementById("contact-quote-form-id")
+
+    for (const prev of prevButtons) {
+
+      prev.addEventListener('click', () => {
+        const currentIndex = +quoteForm.dataset.section;
+
+        const currentSection = sections[currentIndex];
+
+        const prevIndex =  currentIndex - 1 ;
+
+        const atStart = prevIndex < 0;
+
+        if (atStart) {
+          return;
+        }
+
+        progress.value = prevIndex;
+
+        const prevSection = sections[prevIndex];
+
+        currentSection.classList.add('hidden');
+        currentSection.classList.remove('flex');
+
+        prevSection.classList.remove('hidden');
+        prevSection.classList.add('flex');
+
+        quoteForm.setAttribute('data-section', prevIndex);
+      });
+
+    }
+
     quoteForm.addEventListener("submit", async (event) => {
-      let button = document.getElementById("contact-us-submit-button-quote")
-      button.setAttribute("disabled", "true")
-      event.preventDefault()
+      const button = document.getElementById("contact-us-submit-button-quote")
+
+      button.setAttribute("disabled", "true");
+
+      event.preventDefault();
+
       try {
         await fetch(
           "https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission",
@@ -130,11 +317,14 @@
       } catch (error) {
         console.log(error)
       } finally {
-        quoteForm.parentNode.remove()
-        document
-          .getElementById("thank-you-after-submit-quote")
-          .removeAttribute("style")
+        quoteForm.remove()
+
+        const thanks = document
+          .getElementById("thank-you-after-submit-quote");
+
+        thanks.classList.remove('hidden');
       }
     })
-  </script>
-</div>
+  });
+
+</script>

@@ -1,0 +1,73 @@
+{#
+ 
+  Three Cards Section
+
+  Renders three side by side cards with an icon, title, and some content
+
+  args:
+    - cards: Cards with to map 
+    - containerClass: class appended to the container
+
+  cards:
+    cards needs to be an array of "ICard" objects
+
+    {
+      title: string;
+      content: raw string;
+      icon: fontawesome icon name sans fa i.e. "cheese, check" 
+      class?: string // class override for this specific card
+    }
+
+#}
+
+{% import "./layouts.njk" as layouts %}
+{% from "./atoms/angle.njk" import angle %}
+{% from "../components/atoms/icon.njk" import Icon %}
+
+{% macro ThreeCards(cards, class) %}
+
+  {{angle('top')}}
+
+  {% call layouts.section('dark', 'quarter', 'lg:-my-10 -mb-10') -%}
+
+    {% call layouts.centerContainer('pl-8 p-4 lg:pl-4 gap-10 grid grid-cols-1 lg:grid-cols-3 relative z-10') -%}
+
+      {% for item in cards %}
+        <div class="
+          relative flex flex-col p-5 rounded-lg bg-rapid-blue 
+          pl-20 
+          lg:pt-20 lg:pl-5
+          {% if class != blank %} {{class}} {% endif %}
+        ">
+
+          <div class="
+            absolute flex items-center justify-center 
+            -left-7 top-0 bottom-0
+            lg:-top-3 lg:left-0 lg:right-0 lg:bottom-auto
+          " >
+            {{ Icon(item.icon, 'fa-5x text-ice-blue') }}
+          </div>
+
+          <h4 class="
+            font-bold text-xl mb-5 
+            text-left
+            lg:text-center 
+          " >
+            {{item.heading}}
+          </h4>
+
+          <p class="
+            text-justify  
+          " >
+            {{item.message}}
+          </p>
+        </div>
+      {% endfor %}
+
+    {%- endcall %}
+
+  {%- endcall %}
+
+  {{angle('bottom')}}
+
+{% endmacro %}

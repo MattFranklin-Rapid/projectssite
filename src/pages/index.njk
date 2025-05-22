@@ -1,5 +1,7 @@
 {% extends "layouts/layout.njk" %}
 
+{% from "components/feature_multi_tabs.njk" import FeatureMulti with context %}
+
 {% block content %}
     {% include 'components/hero.njk' %}
 
@@ -9,7 +11,7 @@
         
     {% include 'components/cta/book_demo.njk' %}
 
-    {% include 'components/feature_multi_tabs.njk' %}
+    {{ FeatureMulti('dark', multi_feature) }}
 
     {% include 'components/promise.njk' %}
 

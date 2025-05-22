@@ -1,14 +1,14 @@
 {# 
  Feature multi tabs component has configuration options
+
  "multi_feature": {
-  "minor_heading": "string",
-  "major_heading": "string",
-  "heading_paragraph": "string/html",
+  "title": "string",
+  "subTitle": "string",
+  "content": "string/html",
   "areas": [
     {
       "label": "string",
-      "active_status": "button-active" | "button-not-active",
-      "display": "none" | "block",
+      "message": "string",
       "features": [
         {
           "active_status": "button-active" | "button-not-active",
@@ -27,210 +27,238 @@
     }
   ]
  }
+
+  args:
+    - theme: 'light' | 'dark' sets the theme for the section. Changing background and font colors
+  
+  Useage:
+  - import into file using:
+    {% from "../components/feature_multi_tabs.njk" import FeatureMulti with context %}
+
+    NOTE: the "with context" on the end of the import allows us to pull config from main.json 
+
+  - Use the macro like:
+    {{ FeatureMulti('light', FEATURES_DATA_KEY) }}
+
 #}
 
 {% import "./layouts.njk" as layouts %}
+{% import "./atoms/typography.njk" as typography %}
 {% from "../components/atoms/button.njk" import Button %}
 {% from "../components/atoms/icon.njk" import Icon %}
 {% from "../components/atoms/angle.njk" import angle %}
 
-{% call layouts.section('dark', 'full') -%}
-  
-  {{ angle('top') }}
 
-  {% call layouts.centerContainer('flex flex-col-reverse lg:flex-row sm:pt-10') -%}
-    <div  class="
-          z-10
-          grid gap-5 grid-cols-1 auto-rows-auto relative px-5
-          mb-[-150px]
-          md:grid-cols-2 md:mb-[-100px]
-          lg:gap-10 lg:grid-cols-[400px_1fr] lg:grid-rows-[1fr_100px_auto] 
+{% macro FeatureMulti(theme, feature) %}
+
+  {% set id = uuid() %}
+
+  {% call layouts.section(theme, 'full') -%}
+    
+    {% if theme == 'dark' %} 
+      {{ angle('top') }}
+    {% endif %}
+
+    {% call layouts.centerContainer('flex flex-col-reverse lg:flex-row sm:pt-10') -%}
+      <div  class="
+            z-10
+            grid gap-5 grid-cols-1 auto-rows-auto relative px-5
+            mb-[-150px]
+            md:grid-cols-2 md:mb-[-100px]
+            lg:gap-10 lg:grid-cols-[400px_1fr] lg:grid-rows-[1fr_100px_auto] 
+          ">
+        <div class="
+            place-self-center text-center 
+            md:col-span-2
+            lg:max-w-xl 
         ">
-      <div class="
-          place-self-center text-center 
-          md:col-span-2
-          lg:max-w-xl 
-      ">
-        <h2 class="uppercase text-rapid-blue font-light">{{multi_feature.minor_heading }}</h2>
-        <p class="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">{{multi_feature.major_heading }}</p>
-        <p class="mt-6 text-lg/8">{{multi_feature.heading_paragraph|safe}}</p>
-      </div>
+          {{ typography.title(feature.title) }}
+          {{ typography.subTitle(feature.subTitle) }}
+          {{ typography.content(feature.content) }}
+        </div>
 
-      <div 
-        id="multi-tab-wrapper"
-        class="
-          flex gap-5 justify-between mt-10
-          md:col-span-2 md:place-self-center md:mt-auto
-        ">
-        <button id="prev" class="p-5">
-          <i class="fas fa-fw fa-chevron-left" ></i>
-        </button>
-
-        {% for area in multi_feature.areas %}
-        <button 
-          id="{{area.label|slug}}"
+        <div 
+          id="multi-tab-wrapper_{{id}}"
           class="
-            tablink-feature
-            hidden p-4 max-h-max max-w-max rounded-sm transition cursor-pointer hover:bg-rapid-blue hover:text-white text-grey-500 text-lg
-            md:block  md:text-xs
-          " 
-          >{{area.label}}</button>
-        {% endfor %}
+            flex gap-5 justify-between mt-10
+            md:col-span-2 md:place-self-center md:mt-auto
+          ">
+          <button id="prev_{{id}}" class="p-5">
+            <i class="fas fa-fw fa-chevron-left" ></i>
+          </button>
 
-        <button id="next" class="p-5">
-          {{ Icon("chevron-right") }}
-        </button>
-      </div>
-
-      {% for area in multi_feature.areas %}
-        <dl class="
-          mt-10 max-w-xl space-y-8 place-self-center
-          lg:max-w-none 
-          hidden {{area.label|slug}}
-        ">
-
-          {% for point in area.features %}
-
-            <div class="relative pl-9">
-              <dt class="inline font-semibold">
-                {{ Icon(point.icon, "absolute top-1 left-1 size-5 text-rapid-blue") }}
-                {{point.label}}
-              </dt>
-              <!-- space -->
-            <dd class="inline font-light">{{point.message}}</dd>
-            </div>
-
+          {% for area in feature.areas %}
+          <button 
+            id="{{area.label|slug}}_{{id}}"
+            class="
+              tablink_{{id}}
+              hidden p-4 max-h-max max-w-max rounded-sm transition cursor-pointer hover:bg-rapid-blue hover:text-white text-grey-500 text-lg
+              md:block  md:text-xs
+            " 
+            >{{area.label}}</button>
           {% endfor %}
 
-        </dl>
-
-        <div class="relative hidden place-self-center {{area.label|slug}}" >
-          <img
-            class="
-              max-w-auto rounded-xl shadow-sm shadow-black max-h-max 
-              sm:w-max
-              "
-            src="{{area.image_source}}" 
-            alt="Product screenshot" 
-            width="2432" 
-            height="1442"
-          >
+        <button id="next_{{id}}" class="p-5">
+            {{ Icon("chevron-right") }}
+          </button>
         </div>
-      {% endfor %}
-    </div>
+
+        {% for area in feature.areas %}
+          <dl class="
+            mt-10 max-w-xl space-y-8 place-self-center
+            lg:max-w-none 
+            hidden {{area.label|slug}}_{{id}}
+          ">
+
+            {% for point in area.features %}
+
+              <div class="relative pl-9">
+                <dt class="inline font-semibold">
+                  {{ Icon(point.icon, "absolute top-1 left-1 size-5 text-rapid-blue") }}
+                  {{point.label}}
+                </dt>
+                <!-- space -->
+              <dd class="inline font-light">{{point.message}}</dd>
+              </div>
+
+            {% endfor %}
+
+          </dl>
+
+          <div class="relative hidden place-self-center {{area.label|slug}}_{{id}}" >
+            <img
+              class="
+                max-w-auto rounded-xl shadow-sm shadow-black max-h-max 
+                sm:w-max
+                "
+              src="{{area.image_source}}" 
+              alt="Product screenshot" 
+              width="2432" 
+              height="1442"
+            >
+          </div>
+        {% endfor %}
+      </div>
+    {%- endcall %}
+
+    {% if theme == 'dark' %} 
+      {{ angle('bottom') }}
+    {% endif %}
+
   {%- endcall %}
+    
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
 
-  {{ angle('bottom') }}
+    const btnActiveClass = ["bg-rapid-blue", "hover:bg-ice-blue", "text-white"];
 
-{%- endcall %}
-  
-<script>
-  const btnActiveClass = ["bg-rapid-blue", "hover:bg-ice-blue", "text-white"];
+    const buttons = document.querySelectorAll('.tablink_{{id}}');
 
-  const buttons = document.querySelectorAll('.tablink-feature');
+    let activeButton;
 
-  let activeButton;
+    const setButtonActive = (button) => {
+      const content = document.querySelectorAll(`.${button.id}`);
 
-  const setButtonActive = (button) => {
-    const content = document.querySelectorAll(`.${button.id}`);
+      btnActiveClass.forEach(c => button.classList.add(c));
 
-    btnActiveClass.forEach(c => button.classList.add(c));
+      button.classList.remove('hidden');
 
-    button.classList.remove('hidden');
+      content.forEach(c => c.classList.remove('hidden'));
 
-    content.forEach(c => c.classList.remove('hidden'));
+      if (activeButton) {
+        setButtonInactive(activeButton);
+      }
 
-    if (activeButton) {
-      setButtonInactive(activeButton);
+      activeButton = button;
     }
 
-    activeButton = button;
-  }
+    const setButtonInactive = (button) => {
+      const content = document.querySelectorAll(`.${button.id}`);
 
-  const setButtonInactive = (button) => {
-    const content = document.querySelectorAll(`.${button.id}`);
+      btnActiveClass.forEach(c => button.classList.remove(c));
 
-    btnActiveClass.forEach(c => button.classList.remove(c));
+      button.classList.add('hidden');
 
-    button.classList.add('hidden');
+      content.forEach(c => c.classList.add('hidden'));
+    }
 
-    content.forEach(c => c.classList.add('hidden'));
-  }
-
-const focusNextTab = () => {
-  // Get array of all buttons
-  const buttonsArray = Array.from(buttons);
-  
-  // If no active button, activate the first one
-  if (!activeButton) {
-    setButtonActive(buttonsArray[0]);
-    return;
-  }
-  
-  // Find the index of the active button
-  const currentIndex = buttonsArray.indexOf(activeButton);
-  
-  // Calculate the next index (with wrap-around)
-  const nextIndex = (currentIndex + 1) % buttonsArray.length;
-
-
-  activeButton.classList.add('hidden');
-  
-  // Activate the next button
-  setButtonActive(buttonsArray[nextIndex]);
-}
-
-const focusPrevTab = () => {
-  // Get array of all buttons
-  const buttonsArray = Array.from(buttons);
-  
-  // If no active button, activate the first one
-  if (!activeButton) {
-    setButtonActive(buttonsArray[0]);
-    return;
-  }
-  
-  // Find the index of the active button
-  const currentIndex = buttonsArray.indexOf(activeButton);
-  
-  // Calculate the previous index (with wrap-around)
-  // Add buttonsArray.length before modulo to handle negative index
-  const prevIndex = (currentIndex - 1 + buttonsArray.length) % buttonsArray.length;
-
-  activeButton.classList.add('hidden');
-  
-  // Activate the previous button
-  setButtonActive(buttonsArray[prevIndex]);
-}
-
-  setButtonActive(buttons[0]);
-
-  const wrapper = document.getElementById("multi-tab-wrapper");
-
-  function handleButtonClick(event) {
-    const button = event.target.closest('.tablink-feature');
-
-    if (button) {
-      setButtonActive(button);
+  const focusNextTab = () => {
+    // Get array of all buttons
+    const buttonsArray = Array.from(buttons);
+    
+    // If no active button, activate the first one
+    if (!activeButton) {
+      setButtonActive(buttonsArray[0]);
       return;
-    };
-
-    const next = event.target.closest('#next');
-
-    if (next) {
-      focusNextTab();
-      return
     }
+    
+    // Find the index of the active button
+    const currentIndex = buttonsArray.indexOf(activeButton);
+    
+    // Calculate the next index (with wrap-around)
+    const nextIndex = (currentIndex + 1) % buttonsArray.length;
 
-    const prev = event.target.closest('#prev');
 
-    if (next) {
-      focusPrevTab();
-      return
-    }
+    activeButton.classList.add('hidden');
+    
+    // Activate the next button
+    setButtonActive(buttonsArray[nextIndex]);
   }
 
-  wrapper.addEventListener('click', handleButtonClick);
+  const focusPrevTab = () => {
+    // Get array of all buttons
+    const buttonsArray = Array.from(buttons);
+    
+    // If no active button, activate the first one
+    if (!activeButton) {
+      setButtonActive(buttonsArray[0]);
+      return;
+    }
+    
+    // Find the index of the active button
+    const currentIndex = buttonsArray.indexOf(activeButton);
+    
+    // Calculate the previous index (with wrap-around)
+    // Add buttonsArray.length before modulo to handle negative index
+    const prevIndex = (currentIndex - 1 + buttonsArray.length) % buttonsArray.length;
 
-</script>
+    activeButton.classList.add('hidden');
+    
+    // Activate the previous button
+    setButtonActive(buttonsArray[prevIndex]);
+  }
 
+    setButtonActive(buttons[0]);
+
+    const wrapper = document.getElementById("multi-tab-wrapper_{{id}}");
+
+    function handleButtonClick(event) {
+      const button = event.target.closest('.tablink_{{id}}');
+
+      if (button) {
+        setButtonActive(button);
+        return;
+      };
+
+      const next = event.target.closest('#next_{{id}}');
+
+      if (next) {
+        focusNextTab();
+        return
+      }
+
+      const prev = event.target.closest('#prev_{{id}}');
+
+      if (next) {
+        focusPrevTab();
+        return
+      }
+    }
+
+    wrapper.addEventListener('click', handleButtonClick);
+
+  });
+  </script>
+
+
+{% endmacro %}
