@@ -1,5 +1,14 @@
 {# 
   Three improvement statements
+
+  edit in main.json or add an override into the page data file. 
+  root level key "improvements"
+
+  {
+    value: String,
+    message: Raw String,
+    client: Raw String,
+  }
 #}
 
 {% import "./layouts.njk" as layouts %}
@@ -10,8 +19,9 @@
     
     {% for i in improvements %}
       <div class="flex flex-col items-center max-w-2/3 place-self-center" >
-        <h2 class="text-center font-bold text-xl" >{{i.message|safe}}</h2> 
-        <h3 class="text-center font-light" >{{i.client|safe}}</h3> 
+        <h2 class="font-bold text-4xl text-rapid-blue" >{{i.value}}</h2>
+        <h3 class="text-center font-bold text-xl" >{{i.message|safe}}</h3> 
+        <h4 class="text-center text-sm font-light" >{{i.client|safe}}</h4> 
       </div>
     {%endfor%}
 
