@@ -10,6 +10,12 @@
   </h4>
 {% endmacro %}
 
+{% macro heading(heading, align, class) %}
+<h4 class="text-2xl my-5 text-center {%if align != blank %} lg:text-{{align}} {%endif%} {%if class != blank %} {{class}} {% endif %}" >
+    {{ heading | safe}}
+  </h4>
+{% endmacro %}
+
 {% macro content(content, align, class) %}
   <div class=" {%if align != blank %} text-{{align}} {%endif%} {%if class != blank %} {{class}} {% endif %} " >
     {{ content | safe }}

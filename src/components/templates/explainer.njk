@@ -1,0 +1,77 @@
+{% import "../layouts.njk" as layouts %}
+
+{% call layouts.section('dark', 'half') -%}
+  {% call layouts.centerContainer('px-4 py-2 flex flex-col items-center') -%}
+
+  <br/>
+  <h2 class="text-4xl my-5">What's in a template?</h2>
+  <div class='grid grid-cols-1 gap-4 md:grid-cols-2'>
+    {# Flex Grid Container #}
+    <div class="flex flex-row bg-rapid-blue text-white rounded-full">
+        {# Card #}
+        <div class="p-2 rounded-full bg-rapid-blue outline-5 outline-deep-navy">
+            {# Circle Image#}
+            <img class="max-w-20 max-h-20" src="/src/assets/images/templates/explainer-data.svg" />
+        </div>
+        <div class="m-5">
+            {# Card Content #}
+            <h5 class="text-2xl">Pre-built data structures</h5>
+            <p>No database modelling from scratch.</p>
+        </div>
+    </div>
+
+    <div class="flex flex-row bg-rapid-blue text-white rounded-full">
+        {# Card #}
+        <div class="p-2 rounded-full bg-rapid-blue outline-5 outline-deep-navy">
+            {# Circle Image#}
+            <img class="max-w-20 max-h-20" src="/src/assets/images/templates/explainer-form.svg" />
+        </div>
+        <div class="m-5">
+            {# Card Content #}
+            <h5 class="text-2xl">Online Forms</h5>
+            <p>Efficiently capture clean data the first time.</p>
+        </div>
+    </div>
+
+    <div class="flex flex-row bg-rapid-blue text-white rounded-full">
+        {# Card #}
+        <div class="p-2 rounded-full bg-rapid-blue outline-5 outline-deep-navy">
+            {# Circle Image#}
+            <img class="max-w-20 max-h-20" src="/src/assets/images/templates/explainer-cog.svg" />
+        </div>
+        <div class="m-5">
+            {# Card Content #}
+            <h5 class="text-2xl">Workflows &amp; Actions</h5>
+            <p>Effective operations straight out of the box.</p>
+        </div>
+    </div>
+
+    <div class="flex flex-row bg-rapid-blue text-white rounded-full">
+        {# Card #}
+        <div class="p-2 rounded-full bg-rapid-blue outline-5 outline-deep-navy">
+            {# Circle Image#}
+            <img class="max-w-20 max-h-20" src="/src/assets/images/templates/explainer-report.svg" />
+        </div>
+        <div class="m-5">
+            {# Card Content #}
+            <h5 class="text-2xl">Dashboards &amp; Reports</h5>
+            <p>Instant access to reporst and visibility on progress.</p>
+        </div>
+    </div>
+  </div>
+  
+  <br/>
+  
+  <h4 class="text-2xl">How it works - in three <span class="text-ice-blue">quick</span> steps</h4>
+  <br/>
+  <ol class="list-decimal">
+    <li>Pick a template.</li>
+    <li>It gets deployed.</li>
+    <li>Login and Go.</li>
+  </ol>
+
+  <br/>
+  <br/>
+
+  {%- endcall %}
+{%- endcall %}
