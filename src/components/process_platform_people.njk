@@ -1,0 +1,14 @@
+
+{% from "components/three_cards.njk" import ThreeCards with context %}
+{% import "./layouts.njk" as layouts %}
+{% from "./atoms/angle.njk" import angle %}
+{% from "../components/atoms/icon.njk" import Icon %}
+
+
+{% call layouts.section('dark', 'quarter') %}
+  
+{% endcall %}
+
+{{ ThreeCards(ppp.cards, 'dark', 'quarter') }}
+
+{{angle('bottom')}}

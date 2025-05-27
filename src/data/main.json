@@ -107,7 +107,25 @@
       }
     ]
   },
-
+  "ppp": {
+    "cards": [
+      {
+        "heading": "Process",
+        "message": "Access pre-built templates that get you moving fast.",
+        "icon": "chart-diagram"
+      },
+      {
+        "heading": "Platform",
+        "message": "A enterprise-grade platform that easily adapts to your needs.",
+        "icon": "rapid-brand-mark fak"
+      },
+      {
+        "heading": "People",
+        "message": "Access an expert team to make sure you get the results from day one.",
+        "icon": "people"
+      }
+    ]
+  },
   "microsoftIntegrations": [
     {
       "src": "/src/assets/images/approach/ms-office-365.svg",

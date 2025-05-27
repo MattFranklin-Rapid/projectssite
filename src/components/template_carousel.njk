@@ -2,7 +2,6 @@
 {% import "./layouts.njk" as layouts %}
 {% import "./carousel.njk" as carousel with context %}
 {% from "../components/atoms/button.njk" import Button %}
-{% from "../components/atoms/icon.njk" import Icon %}
 {% from "../components/atoms/angle.njk" import angle %}
 
 {% call layouts.section('dark', 'half', "max-h-max") -%}
@@ -29,6 +28,5 @@
 
   {%- endcall %}
 
-  {{ angle('bottom') }}
 
 {%- endcall %}

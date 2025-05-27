@@ -31,6 +31,13 @@ export default {
         slug: (value) => {
           return value.replace(/\s/g, "_");
         },
+        icon: (value) => {
+          if (value.includes("rapid")) {
+            return "fak fa-fw fa-rapid-brand-mark";
+          }
+
+          return `fas fa-fw fa-` + value;
+        },
       },
     }),
     tailwindcss({
