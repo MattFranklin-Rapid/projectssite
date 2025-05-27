@@ -1,0 +1,34 @@
+
+{% import "./layouts.njk" as layouts %}
+{% import "./carousel.njk" as carousel with context %}
+{% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/icon.njk" import Icon %}
+{% from "../components/atoms/angle.njk" import angle %}
+
+{% call layouts.section('dark', 'half', "max-h-max") -%}
+
+  {{ angle('top') }}
+
+  {% call layouts.centerContainer('
+    px-4 
+  ') -%}
+
+    {% call carousel.wrapper(templates.carousel) %}
+
+        {% for item in templates.carousel %}
+          
+          {% call carousel.item(item, 'flex items-center justify-center') %}
+            <img class="rounded-md shadow-xl shadow-gray-900 lg:w-4/5 " src="{{item.image.src}}" alt="{{item.image.alt}}" />
+          {% endcall %}
+
+        {% endfor %}
+        
+    {%- endcall %}
+
+      {{ Button(templates.ctaButton.link, templates.ctaButton.text, 'place-self-center mt-10') }}
+
+  {%- endcall %}
+
+  {{ angle('bottom') }}
+
+{%- endcall %}

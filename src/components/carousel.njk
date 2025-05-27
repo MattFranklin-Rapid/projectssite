@@ -1,111 +1,79 @@
 
 {# 
- industry tabs component has configuration options
- "industry": {
-  "minor_heading": "string",
-  "major_heading": "string",
-  "heading_paragraph": "string/html",
-  "quote": "string/html",
-  "more_page": "URL path",
-  "industries": [
-    {
-      "active_status": "button-active" | "button-not-active",
-      "label": "string",
-      "display": "none" | "block",
-      "image_source": "string",
-      "bulletPoints": [
-        {
-          "label": "string",
-          "message": "string"
-        }
-      ]
-    }
-  ]
- }
+
+  Carousel Component
+
+  {% import "./path/to/carousel.njk" as Carousel with context %}
+
+  {% call Carousel(theme, class) %}
+    // Add divs with the class "carousel-item"
+  {% endcall %}
+
 #}
 
 {% import "./layouts.njk" as layouts %}
-{% import "./carousel.njk" as carousel with context %}
 {% from "../components/atoms/button.njk" import Button %}
 {% from "../components/atoms/icon.njk" import Icon %}
 {% from "../components/atoms/angle.njk" import angle %}
 
-{% call layouts.section('dark', 'half', "max-h-max") -%} <!-- 'mt-[-200px] lg:mt-[-250px]') -%} -->
 
-  {{ angle('top') }}
+{% macro item(item, class) %}
+  <div id="{{item.label|slug}}" class="
+    flex flex-col min-w-full carousel-item
+    scroll-mt-[800px]
+    {%if class != blank%} {{class}} {%endif%}
+  " >
+    {{ caller() }}
+  </div>
+{% endmacro %}
 
-  {% call layouts.centerContainer('
-    px-4 py-5 grid grid-cols-1 lg:grid-cols-3 auto-rows-auto
-  ') -%}
-      <div class="col-span-1 mb-10" >
-        <h6 class="font-light text-rapid-blue uppercase" >{{ industry.minor_heading }}</h6>
-        <h3 class="font-bold text-4xl my-5" >{{ industry.major_heading }}</h3>
-        <p class="text-justify" >{{industry.heading_paragraph|safe}}</p>
-      </div>
+{% macro wrapper(items, class) %}
 
-    {% call carousel.wrapper(industry.industries) %}
+{% set uuid = uuid() %}
 
-      {% for item in industry.industries -%}
+<div class="
+  flex flex-col w-full col-span-2 relative
+">
+  <div class="
+    scroll-container carousel_{{uuid}}
+    flex overflow-x-scroll w-full
+    p-5 pr-0 gap-10 h-min
+    lg:p-10 lg:gap-20 lg:pr-0
+    {%if class != blank%} {{class}} {%endif%}
+  ">
+    {{ caller() }}
+  </div>
 
+  <div
+      id="carousel-pagination-wrapper_{{uuid}}" 
+      class=" 
+        flex gap-5 justify-between  
+        md:col-span-2 md:place-self-center md:mt-auto 
+      "> 
+    <button id="carousel-prev_{{uuid}}" class="p-5 cursor-pointer"> 
+        <i class="fas fa-fw fa-chevron-left" ></i> 
+      </button> 
 
-          {% call carousel.item(item) %}
-          <div class="
-            min-w-full relative transition bg-rapid-blue rounded-lg p-4 h-full
-            lg:min-h-[300px] 
-          ">
-            <div class="
-              relative z-1 lg:pl-[130pt] flex flex-col h-full pt-15
-              md:pt-0 md:pl-22
-            ">
-              <p>{{item.quote|safe}}</p>
-              <p class="
-                mt-auto font-bold text-lg text-right pt-5
-              " >- {{item.quote_by|safe}}</p>
-              <p class="font-light text-sm text-right" >{{item.label|safe}}</p>
-            </div>
+    {% for item in items %} 
+      <button
+          data-id="{{item.label|slug}}" 
+          data-index="{{loop.index0}}"
+          class=" 
+            carousel-pagination_{{uuid}}
+            hidden p-4 max-h-max max-w-max rounded-sm transition cursor-pointer hover:bg-rapid-blue hover:text-white text-grey-500 text-lg 
+            md:block  md:text-xs 
+        "
+          >{{item.label}}
+      </button> 
+    {% endfor %} 
 
-            {{ Icon('quote-left', "
-              absolute text-ice-blue z-0 text-[100pt] left-[-25pt] top-[-25pt]
-              text-[100pt] left-[-25pt] top-[-25pt]
-              lg:top-[-50pt] lg:left-[-50pt] lg:text-[170pt] 
-            ") }}
-          </div>
+    <button id="carousel-next_{{uuid}}" class="p-5 cursor-pointer"> 
+      {{ Icon("chevron-right") }} 
+    </button> 
+  </div> 
 
-          <div class="
-            grid grid-cols-1 gap-10 pt-5
-            sm:grid-cols-3
-          ">
+</div>
 
-            {% for bullet in item.bullet_points %}
-
-              <div class="flex flex-col items-center" >
-
-                <div class="p-5 flex items-center justify-center" >
-
-                    {% set iconName = industry.icons[bullet.label]  %}
-                    {{ Icon(iconName, "text-rapid-blue fa-2x mr-2") }}
-
-                    <p class="font-bold text-xl" >{{ bullet.label }}</p>
-                </div>
-
-                <p class="text-center" >{{ bullet.message }}</p>
-
-              </div>
-
-            {% endfor %}
-
-          </div>
-
-        {% endcall %}
-
-      {% endfor %}
-    {%- endcall %}
-
-  {%- endcall %}
-
-  {{ angle('bottom') }}
-
-{%- endcall %}
 
 <style>
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -124,11 +92,13 @@
 </style>
 
 <script>
+// Initialize the carousel by setting the first item as active
+document.addEventListener('DOMContentLoaded', () => {
 // Select all testimonials and tab buttons
-const testimonials = document.querySelectorAll('.testimonial');
-const tabButtons = Array.from(document.querySelectorAll('.test-feature'));
-const nextButton = document.getElementById('test-next');
-const prevButton = document.getElementById('test-prev');
+const testimonials = document.querySelectorAll('.carousel_{{uuid}} .carousel-item');
+const tabButtons = Array.from(document.querySelectorAll('.carousel-pagination_{{uuid}}'));
+const nextButton = document.getElementById('carousel-next_{{uuid}}');
+const prevButton = document.getElementById('carousel-prev_{{uuid}}');
 
 // Define the active class styles
 const activeClass = ["bg-rapid-blue", "hover:bg-ice-blue", "text-white", "block"];
@@ -232,13 +202,12 @@ nextButton.addEventListener('click', focusNext);
 prevButton.addEventListener('click', focusPrev);
 
 // Event delegation for tab buttons
-const testimonialPagination = document.getElementById("testimonial-pagination-wrapper");
+const testimonialPagination = document.getElementById("carousel-pagination-wrapper_{{uuid}}");
 testimonialPagination.addEventListener('click', handleTabButtonClick);
 
-// Initialize the carousel by setting the first item as active
-document.addEventListener('DOMContentLoaded', () => {
   const scrollOnLoad = false;
   setActive(0, scrollOnLoad);
 });
 </script>
 
+{% endmacro %}
