@@ -1,0 +1,59 @@
+{#
+    Data Shape
+    "template_features":[
+        {
+            "category": "string",
+            "templates": [
+                {
+                    "title": "string",
+                    "short_description": "string",
+                    "page": "string"
+                }
+            ]
+        }
+    ]
+#}
+
+
+{% import "../../components/atoms/typography.njk" as typography  %}
+{% import "../layouts.njk" as layouts %}
+
+{% call layouts.section('light', 'full') -%}
+  {% call layouts.centerContainer('px-4 py-2 flex flex-col items-center') -%}
+
+  </br>
+  {{ typography.subTitle('Template Catalogue') }}
+  <p>Explore the process templates that you can access below:</p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  {# Catalogue container #}
+    {% for category in template_features%}
+        <div class="">
+        {# Category Container #}
+            {{ typography.heading(category.category) }}
+            <div>
+            {# Template Card Container #}
+                {% for template in category.templates %}
+                    <details class="group m-2 bg-deep-navy text-white rounded-sm p-3">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <span>{{template.title}}</span>
+                            <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                            </span>
+                        </summary>
+                        <p class="mt-3 group-open:animate-fadeIn">
+                            {{template.short_description | safe}}
+                        </p>
+                    </details>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+  </div>
+
+
+
+
+
+  {%- endcall %}
+{%- endcall %}
