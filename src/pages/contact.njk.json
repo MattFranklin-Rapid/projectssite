@@ -1,6 +1,6 @@
 {
     "title": "Contact Us",
-    "know_more_options": {
+    "contact_us_options": {
       "show_contact_form": true,
       "value": "This is the contact us page, this value is loaded dynamically from the page json file",
       "title": "Get in touch",

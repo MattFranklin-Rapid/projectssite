@@ -1,0 +1,12 @@
+{% import "./layouts.njk" as layouts %}
+
+{% call layouts.section('light', 'full', 'sm:mb-[-50px] md:mb-[-50px]') -%}
+{% call layouts.centerContainer('relative z-10 pt-5 px-4 sm:pt-10 lg:items-center gap-5') -%}
+    <h1 class="text-4xl mb-8"><strong>{{ title|safe }}</strong><h1>
+    {{ content|safe }}
+    <br />
+    <br />    
+    <br />
+    <br />
+{%- endcall %}
+{%- endcall %}
