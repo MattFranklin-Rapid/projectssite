@@ -1,7 +1,5 @@
 {% extends 'layouts/layout.njk' %}
 
 {% block content %}
-  <div class="content-full-column">
-      {{ content|safe }}
-  </div>
+  {% include 'components/content_raw.njk' %}
 {% endblock %}

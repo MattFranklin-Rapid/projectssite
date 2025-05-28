@@ -1,0 +1,39 @@
+{#
+ Blog Post Listing
+
+ takes an array of posts and displays them vertically
+
+ usage:
+  {% from "./path/to/posts.njk" import BlogPosts with context %}
+
+ args:
+  - posts: Array of posts to render in the format
+  {
+    author: string;
+    author_coint: url to image;
+    title: string;
+    content: string;
+    date: string;
+  }
+#}
+
+{% import "../layouts.njk" as layouts %}
+
+{% macro BlogPosts(posts) %}
+
+{% set id = uuid()  %}
+
+  {% call layouts.section('light', 'quarter', 'flex items-center') %}
+
+    {% call layouts.centerContainer('p-4 w-full flex gap-5 items-center justify-center') %}
+      
+      {% for post in posts %}
+        <h1>{{post.title}}</h1>
+        <p>{{post.content | safe}}</p>
+      {% endfor%}
+
+    {% endcall %}
+
+  {% endcall %}
+
+{% endmacro %}

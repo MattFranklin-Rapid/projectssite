@@ -5,10 +5,16 @@
 {% block content %}
     {% include 'components/hero.njk' %}
 
-    {% include 'components/our_approach.njk' %}
+    {% include 'components/improvements.njk' %}
 
-    {% include 'components/building_a_crm.njk' %}
-        
+    {% include 'components/client_logos.njk' %}
+
+    {% include 'components/launch_in_weeks.njk' %}
+
+    {% include "components/template_carousel.njk" %}
+
+    {% include 'components/process_platform_people.njk' %}
+
     {% include 'components/cta/book_demo.njk' %}
 
     {{ FeatureMulti('dark', multi_feature) }}

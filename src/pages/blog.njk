@@ -1,0 +1,12 @@
+{% from "components/blog/posts.njk" import BlogPosts with context %}
+
+{% extends 'layouts/layout.njk' %}
+
+{% block content %}
+
+    {% include 'components/blog/heading.njk' %}
+
+    {% call BlogPosts(posts) -%}
+    {%- endcall %}
+
+{% endblock %}

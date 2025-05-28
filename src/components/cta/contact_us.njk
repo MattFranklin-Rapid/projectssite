@@ -1,0 +1,110 @@
+{# 
+    contact us component has configuration options
+    "contact_us_options": {
+        "show_contact_form": true|false,
+        "location": "location",
+        "email": "email",
+        "title": "title of contact us form",
+        "cta_nav_heading": ""
+  }
+#}
+{% import "../layouts.njk" as layouts %}
+{% from "../atoms/button.njk" import FormButton %}
+
+{% call layouts.section('light', 'full', 'sm:mb-[-50px] md:mb-[-50px]') -%}
+  {% call layouts.centerContainer('flex relative z-10 pt-5 px-4 flex-col md:flex-row sm:pt-10 lg:items-center gap-5') -%}
+    <div class="grid p-5 gap-4 text-xl grid-cols-1 xl:grid-cols-2">
+      <div class="xl:min-w-xl">
+        <h4>EMAIL:</h4>
+        <a class="text-rapid-blue underline" href="mailto:{{ contact_us_options.email|safe }}">
+          <p>
+            {{ contact_us_options.email|safe }}
+          </p>
+        </a>
+        <br />
+        <h4>LOCATION:</h3>
+        <p>
+          {{ contact_us_options.location|safe }}
+        </p>
+        <br />
+        <div>
+          <iframe
+            class="w-full h-125"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.1330525658561!2d153.09785366964815!3d-27.577024909775076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9144a55dcc2933%3A0x3d3102697594ed64!2s10b%2F107%20Miles%20Platting%20Rd%2C%20Eight%20Mile%20Plains%20QLD%204113!5e0!3m2!1sen!2sau!4v1745986343566!5m2!1sen!2sau"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div>
+        <form id="contact-form" class="flex flex-col">
+          <input class="rounded-sm mb-4 p-5 outline-1" type="text" name="first_name" placeholder="First Name" />
+          <input class="rounded-sm mb-4 p-5 outline-1" type="text" name="last_name" placeholder="Last Name" />
+          <input class="rounded-sm mb-4 p-5 outline-1" type="email" name="email" placeholder="Email" />
+          <input
+            class="rounded-sm mb-4 p-5 outline-1"
+            type="tel"
+            name="mobile_phone"
+            placeholder="Mobile Phone"
+          />
+          <textarea
+            class="rounded-sm mb-4 outline-1 p-5 resize-none h-50"
+            placeholder="Your message"
+            name="message"
+          ></textarea>
+          <div class="mb-4 ">
+             <div
+              class="h-captcha"
+              data-sitekey="c9220d86-5882-442a-88e6-fb76570adf78"
+              data-callback="setToEnabled"
+            ></div>
+          </div> 
+          {{ FormButton("Submit" , '', "contact-us-submit-button", "submit", false) }}
+        </form>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />   
+    </div>
+ 
+  {%- endcall %}
+{%- endcall %}
+
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+<script>
+  function setToEnabled() {
+    const button = document.getElementById("contact-us-submit-button");
+    button.disabled = false;
+  }
+  const form = document.getElementById("contact-form")
+  form.addEventListener("submit", async (event) => {
+    const button = document.getElementById("contact-us-submit-button");
+    button.disabled = true;
+    event.preventDefault();
+    try {
+      await fetch(
+        "https://rapid-internal-api.azurewebsites.net/api/websiteContactSubmission",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+          body: `first_name=${form[0]?.value}
+                &last_name=${form[1]?.value}
+                &email=${form[2]?.value}
+                &mobile_phone=${form[3]?.value}
+                &message=${form[4]?.value}
+                &h-captcha-response=${form[5]?.value}`,
+        }
+      )
+    } catch (error) {
+      console.log(error)
+    } finally {
+       setToEnabled()
+    }
+  })
+</script>

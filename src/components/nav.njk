@@ -38,11 +38,14 @@
 #}
 
 {% from "../components/atoms/button.njk" import Button %}
+{% from "../components/atoms/angle.njk" import angle %}
 {% from "../components/atoms/logo.njk" import Logo with context %}
 {% import "./layouts.njk" as layouts %}
 
-<header class="bg-white shadow-md sticky top-0 z-50">
-  {% call layouts.centerContainer('px-4 py-2 justify-stretch') -%}
+<header class="sticky top-0 w-full z-50 shadow-lg shadow-grey-900" >
+
+  <div class="sticky top-0 bg-white w-full z-50">
+  {% call layouts.centerContainer('px-4 py-2 justify-stretch bg-white ') -%}
     <div class="flex items-center justify-between w-full">
       {# Desktop Logo #}
       <div class="flex-shrink-0 h-9 hidden md:flex">
@@ -147,7 +150,11 @@
     </div>
 
   {%- endcall %}
+  </div>
+
+
 </header>
+
 
 <script>
   // Mobile menu toggle

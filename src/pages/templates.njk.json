@@ -1,0 +1,322 @@
+{
+  "title": "Rapid Templates",
+  "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+  "url_book_demo": "/",
+  "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+  "title_video_embed": "Rapid Platform",
+  "know_more_options": {
+    "show_contact_form": true,
+    "title": "Get in Touch"
+  },
+  "hero": {
+    "title": "Launch processes in days, not weeks.",
+    "subtitle": "Pre-built templates give you enterprise-grade workflows, data models, and dashboards from day one - then flex to fit as you grow.",
+    "videoId": "approach"
+  },
+  "seo": {
+    "description": "See how Rapid Platform fuses first in class dynamic technologies with deep business knowledge to empower lasting solutions."
+  },
+  "template_features": [
+    {
+      "category": "Financial Management",
+      "templates": [
+        {
+          "title": "Accounts Payable",
+          "short_description": "Take control of spending — track invoices, approvals, and payments effortlessly with our Accounts Payable template.",
+          "page": "string"
+        },
+        {
+          "title": "Accounts Receivable",
+          "short_description": "Get paid faster — manage billing, track outstanding invoices, and automate follow-ups with ease.",
+          "page": "string"
+        },
+        {
+          "title": "Budgeting",
+          "short_description": "Plan with confidence — build, adjust, and visualize budgets to stay on top of your financial goals.",
+          "page": "string"
+        },
+        {
+          "title": "Purchase Requests",
+          "short_description": "Streamline procurement — submit, approve, and track purchase requests with full visibility and control.",
+          "page": "string"
+        },
+        {
+          "title": "Quoting",
+          "short_description": "Create and send professional quotes in minutes — track approvals and win more business with less hassle.",
+          "page": "string"
+        },
+        {
+          "title": "Conveyancing",
+          "short_description": "Simplify property transactions — manage documents, deadlines, and stakeholders all in one streamlined template.",
+          "page": "string"
+        }
+      ]
+    },
+    {
+      "category": "Human Resources",
+      "templates": [
+        {
+          "title": "Applicant Tracking",
+          "short_description": "Simplify selection processes with our Applicant Tracking template—manage candidates, stages, and decisions in one clear view.",
+          "page": "string"
+        },
+        {
+          "title": "Blue Card Management",
+          "short_description": "Stay compliant with ease — track Blue Cards, renewals, and forecast expiries all in one secure location.",
+          "page": "string"
+        },
+        {
+          "title": "COI Register",
+          "short_description": "Promote transparency — log, monitor, and manage conflicts of interest with smart, searchable registers.",
+          "page": "string"
+        },
+        {
+          "title": "Leave Requests",
+          "short_description": "Easily manage time off with our Leave template — track requests, approvals, and leave balances all in one place.",
+          "page": "string"
+        },
+        {
+          "title": "OKRs",
+          "short_description": "Stay aligned and on target — our OKR template helps you set, track, and visualize goals with clarity.",
+          "page": "string"
+        },
+        {
+          "title": "Performance Reviews",
+          "short_description": "Streamline feedback and growth with our Performance Review template — automated, organized, and insight-driven.",
+          "page": "string"
+        },
+        {
+          "title": "Staff Index",
+          "short_description": "Keep your team info at your fingertips — organize, update, and access staff details in one central place",
+          "page": "string"
+        },
+        {
+          "title": "Staff On/Offboarding",
+          "short_description": "Make every transition smooth — automate onboarding and offboarding tasks for a seamless staff experience.",
+          "page": "string"
+        }
+      ]
+    },
+    {
+      "category": "Asset Management",
+      "templates": [
+        {
+          "title": "Asset Tracking",
+          "short_description": "Know what you own — track asset location, status, and value with total clarity.",
+          "page": "string"
+        },
+        {
+          "title": "Inventory Management",
+          "short_description": "Stay stocked and in control — manage inventory levels, movements, and receive alerts in real time.",
+          "page": "string"
+        },
+        {
+          "title": "IT Assets",
+          "short_description": "Keep your tech in check — monitor hardware, software, and lifecycle data all in one place.",
+          "page": "string"
+        },
+        {
+          "title": "Software Licences",
+          "short_description": "Never miss a renewal — track software licences, usage, and compliance effortlessly.",
+          "page": "string"
+        },
+        {
+          "title": "Vehicle Registra",
+          "short_description": "Manage your fleet smarter — log fuel cards, maintenance, and availability with ease.",
+          "page": "string"
+        },
+        {
+          "title": "WHS Assets",
+          "short_description": "Stay safe and compliant — track safety gear, inspections, and WHS equipment in one reliable system.",
+          "page": "string"
+        }
+      ]
+    },
+    {
+      "category": "Projects & Processes",
+      "templates": [
+        {
+          "title": "Agile Management",
+          "short_description": "Plan, prioritize, and deliver work efficiently — manage backlogs, sprints, and team collaboration with ease.",
+          "page": "string"
+        },
+        {
+          "title": "Document Archiving",
+          "short_description": "Keep records, not clutter — archive data securely for easy retrieval and peace of mind.",
+          "page": "string"
+        },
+        {
+          "title": "Bug Tracking",
+          "short_description": "Squash bugs fast — log, assign, and resolve issues with a clear, collaborative workflow.",
+          "page": "string"
+        },
+        {
+          "title": "Business Processes",
+          "short_description": "Optimize workflows end-to-end — design, automate, and monitor processes for maximum efficiency.",
+          "page": "string"
+        },
+        {
+          "title": "Form Builder",
+          "short_description": "Create custom forms in minutes — capture data seamlessly with no coding needed.",
+          "page": "string"
+        },
+        {
+          "title": "Management Reporting",
+          "short_description": "Turn data into decisions — generate clear, insightful reports that drive smarter business moves.",
+          "page": "string"
+        },
+        {
+          "title": "Product Roadmap",
+          "short_description": "Chart your product's path — align priorities, timelines, and teams with a clear, strategic roadmap.",
+          "page": "string"
+        },
+        {
+          "title": "Project Management",
+          "short_description": "Drive projects forward — manage tasks, resources, and deadlines seamlessly from start to finish.",
+          "page": "string"
+        },
+        {
+          "title": "Release Cycles",
+          "short_description": "Ensure smooth launches — track releases, approvals, and deployment steps with full control.",
+          "page": "string"
+        }
+      ]
+    },
+    {
+      "category": "Complaince & Records",
+      "templates": [
+        {
+          "title": "Business Continuity",
+          "short_description": "Prepare, respond, and recover — help your business stay running smoothly, whatever comes your way.",
+          "page": "string"
+        },
+        {
+          "title": "Insurances",
+          "short_description": "Manage policies and renewals — keep your coverage up-to-date and easily accessible.",
+          "page": "string"
+        },
+        {
+          "title": "Licence Register",
+          "short_description": "Track licences and certifications — stay compliant with automated reminders and records.",
+          "page": "string"
+        },
+        {
+          "title": "Non-Disclosure Agreements",
+          "short_description": "Manage confidentiality — create, track, and store NDAs with ease and security.",
+          "page": "string"
+        },
+        {
+          "title": "Policies",
+          "short_description": "Keep everyone aligned — organize and share company policies clearly and accessibly.",
+          "page": "string"
+        },
+        {
+          "title": "Procedures",
+          "short_description": "Standardize success — document and streamline your business procedures for consistent results.",
+          "page": "string"
+        },
+        {
+          "title": "Rapid Advantage",
+          "short_description": "Accelerate decision-making — quickly capture and act on key insights and opportunities.",
+          "page": "string"
+        },
+        {
+          "title": "Requests",
+          "short_description": "Simplify submissions — track and manage all types of requests in one efficient system.",
+          "page": "string"
+        },
+        {
+          "title": "WHS - Incidents",
+          "short_description": "Report and resolve workplace incidents swiftly to maintain a safer environment.",
+          "page": "string"
+        },
+        {
+          "title": "WHS - Saftey Data Sheets",
+          "short_description": "Organize Safety Data Sheets for easy access and compliance at your fingertips.",
+          "page": "string"
+        },
+        {
+          "title": "Risk Management",
+          "short_description": "Identify, assess, and mitigate risks to protect your business proactively.",
+          "page": "string"
+        },
+        {
+          "title": "RIA Requests",
+          "short_description": "Streamline information requests — manage, track, and respond efficiently and transparently.",
+          "page": "string"
+        }
+      ]
+    },
+    {
+      "category": "Customer Egagement",
+      "templates": [
+        {
+          "title": "CRM",
+          "short_description": "Build better relationships — track interactions, manage pipelines, and grow customer value in one place.",
+          "page": "string"
+        },
+        {
+          "title": "Client Onboarding",
+          "short_description": "Welcome clients with ease — automate tasks and ensure a smooth, professional start every time.",
+          "page": "string"
+        },
+        {
+          "title": "Communication Campaigns",
+          "short_description": "Plan, launch, and track campaigns — Automatically send bulk emails, texts, or media to your audience lists — fast, targeted, and hassle-free.",
+          "page": "string"
+        },
+        {
+          "title": "Enquiries",
+          "short_description": "Capture and respond to enquiries fast — stay organized and never miss a follow-up.",
+          "page": "string"
+        },
+        {
+          "title": "Event Management",
+          "short_description": "Organize and execute events seamlessly — manage schedules, attendees, and logistics in one central hub.",
+          "page": "string"
+        },
+        {
+          "title": "Feedback Collection",
+          "short_description": "Collect meaningful input — automate feedback gathering to drive smarter decisions.",
+          "page": "string"
+        },
+        {
+          "title": "Leads & Opportunities",
+          "short_description": "Track and nurture leads — turn interest into action with a clear view of every opportunity.",
+          "page": "string"
+        },
+        {
+          "title": "Surveys",
+          "short_description": "Design and distribute surveys easily — gather data and insights to fuel better outcomes.",
+          "page": "string"
+        },
+        {
+          "title": "Account Management",
+          "short_description": "Keep every client relationship on track — centralize contacts, communications, and key account details.",
+          "page": "string"
+        }
+      ]
+    },
+    {
+      "category": "Facilities & Operations",
+      "templates": [
+        {
+          "title": "Building Maintenance",
+          "short_description": "Stay on top of upkeep — schedule, track, and manage maintenance tasks with ease.",
+          "page": "string"
+        },
+        {
+          "title": "Force Org",
+          "short_description": "Visualize your structure — organize teams, roles, and resources for operational clarity.",
+          "page": "string"
+        },
+        {
+          "title": "Logistics Logbooks",
+          "short_description": "Record and review movements — track vehicle and equipment usage with detailed digital logbooks.",
+          "page": "string"
+        }
+      ]
+    }
+
+  ]
+}

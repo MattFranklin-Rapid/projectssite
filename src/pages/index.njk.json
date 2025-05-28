@@ -17,6 +17,44 @@
     "subtitle": "tech in plus the cloud, team on the ground.",
     "videoId": "homepage-splash"
   },
+  "improvements": [
+    {
+      "value": "42%",
+      "message": "boost in enrolments",
+      "client": "Guardian Childcare"
+    },
+    {
+      "value": "70%",
+      "message": "reduction of manual work load",
+      "client": "Torsion Construction"
+    },
+    {
+      "value": "99%",
+      "message": "of our spreadsheets centralized",
+      "client": "EDL Energy"
+    }
+  ],
+  "launchInWeeks": {
+    "titles": [
+      {
+        "icon": "rocket-launch",
+        "title": "Launch in Weeks"
+      },
+      {
+        "icon": "box-open-full",
+        "title": "Start with Templates"
+      },
+      {
+        "icon": "handshake-simple",
+        "title": "Scale with Experts"
+      }
+    ],
+    "content": "Live in <span class='text-rapid-blue font-bold' ><i class='fas fa-fw fa-chevron-left' ></i> 6 weeks</span>, not 6 months. Access pre-built workflows, data models, dashboards. Succeed with a dedicated CSM guiding you every step of the way.",
+    "image": {
+      "src": "/src/assets/images/landing/launch_in_weeks.png",
+      "alt": "Computer sitting on desk with reports open on the screen"
+    }
+  },
   "multi_feature": {
     "title": "rapid technology",
     "subTitle": "real outcomes, real fast.",
@@ -203,6 +241,35 @@
         ]
       }
     ]
+  },
+  "templates": {
+    "carousel": [
+      {
+        "label": "Task Portal",
+        "image": {
+          "src": "src/assets/images/task_portal.png",
+          "alt": "Task portal"
+        }
+      },
+      {
+        "label": "Manufacturing Process",
+        "image": {
+          "src": "src/assets/images/manufacturing_process.png",
+          "alt": "Manufacturing Process"
+        }
+      },
+      {
+        "label": "Projects Dashbaord",
+        "image": {
+          "src": "src/assets/images/projects_dashboard.png",
+          "alt": "Projects Dashboard"
+        }
+      }
+    ],
+    "ctaButton": {
+      "link": "/",
+      "text": "Explore Templates"
+    }
   },
   "industry": {
     "minor_heading": "rapid results",

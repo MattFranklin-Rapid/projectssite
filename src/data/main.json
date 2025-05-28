@@ -1,5 +1,5 @@
 {
-  "template": "layouts/main.njk", 
+  "template": "layouts/main.njk",
   "videos": {
     "building-a-crm": {
       "src": "https://www.youtube.com/embed/4Rni97X0K50?si=PgKR6YqSgCMSp-Db",
@@ -26,6 +26,48 @@
       "overlayImageSrc": "/src/assets/images/childcare_overlay.jpg"
     }
   },
+  "clientLogos": [
+    {
+      "src": "/src/assets/images/logos/mel_logo.jpg",
+      "alt": "Thanks Mel"
+    },
+    {
+      "src": "/src/assets/images/logos/AFG-logo.jpg",
+      "alt": "AFG Rural"
+    },
+    {
+      "src": "/src/assets/images/logos/AI-Business-plan-480x166.png",
+      "alt": "AI Business Plan"
+    },
+    {
+      "src": "/src/assets/images/logos/Block-5-logo.jpg",
+      "alt": "Block 5"
+    },
+    {
+      "src": "/src/assets/images/logos/Torsion-logo.jpg",
+      "alt": "Torsion"
+    },
+    {
+      "src": "/src/assets/images/logos/edl-logo.jpg",
+      "alt": "EDL"
+    },
+    {
+      "src": "/src/assets/images/logos/guardian-logo.jpg",
+      "alt": "Guardian childcare"
+    },
+    {
+      "src": "/src/assets/images/logos/parkland-logo.jpg",
+      "alt": "Parklang Christian College"
+    },
+    {
+      "src": "/src/assets/images/logos/zalt-logo.jpg",
+      "alt": "Zalt"
+    },
+    {
+      "src": "/src/assets/images/logos/gwm_logo_banner.png",
+      "alt": "Grant Wealth Managment"
+    }
+  ],
   "logo": {
     "largeSrc": "/images/logos/RPD_logo_2D.svg",
     "smallSrc": "/images/logos/r.svg",
@@ -41,6 +83,10 @@
       {
         "text": "Our Approach",
         "link": "/approach"
+      },
+      {
+        "text": "Templates",
+        "link": "/templates"
       },
       {
         "text": "Industries",
@@ -65,7 +111,25 @@
       }
     ]
   },
-
+  "ppp": {
+    "cards": [
+      {
+        "heading": "Process",
+        "message": "Access pre-built templates that get you moving fast.",
+        "icon": "chart-diagram"
+      },
+      {
+        "heading": "Platform",
+        "message": "A enterprise-grade platform that easily adapts to your needs.",
+        "icon": "rapid-brand-mark fak"
+      },
+      {
+        "heading": "People",
+        "message": "Access an expert team to make sure you get the results from day one.",
+        "icon": "people"
+      }
+    ]
+  },
   "microsoftIntegrations": [
     {
       "src": "/src/assets/images/approach/ms-office-365.svg",
@@ -91,11 +155,11 @@
 
   "simpleCta": {
     "title": "don't wait",
-    "subTitle": "We are waiting for you",
-    "message": "You cannot escape us. Your business will be revolutaionized by Rapid it is inevitable.",
+    "subTitle": "Ready to Launch?",
+    "message": "Start small. Scale fast. Solve what matters most. Whether you need one workflow or an end-to-end transformation, we've got you covered.",
     "button": {
-      "text": "Get in touch",
-      "link": "/contact"
+      "text": "Book a Demo",
+      "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/"
     }
   },
   "ourApproach": {
@@ -238,7 +302,7 @@
       "text": "Book Demo"
     },
     "image": {
-      "src": "/src/assets/images/landing/demo-consultant-face.png",
+      "src": "/src/assets/images/book_demo.png",
       "alt": "A happy consultant sitting at a computer waiting to solve your problem with Rapid"
     }
   },

@@ -19,8 +19,7 @@
 {% macro Icon(iconName, class) %}
 <i 
   class="
-  fas fa-fw
-  fa-{{iconName}} 
+  {{iconName|icon}} 
   {% if class != blank %} {{class}} {% endif %}
   " 
 >

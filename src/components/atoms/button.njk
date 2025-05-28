@@ -39,3 +39,27 @@ If you want link or text to be data variables simply use them as you would in ja
     {{ text }}
 </a> 
 {% endmacro %}
+
+{% macro FormButton(text, class, id, type = "submit", disabled = false) %}
+<Button
+  class="
+    bg-rapid-blue 
+    transition
+    text-white
+    rounded-sm 
+    p-4
+    block
+    h-min 
+    text-nowrap 
+    hover:bg-ice-blue
+    disabled:hover:bg-rapid-blue
+    disabled:opacity-50
+    {% if class != blank %} {{class}} {% else %} w-max {% endif %}
+  " 
+  {% if disabled == true %} disabled {% endif %}
+  id="{{ id }}"
+  type="{{ type }}"
+  >
+    {{ text }}
+</Button> 
+{% endmacro %}

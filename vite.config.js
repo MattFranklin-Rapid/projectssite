@@ -12,13 +12,15 @@ export default {
   },
   plugins: [
     vituum(),
-    Sitemap({ hostname: "https://rapidplatform.com"/*, generateRobotsTxt: false*/}),
+    Sitemap({
+      hostname: "https://rapidplatform.com" /*, generateRobotsTxt: false*/,
+    }),
     nunjucks({
       root: "./src",
       data: ["src/**/*.json"],
       globals: {
-        uuid: () => {
-          return crypto.randomUUID();
+        uuid: (prefix = "component") => {
+          return `${prefix}-${Math.random().toString(36).substring(2, 15)}`;
         },
       },
       filters: {
@@ -28,6 +30,13 @@ export default {
         },
         slug: (value) => {
           return value.replace(/\s/g, "_");
+        },
+        icon: (value) => {
+          if (value.includes("rapid")) {
+            return "fak fa-fw fa-rapid-brand-mark";
+          }
+
+          return `fas fa-fw fa-` + value;
         },
       },
     }),

@@ -1,0 +1,27 @@
+
+{
+    "title": "Rapid Blog",
+    "url_get_started": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/",
+    "url_book_demo": "/",
+    "url_video_embed": "https://www.youtube.com/embed/SGMIifxInw0?si=nS3rWeAHPJstbjiL",
+    "title_video_embed": "Rapid Platform",
+    "seo": {
+      "description": "Updates from the Rapid team as we learn and work in a variety of industries."
+    },
+    "posts": [
+      {
+        "author": "Matt",
+        "author_coin": "./img",
+        "title": "Some Post 1",
+        "content": "This is the text",
+        "date": "26-05-2025"
+      },
+      {
+        "author": "Matt",
+        "author_coin": "./img",
+        "title": "Some Post 2",
+        "content": "This is the text again",
+        "date": "19-05-2025"
+      }
+    ]
+}
