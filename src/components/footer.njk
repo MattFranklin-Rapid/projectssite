@@ -5,17 +5,17 @@
 
 {% call layouts.section('light', 'half', 'z-1 relative') -%}
   {% call layouts.centerContainer('px-4 flex flex-col gap-5 items-center justify-center text-center') -%}
-
+      <br/>
+      <br/>
+      <br/>
       <h2 class="font-light uppercase text-rapid-blue" >{{simpleCta.title}}</h2>
       <h4 class="font-bold text-4xl" >{{simpleCta.subTitle|safe}}</h4>
       <p class="" >{{simpleCta.message|safe}}</p>
-
-
   {%- endcall %}
 {%- endcall %}
 
 {% call layouts.section('dark', 'half', 'mt-[-200px] z-2 relative') -%}
-
+  
   {# This gives the sticky footer menu enough space to hide so we never see it move #}
   <div class="w-full h-15 bg-white z-1 relative flex items-center justify-center" >
       {{ Button(simpleCta.button.link, simpleCta.button.text) }}

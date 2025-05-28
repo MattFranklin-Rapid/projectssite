@@ -85,6 +85,10 @@
         "link": "/approach"
       },
       {
+        "text": "Templates",
+        "link": "/templates"
+      },
+      {
         "text": "Industries",
         "children": [
           {
@@ -151,11 +155,11 @@
 
   "simpleCta": {
     "title": "don't wait",
-    "subTitle": "We are waiting for you",
-    "message": "You cannot escape us. Your business will be revolutaionized by Rapid it is inevitable.",
+    "subTitle": "Ready to Launch?",
+    "message": "Start small. Scale fast. Solve what matters most. Whether you need one workflow or an end-to-end transformation, we've got you covered.",
     "button": {
-      "text": "Get in touch",
-      "link": "/contact"
+      "text": "Book a Demo",
+      "link": "https://outlook.office365.com/book/RAPIDPlatform@rapidplatform.com.au/"
     }
   },
   "ourApproach": {
